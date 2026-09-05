@@ -1,0 +1,1223 @@
+{
+ "meta": {
+  "generated": "2026-08-05 14:07",
+  "script": "analysis/validation/scripts/color_alignment_z.py",
+  "n_perm": 2000,
+  "seed": 42,
+  "hc": [
+   "sub-01",
+   "sub-02",
+   "sub-03",
+   "sub-04",
+   "sub-05",
+   "sub-06",
+   "sub-07"
+  ],
+  "cvd": [
+   "sub-08",
+   "sub-09"
+  ],
+  "excluded": [
+   "sub-10 (near-normal)"
+  ],
+  "k_srm": {
+   "V1": 4,
+   "V2": 4,
+   "V3": 3,
+   "V4": 3
+  },
+  "min_voxels": 20,
+  "statistic": "z = (관측 - 순열평균)/순열sd, 부호는 '클수록 색 특이적 정렬 강함'. 대상 피험자의 색 라벨만 순열하고 SRM 공유공간·참조는 고정. CVD z 를 HC z 분포에 Crawford & Howell (1998) one-tailed LOWER.",
+  "design": "대칭 LOSO: 6 HC 로 SRM 학습, held-out HC 와 CVD 를 동일 SVD 투영. HC z = 자신이 held-out 인 단일 fold; CVD z = 7 fold 평균 (보수적).",
+  "prerequisite": "HC z > 0 (색 특이적 정렬이 HC 에서 먼저 검출되어야 함).",
+  "metrics": {
+   "procrustes_srm": "논문 지표 (SRM 투영 + orthogonal Procrustes disparity; 낮을수록 정렬)",
+   "rdm_srm": "SRM 공간 RDM 상관 (직교불변·라벨민감; 논문 지표의 대조군)",
+   "rdm_voxel": "native voxel 공간 RDM 상관 (SRM 미사용)"
+  }
+ },
+ "results": {
+  "V1": {
+   "k": 4,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "metrics": {
+    "procrustes_srm": {
+     "note": "논문 지표 (SRM 투영 + orthogonal Procrustes disparity; 낮을수록 정렬)",
+     "hc_z": {
+      "mean": 0.201,
+      "sd": 0.85,
+      "min": -0.949,
+      "max": 1.842,
+      "t_vs_zero": 0.627,
+      "p_vs_zero": 0.2769,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": 0.2742,
+        "observed": 0.4607,
+        "null_mean": 0.4738,
+        "null_sd": 0.0476,
+        "p_perm": 0.3708
+       },
+       "sub-02": {
+        "z": 1.8415,
+        "observed": 0.344,
+        "null_mean": 0.4137,
+        "null_sd": 0.0379,
+        "p_perm": 0.051
+       },
+       "sub-03": {
+        "z": 0.014,
+        "observed": 0.5431,
+        "null_mean": 0.5438,
+        "null_sd": 0.0459,
+        "p_perm": 0.4808
+       },
+       "sub-04": {
+        "z": -0.3171,
+        "observed": 0.6057,
+        "null_mean": 0.5884,
+        "null_sd": 0.0546,
+        "p_perm": 0.5652
+       },
+       "sub-05": {
+        "z": 0.2896,
+        "observed": 0.4257,
+        "null_mean": 0.4387,
+        "null_sd": 0.0449,
+        "p_perm": 0.3723
+       },
+       "sub-06": {
+        "z": -0.9488,
+        "observed": 0.6813,
+        "null_mean": 0.6256,
+        "null_sd": 0.0587,
+        "p_perm": 0.8256
+       },
+       "sub-07": {
+        "z": 0.2561,
+        "observed": 0.372,
+        "null_mean": 0.3815,
+        "null_sd": 0.037,
+        "p_perm": 0.3758
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.455,
+       "z_sd_across_folds": 0.829,
+       "z_min": 0.295,
+       "z_max": 2.713,
+       "p_perm_mean": 0.1304,
+       "t_crawford_howell": 1.38,
+       "p_one_tailed_lower": 0.8917,
+       "sensitivity_worst_fold": {
+        "z": 2.713,
+        "t": 2.765,
+        "p": 0.9837
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": -1.061,
+       "z_sd_across_folds": 0.257,
+       "z_min": -1.489,
+       "z_max": -0.754,
+       "p_perm_mean": 0.8339,
+       "t_crawford_howell": -1.39,
+       "p_one_tailed_lower": 0.107,
+       "sensitivity_worst_fold": {
+        "z": -0.754,
+        "t": -1.052,
+        "p": 0.1667
+       }
+      }
+     }
+    },
+    "rdm_srm": {
+     "note": "SRM 공간 RDM 상관 (직교불변·라벨민감; 논문 지표의 대조군)",
+     "hc_z": {
+      "mean": -0.194,
+      "sd": 0.868,
+      "min": -1.236,
+      "max": 1.212,
+      "t_vs_zero": -0.591,
+      "p_vs_zero": 0.712,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": -1.1401,
+        "observed": 0.2728,
+        "null_mean": 0.4397,
+        "null_sd": 0.1464,
+        "p_perm": 0.8666
+       },
+       "sub-02": {
+        "z": 0.531,
+        "observed": 0.5996,
+        "null_mean": 0.5247,
+        "null_sd": 0.141,
+        "p_perm": 0.3363
+       },
+       "sub-03": {
+        "z": 1.212,
+        "observed": 0.5271,
+        "null_mean": 0.3141,
+        "null_sd": 0.1758,
+        "p_perm": 0.1089
+       },
+       "sub-04": {
+        "z": -0.1132,
+        "observed": 0.2917,
+        "null_mean": 0.3093,
+        "null_sd": 0.1549,
+        "p_perm": 0.5542
+       },
+       "sub-05": {
+        "z": -0.3108,
+        "observed": 0.5371,
+        "null_mean": 0.57,
+        "null_sd": 0.106,
+        "p_perm": 0.6432
+       },
+       "sub-06": {
+        "z": -1.2365,
+        "observed": 0.043,
+        "null_mean": 0.285,
+        "null_sd": 0.1957,
+        "p_perm": 0.8916
+       },
+       "sub-07": {
+        "z": -0.2992,
+        "observed": 0.6412,
+        "null_mean": 0.6664,
+        "null_sd": 0.0841,
+        "p_perm": 0.6427
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.082,
+       "z_sd_across_folds": 0.395,
+       "z_min": 0.615,
+       "z_max": 1.573,
+       "p_perm_mean": 0.1709,
+       "t_crawford_howell": 1.376,
+       "p_one_tailed_lower": 0.891,
+       "sensitivity_worst_fold": {
+        "z": 1.573,
+        "t": 1.905,
+        "p": 0.9473
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": -1.44,
+       "z_sd_across_folds": 0.656,
+       "z_min": -2.76,
+       "z_max": -0.838,
+       "p_perm_mean": 0.8789,
+       "t_crawford_howell": -1.344,
+       "p_one_tailed_lower": 0.1138,
+       "sensitivity_worst_fold": {
+        "z": -0.838,
+        "t": -0.695,
+        "p": 0.2567
+       }
+      }
+     }
+    },
+    "rdm_voxel": {
+     "note": "native voxel 공간 RDM 상관 (SRM 미사용)",
+     "hc_z": {
+      "mean": 0.417,
+      "sd": 0.982,
+      "min": -0.978,
+      "max": 1.463,
+      "t_vs_zero": 1.123,
+      "p_vs_zero": 0.1522,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": -0.2871,
+        "observed": -0.0598,
+        "null_mean": 0.01,
+        "null_sd": 0.243,
+        "p_perm": 0.5977
+       },
+       "sub-02": {
+        "z": 1.4631,
+        "observed": 0.3591,
+        "null_mean": -0.0059,
+        "null_sd": 0.2495,
+        "p_perm": 0.071
+       },
+       "sub-03": {
+        "z": 1.3256,
+        "observed": 0.3015,
+        "null_mean": -0.006,
+        "null_sd": 0.2319,
+        "p_perm": 0.0935
+       },
+       "sub-04": {
+        "z": 1.293,
+        "observed": 0.2677,
+        "null_mean": -0.0063,
+        "null_sd": 0.212,
+        "p_perm": 0.1079
+       },
+       "sub-05": {
+        "z": 0.4867,
+        "observed": 0.1086,
+        "null_mean": 0.0016,
+        "null_sd": 0.22,
+        "p_perm": 0.3203
+       },
+       "sub-06": {
+        "z": -0.978,
+        "observed": -0.2592,
+        "null_mean": -0.0053,
+        "null_sd": 0.2596,
+        "p_perm": 0.8366
+       },
+       "sub-07": {
+        "z": -0.3875,
+        "observed": -0.0817,
+        "null_mean": 0.0004,
+        "null_sd": 0.2119,
+        "p_perm": 0.6547
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.128,
+       "z_sd_across_folds": 0.348,
+       "z_min": 0.805,
+       "z_max": 1.759,
+       "p_perm_mean": 0.1497,
+       "t_crawford_howell": 0.678,
+       "p_one_tailed_lower": 0.7384,
+       "sensitivity_worst_fold": {
+        "z": 1.759,
+        "t": 1.279,
+        "p": 0.876
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": -1.292,
+       "z_sd_across_folds": 0.267,
+       "z_min": -1.721,
+       "z_max": -1.002,
+       "p_perm_mean": 0.8878,
+       "t_crawford_howell": -1.629,
+       "p_one_tailed_lower": 0.0773,
+       "sensitivity_worst_fold": {
+        "z": -1.002,
+        "t": -1.352,
+        "p": 0.1126
+       }
+      }
+     }
+    }
+   },
+   "elapsed_s": 5.1
+  },
+  "V2": {
+   "k": 4,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "metrics": {
+    "procrustes_srm": {
+     "note": "논문 지표 (SRM 투영 + orthogonal Procrustes disparity; 낮을수록 정렬)",
+     "hc_z": {
+      "mean": 0.242,
+      "sd": 1.265,
+      "min": -1.205,
+      "max": 2.79,
+      "t_vs_zero": 0.506,
+      "p_vs_zero": 0.3156,
+      "n_p_perm_lt_05": 1,
+      "per_subject": {
+       "sub-01": {
+        "z": 2.7901,
+        "observed": 0.2545,
+        "null_mean": 0.3512,
+        "null_sd": 0.0347,
+        "p_perm": 0.0025
+       },
+       "sub-02": {
+        "z": 0.7276,
+        "observed": 0.3821,
+        "null_mean": 0.4117,
+        "null_sd": 0.0406,
+        "p_perm": 0.2454
+       },
+       "sub-03": {
+        "z": -1.2049,
+        "observed": 0.5733,
+        "null_mean": 0.5171,
+        "null_sd": 0.0466,
+        "p_perm": 0.8761
+       },
+       "sub-04": {
+        "z": -0.1967,
+        "observed": 0.4285,
+        "null_mean": 0.4207,
+        "null_sd": 0.0394,
+        "p_perm": 0.5627
+       },
+       "sub-05": {
+        "z": -0.1597,
+        "observed": 0.5974,
+        "null_mean": 0.5881,
+        "null_sd": 0.058,
+        "p_perm": 0.5207
+       },
+       "sub-06": {
+        "z": -0.4035,
+        "observed": 0.6631,
+        "null_mean": 0.6381,
+        "null_sd": 0.0618,
+        "p_perm": 0.6162
+       },
+       "sub-07": {
+        "z": 0.1399,
+        "observed": 0.402,
+        "null_mean": 0.4075,
+        "null_sd": 0.0391,
+        "p_perm": 0.4308
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.552,
+       "z_sd_across_folds": 0.85,
+       "z_min": 0.132,
+       "z_max": 2.743,
+       "p_perm_mean": 0.1187,
+       "t_crawford_howell": 0.969,
+       "p_one_tailed_lower": 0.8149,
+       "sensitivity_worst_fold": {
+        "z": 2.743,
+        "t": 1.849,
+        "p": 0.9431
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 0.651,
+       "z_sd_across_folds": 0.552,
+       "z_min": 0.007,
+       "z_max": 1.343,
+       "p_perm_mean": 0.2876,
+       "t_crawford_howell": 0.303,
+       "p_one_tailed_lower": 0.6139,
+       "sensitivity_worst_fold": {
+        "z": 1.343,
+        "t": 0.814,
+        "p": 0.7767
+       }
+      }
+     }
+    },
+    "rdm_srm": {
+     "note": "SRM 공간 RDM 상관 (직교불변·라벨민감; 논문 지표의 대조군)",
+     "hc_z": {
+      "mean": -0.084,
+      "sd": 1.06,
+      "min": -2.063,
+      "max": 1.499,
+      "t_vs_zero": -0.209,
+      "p_vs_zero": 0.5794,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": 1.4986,
+        "observed": 0.8033,
+        "null_mean": 0.6703,
+        "null_sd": 0.0887,
+        "p_perm": 0.057
+       },
+       "sub-02": {
+        "z": -0.1051,
+        "observed": 0.6192,
+        "null_mean": 0.6275,
+        "null_sd": 0.0795,
+        "p_perm": 0.5087
+       },
+       "sub-03": {
+        "z": -2.0626,
+        "observed": 0.1579,
+        "null_mean": 0.4086,
+        "null_sd": 0.1216,
+        "p_perm": 0.976
+       },
+       "sub-04": {
+        "z": -0.1377,
+        "observed": 0.4605,
+        "null_mean": 0.4751,
+        "null_sd": 0.1067,
+        "p_perm": 0.5702
+       },
+       "sub-05": {
+        "z": -0.3349,
+        "observed": 0.3346,
+        "null_mean": 0.3807,
+        "null_sd": 0.1377,
+        "p_perm": 0.6517
+       },
+       "sub-06": {
+        "z": 0.2911,
+        "observed": 0.3162,
+        "null_mean": 0.2745,
+        "null_sd": 0.1433,
+        "p_perm": 0.4033
+       },
+       "sub-07": {
+        "z": 0.2638,
+        "observed": 0.6116,
+        "null_mean": 0.5893,
+        "null_sd": 0.0846,
+        "p_perm": 0.4078
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.453,
+       "z_sd_across_folds": 0.916,
+       "z_min": -0.033,
+       "z_max": 2.682,
+       "p_perm_mean": 0.1387,
+       "t_crawford_howell": 1.356,
+       "p_one_tailed_lower": 0.888,
+       "sensitivity_worst_fold": {
+        "z": 2.682,
+        "t": 2.439,
+        "p": 0.9747
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 0.092,
+       "z_sd_across_folds": 0.872,
+       "z_min": -0.749,
+       "z_max": 1.409,
+       "p_perm_mean": 0.4518,
+       "t_crawford_howell": 0.155,
+       "p_one_tailed_lower": 0.5589,
+       "sensitivity_worst_fold": {
+        "z": 1.409,
+        "t": 1.317,
+        "p": 0.882
+       }
+      }
+     }
+    },
+    "rdm_voxel": {
+     "note": "native voxel 공간 RDM 상관 (SRM 미사용)",
+     "hc_z": {
+      "mean": -0.081,
+      "sd": 0.958,
+      "min": -1.27,
+      "max": 0.918,
+      "t_vs_zero": -0.223,
+      "p_vs_zero": 0.5844,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": -0.7257,
+        "observed": -0.1539,
+        "null_mean": 0.0094,
+        "null_sd": 0.225,
+        "p_perm": 0.7346
+       },
+       "sub-02": {
+        "z": 0.8946,
+        "observed": 0.183,
+        "null_mean": 0.0047,
+        "null_sd": 0.1994,
+        "p_perm": 0.1964
+       },
+       "sub-03": {
+        "z": -1.2697,
+        "observed": -0.2705,
+        "null_mean": -0.0081,
+        "null_sd": 0.2066,
+        "p_perm": 0.8946
+       },
+       "sub-04": {
+        "z": 0.9178,
+        "observed": 0.1953,
+        "null_mean": 0.0007,
+        "null_sd": 0.212,
+        "p_perm": 0.1904
+       },
+       "sub-05": {
+        "z": -1.1888,
+        "observed": -0.2313,
+        "null_mean": 0.0067,
+        "null_sd": 0.2002,
+        "p_perm": 0.8866
+       },
+       "sub-06": {
+        "z": 0.5181,
+        "observed": 0.1049,
+        "null_mean": 0.0027,
+        "null_sd": 0.1973,
+        "p_perm": 0.3003
+       },
+       "sub-07": {
+        "z": 0.2894,
+        "observed": 0.0582,
+        "null_mean": 0.0009,
+        "null_sd": 0.1982,
+        "p_perm": 0.3938
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.894,
+       "z_sd_across_folds": 0.562,
+       "z_min": 0.9,
+       "z_max": 2.424,
+       "p_perm_mean": 0.0528,
+       "t_crawford_howell": 1.929,
+       "p_one_tailed_lower": 0.949,
+       "sensitivity_worst_fold": {
+        "z": 2.424,
+        "t": 2.447,
+        "p": 0.975
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 0.899,
+       "z_sd_across_folds": 0.523,
+       "z_min": 0.367,
+       "z_max": 1.691,
+       "p_perm_mean": 0.2208,
+       "t_crawford_howell": 0.957,
+       "p_one_tailed_lower": 0.8123,
+       "sensitivity_worst_fold": {
+        "z": 1.691,
+        "t": 1.73,
+        "p": 0.9329
+       }
+      }
+     }
+    }
+   },
+   "elapsed_s": 4.7
+  },
+  "V3": {
+   "k": 3,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "metrics": {
+    "procrustes_srm": {
+     "note": "논문 지표 (SRM 투영 + orthogonal Procrustes disparity; 낮을수록 정렬)",
+     "hc_z": {
+      "mean": 0.461,
+      "sd": 1.007,
+      "min": -0.952,
+      "max": 1.486,
+      "t_vs_zero": 1.211,
+      "p_vs_zero": 0.1358,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": -0.952,
+        "observed": 0.5004,
+        "null_mean": 0.4504,
+        "null_sd": 0.0525,
+        "p_perm": 0.8336
+       },
+       "sub-02": {
+        "z": 1.4666,
+        "observed": 0.5423,
+        "null_mean": 0.6471,
+        "null_sd": 0.0715,
+        "p_perm": 0.0795
+       },
+       "sub-03": {
+        "z": -0.5696,
+        "observed": 0.7071,
+        "null_mean": 0.6684,
+        "null_sd": 0.0679,
+        "p_perm": 0.7006
+       },
+       "sub-04": {
+        "z": 1.3374,
+        "observed": 0.3153,
+        "null_mean": 0.3807,
+        "null_sd": 0.0489,
+        "p_perm": 0.1004
+       },
+       "sub-05": {
+        "z": 0.0172,
+        "observed": 0.4515,
+        "null_mean": 0.4525,
+        "null_sd": 0.0574,
+        "p_perm": 0.4768
+       },
+       "sub-06": {
+        "z": 0.4401,
+        "observed": 0.7459,
+        "null_mean": 0.783,
+        "null_sd": 0.0844,
+        "p_perm": 0.3218
+       },
+       "sub-07": {
+        "z": 1.4862,
+        "observed": 0.5121,
+        "null_mean": 0.6175,
+        "null_sd": 0.0709,
+        "p_perm": 0.0805
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.467,
+       "z_sd_across_folds": 0.593,
+       "z_min": 0.645,
+       "z_max": 2.178,
+       "p_perm_mean": 0.1112,
+       "t_crawford_howell": 0.935,
+       "p_one_tailed_lower": 0.807,
+       "sensitivity_worst_fold": {
+        "z": 2.178,
+        "t": 1.595,
+        "p": 0.919
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 2.39,
+       "z_sd_across_folds": 0.868,
+       "z_min": 0.678,
+       "z_max": 3.402,
+       "p_perm_mean": 0.0474,
+       "t_crawford_howell": 1.792,
+       "p_one_tailed_lower": 0.9384,
+       "sensitivity_worst_fold": {
+        "z": 3.402,
+        "t": 2.731,
+        "p": 0.9829
+       }
+      }
+     }
+    },
+    "rdm_srm": {
+     "note": "SRM 공간 RDM 상관 (직교불변·라벨민감; 논문 지표의 대조군)",
+     "hc_z": {
+      "mean": -0.101,
+      "sd": 1.078,
+      "min": -1.671,
+      "max": 1.064,
+      "t_vs_zero": -0.248,
+      "p_vs_zero": 0.5938,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": -1.671,
+        "observed": 0.4426,
+        "null_mean": 0.6077,
+        "null_sd": 0.0988,
+        "p_perm": 0.947
+       },
+       "sub-02": {
+        "z": 0.3921,
+        "observed": 0.4379,
+        "null_mean": 0.3825,
+        "null_sd": 0.1414,
+        "p_perm": 0.3738
+       },
+       "sub-03": {
+        "z": -1.2077,
+        "observed": 0.1308,
+        "null_mean": 0.3437,
+        "null_sd": 0.1763,
+        "p_perm": 0.8866
+       },
+       "sub-04": {
+        "z": 0.744,
+        "observed": 0.7852,
+        "null_mean": 0.7341,
+        "null_sd": 0.0687,
+        "p_perm": 0.2374
+       },
+       "sub-05": {
+        "z": 0.6765,
+        "observed": 0.6843,
+        "null_mean": 0.611,
+        "null_sd": 0.1085,
+        "p_perm": 0.2649
+       },
+       "sub-06": {
+        "z": -0.7057,
+        "observed": 0.1043,
+        "null_mean": 0.2305,
+        "null_sd": 0.1788,
+        "p_perm": 0.7441
+       },
+       "sub-07": {
+        "z": 1.0643,
+        "observed": 0.5363,
+        "null_mean": 0.388,
+        "null_sd": 0.1394,
+        "p_perm": 0.1584
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.254,
+       "z_sd_across_folds": 0.521,
+       "z_min": 0.278,
+       "z_max": 1.888,
+       "p_perm_mean": 0.1351,
+       "t_crawford_howell": 1.176,
+       "p_one_tailed_lower": 0.8579,
+       "sensitivity_worst_fold": {
+        "z": 1.888,
+        "t": 1.726,
+        "p": 0.9325
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 1.551,
+       "z_sd_across_folds": 0.71,
+       "z_min": 0.287,
+       "z_max": 2.499,
+       "p_perm_mean": 0.0967,
+       "t_crawford_howell": 1.433,
+       "p_one_tailed_lower": 0.8991,
+       "sensitivity_worst_fold": {
+        "z": 2.499,
+        "t": 2.256,
+        "p": 0.9675
+       }
+      }
+     }
+    },
+    "rdm_voxel": {
+     "note": "native voxel 공간 RDM 상관 (SRM 미사용)",
+     "hc_z": {
+      "mean": 0.175,
+      "sd": 1.014,
+      "min": -1.321,
+      "max": 1.759,
+      "t_vs_zero": 0.455,
+      "p_vs_zero": 0.3325,
+      "n_p_perm_lt_05": 1,
+      "per_subject": {
+       "sub-01": {
+        "z": -1.3214,
+        "observed": -0.3386,
+        "null_mean": -0.0001,
+        "null_sd": 0.2562,
+        "p_perm": 0.8966
+       },
+       "sub-02": {
+        "z": 0.9035,
+        "observed": 0.1838,
+        "null_mean": 0.0011,
+        "null_sd": 0.2022,
+        "p_perm": 0.1899
+       },
+       "sub-03": {
+        "z": -0.7105,
+        "observed": -0.1636,
+        "null_mean": -0.0094,
+        "null_sd": 0.2169,
+        "p_perm": 0.7681
+       },
+       "sub-04": {
+        "z": 0.2543,
+        "observed": 0.0531,
+        "null_mean": -0.0007,
+        "null_sd": 0.2114,
+        "p_perm": 0.3903
+       },
+       "sub-05": {
+        "z": -0.0597,
+        "observed": -0.0076,
+        "null_mean": 0.0063,
+        "null_sd": 0.2328,
+        "p_perm": 0.5147
+       },
+       "sub-06": {
+        "z": 0.3964,
+        "observed": 0.0877,
+        "null_mean": 0.0042,
+        "null_sd": 0.2105,
+        "p_perm": 0.3548
+       },
+       "sub-07": {
+        "z": 1.7591,
+        "observed": 0.3811,
+        "null_mean": 0.0013,
+        "null_sd": 0.2159,
+        "p_perm": 0.0415
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.849,
+       "z_sd_across_folds": 0.489,
+       "z_min": 1.135,
+       "z_max": 2.361,
+       "p_perm_mean": 0.046,
+       "t_crawford_howell": 1.544,
+       "p_one_tailed_lower": 0.9133,
+       "sensitivity_worst_fold": {
+        "z": 2.361,
+        "t": 2.016,
+        "p": 0.9548
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 2.428,
+       "z_sd_across_folds": 0.566,
+       "z_min": 1.211,
+       "z_max": 2.917,
+       "p_perm_mean": 0.021,
+       "t_crawford_howell": 2.078,
+       "p_one_tailed_lower": 0.9585,
+       "sensitivity_worst_fold": {
+        "z": 2.917,
+        "t": 2.529,
+        "p": 0.9776
+       }
+      }
+     }
+    }
+   },
+   "elapsed_s": 3.8
+  },
+  "hV4": {
+   "k": 3,
+   "n_hc": 6,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06"
+   ],
+   "metrics": {
+    "procrustes_srm": {
+     "note": "논문 지표 (SRM 투영 + orthogonal Procrustes disparity; 낮을수록 정렬)",
+     "hc_z": {
+      "mean": -0.622,
+      "sd": 0.943,
+      "min": -1.778,
+      "max": 0.812,
+      "t_vs_zero": -1.616,
+      "p_vs_zero": 0.9165,
+      "n_p_perm_lt_05": 0,
+      "per_subject": {
+       "sub-01": {
+        "z": -1.778,
+        "observed": 0.8395,
+        "null_mean": 0.6962,
+        "null_sd": 0.0806,
+        "p_perm": 0.994
+       },
+       "sub-02": {
+        "z": -0.9812,
+        "observed": 0.7519,
+        "null_mean": 0.6786,
+        "null_sd": 0.0747,
+        "p_perm": 0.8566
+       },
+       "sub-03": {
+        "z": 0.1869,
+        "observed": 0.9252,
+        "null_mean": 0.9443,
+        "null_sd": 0.1018,
+        "p_perm": 0.4318
+       },
+       "sub-04": {
+        "z": 0.8123,
+        "observed": 0.6216,
+        "null_mean": 0.6798,
+        "null_sd": 0.0717,
+        "p_perm": 0.1979
+       },
+       "sub-05": {
+        "z": -0.9479,
+        "observed": 0.5868,
+        "null_mean": 0.525,
+        "null_sd": 0.0652,
+        "p_perm": 0.8241
+       },
+       "sub-06": {
+        "z": -1.0234,
+        "observed": 0.7985,
+        "null_mean": 0.715,
+        "null_sd": 0.0817,
+        "p_perm": 0.8556
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 0.536,
+       "z_sd_across_folds": 0.787,
+       "z_min": -0.302,
+       "z_max": 1.876,
+       "p_perm_mean": 0.3197,
+       "t_crawford_howell": 1.137,
+       "p_one_tailed_lower": 0.8465,
+       "sensitivity_worst_fold": {
+        "z": 1.876,
+        "t": 2.453,
+        "p": 0.9711
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": -0.133,
+       "z_sd_across_folds": 0.493,
+       "z_min": -0.677,
+       "z_max": 0.535,
+       "p_perm_mean": 0.5259,
+       "t_crawford_howell": 0.48,
+       "p_one_tailed_lower": 0.6743,
+       "sensitivity_worst_fold": {
+        "z": 0.535,
+        "t": 1.136,
+        "p": 0.8462
+       }
+      }
+     }
+    },
+    "rdm_srm": {
+     "note": "SRM 공간 RDM 상관 (직교불변·라벨민감; 논문 지표의 대조군)",
+     "hc_z": {
+      "mean": -0.397,
+      "sd": 1.021,
+      "min": -1.227,
+      "max": 1.483,
+      "t_vs_zero": -0.953,
+      "p_vs_zero": 0.8078,
+      "n_p_perm_lt_05": 1,
+      "per_subject": {
+       "sub-01": {
+        "z": -1.227,
+        "observed": 0.0956,
+        "null_mean": 0.3453,
+        "null_sd": 0.2035,
+        "p_perm": 0.8926
+       },
+       "sub-02": {
+        "z": -0.3828,
+        "observed": 0.2709,
+        "null_mean": 0.3383,
+        "null_sd": 0.1762,
+        "p_perm": 0.6627
+       },
+       "sub-03": {
+        "z": -0.1373,
+        "observed": 0.0464,
+        "null_mean": 0.0783,
+        "null_sd": 0.2323,
+        "p_perm": 0.5467
+       },
+       "sub-04": {
+        "z": 1.4828,
+        "observed": 0.5783,
+        "null_mean": 0.3171,
+        "null_sd": 0.1761,
+        "p_perm": 0.045
+       },
+       "sub-05": {
+        "z": -1.2024,
+        "observed": 0.2635,
+        "null_mean": 0.4914,
+        "null_sd": 0.1895,
+        "p_perm": 0.8776
+       },
+       "sub-06": {
+        "z": -0.9158,
+        "observed": 0.1427,
+        "null_mean": 0.3234,
+        "null_sd": 0.1974,
+        "p_perm": 0.8061
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.032,
+       "z_sd_across_folds": 0.716,
+       "z_min": -0.191,
+       "z_max": 1.684,
+       "p_perm_mean": 0.2003,
+       "t_crawford_howell": 1.297,
+       "p_one_tailed_lower": 0.8743,
+       "sensitivity_worst_fold": {
+        "z": 1.684,
+        "t": 1.888,
+        "p": 0.9412
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 0.266,
+       "z_sd_across_folds": 0.716,
+       "z_min": -0.792,
+       "z_max": 1.111,
+       "p_perm_mean": 0.407,
+       "t_crawford_howell": 0.601,
+       "p_one_tailed_lower": 0.7131,
+       "sensitivity_worst_fold": {
+        "z": 1.111,
+        "t": 1.368,
+        "p": 0.8852
+       }
+      }
+     }
+    },
+    "rdm_voxel": {
+     "note": "native voxel 공간 RDM 상관 (SRM 미사용)",
+     "hc_z": {
+      "mean": -0.165,
+      "sd": 1.08,
+      "min": -1.308,
+      "max": 1.789,
+      "t_vs_zero": -0.374,
+      "p_vs_zero": 0.6383,
+      "n_p_perm_lt_05": 1,
+      "per_subject": {
+       "sub-01": {
+        "z": -1.308,
+        "observed": -0.3526,
+        "null_mean": 0.0013,
+        "null_sd": 0.2705,
+        "p_perm": 0.946
+       },
+       "sub-02": {
+        "z": -0.0052,
+        "observed": -0.0024,
+        "null_mean": -0.0011,
+        "null_sd": 0.2376,
+        "p_perm": 0.4528
+       },
+       "sub-03": {
+        "z": -0.0645,
+        "observed": -0.0138,
+        "null_mean": 0.0018,
+        "null_sd": 0.2427,
+        "p_perm": 0.5162
+       },
+       "sub-04": {
+        "z": 1.7894,
+        "observed": 0.4121,
+        "null_mean": 0.0002,
+        "null_sd": 0.2302,
+        "p_perm": 0.045
+       },
+       "sub-05": {
+        "z": -0.9141,
+        "observed": -0.2706,
+        "null_mean": -0.0035,
+        "null_sd": 0.2922,
+        "p_perm": 0.8176
+       },
+       "sub-06": {
+        "z": -0.4878,
+        "observed": -0.1229,
+        "null_mean": -0.0041,
+        "null_sd": 0.2435,
+        "p_perm": 0.6252
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z_mean": 1.0,
+       "z_sd_across_folds": 0.596,
+       "z_min": -0.042,
+       "z_max": 1.644,
+       "p_perm_mean": 0.1908,
+       "t_crawford_howell": 0.999,
+       "p_one_tailed_lower": 0.8182,
+       "sensitivity_worst_fold": {
+        "z": 1.644,
+        "t": 1.551,
+        "p": 0.9092
+       }
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z_mean": 0.079,
+       "z_sd_across_folds": 0.581,
+       "z_min": -0.659,
+       "z_max": 0.697,
+       "p_perm_mean": 0.4483,
+       "t_crawford_howell": 0.21,
+       "p_one_tailed_lower": 0.5789,
+       "sensitivity_worst_fold": {
+        "z": 0.697,
+        "t": 0.739,
+        "p": 0.7535
+       }
+      }
+     }
+    }
+   },
+   "elapsed_s": 3.2
+  }
+ }
+}

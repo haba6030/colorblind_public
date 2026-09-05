@@ -1,0 +1,1886 @@
+{
+ "stage": "02_geometry",
+ "counts": {
+  "ok": 187,
+  "near": 4,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 4,
+  "table": 5
+ },
+ "checks": [
+  {
+   "id": "02.T1.deutan.V1.t",
+   "desc": "tab:disparity_loso deutan V1 common t",
+   "produced": 1.1008405791509848,
+   "reported": 1.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V1.p",
+   "desc": "tab:disparity_loso deutan V1 common p",
+   "produced": 0.1565790168909047,
+   "reported": 0.157,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V1.d",
+   "desc": "tab:disparity_loso deutan V1 common d_cc",
+   "produced": 1.1768480813259388,
+   "reported": 1.18,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V1.t_loso",
+   "desc": "tab:disparity_loso deutan V1 LOSO t",
+   "produced": 0.4829570058990468,
+   "reported": 0.48,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V1.p_loso",
+   "desc": "tab:disparity_loso deutan V1 LOSO p",
+   "produced": 0.32312124107614637,
+   "reported": 0.323,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V1.d_loso",
+   "desc": "tab:disparity_loso deutan V1 LOSO d_cc",
+   "produced": 0.5163027567475412,
+   "reported": 0.51,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V2.t",
+   "desc": "tab:disparity_loso deutan V2 common t",
+   "produced": 2.1133181268492223,
+   "reported": 2.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V2.p",
+   "desc": "tab:disparity_loso deutan V2 common p",
+   "produced": 0.039504816983549795,
+   "reported": 0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V2.d",
+   "desc": "tab:disparity_loso deutan V2 common d_cc",
+   "produced": 2.2592321085510463,
+   "reported": 2.26,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V2.t_loso",
+   "desc": "tab:disparity_loso deutan V2 LOSO t",
+   "produced": 1.331174795403415,
+   "reported": 1.33,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V2.p_loso",
+   "desc": "tab:disparity_loso deutan V2 LOSO p",
+   "produced": 0.11573824814705647,
+   "reported": 0.116,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V2.d_loso",
+   "desc": "tab:disparity_loso deutan V2 LOSO d_cc",
+   "produced": 1.4230857160881365,
+   "reported": 1.42,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V3.t",
+   "desc": "tab:disparity_loso deutan V3 common t",
+   "produced": 1.9213103509419565,
+   "reported": 1.92,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V3.p",
+   "desc": "tab:disparity_loso deutan V3 common p",
+   "produced": 0.05153934094435508,
+   "reported": 0.052,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V3.d",
+   "desc": "tab:disparity_loso deutan V3 common d_cc",
+   "produced": 2.053967161967773,
+   "reported": 2.05,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V3.t_loso",
+   "desc": "tab:disparity_loso deutan V3 LOSO t",
+   "produced": 1.1724933393848727,
+   "reported": 1.17,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V3.p_loso",
+   "desc": "tab:disparity_loso deutan V3 LOSO p",
+   "produced": 0.1427195926975816,
+   "reported": 0.143,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.V3.d_loso",
+   "desc": "tab:disparity_loso deutan V3 LOSO d_cc",
+   "produced": 1.253448104072187,
+   "reported": 1.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.hV4.t",
+   "desc": "tab:disparity_loso deutan hV4 common t",
+   "produced": 0.23452752672173502,
+   "reported": 0.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.hV4.p",
+   "desc": "tab:disparity_loso deutan hV4 common p",
+   "produced": 0.4111868929399959,
+   "reported": 0.411,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.hV4.d",
+   "desc": "tab:disparity_loso deutan hV4 common d_cc",
+   "produced": 0.2507204722172008,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.hV4.t_loso",
+   "desc": "tab:disparity_loso deutan hV4 LOSO t",
+   "produced": 0.06924263036510667,
+   "reported": 0.07,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.hV4.p_loso",
+   "desc": "tab:disparity_loso deutan hV4 LOSO p",
+   "produced": 0.4735232560296748,
+   "reported": 0.474,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.deutan.hV4.d_loso",
+   "desc": "tab:disparity_loso deutan hV4 LOSO d_cc",
+   "produced": 0.07402348553864542,
+   "reported": 0.07,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V1.t",
+   "desc": "tab:disparity_loso protan V1 common t",
+   "produced": 3.476849480277003,
+   "reported": 3.48,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V1.p",
+   "desc": "tab:disparity_loso protan V1 common p",
+   "produced": 0.006596542848822495,
+   "reported": 0.007,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V1.d",
+   "desc": "tab:disparity_loso protan V1 common d_cc",
+   "produced": 3.7169084401655965,
+   "reported": 3.72,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V1.t_loso",
+   "desc": "tab:disparity_loso protan V1 LOSO t",
+   "produced": 2.020351905775747,
+   "reported": 2.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V1.p_loso",
+   "desc": "tab:disparity_loso protan V1 LOSO p",
+   "produced": 0.04492830233445466,
+   "reported": 0.045,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V1.d_loso",
+   "desc": "tab:disparity_loso protan V1 LOSO d_cc",
+   "produced": 2.1598470377510384,
+   "reported": 2.16,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V2.t",
+   "desc": "tab:disparity_loso protan V2 common t",
+   "produced": 0.9859270505339145,
+   "reported": 0.99,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V2.p",
+   "desc": "tab:disparity_loso protan V2 common p",
+   "produced": 0.18112123743138542,
+   "reported": 0.181,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V2.d",
+   "desc": "tab:disparity_loso protan V2 common d_cc",
+   "produced": 1.0540003518429903,
+   "reported": 1.06,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V2.t_loso",
+   "desc": "tab:disparity_loso protan V2 LOSO t",
+   "produced": 0.7729019767188271,
+   "reported": 0.77,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V2.p_loso",
+   "desc": "tab:disparity_loso protan V2 LOSO p",
+   "produced": 0.23446218152818488,
+   "reported": 0.234,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V2.d_loso",
+   "desc": "tab:disparity_loso protan V2 LOSO d_cc",
+   "produced": 0.8262669686977658,
+   "reported": 0.82,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V3.t",
+   "desc": "tab:disparity_loso protan V3 common t",
+   "produced": 0.08964025744191186,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V3.p",
+   "desc": "tab:disparity_loso protan V3 common p",
+   "produced": 0.46574524341828505,
+   "reported": 0.466,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V3.d",
+   "desc": "tab:disparity_loso protan V3 common d_cc",
+   "produced": 0.09582946611709922,
+   "reported": 0.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V3.t_loso",
+   "desc": "tab:disparity_loso protan V3 LOSO t",
+   "produced": 0.05615584109244626,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V3.p_loso",
+   "desc": "tab:disparity_loso protan V3 LOSO p",
+   "produced": 0.4785204887169552,
+   "reported": 0.479,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.V3.d_loso",
+   "desc": "tab:disparity_loso protan V3 LOSO d_cc",
+   "produced": 0.06003311932401577,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.hV4.t",
+   "desc": "tab:disparity_loso protan hV4 common t",
+   "produced": 1.1330595249450988,
+   "reported": 1.13,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.hV4.p",
+   "desc": "tab:disparity_loso protan hV4 common p",
+   "produced": 0.15021294856089729,
+   "reported": 0.15,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.hV4.d",
+   "desc": "tab:disparity_loso protan hV4 common d_cc",
+   "produced": 1.2112915831901148,
+   "reported": 1.21,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.hV4.t_loso",
+   "desc": "tab:disparity_loso protan hV4 LOSO t",
+   "produced": 0.7966953736140269,
+   "reported": 0.8,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.hV4.p_loso",
+   "desc": "tab:disparity_loso protan hV4 LOSO p",
+   "produced": 0.22799349065433638,
+   "reported": 0.228,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T1.protan.hV4.d_loso",
+   "desc": "tab:disparity_loso protan hV4 LOSO d_cc",
+   "produced": 0.8517031799118711,
+   "reported": 0.86,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.01",
+   "desc": "tab:disparity_loso | 8 participant-by-ROI cells x (t, p, d_cc) x two estimators",
+   "produced": null,
+   "reported": "48 cells, see 02.T1.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "02.02",
+   "desc": "Results \u00a72 \u00b61 | largest deviation is V1 in the protan participant (primary pipeline)",
+   "produced": "V1",
+   "reported": "V1",
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.03",
+   "desc": "Results \u00a72 \u00b61 | largest deviation is V2 in the deutan participant (primary pipeline)",
+   "produced": "V2",
+   "reported": "V2",
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.04",
+   "desc": "Results \u00a72 \u00b61 | under the symmetric LOSO reference only protan V1 reaches significance",
+   "produced": [
+    [
+     "sub-09",
+     "V1"
+    ]
+   ],
+   "reported": [
+    [
+     "sub-09",
+     "V1"
+    ]
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.05",
+   "desc": "Methods 'Shared Response Model' | seed, permutation counts recorded in the run config",
+   "produced": [
+    42,
+    1000,
+    10000
+   ],
+   "reported": [
+    42,
+    1000,
+    10000
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.06",
+   "desc": "S4 | k = 4 at V1",
+   "produced": 4,
+   "reported": 4,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.07",
+   "desc": "S4 | k = 4 at V2",
+   "produced": 4,
+   "reported": 4,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.08",
+   "desc": "S4 | k = 3 at V3",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.09",
+   "desc": "S4 | k = 3 at hV4",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.10",
+   "desc": "S4 | cross-participant RDM Spearman r at V1",
+   "produced": 0.5964500742825866,
+   "reported": 0.6,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.11",
+   "desc": "S4 | at V2",
+   "produced": 0.5656423488935804,
+   "reported": 0.57,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.12",
+   "desc": "S4 | at V3",
+   "produced": 0.5464070685745562,
+   "reported": 0.55,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.13",
+   "desc": "S4 | at hV4",
+   "produced": 0.3165220111032919,
+   "reported": 0.32,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.14",
+   "desc": "S4 | candidate range 2..6 over seven folds",
+   "produced": [
+    "2",
+    "6",
+    7
+   ],
+   "reported": [
+    "2",
+    "6",
+    7
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cn.V1",
+   "desc": "tab:triangulation Crossnobis V1",
+   "produced": 0.8333333333333333,
+   "reported": 0.833,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cn.V2",
+   "desc": "tab:triangulation Crossnobis V2",
+   "produced": 0.7333333333333334,
+   "reported": 0.733,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cn.V3",
+   "desc": "tab:triangulation Crossnobis V3",
+   "produced": 0.5499999999999999,
+   "reported": 0.55,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cn.hV4",
+   "desc": "tab:triangulation Crossnobis hV4",
+   "produced": 0.3,
+   "reported": 0.3,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cn.pooled",
+   "desc": "tab:triangulation Crossnobis pooled",
+   "produced": 0.6324324324324325,
+   "reported": 0.632,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.pca.V1",
+   "desc": "tab:triangulation PCA V1",
+   "produced": 0.6333333333333333,
+   "reported": 0.633,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.pca.V2",
+   "desc": "tab:triangulation PCA V2",
+   "produced": 0.8499999999999999,
+   "reported": 0.85,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.pca.V3",
+   "desc": "tab:triangulation PCA V3",
+   "produced": 0.33333333333333337,
+   "reported": 0.333,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.pca.hV4",
+   "desc": "tab:triangulation PCA hV4",
+   "produced": 0.5333333333333333,
+   "reported": 0.533,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.pca.pooled",
+   "desc": "tab:triangulation PCA pooled",
+   "produced": 0.7804375804375805,
+   "reported": 0.78,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cca.V1",
+   "desc": "tab:triangulation PCA-CCA V1",
+   "produced": 0.48333333333333334,
+   "reported": 0.483,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cca.V2",
+   "desc": "tab:triangulation PCA-CCA V2",
+   "produced": 0.43333333333333335,
+   "reported": 0.433,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cca.V3",
+   "desc": "tab:triangulation PCA-CCA V3",
+   "produced": 0.09999999999999999,
+   "reported": 0.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cca.hV4",
+   "desc": "tab:triangulation PCA-CCA hV4",
+   "produced": -0.06666666666666667,
+   "reported": -0.067,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T2.cca.pooled",
+   "desc": "tab:triangulation PCA-CCA pooled",
+   "produced": 0.5436293436293437,
+   "reported": 0.544,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.15",
+   "desc": "tab:triangulation | Spearman r, 3 distances x (4 ROIs + pooled)",
+   "produced": null,
+   "reported": "15 cells, see 02.T2.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "02.16",
+   "desc": "S9 \u00b61 | crossnobis pooled p < .001",
+   "produced": 3.502133564561487e-05,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "02.17",
+   "desc": "S9 \u00b61 | PCA pooled p < .001",
+   "produced": 1.989153220558642e-08,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "02.18",
+   "desc": "S9 \u00b63 | PCA-CCA pooled p < .001",
+   "produced": 0.0006110811558000683,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "02.19",
+   "desc": "S9 \u00b62 | crossnobis V1 convergent r p = .005",
+   "produced": 0.00526569102916175,
+   "reported": 0.005,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.20",
+   "desc": "S9 \u00b62 | crossnobis V2 convergent r p = .025",
+   "produced": 0.02455415007146968,
+   "reported": 0.025,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.21",
+   "desc": "S9 \u00b62 | control-to-control minus control-to-CVD crossnobis RDM similarity at V1",
+   "produced": 0.1039174290405818,
+   "reported": 0.104,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.22",
+   "desc": "S9 \u00b62 | the three remaining ROIs give differences below 0.05",
+   "produced": 0.04605520369067166,
+   "reported": 0.05,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "02.23",
+   "desc": "S9 \u00b62 | permutation p = .120 for the V1 difference",
+   "produced": null,
+   "reported": "the committed permutation was run with sub-10 included (p = .051); the n = 2 permutation needs the per-participant crossnobis RDMs, which are not stored",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "the committed permutation was run with sub-10 included (p = .051); the n = 2 permutation needs the per-participant crossnobis RDMs, which are not stored"
+  },
+  {
+   "id": "02.24",
+   "desc": "S9 \u00b63 | Hedges g under PCA ranges from -0.13 to +0.40",
+   "produced": [
+    -0.13469309955773906,
+    0.40047365012177943
+   ],
+   "reported": [
+    -0.13,
+    0.4
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "02.25",
+   "desc": "S9 \u00b63 | Hedges g under PCA-CCA ranges from -0.13 to +0.16",
+   "produced": [
+    -0.1300224945468948,
+    0.1608434546227032
+   ],
+   "reported": [
+    -0.13,
+    0.16
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V1.k",
+   "desc": "tab:variance_explained V1 k",
+   "produced": 4,
+   "reported": 4,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V1.controls",
+   "desc": "tab:variance_explained V1 controls",
+   "produced": 0.35237281676793675,
+   "reported": 0.352,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V1.cvd",
+   "desc": "tab:variance_explained V1 CVD",
+   "produced": 0.4073650424673729,
+   "reported": 0.407,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V1.g",
+   "desc": "tab:variance_explained V1 Hedges g",
+   "produced": -0.39757835419135634,
+   "reported": -0.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V2.k",
+   "desc": "tab:variance_explained V2 k",
+   "produced": 4,
+   "reported": 4,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V2.controls",
+   "desc": "tab:variance_explained V2 controls",
+   "produced": 0.3311727252519444,
+   "reported": 0.331,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V2.cvd",
+   "desc": "tab:variance_explained V2 CVD",
+   "produced": 0.4163480954324662,
+   "reported": 0.416,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V2.g",
+   "desc": "tab:variance_explained V2 Hedges g",
+   "produced": -1.256598733565213,
+   "reported": -1.26,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V3.k",
+   "desc": "tab:variance_explained V3 k",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V3.controls",
+   "desc": "tab:variance_explained V3 controls",
+   "produced": 0.2502599368714606,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V3.cvd",
+   "desc": "tab:variance_explained V3 CVD",
+   "produced": 0.3138459462252231,
+   "reported": 0.314,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.V3.g",
+   "desc": "tab:variance_explained V3 Hedges g",
+   "produced": -0.6574438796527737,
+   "reported": -0.66,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.hV4.k",
+   "desc": "tab:variance_explained hV4 k",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T3.hV4.controls",
+   "desc": "tab:variance_explained hV4 controls",
+   "produced": 0.2254002103758359,
+   "reported": 0.225,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.hV4.cvd",
+   "desc": "tab:variance_explained hV4 CVD",
+   "produced": 0.2525556651743862,
+   "reported": 0.253,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T3.hV4.g",
+   "desc": "tab:variance_explained hV4 Hedges g",
+   "produced": -0.3938027364146455,
+   "reported": -0.39,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.26",
+   "desc": "tab:variance_explained | 4 ROIs x (k, controls, CVD, g)",
+   "produced": null,
+   "reported": "16 cells, see 02.T3.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "02.27",
+   "desc": "S9 \u00b64 | variance explained higher in CVD than controls at all four ROIs",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.28",
+   "desc": "S9 \u00b64 | variance explained vs disparity, pooled Spearman r = -0.214 (common-space disparity, 36 points)",
+   "produced": -0.2136422136422137,
+   "reported": -0.214,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.29",
+   "desc": "S9 \u00b64 | p = .211",
+   "produced": 0.2108908826288139,
+   "reported": 0.211,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.30",
+   "desc": "S10 \u00b62 | mean |beta|: every single-case p >= 0.182",
+   "produced": 0.1820357759101655,
+   "reported": 0.182,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.31",
+   "desc": "S10 \u00b62 | largest mean |beta| deviation is the deutan participant at V3",
+   "produced": [
+    "sub-08",
+    "V3"
+   ],
+   "reported": [
+    "sub-08",
+    "V3"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.32",
+   "desc": "S10 \u00b62 | its d_cc = +1.61",
+   "produced": 1.613179661269465,
+   "reported": 1.61,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.33",
+   "desc": "S10 \u00b62 | largest modulation-depth deviation is the deutan participant at V2",
+   "produced": [
+    "sub-08",
+    "V2"
+   ],
+   "reported": [
+    "sub-08",
+    "V2"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.34",
+   "desc": "S10 \u00b62 | its d_cc = +2.16",
+   "produced": 2.1626194047581153,
+   "reported": 2.16,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.35",
+   "desc": "S10 \u00b62 | its p = 0.090",
+   "produced": 0.08953439880306585,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.36",
+   "desc": "S10 \u00b62 | voxel-level colour selectivity F > 4 in V1-V3 (mean F over the nine participants; one participant's V3 F is 1.46, p = .18, so the statement holds at the group level)",
+   "produced": 10.154335568417999,
+   "reported": 4.0,
+   "status": "ok",
+   "mode": "gt",
+   "reason": null
+  },
+  {
+   "id": "02.37",
+   "desc": "S10 \u00b62 | p < 0.001 for every participant in V1 and V2",
+   "produced": 3.857660722492254e-06,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "02.38",
+   "desc": "S10 \u00b63 | activation metrics vs disparity: 20 tests, r from -0.29 to +0.51, all p >= 0.130",
+   "produced": null,
+   "reported": [
+    20,
+    -0.29,
+    0.51,
+    0.13
+   ],
+   "status": "flag",
+   "mode": "eq_or_flag",
+   "reason": "activation_prior_results.json does not store the metric-disparity correlations in a recognised layout"
+  },
+  {
+   "id": "02.T4.V1.n",
+   "desc": "tab:frozen_control V1 n",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V1.refit_detected",
+   "desc": "tab:frozen_control V1 re-estimated detected",
+   "produced": 0,
+   "reported": 0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V1.refit_z",
+   "desc": "tab:frozen_control V1 re-estimated mean z",
+   "produced": -0.040428571428571425,
+   "reported": -0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V1.frozen_detected",
+   "desc": "tab:frozen_control V1 frozen detected",
+   "produced": 2,
+   "reported": 2,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V1.frozen_z",
+   "desc": "tab:frozen_control V1 frozen mean z",
+   "produced": -1.5797142857142854,
+   "reported": -1.58,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V2.n",
+   "desc": "tab:frozen_control V2 n",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V2.refit_detected",
+   "desc": "tab:frozen_control V2 re-estimated detected",
+   "produced": 0,
+   "reported": 0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V2.refit_z",
+   "desc": "tab:frozen_control V2 re-estimated mean z",
+   "produced": -0.042857142857142864,
+   "reported": -0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V2.frozen_detected",
+   "desc": "tab:frozen_control V2 frozen detected",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V2.frozen_z",
+   "desc": "tab:frozen_control V2 frozen mean z",
+   "produced": -1.0024285714285714,
+   "reported": -1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V3.n",
+   "desc": "tab:frozen_control V3 n",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V3.refit_detected",
+   "desc": "tab:frozen_control V3 re-estimated detected",
+   "produced": 0,
+   "reported": 0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V3.refit_z",
+   "desc": "tab:frozen_control V3 re-estimated mean z",
+   "produced": -0.7841428571428571,
+   "reported": -0.78,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V3.frozen_detected",
+   "desc": "tab:frozen_control V3 frozen detected",
+   "produced": 5,
+   "reported": 5,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.V3.frozen_z",
+   "desc": "tab:frozen_control V3 frozen mean z",
+   "produced": -2.3915714285714285,
+   "reported": -2.39,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.hV4.n",
+   "desc": "tab:frozen_control hV4 n",
+   "produced": 6,
+   "reported": 6,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.hV4.refit_detected",
+   "desc": "tab:frozen_control hV4 re-estimated detected",
+   "produced": 0,
+   "reported": 0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.hV4.refit_z",
+   "desc": "tab:frozen_control hV4 re-estimated mean z",
+   "produced": 0.05683333333333331,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T4.hV4.frozen_detected",
+   "desc": "tab:frozen_control hV4 frozen detected",
+   "produced": 2,
+   "reported": 2,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T4.hV4.frozen_z",
+   "desc": "tab:frozen_control hV4 frozen mean z",
+   "produced": -1.0653333333333332,
+   "reported": -1.07,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 1.V1",
+   "desc": "tab:color_specificity Control 1 V1 p_perm",
+   "produced": 0.0879,
+   "reported": 0.088,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 1.V2",
+   "desc": "tab:color_specificity Control 1 V2 p_perm",
+   "produced": 0.02,
+   "reported": 0.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 1.V3",
+   "desc": "tab:color_specificity Control 1 V3 p_perm",
+   "produced": 0.0619,
+   "reported": 0.062,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 1.hV4",
+   "desc": "tab:color_specificity Control 1 hV4 p_perm",
+   "produced": 0.3926,
+   "reported": 0.393,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 2.V1",
+   "desc": "tab:color_specificity Control 2 V1 p_perm",
+   "produced": 0.001,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 2.V2",
+   "desc": "tab:color_specificity Control 2 V2 p_perm",
+   "produced": 0.016,
+   "reported": 0.016,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 2.V3",
+   "desc": "tab:color_specificity Control 2 V3 p_perm",
+   "produced": 0.004,
+   "reported": 0.004,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 2.hV4",
+   "desc": "tab:color_specificity Control 2 hV4 p_perm",
+   "produced": 0.1359,
+   "reported": 0.136,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 3.V1",
+   "desc": "tab:color_specificity Control 3 V1 p_perm",
+   "produced": 0.1089,
+   "reported": 0.109,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 3.V2",
+   "desc": "tab:color_specificity Control 3 V2 p_perm",
+   "produced": 0.5205,
+   "reported": 0.52,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 3.V3",
+   "desc": "tab:color_specificity Control 3 V3 p_perm",
+   "produced": 0.2547,
+   "reported": 0.255,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 3.hV4",
+   "desc": "tab:color_specificity Control 3 hV4 p_perm",
+   "produced": 0.2717,
+   "reported": 0.272,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 4.V1",
+   "desc": "tab:color_specificity Control 4 V1 p_perm",
+   "produced": 0.1518,
+   "reported": 0.152,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 4.V2",
+   "desc": "tab:color_specificity Control 4 V2 p_perm",
+   "produced": 0.014,
+   "reported": 0.014,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 4.V3",
+   "desc": "tab:color_specificity Control 4 V3 p_perm",
+   "produced": 0.001,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 4.hV4",
+   "desc": "tab:color_specificity Control 4 hV4 p_perm",
+   "produced": 0.041,
+   "reported": 0.041,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 5.V1",
+   "desc": "tab:color_specificity Control 5 V1 p_perm",
+   "produced": 0.0569,
+   "reported": 0.057,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 5.V2",
+   "desc": "tab:color_specificity Control 5 V2 p_perm",
+   "produced": 0.7732,
+   "reported": 0.773,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 5.V3",
+   "desc": "tab:color_specificity Control 5 V3 p_perm",
+   "produced": 0.034,
+   "reported": 0.034,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 5.hV4",
+   "desc": "tab:color_specificity Control 5 hV4 p_perm",
+   "produced": 0.031,
+   "reported": 0.031,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 6.V1",
+   "desc": "tab:color_specificity Control 6 V1 p_perm",
+   "produced": 0.4066,
+   "reported": 0.407,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 6.V2",
+   "desc": "tab:color_specificity Control 6 V2 p_perm",
+   "produced": 0.2897,
+   "reported": 0.29,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 6.V3",
+   "desc": "tab:color_specificity Control 6 V3 p_perm",
+   "produced": 0.009,
+   "reported": 0.009,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 6.hV4",
+   "desc": "tab:color_specificity Control 6 hV4 p_perm",
+   "produced": 0.2198,
+   "reported": 0.22,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 7.V1",
+   "desc": "tab:color_specificity Control 7 V1 p_perm",
+   "produced": 0.034,
+   "reported": 0.034,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 7.V2",
+   "desc": "tab:color_specificity Control 7 V2 p_perm",
+   "produced": 0.1588,
+   "reported": 0.159,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 7.V3",
+   "desc": "tab:color_specificity Control 7 V3 p_perm",
+   "produced": 0.004,
+   "reported": 0.004,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Control 7.hV4",
+   "desc": "tab:color_specificity Control 7 hV4 (absent: too few voxels)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Deutan.V1",
+   "desc": "tab:color_specificity Deutan V1 p_perm",
+   "produced": 0.1049,
+   "reported": 0.105,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Deutan.V2",
+   "desc": "tab:color_specificity Deutan V2 p_perm",
+   "produced": 0.002,
+   "reported": 0.002,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Deutan.V3",
+   "desc": "tab:color_specificity Deutan V3 p_perm",
+   "produced": 0.024,
+   "reported": 0.024,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Deutan.hV4",
+   "desc": "tab:color_specificity Deutan hV4 p_perm",
+   "produced": 0.2727,
+   "reported": 0.273,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Protan.V1",
+   "desc": "tab:color_specificity Protan V1 p_perm",
+   "produced": 0.7582,
+   "reported": 0.758,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Protan.V2",
+   "desc": "tab:color_specificity Protan V2 p_perm",
+   "produced": 0.013,
+   "reported": 0.013,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Protan.V3",
+   "desc": "tab:color_specificity Protan V3 p_perm",
+   "produced": 0.001,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.T5.Protan.hV4",
+   "desc": "tab:color_specificity Protan hV4 p_perm",
+   "produced": 0.1289,
+   "reported": 0.129,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.39",
+   "desc": "tab:frozen_control | 4 ROIs x (n, detected and mean z under re-estimated and frozen projections)",
+   "produced": null,
+   "reported": "20 cells, see 02.T4.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "02.40",
+   "desc": "tab:color_specificity | 35 participant-by-region p_perm cells, primary pipeline",
+   "produced": null,
+   "reported": "35 cells, see 02.T5.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "02.41",
+   "desc": "S18 \u00b62 | cells below .05 out of 35",
+   "produced": 16,
+   "reported": 16,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.42",
+   "desc": "S18 \u00b62 | chance expectation 35 x 0.05",
+   "produced": 1.75,
+   "reported": 1.8,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.43",
+   "desc": "S18 \u00b62 | cells surviving BH over 35",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.44",
+   "desc": "S18 \u00b62 | deutan V2 q",
+   "produced": 0.0175,
+   "reported": 0.018,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.45",
+   "desc": "S18 \u00b62 | protan V3 q",
+   "produced": 0.011666666666666667,
+   "reported": 0.012,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.46",
+   "desc": "S18 \u00b62 | the two CVD survivors are deutan V2 and protan V3",
+   "produced": [
+    [
+     "sub-08",
+     "V2"
+    ],
+    [
+     "sub-09",
+     "V3"
+    ]
+   ],
+   "reported": [
+    [
+     "sub-08",
+     "V2"
+    ],
+    [
+     "sub-09",
+     "V3"
+    ]
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.47",
+   "desc": "S18 \u00b62 | V3: 5 of its 9 cells survive",
+   "produced": 5,
+   "reported": 5,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.48",
+   "desc": "S18 \u00b62 | deutan V2 is the lowest V2 value among the nine participants",
+   "produced": "sub-08",
+   "reported": "sub-08",
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.49",
+   "desc": "S18 \u00b61 | number of permutations",
+   "produced": 1000,
+   "reported": 1000,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.50",
+   "desc": "S18 \u00b64 | protan V1 split-half pattern reliability",
+   "produced": 0.847,
+   "reported": 0.847,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.51",
+   "desc": "S18 \u00b64 | above the highest control value",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.52",
+   "desc": "S18 \u00b64 | eight-way classification 0.79 at protan V1",
+   "produced": null,
+   "reported": "readout not stored in a committed artifact (the frozen-permutation driver printed it to stdout)",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "readout not stored in a committed artifact (the frozen-permutation driver printed it to stdout)"
+  },
+  {
+   "id": "02.53",
+   "desc": "S18 \u00b64 | protan V1 disparity with identity labels",
+   "produced": 1.0369,
+   "reported": 1.037,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.54",
+   "desc": "S18 \u00b64 | after a 45-degree rotation of the labels",
+   "produced": 0.7884,
+   "reported": 0.788,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.55",
+   "desc": "S18 \u00b64 | gain (%)",
+   "produced": 23.9656668916964,
+   "reported": 24.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.56",
+   "desc": "S18 \u00b64 | control gain mean (%)",
+   "produced": 3.5304310752263293,
+   "reported": 3.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.57",
+   "desc": "S18 \u00b64 | control gain SD (%)",
+   "produced": 5.937523800067379,
+   "reported": 5.9,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.58",
+   "desc": "S18 \u00b64 | Crawford-Howell t of the protan gain",
+   "produced": 3.2194250338118633,
+   "reported": 3.22,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.59",
+   "desc": "S18 \u00b64 | p",
+   "produced": 0.00907515837370243,
+   "reported": 0.009,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.60",
+   "desc": "S18 \u00b64 | d_cc",
+   "produced": 3.4417101311220297,
+   "reported": 3.44,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.61",
+   "desc": "S18 \u00b64 | control mean disparity at V1",
+   "produced": 0.8388999999999999,
+   "reported": 0.839,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.62",
+   "desc": "S18 \u00b64 | control SD",
+   "produced": 0.08673511399658156,
+   "reported": 0.087,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "02.63",
+   "desc": "S18 \u00b64 | rotated protan geometry lies below the control mean",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "02.64",
+   "desc": "S18 \u00b64 | second-order RSA rho 0.00 -> +0.52 (controls 0.45), z = +5.02, p = .002, p_adj = .032; SRM 225-degree shift +0.50; PCA optimum at 135 degrees p = .048",
+   "produced": null,
+   "reported": "no committed artifact for the second-order RSA cyclic-shift statistics",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "no committed artifact for the second-order RSA cyclic-shift statistics"
+  },
+  {
+   "id": "02.65",
+   "desc": "S18 \u00b64 | deutan: identity mapping optimal at V1, V2 and V3",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  }
+ ]
+}

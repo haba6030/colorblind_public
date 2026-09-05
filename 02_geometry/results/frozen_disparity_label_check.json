@@ -1,0 +1,736 @@
+{
+ "meta": {
+  "generated": "2026-08-05 16:12",
+  "script": "analysis/validation/scripts/frozen_disparity_label_check.py",
+  "n_perm": 1000,
+  "seed": 42,
+  "k_srm": {
+   "V1": 4,
+   "V2": 4,
+   "V3": 3,
+   "V4": 3
+  },
+  "design": "color_correspondence_loro.py 와 동일한 LORO 동결 루프. 같은 fold 위에서 rdm(직교불변) 과 disparity(평가 시 회전 재적합) 를 나란히 계산.",
+  "question": "투영을 동결해도 Procrustes disparity 가 색 라벨에 민감한가.",
+  "z_sign": "클수록 색 특이적 정렬이 강함 (disparity 는 낮을수록 좋으므로 부호 반전)"
+ },
+ "results": {
+  "V1": {
+   "k": 4,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "metrics": {
+    "rdm": {
+     "hc_z": {
+      "mean": 0.898,
+      "sd": 0.941,
+      "t_vs_zero": 2.526,
+      "p_vs_zero": 0.0225,
+      "observed_mean": 0.1338,
+      "null_mean_mean": -0.0046,
+      "n_p_perm_lt_05": 1,
+      "per_subject": {
+       "sub-01": {
+        "z": -0.073,
+        "observed": -0.0064,
+        "null_mean": 0.005,
+        "null_sd": 0.1568,
+        "p_perm": 0.5185
+       },
+       "sub-02": {
+        "z": 2.327,
+        "observed": 0.4093,
+        "null_mean": -0.0115,
+        "null_sd": 0.1808,
+        "p_perm": 0.004
+       },
+       "sub-03": {
+        "z": 1.379,
+        "observed": 0.1966,
+        "null_mean": -0.0128,
+        "null_sd": 0.1519,
+        "p_perm": 0.0979
+       },
+       "sub-04": {
+        "z": 1.137,
+        "observed": 0.1769,
+        "null_mean": -0.0076,
+        "null_sd": 0.1623,
+        "p_perm": 0.1329
+       },
+       "sub-05": {
+        "z": 0.821,
+        "observed": 0.108,
+        "null_mean": -0.0071,
+        "null_sd": 0.1401,
+        "p_perm": 0.2048
+       },
+       "sub-06": {
+        "z": -0.497,
+        "observed": -0.0938,
+        "null_mean": 0.001,
+        "null_sd": 0.1908,
+        "p_perm": 0.6523
+       },
+       "sub-07": {
+        "z": 1.195,
+        "observed": 0.1459,
+        "null_mean": 0.0005,
+        "null_sd": 0.1217,
+        "p_perm": 0.1289
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 1.065,
+       "observed": 0.1912,
+       "null_mean": 0.0021,
+       "null_sd": 0.1776,
+       "p_perm": 0.1608,
+       "t_crawford_howell": 0.166,
+       "p_one_tailed_lower": 0.563
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": -0.757,
+       "observed": -0.1423,
+       "null_mean": 0.0098,
+       "null_sd": 0.201,
+       "p_perm": 0.7303,
+       "t_crawford_howell": -1.646,
+       "p_one_tailed_lower": 0.0755
+      }
+     }
+    },
+    "disparity": {
+     "hc_z": {
+      "mean": 1.58,
+      "sd": 1.047,
+      "t_vs_zero": 3.992,
+      "p_vs_zero": 0.0036,
+      "observed_mean": 0.8389,
+      "null_mean_mean": 0.9459,
+      "n_p_perm_lt_05": 2,
+      "per_subject": {
+       "sub-01": {
+        "z": 1.336,
+        "observed": 0.8279,
+        "null_mean": 0.9268,
+        "null_sd": 0.0741,
+        "p_perm": 0.0879
+       },
+       "sub-02": {
+        "z": 3.616,
+        "observed": 0.6823,
+        "null_mean": 0.9182,
+        "null_sd": 0.0652,
+        "p_perm": 0.001
+       },
+       "sub-03": {
+        "z": 1.315,
+        "observed": 0.8853,
+        "null_mean": 0.9658,
+        "null_sd": 0.0613,
+        "p_perm": 0.1089
+       },
+       "sub-04": {
+        "z": 1.071,
+        "observed": 0.9038,
+        "null_mean": 0.9867,
+        "null_sd": 0.0774,
+        "p_perm": 0.1518
+       },
+       "sub-05": {
+        "z": 1.584,
+        "observed": 0.8094,
+        "null_mean": 0.9283,
+        "null_sd": 0.0751,
+        "p_perm": 0.0569
+       },
+       "sub-06": {
+        "z": 0.197,
+        "observed": 0.951,
+        "null_mean": 0.9665,
+        "null_sd": 0.0787,
+        "p_perm": 0.4066
+       },
+       "sub-07": {
+        "z": 1.939,
+        "observed": 0.8126,
+        "null_mean": 0.9292,
+        "null_sd": 0.0601,
+        "p_perm": 0.034
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 1.281,
+       "observed": 0.8604,
+       "null_mean": 0.9622,
+       "null_sd": 0.0795,
+       "p_perm": 0.1049,
+       "t_crawford_howell": -0.267,
+       "p_one_tailed_lower": 0.3992
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": -0.67,
+       "observed": 1.0369,
+       "null_mean": 0.986,
+       "null_sd": 0.076,
+       "p_perm": 0.7582,
+       "t_crawford_howell": -2.01,
+       "p_one_tailed_lower": 0.0456
+      }
+     }
+    }
+   }
+  },
+  "V2": {
+   "k": 4,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "metrics": {
+    "rdm": {
+     "hc_z": {
+      "mean": 0.829,
+      "sd": 0.93,
+      "t_vs_zero": 2.358,
+      "p_vs_zero": 0.0282,
+      "observed_mean": 0.0887,
+      "null_mean_mean": 0.0014,
+      "n_p_perm_lt_05": 2,
+      "per_subject": {
+       "sub-01": {
+        "z": 1.751,
+        "observed": 0.2028,
+        "null_mean": 0.0039,
+        "null_sd": 0.1136,
+        "p_perm": 0.041
+       },
+       "sub-02": {
+        "z": 1.086,
+        "observed": 0.1483,
+        "null_mean": 0.0037,
+        "null_sd": 0.1331,
+        "p_perm": 0.1489
+       },
+       "sub-03": {
+        "z": 0.006,
+        "observed": -0.0019,
+        "null_mean": -0.0026,
+        "null_sd": 0.1245,
+        "p_perm": 0.4865
+       },
+       "sub-04": {
+        "z": 0.948,
+        "observed": 0.1071,
+        "null_mean": 0.0018,
+        "null_sd": 0.1111,
+        "p_perm": 0.1738
+       },
+       "sub-05": {
+        "z": -0.811,
+        "observed": -0.1229,
+        "null_mean": 0.0012,
+        "null_sd": 0.1529,
+        "p_perm": 0.7852
+       },
+       "sub-06": {
+        "z": 1.085,
+        "observed": 0.1284,
+        "null_mean": 0.0032,
+        "null_sd": 0.1154,
+        "p_perm": 0.1349
+       },
+       "sub-07": {
+        "z": 1.739,
+        "observed": 0.1588,
+        "null_mean": -0.0017,
+        "null_sd": 0.0923,
+        "p_perm": 0.046
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 2.105,
+       "observed": 0.3205,
+       "null_mean": 0.0063,
+       "null_sd": 0.1493,
+       "p_perm": 0.015,
+       "t_crawford_howell": 1.283,
+       "p_one_tailed_lower": 0.8766
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": 0.686,
+       "observed": 0.0963,
+       "null_mean": -0.0017,
+       "null_sd": 0.1429,
+       "p_perm": 0.2647,
+       "t_crawford_howell": -0.144,
+       "p_one_tailed_lower": 0.4451
+      }
+     }
+    },
+    "disparity": {
+     "hc_z": {
+      "mean": 1.002,
+      "sd": 1.162,
+      "t_vs_zero": 2.283,
+      "p_vs_zero": 0.0313,
+      "observed_mean": 0.865,
+      "null_mean_mean": 0.9247,
+      "n_p_perm_lt_05": 3,
+      "per_subject": {
+       "sub-01": {
+        "z": 2.048,
+        "observed": 0.7746,
+        "null_mean": 0.887,
+        "null_sd": 0.0549,
+        "p_perm": 0.02
+       },
+       "sub-02": {
+        "z": 2.1,
+        "observed": 0.7702,
+        "null_mean": 0.9204,
+        "null_sd": 0.0715,
+        "p_perm": 0.016
+       },
+       "sub-03": {
+        "z": -0.064,
+        "observed": 0.9233,
+        "null_mean": 0.9193,
+        "null_sd": 0.0634,
+        "p_perm": 0.5205
+       },
+       "sub-04": {
+        "z": 2.121,
+        "observed": 0.7764,
+        "null_mean": 0.9074,
+        "null_sd": 0.0617,
+        "p_perm": 0.014
+       },
+       "sub-05": {
+        "z": -0.804,
+        "observed": 1.0103,
+        "null_mean": 0.9487,
+        "null_sd": 0.0766,
+        "p_perm": 0.7732
+       },
+       "sub-06": {
+        "z": 0.616,
+        "observed": 0.9333,
+        "null_mean": 0.9738,
+        "null_sd": 0.0656,
+        "p_perm": 0.2897
+       },
+       "sub-07": {
+        "z": 1.0,
+        "observed": 0.8672,
+        "null_mean": 0.916,
+        "null_sd": 0.0488,
+        "p_perm": 0.1588
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 2.462,
+       "observed": 0.8258,
+       "null_mean": 0.9925,
+       "null_sd": 0.0677,
+       "p_perm": 0.002,
+       "t_crawford_howell": 1.175,
+       "p_one_tailed_lower": 0.8578
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": 2.043,
+       "observed": 0.8319,
+       "null_mean": 0.9518,
+       "null_sd": 0.0587,
+       "p_perm": 0.013,
+       "t_crawford_howell": 0.838,
+       "p_one_tailed_lower": 0.7829
+      }
+     }
+    }
+   }
+  },
+  "V3": {
+   "k": 3,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "metrics": {
+    "rdm": {
+     "hc_z": {
+      "mean": 1.159,
+      "sd": 1.029,
+      "t_vs_zero": 2.982,
+      "p_vs_zero": 0.0123,
+      "observed_mean": 0.1445,
+      "null_mean_mean": 0.0026,
+      "n_p_perm_lt_05": 2,
+      "per_subject": {
+       "sub-01": {
+        "z": 0.684,
+        "observed": 0.0706,
+        "null_mean": 0.0038,
+        "null_sd": 0.0976,
+        "p_perm": 0.2458
+       },
+       "sub-02": {
+        "z": 1.477,
+        "observed": 0.1892,
+        "null_mean": 0.0017,
+        "null_sd": 0.1269,
+        "p_perm": 0.0759
+       },
+       "sub-03": {
+        "z": -0.646,
+        "observed": -0.0858,
+        "null_mean": -0.0015,
+        "null_sd": 0.1306,
+        "p_perm": 0.7173
+       },
+       "sub-04": {
+        "z": 2.156,
+        "observed": 0.2439,
+        "null_mean": 0.001,
+        "null_sd": 0.1127,
+        "p_perm": 0.021
+       },
+       "sub-05": {
+        "z": 1.423,
+        "observed": 0.1538,
+        "null_mean": 0.0042,
+        "null_sd": 0.1051,
+        "p_perm": 0.0729
+       },
+       "sub-06": {
+        "z": 0.658,
+        "observed": 0.1026,
+        "null_mean": 0.0043,
+        "null_sd": 0.1494,
+        "p_perm": 0.2418
+       },
+       "sub-07": {
+        "z": 2.363,
+        "observed": 0.337,
+        "null_mean": 0.0045,
+        "null_sd": 0.1407,
+        "p_perm": 0.01
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 1.98,
+       "observed": 0.263,
+       "null_mean": 0.0029,
+       "null_sd": 0.1314,
+       "p_perm": 0.035,
+       "t_crawford_howell": 0.746,
+       "p_one_tailed_lower": 0.7582
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": 3.002,
+       "observed": 0.3676,
+       "null_mean": 0.0048,
+       "null_sd": 0.1208,
+       "p_perm": 0.005,
+       "t_crawford_howell": 1.676,
+       "p_one_tailed_lower": 0.9276
+      }
+     }
+    },
+    "disparity": {
+     "hc_z": {
+      "mean": 2.392,
+      "sd": 1.061,
+      "t_vs_zero": 5.964,
+      "p_vs_zero": 0.0005,
+      "observed_mean": 0.8041,
+      "null_mean_mean": 0.9876,
+      "n_p_perm_lt_05": 5,
+      "per_subject": {
+       "sub-01": {
+        "z": 1.639,
+        "observed": 0.8732,
+        "null_mean": 0.9877,
+        "null_sd": 0.0699,
+        "p_perm": 0.0619
+       },
+       "sub-02": {
+        "z": 2.962,
+        "observed": 0.73,
+        "null_mean": 0.9985,
+        "null_sd": 0.0906,
+        "p_perm": 0.004
+       },
+       "sub-03": {
+        "z": 0.662,
+        "observed": 0.9478,
+        "null_mean": 0.9948,
+        "null_sd": 0.0711,
+        "p_perm": 0.2547
+       },
+       "sub-04": {
+        "z": 3.825,
+        "observed": 0.7161,
+        "null_mean": 0.9733,
+        "null_sd": 0.0672,
+        "p_perm": 0.001
+       },
+       "sub-05": {
+        "z": 1.968,
+        "observed": 0.8598,
+        "null_mean": 0.975,
+        "null_sd": 0.0585,
+        "p_perm": 0.034
+       },
+       "sub-06": {
+        "z": 2.503,
+        "observed": 0.7957,
+        "null_mean": 1.0066,
+        "null_sd": 0.0843,
+        "p_perm": 0.009
+       },
+       "sub-07": {
+        "z": 3.182,
+        "observed": 0.7058,
+        "null_mean": 0.9774,
+        "null_sd": 0.0854,
+        "p_perm": 0.004
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 2.23,
+       "observed": 0.8622,
+       "null_mean": 1.0464,
+       "null_sd": 0.0826,
+       "p_perm": 0.024,
+       "t_crawford_howell": -0.142,
+       "p_one_tailed_lower": 0.4457
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": 3.778,
+       "observed": 0.7151,
+       "null_mean": 1.0252,
+       "null_sd": 0.0821,
+       "p_perm": 0.001,
+       "t_crawford_howell": 1.222,
+       "p_one_tailed_lower": 0.8663
+      }
+     }
+    }
+   }
+  },
+  "hV4": {
+   "k": 3,
+   "n_hc": 6,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06"
+   ],
+   "metrics": {
+    "rdm": {
+     "hc_z": {
+      "mean": 0.509,
+      "sd": 0.861,
+      "t_vs_zero": 1.446,
+      "p_vs_zero": 0.1039,
+      "observed_mean": 0.0838,
+      "null_mean_mean": -0.0028,
+      "n_p_perm_lt_05": 1,
+      "per_subject": {
+       "sub-01": {
+        "z": -0.16,
+        "observed": -0.0352,
+        "null_mean": -0.0056,
+        "null_sd": 0.1851,
+        "p_perm": 0.5485
+       },
+       "sub-02": {
+        "z": 0.384,
+        "observed": 0.0636,
+        "null_mean": -0.001,
+        "null_sd": 0.1681,
+        "p_perm": 0.3387
+       },
+       "sub-03": {
+        "z": 0.033,
+        "observed": 0.0065,
+        "null_mean": -0.0003,
+        "null_sd": 0.2075,
+        "p_perm": 0.4725
+       },
+       "sub-04": {
+        "z": 2.213,
+        "observed": 0.3816,
+        "null_mean": 0.0003,
+        "null_sd": 0.1722,
+        "p_perm": 0.007
+       },
+       "sub-05": {
+        "z": 0.186,
+        "observed": 0.0229,
+        "null_mean": -0.0054,
+        "null_sd": 0.1529,
+        "p_perm": 0.3996
+       },
+       "sub-06": {
+        "z": 0.396,
+        "observed": 0.0634,
+        "null_mean": -0.0045,
+        "null_sd": 0.1713,
+        "p_perm": 0.3506
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 1.152,
+       "observed": 0.2022,
+       "null_mean": -0.0018,
+       "null_sd": 0.1771,
+       "p_perm": 0.1389,
+       "t_crawford_howell": 0.691,
+       "p_one_tailed_lower": 0.74
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": 0.926,
+       "observed": 0.1643,
+       "null_mean": -0.0021,
+       "null_sd": 0.1796,
+       "p_perm": 0.1878,
+       "t_crawford_howell": 0.449,
+       "p_one_tailed_lower": 0.6637
+      }
+     }
+    },
+    "disparity": {
+     "hc_z": {
+      "mean": 1.065,
+      "sd": 0.659,
+      "t_vs_zero": 3.96,
+      "p_vs_zero": 0.0054,
+      "observed_mean": 0.9234,
+      "null_mean_mean": 1.0137,
+      "n_p_perm_lt_05": 2,
+      "per_subject": {
+       "sub-01": {
+        "z": 0.169,
+        "observed": 0.986,
+        "null_mean": 1.0008,
+        "null_sd": 0.0881,
+        "p_perm": 0.3926
+       },
+       "sub-02": {
+        "z": 1.121,
+        "observed": 0.9067,
+        "null_mean": 1.0085,
+        "null_sd": 0.0908,
+        "p_perm": 0.1359
+       },
+       "sub-03": {
+        "z": 0.73,
+        "observed": 0.9932,
+        "null_mean": 1.0681,
+        "null_sd": 0.1027,
+        "p_perm": 0.2717
+       },
+       "sub-04": {
+        "z": 1.825,
+        "observed": 0.8598,
+        "null_mean": 1.0135,
+        "null_sd": 0.0842,
+        "p_perm": 0.041
+       },
+       "sub-05": {
+        "z": 1.816,
+        "observed": 0.8525,
+        "null_mean": 0.9821,
+        "null_sd": 0.0714,
+        "p_perm": 0.031
+       },
+       "sub-06": {
+        "z": 0.731,
+        "observed": 0.9422,
+        "null_mean": 1.0095,
+        "null_sd": 0.0921,
+        "p_perm": 0.2198
+       }
+      }
+     },
+     "cvd": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "z": 0.552,
+       "observed": 1.0107,
+       "null_mean": 1.0644,
+       "null_sd": 0.0974,
+       "p_perm": 0.2727,
+       "t_crawford_howell": -0.721,
+       "p_one_tailed_lower": 0.2515
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "z": 1.142,
+       "observed": 0.9126,
+       "null_mean": 1.0141,
+       "null_sd": 0.0889,
+       "p_perm": 0.1289,
+       "t_crawford_howell": 0.108,
+       "p_one_tailed_lower": 0.5408
+      }
+     }
+    }
+   }
+  }
+ }
+}

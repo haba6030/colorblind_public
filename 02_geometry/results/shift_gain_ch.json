@@ -1,0 +1,264 @@
+{
+ "note": "best-shift gain, Crawford-Howell one-tailed upper vs controls; selection bias is matched because controls take the same min over 8 shifts",
+ "arms": {
+  "with_residuals": {
+   "V1": {
+    "hc_n": 7,
+    "hc_gain_mean": 0.03530431075226329,
+    "hc_gain_sd": 0.05937523800067379,
+    "hc_best_shift_idx": [
+     0,
+     0,
+     0,
+     4,
+     0,
+     4,
+     4
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.556194128896248,
+      "p_one_tailed_upper": 0.7009037665706319,
+      "d_cc": -0.5945965345328411
+     },
+     "protan": {
+      "gain": 0.239656668916964,
+      "best_shift_idx": 1,
+      "best_shift_deg": 45,
+      "t": 3.2194250338118633,
+      "p_one_tailed_upper": 0.00907515837370243,
+      "d_cc": 3.4417101311220297
+     }
+    }
+   },
+   "V2": {
+    "hc_n": 7,
+    "hc_gain_mean": 0.016184082939890092,
+    "hc_gain_sd": 0.018596531711227084,
+    "hc_best_shift_idx": [
+     0,
+     5,
+     7,
+     0,
+     1,
+     0,
+     4
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.8140670316987587,
+      "p_one_tailed_upper": 0.7766484650451876,
+      "d_cc": -0.8702742635670849
+     },
+     "protan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.8140670316987587,
+      "p_one_tailed_upper": 0.7766484650451876,
+      "d_cc": -0.8702742635670849
+     }
+    }
+   },
+   "V3": {
+    "hc_n": 7,
+    "hc_gain_mean": 0.005878274500346656,
+    "hc_gain_sd": 0.015552452466089717,
+    "hc_best_shift_idx": [
+     0,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.35355339059327373,
+      "p_one_tailed_upper": 0.6321175700600941,
+      "d_cc": -0.3779644730092272
+     },
+     "protan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.35355339059327373,
+      "p_one_tailed_upper": 0.6321175700600941,
+      "d_cc": -0.3779644730092272
+     }
+    }
+   },
+   "hV4": {
+    "hc_n": 6,
+    "hc_gain_mean": 0.07416495843296188,
+    "hc_gain_sd": 0.0905679921231303,
+    "hc_best_shift_idx": [
+     7,
+     0,
+     4,
+     0,
+     0,
+     4
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.02057979618086468,
+      "best_shift_idx": 5,
+      "best_shift_deg": 225,
+      "t": -0.5477676947405236,
+      "p_one_tailed_upper": 0.6962966391304184,
+      "d_cc": -0.5916567320963274
+     },
+     "protan": {
+      "gain": 0.0683760683760684,
+      "best_shift_idx": 5,
+      "best_shift_deg": 225,
+      "t": -0.0591762127480873,
+      "p_one_tailed_upper": 0.5224479666731208,
+      "d_cc": -0.06391761505569524
+     }
+    }
+   }
+  },
+  "motreg": {
+   "V1": {
+    "hc_n": 7,
+    "hc_gain_mean": 0.04870516112324563,
+    "hc_gain_sd": 0.055080918892026265,
+    "hc_best_shift_idx": [
+     0,
+     0,
+     5,
+     4,
+     1,
+     4,
+     0
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.8271377346120696,
+      "p_one_tailed_upper": 0.7800960207750506,
+      "d_cc": -0.8842474327402041
+     },
+     "protan": {
+      "gain": 0.1920656112912455,
+      "best_shift_idx": 1,
+      "best_shift_deg": 45,
+      "t": 2.43462572035988,
+      "p_one_tailed_upper": 0.025420845947254578,
+      "d_cc": 2.6027243744612494
+     }
+    }
+   },
+   "V2": {
+    "hc_n": 7,
+    "hc_gain_mean": 0.0035674577076802373,
+    "hc_gain_sd": 0.006832855549523605,
+    "hc_best_shift_idx": [
+     0,
+     0,
+     0,
+     4,
+     0,
+     0,
+     4
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.48838309207619807,
+      "p_one_tailed_upper": 0.6786933146899146,
+      "d_cc": -0.5221034868692584
+     },
+     "protan": {
+      "gain": 0.010035005834305648,
+      "best_shift_idx": 4,
+      "best_shift_deg": 180,
+      "t": 0.8854039517925687,
+      "p_one_tailed_upper": 0.20500812820146275,
+      "d_cc": 0.946536639001001
+     }
+    }
+   },
+   "V3": {
+    "hc_n": 7,
+    "hc_gain_mean": 0.008852749383681514,
+    "hc_gain_sd": 0.023320622900807858,
+    "hc_best_shift_idx": [
+     0,
+     0,
+     0,
+     0,
+     2,
+     6,
+     0
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.3550929499782243,
+      "p_one_tailed_upper": 0.6326656133747002,
+      "d_cc": -0.3796103312221065
+     },
+     "protan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.3550929499782243,
+      "p_one_tailed_upper": 0.6326656133747002,
+      "d_cc": -0.3796103312221065
+     }
+    }
+   },
+   "hV4": {
+    "hc_n": 6,
+    "hc_gain_mean": 0.0015487124077075349,
+    "hc_gain_sd": 0.003793555157200646,
+    "hc_best_shift_idx": [
+     0,
+     0,
+     4,
+     0,
+     0,
+     0
+    ],
+    "cvd": {
+     "deutan": {
+      "gain": 0.0,
+      "best_shift_idx": 0,
+      "best_shift_deg": 0,
+      "t": -0.3779644730092272,
+      "p_one_tailed_upper": 0.6395143989633848,
+      "d_cc": -0.408248290463863
+     },
+     "protan": {
+      "gain": 0.12933787523951465,
+      "best_shift_idx": 6,
+      "best_shift_deg": 270,
+      "t": 31.187045022458047,
+      "p_one_tailed_upper": 3.181489608428123e-07,
+      "d_cc": 33.68585865668703
+     }
+    }
+   }
+  }
+ },
+ "caveat_hV4_motreg": "hV4 motreg 의 통제군 이득 SD 가 0.4% 로 붕괴해 t 가 31 까지 부풀었다. 그 칸은 인용하지 않는다."
+}

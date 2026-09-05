@@ -1,0 +1,2664 @@
+{
+ "stage": "01_decoding",
+ "counts": {
+  "ok": 285,
+  "near": 3,
+  "mismatch": 1,
+  "error": 0,
+  "flag": 0,
+  "table": 4
+ },
+ "checks": [
+  {
+   "id": "01.T1.V1.controls",
+   "desc": "tab:alignment LORO controls V1",
+   "produced": 0.5803571428571429,
+   "reported": 0.58,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V1.deutan",
+   "desc": "tab:alignment LORO deutan V1",
+   "produced": 0.5625,
+   "reported": 0.562,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V1.protan",
+   "desc": "tab:alignment LORO protan V1",
+   "produced": 0.5625,
+   "reported": 0.562,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V2.controls",
+   "desc": "tab:alignment LORO controls V2",
+   "produced": 0.6071428571428571,
+   "reported": 0.607,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V2.deutan",
+   "desc": "tab:alignment LORO deutan V2",
+   "produced": 0.5208333333333334,
+   "reported": 0.521,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V2.protan",
+   "desc": "tab:alignment LORO protan V2",
+   "produced": 0.5625,
+   "reported": 0.562,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V3.controls",
+   "desc": "tab:alignment LORO controls V3",
+   "produced": 0.5744047619047619,
+   "reported": 0.574,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V3.deutan",
+   "desc": "tab:alignment LORO deutan V3",
+   "produced": 0.3958333333333333,
+   "reported": 0.396,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.V3.protan",
+   "desc": "tab:alignment LORO protan V3",
+   "produced": 0.4583333333333333,
+   "reported": 0.458,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.hV4.controls",
+   "desc": "tab:alignment LORO controls hV4",
+   "produced": 0.48809523809523814,
+   "reported": 0.488,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.hV4.deutan",
+   "desc": "tab:alignment LORO deutan hV4",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T1.hV4.protan",
+   "desc": "tab:alignment LORO protan hV4",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.01",
+   "desc": "tab:alignment | LORO classification, Procrustes space: 4 ROIs x (controls, deutan, protan)",
+   "produced": null,
+   "reported": "12 cells, see 01.T1.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "01.02",
+   "desc": "Results \u00a71 \u00b61 | lowest CVD classification cell (hV4)",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.03",
+   "desc": "Results \u00a71 \u00b61 | lowest cell as a multiple of chance",
+   "produced": 3.0,
+   "reported": 3.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.04",
+   "desc": "Results \u00a71 \u00b61 | every CVD cell above chance 0.125",
+   "produced": 0.375,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "gt",
+   "reason": null
+  },
+  {
+   "id": "01.05",
+   "desc": "S16 | smallest |d_cc| over the eight classification contrasts",
+   "produced": 0.25301969999050333,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.06",
+   "desc": "S16 | largest |d_cc|",
+   "produced": 1.583891032045364,
+   "reported": 1.58,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.07",
+   "desc": "S16 | smallest two-tailed p",
+   "produced": 0.18895704722741985,
+   "reported": 0.189,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.08",
+   "desc": "S16 | deutan V3 d_cc",
+   "produced": -1.583891032045364,
+   "reported": -1.58,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.09",
+   "desc": "S16 | hV4 d_cc, both participants",
+   "produced": -1.079562880481559,
+   "reported": -1.08,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.10",
+   "desc": "S16 | hV4 two-tailed p, both participants",
+   "produced": 0.35154844454479806,
+   "reported": 0.352,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.11",
+   "desc": "Results \u00a71 \u00b62 | HC-to-CVD mean accuracy over eight cells",
+   "produced": 0.4322916666666667,
+   "reported": 0.432,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.12",
+   "desc": "Results \u00a71 \u00b62 | number of CVD cells",
+   "produced": 8,
+   "reported": 8,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.13",
+   "desc": "Results \u00a71 \u00b62 | t(7) against chance 0.125",
+   "produced": 6.509791955534971,
+   "reported": 6.51,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.14",
+   "desc": "Results \u00a71 \u00b62 | p against chance (< 0.001)",
+   "produced": 0.00033107227713209084,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "01.15",
+   "desc": "Results \u00a71 \u00b62 | HC-to-HC mean over 28 cells",
+   "produced": 0.5260416666666666,
+   "reported": 0.526,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.16",
+   "desc": "S5 | Mann-Whitney U",
+   "produced": 163.5,
+   "reported": 163.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.17",
+   "desc": "Results \u00a71 \u00b62 | Mann-Whitney p",
+   "produced": 0.05176163990395068,
+   "reported": 0.052,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.18",
+   "desc": "S5 | rank-biserial r",
+   "produced": 0.4598214285714286,
+   "reported": 0.46,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.19",
+   "desc": "S5 | lowest single HC-to-CVD cell",
+   "produced": 0.2708333333333333,
+   "reported": 0.271,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.20",
+   "desc": "Results \u00a71 \u00b63 | hV4 control adjacent accuracy",
+   "produced": 0.45595238095238094,
+   "reported": 0.456,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.21",
+   "desc": "Results \u00a71 \u00b63 | hV4 SEM (n = 7)",
+   "produced": 0.03854214545881436,
+   "reported": 0.039,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.22",
+   "desc": "Results \u00a71 \u00b63 | hV4 permutation p",
+   "produced": 0.01098901098901099,
+   "reported": 0.011,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.23",
+   "desc": "Results \u00a71 \u00b63 | V1 control adjacent accuracy",
+   "produced": 0.3928571428571428,
+   "reported": 0.393,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.24",
+   "desc": "Results \u00a71 \u00b63 | V1 permutation p",
+   "produced": 0.16383616383616384,
+   "reported": 0.164,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.25",
+   "desc": "Results \u00a71 \u00b63 | V2 control adjacent accuracy",
+   "produced": 0.35714285714285715,
+   "reported": 0.357,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.26",
+   "desc": "Results \u00a71 \u00b63 | V2 permutation p",
+   "produced": 0.42357642357642356,
+   "reported": 0.424,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.27",
+   "desc": "Results \u00a71 \u00b63 | V3 control adjacent accuracy",
+   "produced": 0.3392857142857143,
+   "reported": 0.339,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.28",
+   "desc": "Results \u00a71 \u00b63 | V3 permutation p",
+   "produced": 0.5864135864135864,
+   "reported": 0.586,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.29",
+   "desc": "Results \u00a71 \u00b63 | permutation null lies near 0.35 (all four ROIs within 0.34-0.36)",
+   "produced": [
+    0.34614464285714286,
+    0.349297619047619
+   ],
+   "reported": [
+    0.34,
+    0.36
+   ],
+   "status": "ok",
+   "mode": "range",
+   "reason": null
+  },
+  {
+   "id": "01.30",
+   "desc": "Results \u00a71 \u00b63 | all four ROIs exceed analytic chance 0.25",
+   "produced": 0.3392857142857143,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "gt",
+   "reason": null
+  },
+  {
+   "id": "01.31",
+   "desc": "Results \u00a71 \u00b63 | number of permutations",
+   "produced": 1000,
+   "reported": 1000,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.32",
+   "desc": "Results \u00a71 \u00b64 | deutan hV4 adjacent accuracy",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.33",
+   "desc": "Results \u00a71 \u00b64 | deutan Crawford-Howell t",
+   "produced": -1.8892348030879906,
+   "reported": -1.89,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.34",
+   "desc": "Results \u00a71 \u00b64 | deutan p (one-tailed)",
+   "produced": 0.05388318894783613,
+   "reported": 0.054,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.35",
+   "desc": "Results \u00a71 \u00b64 | deutan d_cc",
+   "produced": -2.019676958949884,
+   "reported": -2.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.36",
+   "desc": "Results \u00a71 \u00b64 | protan hV4 adjacent accuracy",
+   "produced": 0.125,
+   "reported": 0.13,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.37",
+   "desc": "Results \u00a71 \u00b64 | protan Crawford-Howell t",
+   "produced": -3.035880203806135,
+   "reported": -3.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.38",
+   "desc": "Results \u00a71 \u00b64 | protan p (one-tailed)",
+   "produced": 0.0114619638613391,
+   "reported": 0.012,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.39",
+   "desc": "Results \u00a71 \u00b64 | protan d_cc",
+   "produced": -3.2454924542662873,
+   "reported": -3.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.40",
+   "desc": "Results \u00a71 \u00b64 | control mean",
+   "produced": 0.45595238095238094,
+   "reported": 0.46,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.41",
+   "desc": "Results \u00a71 \u00b64 | all seven controls above the protan participant",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.42",
+   "desc": "Results \u00a71 \u00b64 | at least five controls above the deutan participant",
+   "produced": 7,
+   "reported": 5,
+   "status": "ok",
+   "mode": "ge",
+   "reason": null
+  },
+  {
+   "id": "01.43",
+   "desc": "Results \u00a71 \u00b65 | deutan blue adjacent accuracy = 0",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.44",
+   "desc": "Results \u00a71 \u00b65 | deutan purple = 0",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.45",
+   "desc": "Results \u00a71 \u00b65 | deutan magenta = 0",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.46",
+   "desc": "Results \u00a71 \u00b65 | protan blue = 0",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.47",
+   "desc": "Results \u00a71 \u00b65 | protan purple = 0",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.48",
+   "desc": "Results \u00a71 \u00b65 | protan magenta = 0",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.49",
+   "desc": "tab:effect_sizes | blue t",
+   "produced": -1.9274870130735018,
+   "reported": -1.93,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.50",
+   "desc": "tab:effect_sizes | blue p",
+   "produced": 0.05109983943732722,
+   "reported": 0.051,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.51",
+   "desc": "tab:effect_sizes | blue d_cc",
+   "produced": -2.060570291536374,
+   "reported": -2.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.52",
+   "desc": "tab:effect_sizes | purple t",
+   "produced": -0.7921333521098277,
+   "reported": -0.79,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.53",
+   "desc": "tab:effect_sizes | purple p",
+   "produced": 0.2292238560617153,
+   "reported": 0.229,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.54",
+   "desc": "tab:effect_sizes | purple d_cc",
+   "produced": -0.8468261737804973,
+   "reported": -0.85,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.55",
+   "desc": "tab:effect_sizes | magenta t",
+   "produced": -1.4719601443879748,
+   "reported": -1.47,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.56",
+   "desc": "tab:effect_sizes | magenta p",
+   "produced": 0.09572431852133705,
+   "reported": 0.096,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.57",
+   "desc": "tab:effect_sizes | magenta d_cc",
+   "produced": -1.5735915849388868,
+   "reported": -1.57,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.58",
+   "desc": "Results \u00a71 \u00b65 | smallest per-hue p over 16 tests (p >= 0.051 at every hue)",
+   "produced": 0.05109983943732722,
+   "reported": 0.051,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V1.controls",
+   "desc": "tab:alignment LOCO controls V1",
+   "produced": 0.3928571428571428,
+   "reported": 0.393,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V1.deutan",
+   "desc": "tab:alignment LOCO deutan V1",
+   "produced": 0.43749999999999994,
+   "reported": 0.437,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V1.protan",
+   "desc": "tab:alignment LOCO protan V1",
+   "produced": 0.1875,
+   "reported": 0.188,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V2.controls",
+   "desc": "tab:alignment LOCO controls V2",
+   "produced": 0.35714285714285715,
+   "reported": 0.357,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V2.deutan",
+   "desc": "tab:alignment LOCO deutan V2",
+   "produced": 0.27083333333333337,
+   "reported": 0.271,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V2.protan",
+   "desc": "tab:alignment LOCO protan V2",
+   "produced": 0.10416666666666666,
+   "reported": 0.104,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V3.controls",
+   "desc": "tab:alignment LOCO controls V3",
+   "produced": 0.3392857142857143,
+   "reported": 0.339,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V3.deutan",
+   "desc": "tab:alignment LOCO deutan V3",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.V3.protan",
+   "desc": "tab:alignment LOCO protan V3",
+   "produced": 0.20833333333333331,
+   "reported": 0.208,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.hV4.controls",
+   "desc": "tab:alignment LOCO controls hV4",
+   "produced": 0.45595238095238094,
+   "reported": 0.456,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.hV4.deutan",
+   "desc": "tab:alignment LOCO deutan hV4",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T2.hV4.protan",
+   "desc": "tab:alignment LOCO protan hV4",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.59",
+   "desc": "tab:alignment | LOCO interpolation, Procrustes space: 4 ROIs x (controls, deutan, protan)",
+   "produced": null,
+   "reported": "12 cells, see 01.T2.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.LDA.mean",
+   "desc": "tab:loro_decoders V1 LDA control mean",
+   "produced": 0.8779761904761906,
+   "reported": 0.878,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.LDA.sd",
+   "desc": "tab:loro_decoders V1 LDA control SD",
+   "produced": 0.05021448704303081,
+   "reported": 0.05,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.LDA.deutan",
+   "desc": "tab:loro_decoders V1 LDA deutan",
+   "produced": 1.0,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.LDA.protan",
+   "desc": "tab:loro_decoders V1 LDA protan",
+   "produced": 0.8541666666666666,
+   "reported": 0.854,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.SVM.mean",
+   "desc": "tab:loro_decoders V1 SVM control mean",
+   "produced": 0.7767857142857143,
+   "reported": 0.777,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.SVM.sd",
+   "desc": "tab:loro_decoders V1 SVM control SD",
+   "produced": 0.06216843267417976,
+   "reported": 0.062,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.SVM.deutan",
+   "desc": "tab:loro_decoders V1 SVM deutan",
+   "produced": 0.9791666666666666,
+   "reported": 0.979,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.SVM.protan",
+   "desc": "tab:loro_decoders V1 SVM protan",
+   "produced": 0.7708333333333334,
+   "reported": 0.771,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.ForwardEncoding.mean",
+   "desc": "tab:loro_decoders V1 Hue-channel basis control mean",
+   "produced": 0.5416666666666666,
+   "reported": 0.542,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.ForwardEncoding.sd",
+   "desc": "tab:loro_decoders V1 Hue-channel basis control SD",
+   "produced": 0.10554641773312962,
+   "reported": 0.106,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.ForwardEncoding.deutan",
+   "desc": "tab:loro_decoders V1 Hue-channel basis deutan",
+   "produced": 0.6041666666666666,
+   "reported": 0.604,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.ForwardEncoding.protan",
+   "desc": "tab:loro_decoders V1 Hue-channel basis protan",
+   "produced": 0.625,
+   "reported": 0.625,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.Ridge.mean",
+   "desc": "tab:loro_decoders V1 Ridge control mean",
+   "produced": 0.3988095238095238,
+   "reported": 0.399,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.Ridge.sd",
+   "desc": "tab:loro_decoders V1 Ridge control SD",
+   "produced": 0.0543647172969058,
+   "reported": 0.054,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.Ridge.deutan",
+   "desc": "tab:loro_decoders V1 Ridge deutan",
+   "produced": 0.3541666666666667,
+   "reported": 0.354,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.Ridge.protan",
+   "desc": "tab:loro_decoders V1 Ridge protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.KernelRidge.mean",
+   "desc": "tab:loro_decoders V1 Kernel ridge control mean",
+   "produced": 0.3928571428571428,
+   "reported": 0.393,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.KernelRidge.sd",
+   "desc": "tab:loro_decoders V1 Kernel ridge control SD",
+   "produced": 0.06413212840830947,
+   "reported": 0.064,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.KernelRidge.deutan",
+   "desc": "tab:loro_decoders V1 Kernel ridge deutan",
+   "produced": 0.2708333333333333,
+   "reported": 0.271,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.KernelRidge.protan",
+   "desc": "tab:loro_decoders V1 Kernel ridge protan",
+   "produced": 0.2916666666666667,
+   "reported": 0.292,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.MLP.mean",
+   "desc": "tab:loro_decoders V1 MLP control mean",
+   "produced": 0.1279761904761905,
+   "reported": 0.128,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.MLP.sd",
+   "desc": "tab:loro_decoders V1 MLP control SD",
+   "produced": 0.007874259854358905,
+   "reported": 0.008,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.MLP.deutan",
+   "desc": "tab:loro_decoders V1 MLP deutan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V1.MLP.protan",
+   "desc": "tab:loro_decoders V1 MLP protan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.LDA.mean",
+   "desc": "tab:loro_decoders V2 LDA control mean",
+   "produced": 0.8303571428571429,
+   "reported": 0.83,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.LDA.sd",
+   "desc": "tab:loro_decoders V2 LDA control SD",
+   "produced": 0.047245559126153414,
+   "reported": 0.047,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.LDA.deutan",
+   "desc": "tab:loro_decoders V2 LDA deutan",
+   "produced": 0.9166666666666666,
+   "reported": 0.917,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.LDA.protan",
+   "desc": "tab:loro_decoders V2 LDA protan",
+   "produced": 0.8541666666666666,
+   "reported": 0.854,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.SVM.mean",
+   "desc": "tab:loro_decoders V2 SVM control mean",
+   "produced": 0.7589285714285714,
+   "reported": 0.759,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.SVM.sd",
+   "desc": "tab:loro_decoders V2 SVM control SD",
+   "produced": 0.13600680324564843,
+   "reported": 0.136,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.SVM.deutan",
+   "desc": "tab:loro_decoders V2 SVM deutan",
+   "produced": 0.875,
+   "reported": 0.875,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.SVM.protan",
+   "desc": "tab:loro_decoders V2 SVM protan",
+   "produced": 0.8333333333333334,
+   "reported": 0.833,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.ForwardEncoding.mean",
+   "desc": "tab:loro_decoders V2 Hue-channel basis control mean",
+   "produced": 0.5446428571428571,
+   "reported": 0.545,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.ForwardEncoding.sd",
+   "desc": "tab:loro_decoders V2 Hue-channel basis control SD",
+   "produced": 0.07741909926637568,
+   "reported": 0.077,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.ForwardEncoding.deutan",
+   "desc": "tab:loro_decoders V2 Hue-channel basis deutan",
+   "produced": 0.4583333333333333,
+   "reported": 0.458,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.ForwardEncoding.protan",
+   "desc": "tab:loro_decoders V2 Hue-channel basis protan",
+   "produced": 0.4375,
+   "reported": 0.438,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.Ridge.mean",
+   "desc": "tab:loro_decoders V2 Ridge control mean",
+   "produced": 0.3720238095238096,
+   "reported": 0.372,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.Ridge.sd",
+   "desc": "tab:loro_decoders V2 Ridge control SD",
+   "produced": 0.09729305809480528,
+   "reported": 0.097,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.Ridge.deutan",
+   "desc": "tab:loro_decoders V2 Ridge deutan",
+   "produced": 0.4583333333333333,
+   "reported": 0.458,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.Ridge.protan",
+   "desc": "tab:loro_decoders V2 Ridge protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.KernelRidge.mean",
+   "desc": "tab:loro_decoders V2 Kernel ridge control mean",
+   "produced": 0.33035714285714285,
+   "reported": 0.33,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.KernelRidge.sd",
+   "desc": "tab:loro_decoders V2 Kernel ridge control SD",
+   "produced": 0.06634969288573796,
+   "reported": 0.066,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.KernelRidge.deutan",
+   "desc": "tab:loro_decoders V2 Kernel ridge deutan",
+   "produced": 0.3125,
+   "reported": 0.313,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.KernelRidge.protan",
+   "desc": "tab:loro_decoders V2 Kernel ridge protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.MLP.mean",
+   "desc": "tab:loro_decoders V2 MLP control mean",
+   "produced": 0.1488095238095238,
+   "reported": 0.149,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.MLP.sd",
+   "desc": "tab:loro_decoders V2 MLP control SD",
+   "produced": 0.030496877279641663,
+   "reported": 0.031,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.MLP.deutan",
+   "desc": "tab:loro_decoders V2 MLP deutan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V2.MLP.protan",
+   "desc": "tab:loro_decoders V2 MLP protan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.LDA.mean",
+   "desc": "tab:loro_decoders V3 LDA control mean",
+   "produced": 0.7261904761904762,
+   "reported": 0.726,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.LDA.sd",
+   "desc": "tab:loro_decoders V3 LDA control SD",
+   "produced": 0.06413212840830948,
+   "reported": 0.064,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.LDA.deutan",
+   "desc": "tab:loro_decoders V3 LDA deutan",
+   "produced": 0.75,
+   "reported": 0.75,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.LDA.protan",
+   "desc": "tab:loro_decoders V3 LDA protan",
+   "produced": 0.7708333333333334,
+   "reported": 0.771,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.SVM.mean",
+   "desc": "tab:loro_decoders V3 SVM control mean",
+   "produced": 0.630952380952381,
+   "reported": 0.631,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.SVM.sd",
+   "desc": "tab:loro_decoders V3 SVM control SD",
+   "produced": 0.14419430416801268,
+   "reported": 0.144,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.SVM.deutan",
+   "desc": "tab:loro_decoders V3 SVM deutan",
+   "produced": 0.8125,
+   "reported": 0.813,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.SVM.protan",
+   "desc": "tab:loro_decoders V3 SVM protan",
+   "produced": 0.6666666666666666,
+   "reported": 0.667,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.ForwardEncoding.mean",
+   "desc": "tab:loro_decoders V3 Hue-channel basis control mean",
+   "produced": 0.4494047619047619,
+   "reported": 0.449,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.ForwardEncoding.sd",
+   "desc": "tab:loro_decoders V3 Hue-channel basis control SD",
+   "produced": 0.06461372812672135,
+   "reported": 0.065,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.ForwardEncoding.deutan",
+   "desc": "tab:loro_decoders V3 Hue-channel basis deutan",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.ForwardEncoding.protan",
+   "desc": "tab:loro_decoders V3 Hue-channel basis protan",
+   "produced": 0.3125,
+   "reported": 0.313,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.Ridge.mean",
+   "desc": "tab:loro_decoders V3 Ridge control mean",
+   "produced": 0.17261904761904764,
+   "reported": 0.173,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.Ridge.sd",
+   "desc": "tab:loro_decoders V3 Ridge control SD",
+   "produced": 0.06773694450441095,
+   "reported": 0.068,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.Ridge.deutan",
+   "desc": "tab:loro_decoders V3 Ridge deutan",
+   "produced": 0.2916666666666667,
+   "reported": 0.292,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.Ridge.protan",
+   "desc": "tab:loro_decoders V3 Ridge protan",
+   "produced": 0.22916666666666666,
+   "reported": 0.229,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.KernelRidge.mean",
+   "desc": "tab:loro_decoders V3 Kernel ridge control mean",
+   "produced": 0.15773809523809526,
+   "reported": 0.158,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.KernelRidge.sd",
+   "desc": "tab:loro_decoders V3 Kernel ridge control SD",
+   "produced": 0.05223193087733406,
+   "reported": 0.052,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.KernelRidge.deutan",
+   "desc": "tab:loro_decoders V3 Kernel ridge deutan",
+   "produced": 0.20833333333333334,
+   "reported": 0.208,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.KernelRidge.protan",
+   "desc": "tab:loro_decoders V3 Kernel ridge protan",
+   "produced": 0.3333333333333333,
+   "reported": 0.333,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.MLP.mean",
+   "desc": "tab:loro_decoders V3 MLP control mean",
+   "produced": 0.12202380952380952,
+   "reported": 0.122,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.MLP.sd",
+   "desc": "tab:loro_decoders V3 MLP control SD",
+   "produced": 0.0078742598543589,
+   "reported": 0.008,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.MLP.deutan",
+   "desc": "tab:loro_decoders V3 MLP deutan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.V3.MLP.protan",
+   "desc": "tab:loro_decoders V3 MLP protan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.LDA.mean",
+   "desc": "tab:loro_decoders hV4 LDA control mean",
+   "produced": 0.6577380952380952,
+   "reported": 0.658,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.LDA.sd",
+   "desc": "tab:loro_decoders hV4 LDA control SD",
+   "produced": 0.09227790439867846,
+   "reported": 0.092,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.LDA.deutan",
+   "desc": "tab:loro_decoders hV4 LDA deutan",
+   "produced": 0.8125,
+   "reported": 0.813,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.LDA.protan",
+   "desc": "tab:loro_decoders hV4 LDA protan",
+   "produced": 0.7291666666666666,
+   "reported": 0.729,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.SVM.mean",
+   "desc": "tab:loro_decoders hV4 SVM control mean",
+   "produced": 0.5982142857142857,
+   "reported": 0.598,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.SVM.sd",
+   "desc": "tab:loro_decoders hV4 SVM control SD",
+   "produced": 0.08480837409985124,
+   "reported": 0.085,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.SVM.deutan",
+   "desc": "tab:loro_decoders hV4 SVM deutan",
+   "produced": 0.8125,
+   "reported": 0.813,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.SVM.protan",
+   "desc": "tab:loro_decoders hV4 SVM protan",
+   "produced": 0.6666666666666666,
+   "reported": 0.667,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.ForwardEncoding.mean",
+   "desc": "tab:loro_decoders hV4 Hue-channel basis control mean",
+   "produced": 0.42261904761904756,
+   "reported": 0.423,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.ForwardEncoding.sd",
+   "desc": "tab:loro_decoders hV4 Hue-channel basis control SD",
+   "produced": 0.07188182909816189,
+   "reported": 0.072,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.ForwardEncoding.deutan",
+   "desc": "tab:loro_decoders hV4 Hue-channel basis deutan",
+   "produced": 0.3541666666666667,
+   "reported": 0.354,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.ForwardEncoding.protan",
+   "desc": "tab:loro_decoders hV4 Hue-channel basis protan",
+   "produced": 0.3541666666666667,
+   "reported": 0.354,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.Ridge.mean",
+   "desc": "tab:loro_decoders hV4 Ridge control mean",
+   "produced": 0.31845238095238093,
+   "reported": 0.319,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.Ridge.sd",
+   "desc": "tab:loro_decoders hV4 Ridge control SD",
+   "produced": 0.11392759698377454,
+   "reported": 0.114,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.Ridge.deutan",
+   "desc": "tab:loro_decoders hV4 Ridge deutan",
+   "produced": 0.14583333333333334,
+   "reported": 0.146,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.Ridge.protan",
+   "desc": "tab:loro_decoders hV4 Ridge protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.KernelRidge.mean",
+   "desc": "tab:loro_decoders hV4 Kernel ridge control mean",
+   "produced": 0.2767857142857143,
+   "reported": 0.277,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.KernelRidge.sd",
+   "desc": "tab:loro_decoders hV4 Kernel ridge control SD",
+   "produced": 0.09294740220533104,
+   "reported": 0.093,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.KernelRidge.deutan",
+   "desc": "tab:loro_decoders hV4 Kernel ridge deutan",
+   "produced": 0.041666666666666664,
+   "reported": 0.042,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.KernelRidge.protan",
+   "desc": "tab:loro_decoders hV4 Kernel ridge protan",
+   "produced": 0.1875,
+   "reported": 0.188,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.MLP.mean",
+   "desc": "tab:loro_decoders hV4 MLP control mean",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.MLP.sd",
+   "desc": "tab:loro_decoders hV4 MLP control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.MLP.deutan",
+   "desc": "tab:loro_decoders hV4 MLP deutan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T3.hV4.MLP.protan",
+   "desc": "tab:loro_decoders hV4 MLP protan",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.60",
+   "desc": "tab:loro_decoders | LORO six decoders x 4 ROIs: control mean, SD, deutan, protan",
+   "produced": null,
+   "reported": "96 cells, see 01.T3.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "01.61",
+   "desc": "S5 \u00b62 | LDA has the highest control mean at every ROI",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.62",
+   "desc": "S5 \u00b62 | four of the six decoders exceed chance at every ROI (by control mean > 0.125 the count is five, kernel ridge at V3 being 0.158 \u00b1 0.052; by control mean minus one SD it is three: the printed 'four' matches neither criterion)",
+   "produced": 5,
+   "reported": 4,
+   "status": "mismatch",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.ForwardEncoding.mean",
+   "desc": "tab:loco_decoders V1 Hue-channel basis control mean",
+   "produced": 0.36011904761904756,
+   "reported": 0.36,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.ForwardEncoding.sd",
+   "desc": "tab:loco_decoders V1 Hue-channel basis control SD",
+   "produced": 0.09824434364481784,
+   "reported": 0.098,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.ForwardEncoding.deutan",
+   "desc": "tab:loco_decoders V1 Hue-channel basis deutan",
+   "produced": 0.3125,
+   "reported": 0.313,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.ForwardEncoding.protan",
+   "desc": "tab:loco_decoders V1 Hue-channel basis protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.LDA.mean",
+   "desc": "tab:loco_decoders V1 LDA control mean",
+   "produced": 0.26785714285714285,
+   "reported": 0.268,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.LDA.sd",
+   "desc": "tab:loco_decoders V1 LDA control SD",
+   "produced": 0.07358677345497103,
+   "reported": 0.074,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.LDA.deutan",
+   "desc": "tab:loco_decoders V1 LDA deutan",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.LDA.protan",
+   "desc": "tab:loco_decoders V1 LDA protan",
+   "produced": 0.16666666666666666,
+   "reported": 0.167,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.SVM.mean",
+   "desc": "tab:loco_decoders V1 SVM control mean",
+   "produced": 0.22619047619047614,
+   "reported": 0.226,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.SVM.sd",
+   "desc": "tab:loco_decoders V1 SVM control SD",
+   "produced": 0.07834789631600109,
+   "reported": 0.078,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.SVM.deutan",
+   "desc": "tab:loco_decoders V1 SVM deutan",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.SVM.protan",
+   "desc": "tab:loco_decoders V1 SVM protan",
+   "produced": 0.22916666666666663,
+   "reported": 0.229,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.Ridge.mean",
+   "desc": "tab:loco_decoders V1 Ridge control mean",
+   "produced": 0.038690476190476185,
+   "reported": 0.039,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.Ridge.sd",
+   "desc": "tab:loco_decoders V1 Ridge control SD",
+   "produced": 0.05301741752336265,
+   "reported": 0.053,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.Ridge.deutan",
+   "desc": "tab:loco_decoders V1 Ridge deutan",
+   "produced": 0.14583333333333334,
+   "reported": 0.146,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.Ridge.protan",
+   "desc": "tab:loco_decoders V1 Ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.MLP.mean",
+   "desc": "tab:loco_decoders V1 MLP control mean",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.MLP.sd",
+   "desc": "tab:loco_decoders V1 MLP control SD",
+   "produced": 0.012028130608117209,
+   "reported": 0.012,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.MLP.deutan",
+   "desc": "tab:loco_decoders V1 MLP deutan",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.MLP.protan",
+   "desc": "tab:loco_decoders V1 MLP protan",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.KernelRidge.mean",
+   "desc": "tab:loco_decoders V1 Kernel ridge control mean",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.KernelRidge.sd",
+   "desc": "tab:loco_decoders V1 Kernel ridge control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.KernelRidge.deutan",
+   "desc": "tab:loco_decoders V1 Kernel ridge deutan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V1.KernelRidge.protan",
+   "desc": "tab:loco_decoders V1 Kernel ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.ForwardEncoding.mean",
+   "desc": "tab:loco_decoders V2 Hue-channel basis control mean",
+   "produced": 0.28273809523809523,
+   "reported": 0.283,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.ForwardEncoding.sd",
+   "desc": "tab:loco_decoders V2 Hue-channel basis control SD",
+   "produced": 0.10124881604899265,
+   "reported": 0.101,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.ForwardEncoding.deutan",
+   "desc": "tab:loco_decoders V2 Hue-channel basis deutan",
+   "produced": 0.3333333333333333,
+   "reported": 0.333,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.ForwardEncoding.protan",
+   "desc": "tab:loco_decoders V2 Hue-channel basis protan",
+   "produced": 0.0625,
+   "reported": 0.063,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.LDA.mean",
+   "desc": "tab:loco_decoders V2 LDA control mean",
+   "produced": 0.3273809523809524,
+   "reported": 0.327,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.LDA.sd",
+   "desc": "tab:loco_decoders V2 LDA control SD",
+   "produced": 0.0881542059187423,
+   "reported": 0.088,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.LDA.deutan",
+   "desc": "tab:loco_decoders V2 LDA deutan",
+   "produced": 0.3125,
+   "reported": 0.313,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.LDA.protan",
+   "desc": "tab:loco_decoders V2 LDA protan",
+   "produced": 0.41666666666666663,
+   "reported": 0.417,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.SVM.mean",
+   "desc": "tab:loco_decoders V2 SVM control mean",
+   "produced": 0.318452380952381,
+   "reported": 0.318,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.SVM.sd",
+   "desc": "tab:loco_decoders V2 SVM control SD",
+   "produced": 0.10806208410522178,
+   "reported": 0.108,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.SVM.deutan",
+   "desc": "tab:loco_decoders V2 SVM deutan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.SVM.protan",
+   "desc": "tab:loco_decoders V2 SVM protan",
+   "produced": 0.39583333333333337,
+   "reported": 0.396,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.Ridge.mean",
+   "desc": "tab:loco_decoders V2 Ridge control mean",
+   "produced": 0.05357142857142857,
+   "reported": 0.054,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.Ridge.sd",
+   "desc": "tab:loco_decoders V2 Ridge control SD",
+   "produced": 0.08320923299145629,
+   "reported": 0.083,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.Ridge.deutan",
+   "desc": "tab:loco_decoders V2 Ridge deutan",
+   "produced": 0.020833333333333332,
+   "reported": 0.021,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.Ridge.protan",
+   "desc": "tab:loco_decoders V2 Ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.MLP.mean",
+   "desc": "tab:loco_decoders V2 MLP control mean",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.MLP.sd",
+   "desc": "tab:loco_decoders V2 MLP control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.MLP.deutan",
+   "desc": "tab:loco_decoders V2 MLP deutan",
+   "produced": 0.3958333333333333,
+   "reported": 0.396,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.MLP.protan",
+   "desc": "tab:loco_decoders V2 MLP protan",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.KernelRidge.mean",
+   "desc": "tab:loco_decoders V2 Kernel ridge control mean",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.KernelRidge.sd",
+   "desc": "tab:loco_decoders V2 Kernel ridge control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.KernelRidge.deutan",
+   "desc": "tab:loco_decoders V2 Kernel ridge deutan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V2.KernelRidge.protan",
+   "desc": "tab:loco_decoders V2 Kernel ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.ForwardEncoding.mean",
+   "desc": "tab:loco_decoders V3 Hue-channel basis control mean",
+   "produced": 0.22023809523809526,
+   "reported": 0.22,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.ForwardEncoding.sd",
+   "desc": "tab:loco_decoders V3 Hue-channel basis control SD",
+   "produced": 0.09980967337623595,
+   "reported": 0.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.ForwardEncoding.deutan",
+   "desc": "tab:loco_decoders V3 Hue-channel basis deutan",
+   "produced": 0.3541666666666667,
+   "reported": 0.354,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.ForwardEncoding.protan",
+   "desc": "tab:loco_decoders V3 Hue-channel basis protan",
+   "produced": 0.12499999999999999,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.LDA.mean",
+   "desc": "tab:loco_decoders V3 LDA control mean",
+   "produced": 0.2202380952380952,
+   "reported": 0.22,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.LDA.sd",
+   "desc": "tab:loco_decoders V3 LDA control SD",
+   "produced": 0.08145197728216673,
+   "reported": 0.081,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.LDA.deutan",
+   "desc": "tab:loco_decoders V3 LDA deutan",
+   "produced": 0.27083333333333337,
+   "reported": 0.271,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.LDA.protan",
+   "desc": "tab:loco_decoders V3 LDA protan",
+   "produced": 0.3333333333333333,
+   "reported": 0.333,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.SVM.mean",
+   "desc": "tab:loco_decoders V3 SVM control mean",
+   "produced": 0.20833333333333334,
+   "reported": 0.208,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.SVM.sd",
+   "desc": "tab:loco_decoders V3 SVM control SD",
+   "produced": 0.10346989184549542,
+   "reported": 0.103,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.SVM.deutan",
+   "desc": "tab:loco_decoders V3 SVM deutan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.SVM.protan",
+   "desc": "tab:loco_decoders V3 SVM protan",
+   "produced": 0.22916666666666666,
+   "reported": 0.229,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.Ridge.mean",
+   "desc": "tab:loco_decoders V3 Ridge control mean",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.Ridge.sd",
+   "desc": "tab:loco_decoders V3 Ridge control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.Ridge.deutan",
+   "desc": "tab:loco_decoders V3 Ridge deutan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.Ridge.protan",
+   "desc": "tab:loco_decoders V3 Ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.MLP.mean",
+   "desc": "tab:loco_decoders V3 MLP control mean",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.MLP.sd",
+   "desc": "tab:loco_decoders V3 MLP control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.MLP.deutan",
+   "desc": "tab:loco_decoders V3 MLP deutan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.MLP.protan",
+   "desc": "tab:loco_decoders V3 MLP protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.KernelRidge.mean",
+   "desc": "tab:loco_decoders V3 Kernel ridge control mean",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.KernelRidge.sd",
+   "desc": "tab:loco_decoders V3 Kernel ridge control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.KernelRidge.deutan",
+   "desc": "tab:loco_decoders V3 Kernel ridge deutan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.V3.KernelRidge.protan",
+   "desc": "tab:loco_decoders V3 Kernel ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.ForwardEncoding.mean",
+   "desc": "tab:loco_decoders hV4 Hue-channel basis control mean",
+   "produced": 0.47023809523809523,
+   "reported": 0.47,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.ForwardEncoding.sd",
+   "desc": "tab:loco_decoders hV4 Hue-channel basis control SD",
+   "produced": 0.13002467205848028,
+   "reported": 0.13,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.ForwardEncoding.deutan",
+   "desc": "tab:loco_decoders hV4 Hue-channel basis deutan",
+   "produced": 0.27083333333333337,
+   "reported": 0.271,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.ForwardEncoding.protan",
+   "desc": "tab:loco_decoders hV4 Hue-channel basis protan",
+   "produced": 0.10416666666666666,
+   "reported": 0.104,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.LDA.mean",
+   "desc": "tab:loco_decoders hV4 LDA control mean",
+   "produced": 0.27976190476190477,
+   "reported": 0.28,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.LDA.sd",
+   "desc": "tab:loco_decoders hV4 LDA control SD",
+   "produced": 0.14426595351612018,
+   "reported": 0.144,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.LDA.deutan",
+   "desc": "tab:loco_decoders hV4 LDA deutan",
+   "produced": 0.14583333333333334,
+   "reported": 0.146,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.LDA.protan",
+   "desc": "tab:loco_decoders hV4 LDA protan",
+   "produced": 0.22916666666666666,
+   "reported": 0.229,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.SVM.mean",
+   "desc": "tab:loco_decoders hV4 SVM control mean",
+   "produced": 0.2529761904761905,
+   "reported": 0.253,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.SVM.sd",
+   "desc": "tab:loco_decoders hV4 SVM control SD",
+   "produced": 0.1258240036486675,
+   "reported": 0.126,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.SVM.deutan",
+   "desc": "tab:loco_decoders hV4 SVM deutan",
+   "produced": 0.16666666666666666,
+   "reported": 0.167,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.SVM.protan",
+   "desc": "tab:loco_decoders hV4 SVM protan",
+   "produced": 0.20833333333333331,
+   "reported": 0.208,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.Ridge.mean",
+   "desc": "tab:loco_decoders hV4 Ridge control mean",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.Ridge.sd",
+   "desc": "tab:loco_decoders hV4 Ridge control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.Ridge.deutan",
+   "desc": "tab:loco_decoders hV4 Ridge deutan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.Ridge.protan",
+   "desc": "tab:loco_decoders hV4 Ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.MLP.mean",
+   "desc": "tab:loco_decoders hV4 MLP control mean",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.MLP.sd",
+   "desc": "tab:loco_decoders hV4 MLP control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.MLP.deutan",
+   "desc": "tab:loco_decoders hV4 MLP deutan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.MLP.protan",
+   "desc": "tab:loco_decoders hV4 MLP protan",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.KernelRidge.mean",
+   "desc": "tab:loco_decoders hV4 Kernel ridge control mean",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.KernelRidge.sd",
+   "desc": "tab:loco_decoders hV4 Kernel ridge control SD",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.KernelRidge.deutan",
+   "desc": "tab:loco_decoders hV4 Kernel ridge deutan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.T4.hV4.KernelRidge.protan",
+   "desc": "tab:loco_decoders hV4 Kernel ridge protan",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.63",
+   "desc": "tab:loco_decoders | LOCO six decoders x 4 ROIs: control mean, SD, deutan, protan",
+   "produced": null,
+   "reported": "96 cells, see 01.T4.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "01.64",
+   "desc": "S5 \u00b63 | hue-channel basis exceeds 0.25 at hV4, V1 and V2 (widest margin at hV4)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.65",
+   "desc": "S5 \u00b63 | classifiers remain at or below their 0.375 chance level at every ROI",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "le",
+   "reason": null
+  },
+  {
+   "id": "01.66",
+   "desc": "S5 \u00b64 | kernel ridge returns exactly 0.000 in every participant and ROI",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.67",
+   "desc": "S7 | fixed-reference hue-channel LORO accuracy (pooled over ten participants incl. sub-10, as printed)",
+   "produced": 0.5447916666666666,
+   "reported": 0.545,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.68",
+   "desc": "S7 | nested re-estimation raises it to (same pool)",
+   "produced": 0.578125,
+   "reported": 0.578,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.68b",
+   "desc": "S7 | the increase persists with sub-10 excluded (nine participants)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.69",
+   "desc": "S17 | lowest CVD classification cell over both spaces",
+   "produced": 0.3125,
+   "reported": 0.312,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.70",
+   "desc": "S17 | Procrustes gives the higher control classification mean at all four ROIs",
+   "produced": 4,
+   "reported": 4,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.71",
+   "desc": "S17 | and the higher control interpolation mean at three of four",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.72",
+   "desc": "S17 | Procrustes higher in 26 of 36 participant-by-region classification cells",
+   "produced": 26,
+   "reported": 26,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "01.73",
+   "desc": "S17 | SRM V1 classification d_cc, deutan",
+   "produced": 0.592156525463792,
+   "reported": 0.59,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.74",
+   "desc": "S17 | SRM V1 classification d_cc, protan",
+   "produced": 0.7895420339517231,
+   "reported": 0.79,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.75",
+   "desc": "S17 | Procrustes V1 classification d_cc, both",
+   "produced": -0.25301969999050333,
+   "reported": -0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "01.76",
+   "desc": "S6 | GCV searches seven penalties from 1e-3 to 1e3",
+   "produced": [
+    7,
+    0.001,
+    1000.0
+   ],
+   "reported": [
+    7,
+    0.001,
+    1000.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  }
+ ]
+}

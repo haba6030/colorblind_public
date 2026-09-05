@@ -1,0 +1,121 @@
+{
+ "stage": "06_filter",
+ "counts": {
+  "ok": 10,
+  "near": 0,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 0,
+  "table": 0
+ },
+ "checks": [
+  {
+   "id": "06.01",
+   "desc": "Results \u00a76 | deutan fitted (beta_s, beta_c)",
+   "produced": [
+    6.0,
+    -42.0
+   ],
+   "reported": [
+    6.0,
+    -42.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "06.02",
+   "desc": "Results \u00a76 | deutan theta_conf",
+   "produced": 150.0,
+   "reported": 150.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "06.03",
+   "desc": "Results \u00a76 | deutan mean per-hue correction |delta theta| (degrees)",
+   "produced": 26.283969800549002,
+   "reported": 26.3,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "06.04",
+   "desc": "Results \u00a76 | protan fitted (beta_s, beta_c)",
+   "produced": [
+    2.0,
+    24.0
+   ],
+   "reported": [
+    2.0,
+    24.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "06.05",
+   "desc": "Results \u00a76 | protan theta_conf",
+   "produced": 16.0,
+   "reported": 16.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "06.06",
+   "desc": "Results \u00a76 | protan mean |delta theta| (degrees)",
+   "produced": 16.203372945287562,
+   "reported": 16.2,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "06.07",
+   "desc": "Methods filter | eight hues per participant",
+   "produced": [
+    8,
+    8
+   ],
+   "reported": [
+    8,
+    8
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "06.08",
+   "desc": "Methods filter | every hue resolves to within 1e-3 degrees (deutan, recomputed)",
+   "produced": 2.0526158550637774e-10,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "06.09",
+   "desc": "Methods filter | every hue resolves to within 1e-3 degrees (protan, recomputed)",
+   "produced": 1.5336354408646002e-10,
+   "reported": 0.001,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "06.10",
+   "desc": "Methods filter | stored per-hue corrections equal pre-image minus stimulus angle",
+   "produced": 0.0,
+   "reported": 1e-06,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+  "subject": "sub-09",
+  "cvd_type": "protan",
+  "model": "2component_closure_A13",
+  "source_note": "\u03b3GB|RDMV1|noLOCO, 2-comp, s10b_v6_pca_rdm. \u00a70 override confirmed 2026-05-30.",
+  "phase_a_params": {
+    "beta_s": 2.0,
+    "beta_c": 24.0
+  },
+  "theta_conf_deg": 16.0,
+  "stimulus_angles_cielab": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+  ],
+  "color_names": [
+    "color_1",
+    "color_2",
+    "color_3",
+    "color_4",
+    "color_5",
+    "color_6",
+    "color_7",
+    "color_8"
+  ],
+  "hue_names": [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "cyan",
+    "blue",
+    "purple",
+    "magenta"
+  ],
+  "preimage_angles_cielab": [
+    -19.006685671475527,
+    20.373607806898676,
+    76.09203642330445,
+    151.00140135805006,
+    204.56382752390246,
+    243.11618460025073,
+    276.1105723733472,
+    307.7060437345224
+  ],
+  "delta_theta_apply_deg": [
+    -19.006685671475537,
+    -24.62639219310131,
+    -13.90796357669555,
+    16.00140135805006,
+    24.56382752390246,
+    18.116184600250733,
+    6.110572373347225,
+    -7.293956265477618
+  ],
+  "perceived_angles_check": [
+    7.627320997016795e-11,
+    45.0,
+    90.00000000001656,
+    135.00000000009024,
+    180.0,
+    224.99999999995688,
+    270.00000000009203,
+    315.00000000015336
+  ],
+  "residuals_deg": [
+    7.628386811120436e-11,
+    0.0,
+    1.6541434888495132e-11,
+    9.023892744153272e-11,
+    0.0,
+    -4.311573320592288e-11,
+    9.202949513564818e-11,
+    1.5336354408646002e-10
+  ],
+  "max_residual_deg": 1.5336354408646002e-10,
+  "exact_status": "8/8 exact (residual < 1e-3\u00b0)",
+  "interface_note": "delta_theta_apply_deg[i] = rotation in CIElab a*-b* plane to apply to RENDERED color_{i+1} by INDEX. direction=preimage (correction). Subject perceives canonical hue after CVD distortion.",
+  "forward_provenance": "scripts/two_comp.py:forward_2comp (closure A13 raw nominal-\u03b8). DO NOT use forward_models/two_component.py frozen variant."
+}

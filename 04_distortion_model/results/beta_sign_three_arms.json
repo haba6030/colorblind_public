@@ -1,0 +1,91 @@
+{
+  "prespec": "U2_BETA_SIGN_PRESPEC.md \u00a76 \u2014 primary judgment = sign of beta_c; magnitude not used (2-comp = descriptive embedding)",
+  "grid": {
+    "beta_s": [
+      0,
+      50,
+      2
+    ],
+    "beta_c": [
+      -50,
+      50,
+      2
+    ]
+  },
+  "n_resamples": 300,
+  "subjects": {
+    "sub-08": {
+      "family": "deutan",
+      "arms": {
+        "baseline": {
+          "combo": "\u03b3OY|RDMV2|noLOCO",
+          "beta_c_median": -42.0,
+          "beta_s_median": 6.0,
+          "p_beta_c_negative": 1.0,
+          "frac_beta_c_at_lower_edge": 0.0,
+          "frac_beta_c_at_upper_edge": 0.0,
+          "frac_beta_s_at_edge": 0.093,
+          "train_loss_median": -2.8924
+        },
+        "motreg": {
+          "combo": "\u03b3OY|RDMV2|noLOCO",
+          "beta_c_median": -48.0,
+          "beta_s_median": 20.0,
+          "p_beta_c_negative": 1.0,
+          "frac_beta_c_at_lower_edge": 0.363,
+          "frac_beta_c_at_upper_edge": 0.0,
+          "frac_beta_s_at_edge": 0.367,
+          "train_loss_median": -2.6911
+        },
+        "hmc_v2": {
+          "combo": "\u03b3OY|RDMV2|noLOCO",
+          "beta_c_median": -46.0,
+          "beta_s_median": 20.0,
+          "p_beta_c_negative": 0.947,
+          "frac_beta_c_at_lower_edge": 0.283,
+          "frac_beta_c_at_upper_edge": 0.0,
+          "frac_beta_s_at_edge": 0.437,
+          "train_loss_median": -2.2335
+        }
+      },
+      "sign_preserved": true
+    },
+    "sub-09": {
+      "family": "protan",
+      "arms": {
+        "baseline": {
+          "combo": "\u03b3ALL|RDMV1|noLOCO",
+          "beta_c_median": 24.0,
+          "beta_s_median": 2.0,
+          "p_beta_c_negative": 0.0,
+          "frac_beta_c_at_lower_edge": 0.0,
+          "frac_beta_c_at_upper_edge": 0.0,
+          "frac_beta_s_at_edge": 0.0,
+          "train_loss_median": -1.6807
+        },
+        "motreg": {
+          "combo": "\u03b3ALL|RDMV1|noLOCO",
+          "beta_c_median": -24.0,
+          "beta_s_median": 22.0,
+          "p_beta_c_negative": 1.0,
+          "frac_beta_c_at_lower_edge": 0.0,
+          "frac_beta_c_at_upper_edge": 0.0,
+          "frac_beta_s_at_edge": 0.0,
+          "train_loss_median": -1.7301
+        },
+        "hmc_v2": {
+          "combo": "\u03b3ALL|RDMV1|noLOCO",
+          "beta_c_median": -12.0,
+          "beta_s_median": 24.0,
+          "p_beta_c_negative": 0.793,
+          "frac_beta_c_at_lower_edge": 0.0,
+          "frac_beta_c_at_upper_edge": 0.107,
+          "frac_beta_s_at_edge": 0.0,
+          "train_loss_median": -1.4824
+        }
+      },
+      "sign_preserved": false
+    }
+  },
+  "verdict": "Branch B (U2_BETA_SIGN_PRESPEC \u00a76): deutan beta_c sign preserved on all three arms; protan reverses on both perturbation arms."
+}

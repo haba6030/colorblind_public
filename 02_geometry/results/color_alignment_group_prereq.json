@@ -1,0 +1,188 @@
+{
+ "meta": {
+  "generated": "2026-08-05 14:09",
+  "script": "analysis/validation/scripts/color_alignment_group_prereq.py",
+  "n_perm": 5000,
+  "seed": 42,
+  "min_voxels": 20,
+  "space": "native voxel (정렬 절차 없음 — 적합된 직교변환의 라벨 흡수 교란 없음)",
+  "statistic": "mean pairwise RDM correlation over all HC pairs; 피험자별 독립 색 라벨 순열 귀무",
+  "note": "개인 내 색 decodability 는 논문에서 이미 확인됨. 여기서 묻는 것은 피험자 간 색 대응."
+ },
+ "results": {
+  "V1": {
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "n_pairs": 21,
+   "r_true": 0.0331,
+   "null": {
+    "mean": 0.0002,
+    "sd": 0.0497,
+    "pct95": 0.0911
+   },
+   "z_group": 0.662,
+   "p_permutation": 0.2266,
+   "hc_to_rest_r": {
+    "sub-01": 0.0083,
+    "sub-02": 0.1116,
+    "sub-03": 0.1039,
+    "sub-04": 0.1049,
+    "sub-05": 0.0381,
+    "sub-06": -0.1086,
+    "sub-07": -0.0263
+   },
+   "cvd": {
+    "sub-08": {
+     "cvd_type": "deutan",
+     "mean_r_to_hc": 0.1339,
+     "t_crawford_howell": 1.146,
+     "p_one_tailed_lower": 0.8523
+    },
+    "sub-09": {
+     "cvd_type": "protan",
+     "mean_r_to_hc": -0.1032,
+     "t_crawford_howell": -1.55,
+     "p_one_tailed_lower": 0.0861
+    }
+   }
+  },
+  "V2": {
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "n_pairs": 21,
+   "r_true": -0.0079,
+   "null": {
+    "mean": -0.0003,
+    "sd": 0.0464,
+    "pct95": 0.0831
+   },
+   "z_group": -0.163,
+   "p_permutation": 0.5203,
+   "hc_to_rest_r": {
+    "sub-01": -0.0317,
+    "sub-02": 0.0646,
+    "sub-03": -0.1345,
+    "sub-04": 0.0301,
+    "sub-05": -0.0803,
+    "sub-06": 0.0525,
+    "sub-07": 0.0439
+   },
+   "cvd": {
+    "sub-08": {
+     "cvd_type": "deutan",
+     "mean_r_to_hc": 0.192,
+     "t_crawford_howell": 2.452,
+     "p_one_tailed_lower": 0.9752
+    },
+    "sub-09": {
+     "cvd_type": "protan",
+     "mean_r_to_hc": 0.0936,
+     "t_crawford_howell": 1.245,
+     "p_one_tailed_lower": 0.8702
+    }
+   }
+  },
+  "V3": {
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "n_pairs": 21,
+   "r_true": 0.0102,
+   "null": {
+    "mean": 0.0003,
+    "sd": 0.0513,
+    "pct95": 0.0945
+   },
+   "z_group": 0.193,
+   "p_permutation": 0.3765,
+   "hc_to_rest_r": {
+    "sub-01": -0.0837,
+    "sub-02": 0.0164,
+    "sub-03": -0.0818,
+    "sub-04": 0.0507,
+    "sub-05": 0.0474,
+    "sub-06": -0.0129,
+    "sub-07": 0.1353
+   },
+   "cvd": {
+    "sub-08": {
+     "cvd_type": "deutan",
+     "mean_r_to_hc": 0.1286,
+     "t_crawford_howell": 1.419,
+     "p_one_tailed_lower": 0.8972
+    },
+    "sub-09": {
+     "cvd_type": "protan",
+     "mean_r_to_hc": 0.1832,
+     "t_crawford_howell": 2.075,
+     "p_one_tailed_lower": 0.9583
+    }
+   }
+  },
+  "hV4": {
+   "n_hc": 6,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06"
+   ],
+   "n_pairs": 15,
+   "r_true": -0.0457,
+   "null": {
+    "mean": -0.0019,
+    "sd": 0.0677,
+    "pct95": 0.1231
+   },
+   "z_group": -0.647,
+   "p_permutation": 0.7197,
+   "hc_to_rest_r": {
+    "sub-01": -0.154,
+    "sub-02": -0.0118,
+    "sub-03": -0.0104,
+    "sub-04": 0.0849,
+    "sub-05": -0.1405,
+    "sub-06": -0.0422
+   },
+   "cvd": {
+    "sub-08": {
+     "cvd_type": "deutan",
+     "mean_r_to_hc": 0.1234,
+     "t_crawford_howell": 1.746,
+     "p_one_tailed_lower": 0.9293
+    },
+    "sub-09": {
+     "cvd_type": "protan",
+     "mean_r_to_hc": 0.0277,
+     "t_crawford_howell": 0.758,
+     "p_one_tailed_lower": 0.7587
+    }
+   }
+  }
+ }
+}

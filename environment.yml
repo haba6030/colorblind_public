@@ -1,0 +1,39 @@
+# colorblind_public — local analysis environment (copied from the development repository)
+# Tested on: macOS (Apple Silicon & Intel), Ubuntu 22.04
+#
+# Install:
+#   conda env create -f environment_mac.yml
+#   conda activate colorblind
+#
+# BrainIAK requires MPI. On macOS install OpenMPI first:
+#   brew install open-mpi
+# On Linux:
+#   sudo apt install libopenmpi-dev   # or equivalent
+#
+# After activation, verify:
+#   mpirun -np 1 python -c "from brainiak.funcalign.srm import SRM; print('BrainIAK OK')"
+
+name: colorblind
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  # Core scientific stack
+  - numpy>=1.24
+  - scipy>=1.13
+  - scikit-learn>=1.6
+  - matplotlib>=3.9
+  - pandas>=2.3
+  - seaborn>=0.13
+  - statsmodels>=0.14
+  - joblib>=1.5
+  - pillow>=10
+  - psutil>=5.9
+  # Neuroimaging
+  - nibabel>=5.3
+  - nilearn>=0.12
+  # MPI (required for BrainIAK SRM)
+  - mpi4py>=4.0
+  - pip:
+    - brainiak>=0.12

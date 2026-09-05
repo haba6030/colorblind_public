@@ -1,0 +1,166 @@
+{
+ "stage": "00_preprocessing",
+ "counts": {
+  "ok": 14,
+  "near": 0,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 3,
+  "table": 0
+ },
+ "checks": [
+  {
+   "id": "00.01",
+   "desc": "S2 \u00b61 | mean FD, nine analysed participants (mm)",
+   "produced": 0.3183564077960303,
+   "reported": 0.318,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.02",
+   "desc": "S2 \u00b61 | SD of FD, nine participants",
+   "produced": 0.044221075693051455,
+   "reported": 0.044,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.03",
+   "desc": "S2 \u00b61 | mean FD, controls",
+   "produced": 0.31277592065490883,
+   "reported": 0.313,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.04",
+   "desc": "S2 \u00b61 | SD of FD, controls",
+   "produced": 0.042139436418212314,
+   "reported": 0.042,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.05",
+   "desc": "S2 \u00b61 | mean FD, CVD",
+   "produced": 0.33788811278995556,
+   "reported": 0.338,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.06",
+   "desc": "S2 \u00b61 | SD of FD, CVD",
+   "produced": 0.04576264443013736,
+   "reported": 0.046,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.07",
+   "desc": "S2 \u00b61 | percentage of volumes with FD > 0.5 mm",
+   "produced": 16.24358974358974,
+   "reported": 16.2,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.08",
+   "desc": "S2 \u00b61 | smallest tSNR reduction over ROIs (%)",
+   "produced": 1.6620553996073266,
+   "reported": 1.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.09",
+   "desc": "S2 \u00b61 | largest tSNR reduction over ROIs (%)",
+   "produced": 2.6947956083931457,
+   "reported": 2.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.10",
+   "desc": "S3 | mean ROI coverage (%)",
+   "produced": 83.47125758510506,
+   "reported": 83.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.11",
+   "desc": "S3 | SD of ROI coverage (%)",
+   "produced": 22.654256063086407,
+   "reported": 22.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.12",
+   "desc": "S3 | ROI voxels with reliable stimulus-evoked responses (%)",
+   "produced": 99.53703703703704,
+   "reported": 99.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.13",
+   "desc": "S3 | lowest coverage in the sample (%)",
+   "produced": 30.804209234074193,
+   "reported": 30.8,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "00.14",
+   "desc": "S3 | number of analysed participants",
+   "produced": 9,
+   "reported": 9,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "00.15",
+   "desc": "S2 'Susceptibility distortion' | field-map displacement within ROIs 0.01-0.76 voxels (0.02-1.52 mm); within-ROI variation 0.05-0.21 voxels (0.38 in one participant)",
+   "produced": null,
+   "reported": "no committed artifact (server field-map computation)",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "no committed artifact (server field-map computation)"
+  },
+  {
+   "id": "00.16",
+   "desc": "S2 'Registration' | run-to-run displacement of the MI solution 0.9-4.2 mm; defacing moved it by 1.9 mm (deutan) and 9.4 mm (protan)",
+   "produced": null,
+   "reported": "no committed artifact (server registration logs)",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "no committed artifact (server registration logs)"
+  },
+  {
+   "id": "00.17",
+   "desc": "S2 'Registration' | BBR snapped the slab about 10 mm off on visual inspection; MI within about 1 mm",
+   "produced": null,
+   "reported": "visual criterion; bbr_vs_mi_displacement.json gives centroid displacement for three participants (descriptive)",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "visual criterion; bbr_vs_mi_displacement.json gives centroid displacement for three participants (descriptive)"
+  }
+ ]
+}

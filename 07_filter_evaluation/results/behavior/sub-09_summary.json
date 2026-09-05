@@ -1,0 +1,56 @@
+{
+  "subject": "sub-09",
+  "jnd_mean_by_condition": {
+    "baseline": 0.0972,
+    "window": 0.1151,
+    "optimal": 0.1088
+  },
+  "jnd_opt_lt_win_npairs": 5,
+  "jnd_opt_lt_base_npairs": 6,
+  "wilcoxon": {
+    "wilcoxon_opt_vs_win": {
+      "stat": 13.0,
+      "p": 0.546875
+    },
+    "wilcoxon_opt_vs_base": {
+      "stat": 9.0,
+      "p": 0.25
+    },
+    "wilcoxon_win_vs_base": {
+      "stat": 13.0,
+      "p": 0.546875
+    }
+  },
+  "rsvp": {
+    "baseline": {
+      "acc": 1.0,
+      "n": 64,
+      "n_correct": 64,
+      "errors": []
+    },
+    "window": {
+      "acc": 0.859375,
+      "n": 64,
+      "n_correct": 55,
+      "errors": [
+        "green->cyan",
+        "red->orange",
+        "blue->green",
+        "green->cyan",
+        "green->cyan",
+        "red->orange",
+        "green->cyan",
+        "green->cyan",
+        "green->cyan"
+      ]
+    },
+    "optimal": {
+      "acc": 0.984375,
+      "n": 64,
+      "n_correct": 63,
+      "errors": [
+        "yellow->orange"
+      ]
+    }
+  }
+}

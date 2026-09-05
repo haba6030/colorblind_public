@@ -1,0 +1,11 @@
+{
+  "generated": "2026-05-30",
+  "purpose": "exp2 Optimal-condition pre-image filters",
+  "override_note": "\u00a70 override confirmed by user for tentative adoption; S7 results pending re-validation",
+  "subjects": [
+    "sub-08",
+    "sub-09"
+  ],
+  "model": "2component_closure_A13",
+  "forward_source": "scripts/two_comp.py:forward_2comp"
+}

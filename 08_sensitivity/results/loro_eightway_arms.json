@@ -1,0 +1,128 @@
+{
+ "metric": "LORO eight-way classification accuracy (ForwardEncoding acc_exact, Procrustes-aligned, 6 folds)",
+ "chance": 0.125,
+ "test": "Crawford-Howell two-tailed (hypothesis = preservation)",
+ "source_driver": "analysis/phase3_decoder_comparing/model_comparison_validation/scripts/loro_baseline.py",
+ "arms": {
+  "Primary": {
+   "V1": {
+    "hc_mean": 0.5804,
+    "hc_sd": 0.0706,
+    "deutan": {
+     "accuracy": 0.5625,
+     "t": -0.237,
+     "p_two_tailed": 0.8208
+    },
+    "protan": {
+     "accuracy": 0.5625,
+     "t": -0.237,
+     "p_two_tailed": 0.8208
+    }
+   },
+   "V2": {
+    "hc_mean": 0.6071,
+    "hc_sd": 0.1131,
+    "deutan": {
+     "accuracy": 0.5208,
+     "t": -0.714,
+     "p_two_tailed": 0.5022
+    },
+    "protan": {
+     "accuracy": 0.5625,
+     "t": -0.369,
+     "p_two_tailed": 0.7247
+    }
+   },
+   "V3": {
+    "hc_mean": 0.5744,
+    "hc_sd": 0.1127,
+    "deutan": {
+     "accuracy": 0.3958,
+     "t": -1.482,
+     "p_two_tailed": 0.189
+    },
+    "protan": {
+     "accuracy": 0.4583,
+     "t": -0.963,
+     "p_two_tailed": 0.3727
+    }
+   },
+   "hV4": {
+    "hc_mean": 0.4881,
+    "hc_sd": 0.1048,
+    "deutan": {
+     "accuracy": 0.375,
+     "t": -1.01,
+     "p_two_tailed": 0.3515
+    },
+    "protan": {
+     "accuracy": 0.375,
+     "t": -1.01,
+     "p_two_tailed": 0.3515
+    }
+   }
+  },
+  "Realignment": {
+   "V1": {
+    "hc_mean": 0.503,
+    "hc_sd": 0.1331,
+    "deutan": {
+     "accuracy": 0.2292,
+     "t": -1.924,
+     "p_two_tailed": 0.1026
+    },
+    "protan": {
+     "accuracy": 0.5208,
+     "t": 0.126,
+     "p_two_tailed": 0.9042
+    }
+   },
+   "V2": {
+    "hc_mean": 0.503,
+    "hc_sd": 0.0846,
+    "deutan": {
+     "accuracy": 0.4792,
+     "t": -0.263,
+     "p_two_tailed": 0.8011
+    },
+    "protan": {
+     "accuracy": 0.3333,
+     "t": -1.877,
+     "p_two_tailed": 0.1097
+    }
+   },
+   "V3": {
+    "hc_mean": 0.5417,
+    "hc_sd": 0.1443,
+    "deutan": {
+     "accuracy": 0.4792,
+     "t": -0.405,
+     "p_two_tailed": 0.6995
+    },
+    "protan": {
+     "accuracy": 0.5,
+     "t": -0.27,
+     "p_two_tailed": 0.7962
+    }
+   },
+   "hV4": {
+    "hc_mean": 0.5685,
+    "hc_sd": 0.1114,
+    "deutan": {
+     "accuracy": 0.5833,
+     "t": 0.125,
+     "p_two_tailed": 0.9046
+    },
+    "protan": {
+     "accuracy": 0.3958,
+     "t": -1.45,
+     "p_two_tailed": 0.1972
+    }
+   }
+  }
+ },
+ "min_cvd_cell": {
+  "Primary": 0.375,
+  "Realignment": 0.2292
+ }
+}

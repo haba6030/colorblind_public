@@ -1,0 +1,85 @@
+{
+  "subject": "sub-08",
+  "cvd_type": "deutan",
+  "model": "2component_closure_A13",
+  "source_note": "S08-srm-robust (\u03b3OY|RDMV2|noLOCO), 2-comp, s17 LOO median, IQR(bs=5,bc=4). \u00a70 override confirmed 2026-05-30.",
+  "phase_a_params": {
+    "beta_s": 6.0,
+    "beta_c": -42.0
+  },
+  "theta_conf_deg": 150.0,
+  "stimulus_angles_cielab": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+  ],
+  "color_names": [
+    "color_1",
+    "color_2",
+    "color_3",
+    "color_4",
+    "color_5",
+    "color_6",
+    "color_7",
+    "color_8"
+  ],
+  "hue_names": [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "cyan",
+    "blue",
+    "purple",
+    "magenta"
+  ],
+  "preimage_angles_cielab": [
+    -37.91325455658943,
+    12.889550495493562,
+    121.99252131739165,
+    172.94077499737554,
+    206.07684048133152,
+    234.1464897903162,
+    260.924869077168,
+    288.98370316595077
+  ],
+  "delta_theta_apply_deg": [
+    -37.913254556589436,
+    -32.11044950450645,
+    31.992521317391663,
+    37.94077499737554,
+    26.076840481331516,
+    9.146489790316195,
+    -9.075130922831988,
+    -26.01629683404923
+  ],
+  "perceived_angles_check": [
+    -2.1316282072803006e-14,
+    44.99999999999986,
+    90.00000000000017,
+    135.0,
+    180.0000000001918,
+    225.0,
+    270.0,
+    314.99999999979474
+  ],
+  "residuals_deg": [
+    -2.842170943040401e-14,
+    -1.4210854715202004e-13,
+    1.7053025658242404e-13,
+    0.0,
+    1.9178969523636624e-10,
+    0.0,
+    0.0,
+    -2.0526158550637774e-10
+  ],
+  "max_residual_deg": 2.0526158550637774e-10,
+  "exact_status": "8/8 exact (residual < 1e-3\u00b0)",
+  "interface_note": "delta_theta_apply_deg[i] = rotation in CIElab a*-b* plane to apply to RENDERED color_{i+1} by INDEX. direction=preimage (correction). Subject perceives canonical hue after CVD distortion.",
+  "forward_provenance": "scripts/two_comp.py:forward_2comp (closure A13 raw nominal-\u03b8). DO NOT use forward_models/two_component.py frozen variant."
+}

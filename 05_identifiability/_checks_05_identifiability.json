@@ -1,0 +1,364 @@
+{
+ "stage": "05_identifiability",
+ "counts": {
+  "ok": 35,
+  "near": 0,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 0,
+  "table": 0
+ },
+ "checks": [
+  {
+   "id": "05.01",
+   "desc": "S12 \u00b63 | 7 donors x 20 draws = 140 samples per candidate",
+   "produced": [
+    7,
+    20
+   ],
+   "reported": [
+    7,
+    20
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "05.02",
+   "desc": "tab:identifiability | deutan f_10",
+   "produced": 0.2642857142857143,
+   "reported": 0.26,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.03",
+   "desc": "tab:identifiability | protan f_10",
+   "produced": 0.13571428571428573,
+   "reported": 0.14,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.04",
+   "desc": "tab:identifiability | both fail the f_10 >= 0.5 criterion",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "05.05",
+   "desc": "tab:identifiability | deutan bias on beta_s (+16, median over donors)",
+   "produced": 16.0,
+   "reported": 16.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.06",
+   "desc": "tab:identifiability | deutan bias on beta_c (-4.7, mean over donors; the donor median is -4.0)",
+   "produced": -4.714285714285714,
+   "reported": -4.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.07",
+   "desc": "tab:identifiability | protan bias on beta_s (+11)",
+   "produced": 11.0,
+   "reported": 11.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.08",
+   "desc": "tab:identifiability | protan bias on beta_c (-27)",
+   "produced": -27.0,
+   "reported": -27.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.09",
+   "desc": "S12 \u00b64 | deutan dominant-axis bias 4.7 against 16 on the non-dominant axis",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "05.10",
+   "desc": "tab:identifiability | deutan median |beta_s| (IQR)",
+   "produced": [
+    22.0,
+    40.0
+   ],
+   "reported": [
+    22.0,
+    40.0
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "05.11",
+   "desc": "tab:identifiability | deutan median |beta_c| (IQR)",
+   "produced": [
+    26.0,
+    10.5
+   ],
+   "reported": [
+    26.0,
+    10.5
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "05.12",
+   "desc": "tab:identifiability | deutan f_origin",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.13",
+   "desc": "tab:identifiability | protan median |beta_s| (IQR)",
+   "produced": [
+    16.0,
+    17.5
+   ],
+   "reported": [
+    16.0,
+    17.5
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "05.14",
+   "desc": "tab:identifiability | protan median |beta_c| (IQR)",
+   "produced": [
+    24.0,
+    9.0
+   ],
+   "reported": [
+    24.0,
+    9.0
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "05.15",
+   "desc": "tab:identifiability | protan f_origin",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.16",
+   "desc": "S12 \u00b64 | effective uncertainty about 20 degrees on beta_s and 25 on beta_c (means of the two medians)",
+   "produced": [
+    19,
+    25
+   ],
+   "reported": [
+    19,
+    25
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "05.17",
+   "desc": "tab:identifiability | deutan Test 2b rank_dist",
+   "produced": 0.875,
+   "reported": 0.875,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.18",
+   "desc": "tab:identifiability | protan Test 2b rank_dist",
+   "produced": 0.875,
+   "reported": 0.875,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.19",
+   "desc": "tab:identifiability | deutan Test 2c real loss",
+   "produced": -2.8923767566919483,
+   "reported": -2.892,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.20",
+   "desc": "tab:identifiability | deutan Test 2c 5% cut",
+   "produced": -3.1358200884887997,
+   "reported": -3.136,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.21",
+   "desc": "tab:identifiability | deutan Test 2c p",
+   "produced": 0.16683316683316685,
+   "reported": 0.167,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.22",
+   "desc": "tab:identifiability | protan Test 2c real loss",
+   "produced": -1.6806559032848642,
+   "reported": -1.681,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.23",
+   "desc": "tab:identifiability | protan Test 2c 5% cut",
+   "produced": -3.0525867198909524,
+   "reported": -3.053,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.24",
+   "desc": "tab:identifiability | protan Test 2c p",
+   "produced": 0.47052947052947053,
+   "reported": 0.471,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.25",
+   "desc": "S12 \u00b61 | N = 1,000 permutations",
+   "produced": 1000,
+   "reported": 1000,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "05.26",
+   "desc": "S12 \u00b61 | BH over six checks: none significant",
+   "produced": 0,
+   "reported": 0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "05.27",
+   "desc": "S13 \u00b61 | deutan ||beta||",
+   "produced": 42.42640687119285,
+   "reported": 42.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.28",
+   "desc": "S13 \u00b61 | deutan control range low",
+   "produced": 30.463092423455635,
+   "reported": 30.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.29",
+   "desc": "S13 \u00b61 | deutan control range high",
+   "produced": 58.137767414994535,
+   "reported": 58.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.30",
+   "desc": "S13 \u00b61 | deutan control mean",
+   "produced": 49.138021121075944,
+   "reported": 49.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.31",
+   "desc": "S13 \u00b61 | protan ||beta||",
+   "produced": 24.08318915758459,
+   "reported": 24.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.32",
+   "desc": "S13 \u00b61 | protan control range low",
+   "produced": 23.40939982143925,
+   "reported": 23.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.33",
+   "desc": "S13 \u00b61 | protan control range high",
+   "produced": 55.46169849544819,
+   "reported": 55.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.34",
+   "desc": "S13 \u00b61 | protan control mean",
+   "produced": 35.66627143795189,
+   "reported": 35.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "05.35",
+   "desc": "S13 \u00b61 | both estimates fall inside the control range",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  }
+ ]
+}

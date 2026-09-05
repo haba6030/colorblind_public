@@ -1,0 +1,196 @@
+{
+  "analysis": "jnd_noise_floor",
+  "standard": "patterson2022 (effect vs measurement variability)",
+  "noise_metric": "abs(staircase_0 - staircase_1) per hue pair, same session",
+  "caveat": "within-session floor; excludes session-to-session drift that patterson2022 between-baseline SD includes -> ratios are optimistic upper bounds",
+  "reference_patterson2022": {
+    "test_retest_sd_units": 1.91,
+    "enchroma_mean_effect": 1.16,
+    "enchroma_ratio": 0.61,
+    "vino_mean_effect": 8.03,
+    "vino_ratio": 4.2
+  },
+  "hc": {
+    "sub-01": {
+      "noise_floor": {
+        "mean": 0.035625000000000004,
+        "median": 0.03000000000000002,
+        "min": 0.0049999999999999906,
+        "max": 0.07
+      }
+    },
+    "sub-02": {
+      "noise_floor": {
+        "mean": 0.0191625,
+        "median": 0.019149999999999997,
+        "min": 0.0,
+        "max": 0.043300000000000005
+      }
+    },
+    "sub-03": {
+      "noise_floor": {
+        "mean": 0.025625,
+        "median": 0.02499999999999998,
+        "min": 0.0,
+        "max": 0.07500000000000001
+      }
+    },
+    "sub-04": {
+      "noise_floor": {
+        "mean": 0.015625000000000007,
+        "median": 0.010000000000000002,
+        "min": 0.0,
+        "max": 0.04500000000000001
+      }
+    },
+    "sub-05": {
+      "noise_floor": {
+        "mean": 0.039999999999999994,
+        "median": 0.02,
+        "min": 0.0,
+        "max": 0.19
+      }
+    },
+    "sub-06": {
+      "noise_floor": {
+        "mean": 0.029162500000000004,
+        "median": 0.012500000000000011,
+        "min": 0.0,
+        "max": 0.13
+      }
+    },
+    "sub-07": {
+      "noise_floor": {
+        "mean": 0.0122875,
+        "median": 0.0025000000000000005,
+        "min": 0.0,
+        "max": 0.05829999999999999
+      }
+    },
+    "pooled": {
+      "n_subjects": 7,
+      "noise_floor": {
+        "mean": 0.02535535714285714,
+        "median": 0.015000000000000006,
+        "min": 0.0,
+        "max": 0.19
+      }
+    }
+  },
+  "cvd": {
+    "sub-08": {
+      "noise_floor_by_condition": {
+        "baseline": {
+          "mean": 0.014999999999999993,
+          "median": 0.0075,
+          "min": 0.0,
+          "max": 0.05999999999999994
+        },
+        "window": {
+          "mean": 0.0264625,
+          "median": 0.025849999999999998,
+          "min": 0.0049999999999999975,
+          "max": 0.04999999999999999
+        },
+        "optimal": {
+          "mean": 0.026250000000000002,
+          "median": 0.01750000000000001,
+          "min": 0.006699999999999998,
+          "max": 0.09000000000000001
+        }
+      },
+      "noise_floor_pooled_mean": 0.02257083333333333,
+      "change_vs_baseline": {
+        "optimal": {
+          "mean_abs_change": 0.1375,
+          "ratio_to_floor": 6.091932804135131,
+          "n_pairs_exceeding_floor": 6,
+          "n_pairs": 8,
+          "per_pair": {
+            "orange-yellow": 0.7941500000000001,
+            "yellow-green": 0.12250000000000003,
+            "green-blue": 0.025,
+            "red-orange": 0.07250000000000001,
+            "blue-purple": 0.035,
+            "yellow-purple": 0.0325,
+            "cyan-magenta": 0.003349999999999999,
+            "red-cyan": 0.015
+          }
+        },
+        "window": {
+          "mean_abs_change": 0.15426875000000004,
+          "ratio_to_floor": 6.834871700203067,
+          "n_pairs_exceeding_floor": 6,
+          "n_pairs": 8,
+          "per_pair": {
+            "orange-yellow": 0.7450000000000001,
+            "yellow-green": 0.19500000000000003,
+            "green-blue": 0.052500000000000005,
+            "red-orange": 0.1225,
+            "blue-purple": 0.04749999999999999,
+            "yellow-purple": 0.045,
+            "cyan-magenta": 0.0125,
+            "red-cyan": 0.014150000000000003
+          }
+        }
+      }
+    },
+    "sub-09": {
+      "noise_floor_by_condition": {
+        "baseline": {
+          "mean": 0.015625000000000003,
+          "median": 0.010000000000000004,
+          "min": 0.0,
+          "max": 0.04500000000000001
+        },
+        "window": {
+          "mean": 0.017712499999999996,
+          "median": 0.012499999999999994,
+          "min": 0.005000000000000001,
+          "max": 0.035
+        },
+        "optimal": {
+          "mean": 0.08125,
+          "median": 0.012500000000000004,
+          "min": 0.0,
+          "max": 0.5149999999999999
+        }
+      },
+      "noise_floor_pooled_mean": 0.03819583333333334,
+      "change_vs_baseline": {
+        "optimal": {
+          "mean_abs_change": 0.0565625,
+          "ratio_to_floor": 1.480855241627577,
+          "n_pairs_exceeding_floor": 3,
+          "n_pairs": 8,
+          "per_pair": {
+            "orange-yellow": 0.265,
+            "yellow-green": 0.0675,
+            "green-blue": 0.04749999999999999,
+            "red-orange": 0.012499999999999997,
+            "blue-purple": 0.020000000000000018,
+            "yellow-purple": 0.012500000000000004,
+            "cyan-magenta": 0.020000000000000004,
+            "red-cyan": 0.0075
+          }
+        },
+        "window": {
+          "mean_abs_change": 0.04895625000000001,
+          "ratio_to_floor": 1.2817170284716919,
+          "n_pairs_exceeding_floor": 4,
+          "n_pairs": 8,
+          "per_pair": {
+            "orange-yellow": 0.015000000000000013,
+            "yellow-green": 0.07415,
+            "green-blue": 0.0875,
+            "red-orange": 0.052500000000000005,
+            "blue-purple": 0.025000000000000022,
+            "yellow-purple": 0.010000000000000002,
+            "cyan-magenta": 0.10750000000000001,
+            "red-cyan": 0.020000000000000004
+          }
+        }
+      }
+    }
+  }
+}

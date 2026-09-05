@@ -1,0 +1,1646 @@
+{
+ "ceiling": 0.95,
+ "conditions": {
+  "sub-08/deployed": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.05,
+     "sc_lo": 0.095,
+     "spread": 0.045,
+     "threshold": 0.07250000000000001,
+     "n_trials": [
+      20,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.03,
+     "sc_lo": 0.025,
+     "spread": 0.0049999999999999975,
+     "threshold": 0.0275,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.15,
+     "sc_lo": 0.11,
+     "spread": 0.039999999999999994,
+     "threshold": 0.13,
+     "n_trials": [
+      20,
+      21
+     ],
+     "n_reversals": [
+      10,
+      8
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.08,
+     "sc_lo": 0.11,
+     "spread": 0.03,
+     "threshold": 0.095,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      11
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.04,
+     "sc_lo": 0.0183,
+     "spread": 0.0217,
+     "threshold": 0.029150000000000002,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.16,
+     "sc_lo": 0.21,
+     "spread": 0.04999999999999999,
+     "threshold": 0.185,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      12
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.09,
+     "sc_lo": 0.075,
+     "spread": 0.015,
+     "threshold": 0.08249999999999999,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.02,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0175,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      10
+     ]
+    }
+   },
+   "mean_spread": 0.0264625,
+   "median_spread": 0.025849999999999998,
+   "max_spread": 0.04999999999999999,
+   "worst_pair": "red-orange",
+   "mean_spread_excluding_worst": 0.023100000000000002
+  },
+  "sub-08/individualized": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.11,
+     "sc_lo": 0.2,
+     "spread": 0.09000000000000001,
+     "threshold": 0.155,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      9
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.04,
+     "sc_lo": 0.0333,
+     "spread": 0.006699999999999998,
+     "threshold": 0.03665,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      10
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.045,
+     "sc_lo": 0.06,
+     "spread": 0.015,
+     "threshold": 0.0525,
+     "n_trials": [
+      22,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.06,
+     "sc_lo": 0.0317,
+     "spread": 0.0283,
+     "threshold": 0.04585,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      8
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.045,
+     "spread": 0.03,
+     "threshold": 0.03,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      12
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.14,
+     "sc_lo": 0.13,
+     "spread": 0.010000000000000009,
+     "threshold": 0.135,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.145,
+     "sc_lo": 0.165,
+     "spread": 0.020000000000000018,
+     "threshold": 0.155,
+     "n_trials": [
+      20,
+      21
+     ],
+     "n_reversals": [
+      9,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.035,
+     "sc_lo": 0.025,
+     "spread": 0.010000000000000002,
+     "threshold": 0.030000000000000002,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      8
+     ]
+    }
+   },
+   "mean_spread": 0.026250000000000006,
+   "median_spread": 0.01750000000000001,
+   "max_spread": 0.09000000000000001,
+   "worst_pair": "blue-purple",
+   "mean_spread_excluding_worst": 0.017142857142857147
+  },
+  "sub-08/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.115,
+     "sc_lo": 0.125,
+     "spread": 0.009999999999999995,
+     "threshold": 0.12,
+     "n_trials": [
+      21,
+      25
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.035,
+     "sc_lo": 0.045,
+     "spread": 0.009999999999999995,
+     "threshold": 0.04,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      12
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.065,
+     "sc_lo": 0.09,
+     "spread": 0.024999999999999994,
+     "threshold": 0.0775,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      11,
+      13
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.87,
+     "sc_lo": 0.81,
+     "spread": 0.05999999999999994,
+     "threshold": 0.8400000000000001,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      9
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      12
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.06,
+     "sc_lo": 0.065,
+     "spread": 0.0050000000000000044,
+     "threshold": 0.0625,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      10
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.28,
+     "sc_lo": 0.275,
+     "spread": 0.0050000000000000044,
+     "threshold": 0.2775,
+     "n_trials": [
+      23,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.06,
+     "sc_lo": 0.065,
+     "spread": 0.0050000000000000044,
+     "threshold": 0.0625,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    }
+   },
+   "mean_spread": 0.014999999999999993,
+   "median_spread": 0.0075,
+   "max_spread": 0.05999999999999994,
+   "worst_pair": "orange-yellow",
+   "mean_spread_excluding_worst": 0.008571428571428572
+  },
+  "sub-09/deployed": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.135,
+     "sc_lo": 0.11,
+     "spread": 0.02500000000000001,
+     "threshold": 0.1225,
+     "n_trials": [
+      22,
+      20
+     ],
+     "n_reversals": [
+      8,
+      12
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.15,
+     "sc_lo": 0.14,
+     "spread": 0.009999999999999981,
+     "threshold": 0.14500000000000002,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.26,
+     "sc_lo": 0.225,
+     "spread": 0.035,
+     "threshold": 0.2425,
+     "n_trials": [
+      21,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.17,
+     "sc_lo": 0.185,
+     "spread": 0.014999999999999986,
+     "threshold": 0.1775,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.03,
+     "sc_lo": 0.04,
+     "spread": 0.010000000000000002,
+     "threshold": 0.035,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      10
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.11,
+     "sc_lo": 0.145,
+     "spread": 0.03499999999999999,
+     "threshold": 0.1275,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      10
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.0567,
+     "sc_lo": 0.05,
+     "spread": 0.006699999999999998,
+     "threshold": 0.05335,
+     "n_trials": [
+      21,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.015,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0175,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    }
+   },
+   "mean_spread": 0.017712499999999996,
+   "median_spread": 0.012499999999999994,
+   "max_spread": 0.035,
+   "worst_pair": "green-blue",
+   "mean_spread_excluding_worst": 0.01524285714285714
+  },
+  "sub-09/individualized": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.15,
+     "sc_lo": 0.105,
+     "spread": 0.045,
+     "threshold": 0.1275,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      13,
+      9
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.02,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0175,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      9
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.135,
+     "sc_lo": 0.08,
+     "spread": 0.05500000000000001,
+     "threshold": 0.10750000000000001,
+     "n_trials": [
+      20,
+      23
+     ],
+     "n_reversals": [
+      9,
+      8
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.715,
+     "sc_lo": 0.2,
+     "spread": 0.5149999999999999,
+     "threshold": 0.4575,
+     "n_trials": [
+      29,
+      20
+     ],
+     "n_reversals": [
+      8,
+      9
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.025,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0225,
+     "n_trials": [
+      21,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.07,
+     "sc_lo": 0.055,
+     "spread": 0.015000000000000006,
+     "threshold": 0.0625,
+     "n_trials": [
+      23,
+      22
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.055,
+     "sc_lo": 0.065,
+     "spread": 0.010000000000000002,
+     "threshold": 0.06,
+     "n_trials": [
+      26,
+      27
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    }
+   },
+   "mean_spread": 0.08125,
+   "median_spread": 0.012500000000000004,
+   "max_spread": 0.5149999999999999,
+   "worst_pair": "orange-yellow",
+   "mean_spread_excluding_worst": 0.01928571428571429
+  },
+  "sub-09/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.125,
+     "sc_lo": 0.17,
+     "spread": 0.04500000000000001,
+     "threshold": 0.14750000000000002,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      11,
+      10
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.04,
+     "sc_lo": 0.035,
+     "spread": 0.0049999999999999975,
+     "threshold": 0.037500000000000006,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      12
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.145,
+     "sc_lo": 0.165,
+     "spread": 0.020000000000000018,
+     "threshold": 0.155,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      11,
+      9
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.175,
+     "sc_lo": 0.21,
+     "spread": 0.035,
+     "threshold": 0.1925,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      9
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      24,
+      20
+     ],
+     "n_reversals": [
+      8,
+      12
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.075,
+     "sc_lo": 0.075,
+     "spread": 0.0,
+     "threshold": 0.075,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      9
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.125,
+     "sc_lo": 0.13,
+     "spread": 0.0050000000000000044,
+     "threshold": 0.1275,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      9
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.035,
+     "spread": 0.015000000000000003,
+     "threshold": 0.027500000000000004,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      9
+     ]
+    }
+   },
+   "mean_spread": 0.015625000000000007,
+   "median_spread": 0.010000000000000004,
+   "max_spread": 0.04500000000000001,
+   "worst_pair": "blue-purple",
+   "mean_spread_excluding_worst": 0.011428571428571432
+  },
+  "sub-01/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.135,
+     "sc_lo": 0.195,
+     "spread": 0.06,
+     "threshold": 0.165,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.04,
+     "sc_lo": 0.055,
+     "spread": 0.015,
+     "threshold": 0.0475,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.135,
+     "sc_lo": 0.07,
+     "spread": 0.065,
+     "threshold": 0.10250000000000001,
+     "n_trials": [
+      29,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.42,
+     "sc_lo": 0.465,
+     "spread": 0.04500000000000004,
+     "threshold": 0.4425,
+     "n_trials": [
+      25,
+      23
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.04,
+     "sc_lo": 0.055,
+     "spread": 0.015,
+     "threshold": 0.0475,
+     "n_trials": [
+      22,
+      20
+     ],
+     "n_reversals": [
+      8,
+      9
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.2,
+     "sc_lo": 0.27,
+     "spread": 0.07,
+     "threshold": 0.23500000000000001,
+     "n_trials": [
+      25,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.105,
+     "sc_lo": 0.1,
+     "spread": 0.0049999999999999906,
+     "threshold": 0.10250000000000001,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.03,
+     "spread": 0.009999999999999998,
+     "threshold": 0.025,
+     "n_trials": [
+      20,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    }
+   },
+   "mean_spread": 0.035625000000000004,
+   "median_spread": 0.03000000000000002,
+   "max_spread": 0.07,
+   "worst_pair": "red-orange",
+   "mean_spread_excluding_worst": 0.030714285714285725
+  },
+  "sub-02/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.1133,
+     "sc_lo": 0.0917,
+     "spread": 0.021599999999999994,
+     "threshold": 0.10250000000000001,
+     "n_trials": [
+      28,
+      35
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.045,
+     "sc_lo": 0.015,
+     "spread": 0.03,
+     "threshold": 0.03,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.1233,
+     "sc_lo": 0.08,
+     "spread": 0.043300000000000005,
+     "threshold": 0.10165,
+     "n_trials": [
+      22,
+      26
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.175,
+     "sc_lo": 0.16,
+     "spread": 0.014999999999999986,
+     "threshold": 0.16749999999999998,
+     "n_trials": [
+      66,
+      20
+     ],
+     "n_reversals": [
+      10,
+      9
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.0483,
+     "sc_lo": 0.065,
+     "spread": 0.0167,
+     "threshold": 0.056650000000000006,
+     "n_trials": [
+      26,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.065,
+     "sc_lo": 0.0433,
+     "spread": 0.021700000000000004,
+     "threshold": 0.054150000000000004,
+     "n_trials": [
+      20,
+      22
+     ],
+     "n_reversals": [
+      10,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.02,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0175,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      10
+     ]
+    }
+   },
+   "mean_spread": 0.0191625,
+   "median_spread": 0.019149999999999997,
+   "max_spread": 0.043300000000000005,
+   "worst_pair": "green-blue",
+   "mean_spread_excluding_worst": 0.015714285714285712
+  },
+  "sub-03/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.305,
+     "sc_lo": 0.38,
+     "spread": 0.07500000000000001,
+     "threshold": 0.3425,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.06,
+     "sc_lo": 0.035,
+     "spread": 0.024999999999999994,
+     "threshold": 0.0475,
+     "n_trials": [
+      24,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.06,
+     "sc_lo": 0.06,
+     "spread": 0.0,
+     "threshold": 0.06,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.295,
+     "sc_lo": 0.27,
+     "spread": 0.024999999999999967,
+     "threshold": 0.2825,
+     "n_trials": [
+      31,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.03,
+     "sc_lo": 0.02,
+     "spread": 0.009999999999999998,
+     "threshold": 0.025,
+     "n_trials": [
+      25,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.095,
+     "sc_lo": 0.125,
+     "spread": 0.03,
+     "threshold": 0.11,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      9
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.14,
+     "sc_lo": 0.105,
+     "spread": 0.03500000000000002,
+     "threshold": 0.1225,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.03,
+     "sc_lo": 0.025,
+     "spread": 0.0049999999999999975,
+     "threshold": 0.0275,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    }
+   },
+   "mean_spread": 0.025625,
+   "median_spread": 0.02499999999999998,
+   "max_spread": 0.07500000000000001,
+   "worst_pair": "blue-purple",
+   "mean_spread_excluding_worst": 0.01857142857142857
+  },
+  "sub-04/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.19,
+     "sc_lo": 0.155,
+     "spread": 0.035,
+     "threshold": 0.1725,
+     "n_trials": [
+      32,
+      23
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.055,
+     "sc_lo": 0.065,
+     "spread": 0.010000000000000002,
+     "threshold": 0.06,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      9
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.1,
+     "sc_lo": 0.1,
+     "spread": 0.0,
+     "threshold": 0.1,
+     "n_trials": [
+      21,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.33,
+     "sc_lo": 0.325,
+     "spread": 0.0050000000000000044,
+     "threshold": 0.3275,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.05,
+     "sc_lo": 0.05,
+     "spread": 0.0,
+     "threshold": 0.05,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.19,
+     "sc_lo": 0.145,
+     "spread": 0.04500000000000001,
+     "threshold": 0.16749999999999998,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      10
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.14,
+     "sc_lo": 0.12,
+     "spread": 0.020000000000000018,
+     "threshold": 0.13,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      12,
+      10
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.025,
+     "sc_lo": 0.035,
+     "spread": 0.010000000000000002,
+     "threshold": 0.030000000000000002,
+     "n_trials": [
+      21,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    }
+   },
+   "mean_spread": 0.015625000000000007,
+   "median_spread": 0.010000000000000002,
+   "max_spread": 0.04500000000000001,
+   "worst_pair": "red-orange",
+   "mean_spread_excluding_worst": 0.011428571428571436
+  },
+  "sub-05/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.17,
+     "sc_lo": 0.18,
+     "spread": 0.009999999999999981,
+     "threshold": 0.175,
+     "n_trials": [
+      20,
+      21
+     ],
+     "n_reversals": [
+      9,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.07,
+     "sc_lo": 0.05,
+     "spread": 0.020000000000000004,
+     "threshold": 0.060000000000000005,
+     "n_trials": [
+      24,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.105,
+     "sc_lo": 0.105,
+     "spread": 0.0,
+     "threshold": 0.105,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      11,
+      10
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.405,
+     "sc_lo": 0.44,
+     "spread": 0.034999999999999976,
+     "threshold": 0.4225,
+     "n_trials": [
+      26,
+      25
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.035,
+     "sc_lo": 0.055,
+     "spread": 0.019999999999999997,
+     "threshold": 0.045,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      9
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.245,
+     "sc_lo": 0.055,
+     "spread": 0.19,
+     "threshold": 0.15,
+     "n_trials": [
+      26,
+      30
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.15,
+     "sc_lo": 0.11,
+     "spread": 0.039999999999999994,
+     "threshold": 0.13,
+     "n_trials": [
+      21,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.025,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0225,
+     "n_trials": [
+      21,
+      20
+     ],
+     "n_reversals": [
+      8,
+      9
+     ]
+    }
+   },
+   "mean_spread": 0.039999999999999994,
+   "median_spread": 0.02,
+   "max_spread": 0.19,
+   "worst_pair": "red-orange",
+   "mean_spread_excluding_worst": 0.018571428571428565
+  },
+  "sub-06/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.16,
+     "sc_lo": 0.145,
+     "spread": 0.015000000000000013,
+     "threshold": 0.1525,
+     "n_trials": [
+      21,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.045,
+     "sc_lo": 0.025,
+     "spread": 0.019999999999999997,
+     "threshold": 0.035,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.0683,
+     "sc_lo": 0.065,
+     "spread": 0.0032999999999999974,
+     "threshold": 0.06665,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      10
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.175,
+     "sc_lo": 0.305,
+     "spread": 0.13,
+     "threshold": 0.24,
+     "n_trials": [
+      26,
+      20
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.06,
+     "sc_lo": 0.015,
+     "spread": 0.045,
+     "threshold": 0.0375,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      9,
+      11
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.125,
+     "sc_lo": 0.135,
+     "spread": 0.010000000000000009,
+     "threshold": 0.13,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      8,
+      11
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.075,
+     "sc_lo": 0.065,
+     "spread": 0.009999999999999995,
+     "threshold": 0.07,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      9
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      20,
+      20
+     ],
+     "n_reversals": [
+      10,
+      12
+     ]
+    }
+   },
+   "mean_spread": 0.0291625,
+   "median_spread": 0.012500000000000011,
+   "max_spread": 0.13,
+   "worst_pair": "orange-yellow",
+   "mean_spread_excluding_worst": 0.01475714285714286
+  },
+  "sub-07/session1": {
+   "pairs": {
+    "blue-purple": {
+     "sc_hi": 0.055,
+     "sc_lo": 0.025,
+     "spread": 0.03,
+     "threshold": 0.04,
+     "n_trials": [
+      52,
+      38
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "cyan-magenta": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      24,
+      45
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "green-blue": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.02,
+     "spread": 0.0,
+     "threshold": 0.02,
+     "n_trials": [
+      35,
+      27
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "orange-yellow": {
+     "sc_hi": 0.035,
+     "sc_lo": 0.0933,
+     "spread": 0.05829999999999999,
+     "threshold": 0.06415,
+     "n_trials": [
+      34,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "red-cyan": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      24,
+      30
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "red-orange": {
+     "sc_hi": 0.02,
+     "sc_lo": 0.015,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0175,
+     "n_trials": [
+      36,
+      25
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-green": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.02,
+     "spread": 0.005000000000000001,
+     "threshold": 0.0175,
+     "n_trials": [
+      25,
+      42
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    },
+    "yellow-purple": {
+     "sc_hi": 0.015,
+     "sc_lo": 0.015,
+     "spread": 0.0,
+     "threshold": 0.015,
+     "n_trials": [
+      24,
+      21
+     ],
+     "n_reversals": [
+      8,
+      8
+     ]
+    }
+   },
+   "mean_spread": 0.0122875,
+   "median_spread": 0.0025000000000000005,
+   "max_spread": 0.05829999999999999,
+   "worst_pair": "orange-yellow",
+   "mean_spread_excluding_worst": 0.005714285714285715
+  }
+ },
+ "census": {
+  "n_trial_files": 13,
+  "n_staircases": 208,
+  "n_censored": 2,
+  "censored": [
+   {
+    "source": "sub-08_jnd_ses1_no_filter",
+    "staircase": "orange-yellow_sc0",
+    "pair": "orange-yellow",
+    "n": 20,
+    "level_max": 0.95,
+    "tail_mean": 0.8814285714285715,
+    "frac_upper_range": 1.0,
+    "n_at_ceiling": 1,
+    "n_incorrect_at_ceiling": 1
+   },
+   {
+    "source": "sub-08_jnd_ses1_no_filter",
+    "staircase": "orange-yellow_sc1",
+    "pair": "orange-yellow",
+    "n": 20,
+    "level_max": 0.95,
+    "tail_mean": 0.8557142857142858,
+    "frac_upper_range": 0.75,
+    "n_at_ceiling": 1,
+    "n_incorrect_at_ceiling": 1
+   }
+  ]
+ },
+ "trajectory": {
+  "sub-09/individualized": {
+   "orange-yellow": {
+    "orange-yellow_sc0": {
+     "n": 29,
+     "level_min": 0.2,
+     "level_max": 0.8,
+     "level_final": 0.71,
+     "level_tail_mean": 0.7190000000000001,
+     "accuracy": 0.5517241379310345,
+     "n_at_ceiling": 0,
+     "n_incorrect_at_ceiling": 0,
+     "min_level_correct": 0.2,
+     "max_level_incorrect": 0.8
+    },
+    "orange-yellow_sc1": {
+     "n": 20,
+     "level_min": 0.05,
+     "level_max": 0.35,
+     "level_final": 0.2,
+     "level_tail_mean": 0.17,
+     "accuracy": 0.55,
+     "n_at_ceiling": 0,
+     "n_incorrect_at_ceiling": 0,
+     "min_level_correct": 0.05,
+     "max_level_incorrect": 0.26
+    }
+   }
+  }
+ },
+ "adjudication": {
+  "pair_specific": true,
+  "start_level_dependent": true,
+  "gamut_clipping_excluded": true,
+  "internally_inconsistent": true,
+  "censored_at_ceiling": false,
+  "high_staircase": "orange-yellow_sc0",
+  "low_staircase": "orange-yellow_sc1"
+ }
+}

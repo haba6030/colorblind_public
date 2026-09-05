@@ -1,0 +1,325 @@
+{
+  "note": "exp2 neural endpoints, canonical arm vs anat-harmonised + realigned arm. Both arms reported; no directional claim is made from either. HC reference and the exp1 no-filter anchor use full_dataset_C010 (canon) / full_dataset_C010_hmc_v2 (harm) so the two sides never mix arms.",
+  "prespecified_cells": 14,
+  "variants": {
+    "native": {
+      "hv4_adjacc": {
+        "deutan_canon": {
+          "nofilter": 0.23125,
+          "window": 0.25,
+          "optimal": 0.3125,
+          "hc_n4_mean": 0.45555555555555555
+        },
+        "deutan_harm": {
+          "nofilter": 0.3416666666666667,
+          "window": 0.15625,
+          "optimal": 0.28125,
+          "hc_n4_mean": 0.4454861111111112
+        },
+        "protan_canon": {
+          "nofilter": 0.1375,
+          "window": 0.1875,
+          "optimal": 0.0625,
+          "hc_n4_mean": 0.45555555555555555
+        },
+        "protan_harm": {
+          "nofilter": 0.2625,
+          "window": 0.09375,
+          "optimal": 0.34375,
+          "hc_n4_mean": 0.4454861111111112
+        }
+      },
+      "deficit_roi_rho": {
+        "deutan_V2_canon": {
+          "nofilter": -0.21075823213937914,
+          "window": -0.19009080745090412,
+          "optimal": 0.09775378150125233,
+          "hc_n4_mean": 0.16165882707011606
+        },
+        "deutan_V2_harm": {
+          "nofilter": 0.1955921636500384,
+          "window": 0.11303316927445985,
+          "optimal": 0.08717768756527866,
+          "hc_n4_mean": 0.08021523843530544
+        },
+        "protan_V1_canon": {
+          "nofilter": -0.020187749279598727,
+          "window": -0.09636647404820582,
+          "optimal": 0.12940022464772438,
+          "hc_n4_mean": 0.12859393179004194
+        },
+        "protan_V1_harm": {
+          "nofilter": 0.2575480918370844,
+          "window": 0.022568315820046696,
+          "optimal": -0.0016191116890892712,
+          "hc_n4_mean": 0.01625723571704605
+        }
+      },
+      "rdm_cosine_hv4": {
+        "deutan_canon": {
+          "window": 0.8127867131106469,
+          "optimal": 0.812850402753122
+        },
+        "deutan_harm": {
+          "window": 0.8841466848034196,
+          "optimal": 0.936207915024766
+        },
+        "protan_canon": {
+          "window": 0.9156122826993484,
+          "optimal": 0.945782627399315
+        },
+        "protan_harm": {
+          "window": 0.8984818160620245,
+          "optimal": 0.8731400524311091
+        }
+      },
+      "loro_fe6_hv4": {
+        "deutan_canon": {
+          "nofilter": 0.5208333333333334,
+          "window": 0.40625,
+          "optimal": 0.40625
+        },
+        "deutan_harm": {
+          "nofilter": 0.7083333333333334,
+          "window": 0.4375,
+          "optimal": 0.46875
+        },
+        "protan_canon": {
+          "nofilter": 0.4583333333333333,
+          "window": 0.5625,
+          "optimal": 0.4375
+        },
+        "protan_harm": {
+          "nofilter": 0.5416666666666666,
+          "window": 0.5,
+          "optimal": 0.53125
+        }
+      },
+      "direction_stability": {
+        "deutan_hv4_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        },
+        "deutan_hv4_opt_gt_nofilter": {
+          "canon": true,
+          "harm": false,
+          "flipped": true
+        },
+        "deutan_rdm_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        },
+        "deutan_loro_opt_gt_win": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "deutan_V2_opt_gt_win": {
+          "canon": true,
+          "harm": false,
+          "flipped": true
+        },
+        "protan_hv4_opt_gt_win": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "protan_hv4_opt_gt_nofilter": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "protan_rdm_opt_gt_win": {
+          "canon": true,
+          "harm": false,
+          "flipped": true
+        },
+        "protan_loro_opt_gt_win": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "protan_V1_opt_gt_win": {
+          "canon": true,
+          "harm": false,
+          "flipped": true
+        }
+      }
+    },
+    "matched": {
+      "hv4_adjacc": {
+        "deutan_canon": {
+          "nofilter": 0.23125,
+          "window": 0.25,
+          "optimal": 0.3125,
+          "hc_n4_mean": 0.45555555555555555
+        },
+        "deutan_harm": {
+          "nofilter": 0.3416666666666667,
+          "window": 0.15625,
+          "optimal": 0.28125,
+          "hc_n4_mean": 0.4454861111111112
+        },
+        "protan_canon": {
+          "nofilter": 0.1375,
+          "window": 0.1875,
+          "optimal": 0.0625,
+          "hc_n4_mean": 0.45555555555555555
+        },
+        "protan_harm": {
+          "nofilter": 0.2625,
+          "window": 0.28125,
+          "optimal": 0.40625,
+          "hc_n4_mean": 0.4454861111111112
+        }
+      },
+      "deficit_roi_rho": {
+        "deutan_V2_canon": {
+          "nofilter": -0.21075823213937914,
+          "window": -0.2297323618521937,
+          "optimal": 0.1674076446658314,
+          "hc_n4_mean": 0.16165882707011606
+        },
+        "deutan_V2_harm": {
+          "nofilter": 0.1955921636500384,
+          "window": 0.017412702112687306,
+          "optimal": 0.13528050619573126,
+          "hc_n4_mean": 0.08021523843530544
+        },
+        "protan_V1_canon": {
+          "nofilter": -0.020187749279598727,
+          "window": -0.16663386811349445,
+          "optimal": -0.03260212566716324,
+          "hc_n4_mean": 0.12859393179004194
+        },
+        "protan_V1_harm": {
+          "nofilter": 0.2575480918370844,
+          "window": -0.008713754763641203,
+          "optimal": 0.11305911053437082,
+          "hc_n4_mean": 0.01625723571704605
+        }
+      },
+      "rdm_cosine_hv4": {
+        "deutan_canon": {
+          "window": 0.8127867131106469,
+          "optimal": 0.812850402753122
+        },
+        "deutan_harm": {
+          "window": 0.8841466848034196,
+          "optimal": 0.936207915024766
+        },
+        "protan_canon": {
+          "window": 0.9156122826993484,
+          "optimal": 0.945782627399315
+        },
+        "protan_harm": {
+          "window": 0.9217975502939022,
+          "optimal": 0.9626514187994218
+        }
+      },
+      "loro_fe6_hv4": {
+        "deutan_canon": {
+          "nofilter": 0.5208333333333334,
+          "window": 0.40625,
+          "optimal": 0.40625
+        },
+        "deutan_harm": {
+          "nofilter": 0.7083333333333334,
+          "window": 0.4375,
+          "optimal": 0.46875
+        },
+        "protan_canon": {
+          "nofilter": 0.4583333333333333,
+          "window": 0.5625,
+          "optimal": 0.4375
+        },
+        "protan_harm": {
+          "nofilter": 0.5416666666666666,
+          "window": 0.46875,
+          "optimal": 0.625
+        }
+      },
+      "direction_stability": {
+        "deutan_hv4_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        },
+        "deutan_hv4_opt_gt_nofilter": {
+          "canon": true,
+          "harm": false,
+          "flipped": true
+        },
+        "deutan_rdm_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        },
+        "deutan_loro_opt_gt_win": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "deutan_V2_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        },
+        "protan_hv4_opt_gt_win": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "protan_hv4_opt_gt_nofilter": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "protan_rdm_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        },
+        "protan_loro_opt_gt_win": {
+          "canon": false,
+          "harm": true,
+          "flipped": true
+        },
+        "protan_V1_opt_gt_win": {
+          "canon": true,
+          "harm": true,
+          "flipped": false
+        }
+      }
+    }
+  },
+  "flipped_contrasts": [
+    "native/deutan/hv4_opt_gt_nofilter",
+    "native/deutan/loro_opt_gt_win",
+    "native/deutan_V2/deficit_opt_gt_win",
+    "native/protan/hv4_opt_gt_win",
+    "native/protan/hv4_opt_gt_nofilter",
+    "native/protan/rdm_opt_gt_win",
+    "native/protan/loro_opt_gt_win",
+    "native/protan_V1/deficit_opt_gt_win",
+    "matched/deutan/hv4_opt_gt_nofilter",
+    "matched/deutan/loro_opt_gt_win",
+    "matched/protan/hv4_opt_gt_win",
+    "matched/protan/hv4_opt_gt_nofilter",
+    "matched/protan/loro_opt_gt_win"
+  ],
+  "verdict": "native 8/10 and matched 5/10 directional contrasts reverse between arms; the two variants also disagree with each other. The HC reference is stable (0.456 -> 0.445 at hV4), so the instability is confined to single-subject single-condition cells (4 runs each). No directional claim is supportable from the exp2 neural endpoints. Psychophysics is preprocessing-independent and unchanged.",
+  "flips_by_variant": {
+    "native": {
+      "n_contrasts": 10,
+      "n_flipped": 8
+    },
+    "matched": {
+      "n_contrasts": 10,
+      "n_flipped": 5
+    }
+  },
+  "counting_note": "Count per variant, not pooled. native and matched are the same data under different voxel masks, so pooling them inflates the denominator and mixes arm disagreement with variant disagreement."
+}

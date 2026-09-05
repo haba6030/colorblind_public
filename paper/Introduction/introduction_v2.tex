@@ -1,0 +1,121 @@
+% Introduction Section — v2 (2026-04-17; restructured 2026-06-11; revised 2026-07-22;
+% citation audit 2026-08-07/08; compressed, reordered and source-checked 2026-09-03)
+% Supersedes Introduction/introduction.tex (v1).
+%
+% Structure (4 moves; rationale = words_trimming.md §1)
+%   §Intro-1  The problem: what CVD is, and why retina-derived correction is limited
+%   §Intro-2  Individualization stops at the retina; what the cortex carries
+%   §Intro-3  What CVD studies measured (magnitude); where the arrangement evidence is
+%   §Intro-4  Contribution
+%
+% 2026-09-03 revision (words_trimming.md §1.2, §1.5). 1,240 -> ~940 words.
+%   - Gap list, research-question enumerate, and hypothesis paragraph deleted; the
+%     "efficacy superiority" question (old Q4) is withdrawn per §0.7.
+%   - The hV4 perception-linking premise is no longer stated as a standalone premise.
+%     The Discussion does not audit it and the neural endpoints do not support it.
+%     hV4's perceptual correspondence now appears once, where hV4 is first used.
+%     The untested status is declared in Discussion/Limitations.
+%   - Old Intro-3b (CVD magnitude) and Intro-3a (cortex carries arrangement) swapped,
+%     so each gap follows the material needed to read it as a gap.
+%
+% 2026-09-03 source verification (three papers read in full; see words_trimming.md §1.5):
+%   - ohkoba2021: the earlier wording ("dented"/"indented"/"compressed at yellow and
+%     purple-blue, the two ends of the S-cone axis") does not match the paper. The
+%     authors report a CONCAVE C-shape bending at Y and PB, and their model FIXES the
+%     y/b gain at 1 for every observer while only the r/g gain shrinks (normal 4.33 ->
+%     protan 1.51, deutan 0.84). Y and PB are the most widely separated points, not
+%     compressed ones. Text now states the axis-specific finding directly. The
+%     "more than tenfold" figure was our own computation from their Table 3 and holds
+%     only at high chroma, so it is dropped; "3 of 20 observers looked normal" is the
+%     authors' own statement and is kept.
+%   - gomezrobledo2018: measures only the population-average EnChroma lens. Its claim
+%     about per-observer customized filters is an argument in the Conclusions, hedged
+%     with "it is possible that", so the sentence now attributes it as an argument and
+%     scopes it to SPECTRAL filters.
+%   - simonliedtke2016: daltonization significantly IMPROVED Ishihara reading for all
+%     four methods tested, so no "diagnostic classification unchanged" parallel is
+%     available for software filters. The supported limitation is that the benefit did
+%     not generalize to natural images (1 of 4 methods reached significance there).
+%     The blue-axis mechanism is cited to fidaner2005, whose own text reads
+%     "Our transformation maps this information to the blue side of the spectrum."
+%   - rina2024: participant composition (4 controls, 1 dichromat, 2 achromatopsia) and
+%     the magnitude-only characterization are both correct. The author never uses the
+%     noun "achromat", so the phrasing is kept person-first and made parallel.
+%
+% 2026-09-04 revision (Intro-1 paragraph 2, Intro-2 paragraph 1):
+%   - The two paragraphs previously set up two different gaps. Intro-1 made the gap
+%     "correction ignores individual variation", which Intro-2 then conceded in its
+%     first sentence by reporting that individualized correction exists. Both now
+%     carry one line: every existing correction, individualized or not, is derived
+%     from a RETINAL model, and none from the cortical representation.
+%   - Intro-1 p2 cut from 157 to 84 words. The Brettel-Vienot-Mollon / Machado
+%     simulation walk-through was dropped with the "forward-project" and "inverts
+%     that projection" wording, which had no matching operation (BVM projects into
+%     a reduced subspace of LMS, not "onto a retina", and daltonization
+%     redistributes the original-minus-simulated residual rather than inverting).
+%     Citations are all retained. "standard-observer cone fundamentals" is replaced
+%     by the point it was there to make, that the simulation uses average cone
+%     sensitivities and not the user's.
+%   - "Discrimination follows that parameter only loosely" -> "Spectral separation
+%     predicts discrimination poorly", which is what neitz2011 and bosten2019
+%     actually support. The efficacy-side claim (a fixed correction helps
+%     inconsistently) is now a separate sentence attached to patterson2022, which
+%     moved here from Intro-1 because it bears on the retinal level, not on the
+%     population-average-versus-individual contrast.
+%
+% 2026-09-04 source verification (somers2024 read in full, Vision Research 218:108390):
+%   - The earlier claim that notch lenses "leave discrimination thresholds and
+%     diagnostic classification unchanged" does not hold. There is no main effect
+%     of filter on thresholds (F = 0.64, p = .45), but the hue x filter interaction
+%     is significant (F = 10.95, p < .001), with thresholds LOWER for red
+%     (t = 4.36, p = .0018) and HIGHER for orange (t = -3.5, p = .0070). The text
+%     now reports that redistribution, which is a stronger motivation for a
+%     per-person inverse filter than "unchanged" was, and which agrees with the
+%     gomezrobledo2018 argument already cited in Intro-2.
+%   - "diagnostic classification unchanged" is DELETED. somers2024 never tested a
+%     diagnostic plate under the filter; Ishihara and the Nagel anomaloscope were
+%     used only to screen and classify participants without a filter. No other
+%     citation rescues it either: simonliedtke2016 found Ishihara reading
+%     significantly IMPROVED for all four daltonization methods, and the literature
+%     somers2024 reviews is mixed rather than null.
+%   - The appearance claim IS supported: asymmetric matching t = 15.3, p < .001
+%     (Exp 1) and MDS-reconstructed appearance t = 2.30, p = .047 (Exp 3, first
+%     exposure only; p = .057 after habituation). Scoped to the ten deutan
+%     observers tested rather than asserted generally.
+%   - Note for citation direction: somers2024 frames itself as "the first
+%     quantitative experimental evidence that notch filters CAN enhance color
+%     perception". It must not be cited as evidence that notch lenses do nothing.
+%   - OPEN: alvaro2022 not yet read in full. It is cited here only for the
+%     descriptive fact that notch lenses attenuate the L/M overlap band. Its title
+%     says filters "cannot compensate", but somers2024's Introduction reports that
+%     alvaro2022 found a significant reduction in Ishihara errors, so the paper may
+%     split by measure. Verify before citing it for any efficacy claim.
+
+\section{Introduction}
+\label{sec:intro}
+
+%==============================================================================
+% Intro-1: The problem — CVD, and why one population-average transform fails
+%==============================================================================
+Color vision deficiency (CVD) affects approximately 8\% of men and 0.4\% of women of European ancestry~\citep{birch2012}. It arises from an X-linked opsin polymorphism that shifts the peak spectral sensitivity of the L- or M-cone photopigment toward the other, narrowing the separation between the two peaks from roughly 27~nm in normal trichromacy to between 1 and 12~nm in anomalous trichromacy~\citep{deeb2005, neitz2011, bosten2019}. The narrowed separation attenuates the L--M cone-opponent signal without abolishing it, and the two red--green subtypes, protan and deutan, differ in which of the two pigments is altered~\citep{neitz2011}. Anomalous trichromats show reduced red--green discrimination, frequent category confusions, and elevated just-noticeable differences along the L--M axis. Within one subtype the severity of these signs extends from near-normal to near-dichromatic~\citep{bosten2019, neitz2011}.
+
+Existing corrections are derived from a retinal model of the deficiency. Notch lenses attenuate selected bands of the spectrum to increase the difference between the L- and M-cone signals~\citep{alvaro2022, gomezrobledo2018}. In ten deutan observers such a lens made colors look more saturated along the red--green axis but left overall discrimination thresholds unchanged~\citep{somers2024}. Thresholds fell for red and rose for orange, so the lens redistributed chromatic sensitivity rather than improving it. Software methods recolor the display by first simulating how a stimulus would appear to the user, using average cone sensitivities rather than the user's own~\citep{brettel1997, machado2009, fidaner2005}. Four of these methods have been compared in a visual-search task, where the benefit appeared on Ishihara plates for all four and on natural images for one~\citep{simonliedtke2016}.
+
+%==============================================================================
+% Intro-2: Individualization stops at the retina; what the cortex carries
+%==============================================================================
+Individualization to the severity range has been implemented at the same level, by tuning a cone-shift parameter to a user's responses on plate or matching tests, or by estimating it from genotype or measured cone sensitivities~\citep{deeb2005, stockman2000}. Spectral separation predicts discrimination poorly. Some anomalous trichromats discriminate better than their very small separations would allow~\citep{neitz2011}, and across observers the correlation between the two is weaker than expected~\citep{bosten2019}. Across 51 individuals with red--green CVD, the threshold shift produced by a fixed lens varied more between observers than its mean effect, for both of two commercial products~\citep{patterson2022}. One evaluation of these lenses argues that even a spectral filter customized to an individual observer could redistribute confusions rather than remove them~\citep{gomezrobledo2018}. A retinal parameter characterizes the input to the visual system but leaves undescribed the cortical representation built from that input, which lies closer to color perception.
+
+Cortical activity patterns carry information about both which color was seen and where that color lies among the others. Cortical color processing is distributed and hierarchical~\citep{gegenfurtner2003, shapley2011, conway2018}. In V1 perceptual hues form spatially clustered response patterns~\citep{parkes2009} and responses are selective for hues between the cone-opponent axes~\citep{kuriki2015}. In hV4 a hue withheld from training can be reconstructed from the responses to its neighbors, an interpolation across the hue circle~\citep{brouwer2009}. The relative positions of colors in these patterns constitute a geometry, and a color can be identified in one observer from the patterns of others~\citep{bannert2025}. Existing descriptions of this geometry come from color-normal observers~\citep{brouwer2009, brouwer2013, kuriki2015}.
+
+%==============================================================================
+% Intro-3: What CVD studies measured, and where the arrangement evidence is
+%==============================================================================
+Neural measurements in CVD have primarily characterized the strength of color responses rather than their representational geometry.  Anomalous trichromats perceive more red--green contrast than a cone-sensitivity account predicts~\citep{boehm2014}, deutan observers adapt to chromatic contrast more than the same account predicts~\citep{basim2025}, and both results fit a post-receptoral gain that magnifies the weakened L--M signal~\citep{webster2015}. In V1 color responses are weaker in anomalous than in normal trichromats, and in ventral V2 and V3 the two groups are indistinguishable~\citep{tregillus2021}. Activation has been reported in three observers, one with dichromacy and two with achromatopsia~\citep{rina2024}. Each of these measures how strongly a region responds, not where the colors lie relative to one another.
+
+Psychophysics has measured that arrangement in CVD, and it typically differs from that of normal trichromats. Anomalous trichromats describe stimuli with all four hue primaries, but each primary lands on a different stimulus than in normal trichromats~\citep{emery2021}. Difference judgments by dichromats yield a map with one axis where normal trichromats have two~\citep{saysani2018}. Judgments by protan and deutan observers yield a map whose red--green distances collapse while its yellow--blue distances are preserved, and three of twenty such observers were indistinguishable from normal trichromats~\citep{ohkoba2021}. All of this evidence comes from judgments rather than from the cortical response.
+
+%==============================================================================
+% Intro-4: Contribution
+%==============================================================================
+Here we recover that map from an individual's cortical response instead and invert it into a correction on the stimulus, with the control geometry as the target. A stimulus-space filter is constructible under two conditions. The displayed colors must remain decodable from the cortical response, indicating that usable color information survives. Their continuous arrangement must also be distorted, providing a structured target for correction. We characterize two adults with CVD, one deutan and one protan, against seven color-normal controls, and report two contributions. First, categorical identification of the eight displayed hues is preserved in both participants while interpolation across the hue circle is markedly impaired at hV4, the region where the arrangement of responses follows perceptual color space~\citep{brouwer2009}. Second, we model each participant's departure from the control geometry with two parameters on fixed cone-opponent axes, invert them into a stimulus-space filter for that participant, and evaluate the filters in a prospective session of fMRI and psychophysics. To our knowledge this is the first correction filter derived from an individual's cortical representation. With two participants the evaluation is a proof of concept, and it tests the feasibility of the inversion rather than the superiority of a per-person correction over a subtype-average one.

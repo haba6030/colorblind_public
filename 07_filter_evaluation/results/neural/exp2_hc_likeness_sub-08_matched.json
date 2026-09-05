@@ -1,0 +1,808 @@
+{
+  "V1": {
+    "roi": "V1",
+    "K": 6,
+    "hc_n": 7,
+    "hc_loco_rho_n4_mean": 0.12859393179004194,
+    "hc_loco_rho_n4_sd": 0.08619850326585314,
+    "hc_loco_rho_n4_values": [
+      0.0757,
+      0.0679,
+      0.1807,
+      0.1416,
+      0.2173,
+      -0.0067,
+      0.2236
+    ],
+    "hc_loco_rho_n6_mean": 0.12997847771311385,
+    "hc_loco_rho_n6_sd": 0.09702162176892799,
+    "hc_loco_adjacc_n4_mean": 0.40059523809523806,
+    "hc_loco_adjacc_n4_sd": 0.06704228261873366,
+    "hc_loco_adjacc_n4_values": [
+      0.3354,
+      0.4292,
+      0.4917,
+      0.4208,
+      0.4292,
+      0.2896,
+      0.4083
+    ],
+    "hc_loco_adjacc_n6_mean": 0.3928571428571428,
+    "hc_loco_adjacc_n6_sd": 0.05567942539842176,
+    "hc_loco_exactacc_n4_mean": 0.27499999999999997,
+    "hc_loco_exactacc_n4_sd": 0.0561985361282922,
+    "hc_loco_exactacc_n6_mean": 0.2619047619047619,
+    "hc_loro_acc_mean": 0.7142857142857144,
+    "hc_loro_acc_sd": 0.09294740220533106,
+    "hc_loro_fe6_acc_mean": 0.6071428571428571,
+    "hc_loro_fe6_acc_sd": 0.07647902330241282,
+    "conditions": {
+      "window": {
+        "n_voxels": 560,
+        "n_runs": 4,
+        "loco_rho_mean": -0.31025794799532125,
+        "loco_rho_per_color": [
+          -0.7361,
+          -0.5073,
+          0.1515,
+          0.2869,
+          0.2387,
+          -0.523,
+          -0.7061,
+          -0.6868
+        ],
+        "loco_d_vs_hc_n4matched": -5.091177493324422,
+        "loco_rho_loo_runs": [
+          -0.3482,
+          -0.3245,
+          -0.1709,
+          -0.2307
+        ],
+        "loco_rho_loo_min": -0.3481625906953915,
+        "loco_rho_loo_max": -0.17093797408137912,
+        "loco_adjacc_mean": 0.25,
+        "loco_exactacc_mean": 0.21875,
+        "loco_adjacc_per_color": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.0,
+          0.75,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -2.246272534478967,
+        "loco_adjacc_loo_runs": [
+          0.25,
+          0.25,
+          0.2917,
+          0.25
+        ],
+        "loco_adjacc_loo_min": 0.25,
+        "loco_adjacc_loo_max": 0.29166666666666663,
+        "loro_acc": 0.84375,
+        "loro_fe6_acc": 0.5,
+        "rdm_cosine_to_hc": 0.9128257657544226
+      },
+      "optimal": {
+        "n_voxels": 560,
+        "n_runs": 4,
+        "loco_rho_mean": 0.05798051437320484,
+        "loco_rho_per_color": [
+          0.2536,
+          -0.3736,
+          -0.2051,
+          0.6311,
+          0.4583,
+          -0.3503,
+          -0.0625,
+          0.1124
+        ],
+        "loco_d_vs_hc_n4matched": -0.8191954006330183,
+        "loco_rho_loo_runs": [
+          0.0109,
+          0.1723,
+          0.1927,
+          0.1292
+        ],
+        "loco_rho_loo_min": 0.01087590773509675,
+        "loco_rho_loo_max": 0.1926745762684809,
+        "loco_adjacc_mean": 0.25,
+        "loco_exactacc_mean": 0.21875,
+        "loco_adjacc_per_color": [
+          0.0,
+          0.5,
+          0.0,
+          1.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.25,
+          0.0,
+          1.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -2.246272534478967,
+        "loco_adjacc_loo_runs": [
+          0.2917,
+          0.25,
+          0.2083,
+          0.3333
+        ],
+        "loco_adjacc_loo_min": 0.20833333333333331,
+        "loco_adjacc_loo_max": 0.3333333333333333,
+        "loro_acc": 0.71875,
+        "loro_fe6_acc": 0.5,
+        "rdm_cosine_to_hc": 0.9060214779890253
+      }
+    },
+    "nofilter_baseline_exp1": {
+      "n_voxels": 560,
+      "loco_rho_n6_full": -0.061553156564936456,
+      "loco_rho_n4_matched": 0.005112162154517438,
+      "loco_d_vs_hc_n4": -1.4325280017297102,
+      "loco_adjacc_n6_full": 0.43749999999999994,
+      "loco_adjacc_n4_matched": 0.4083333333333333,
+      "loco_exactacc_n6_full": 0.3125,
+      "loco_exactacc_n4_matched": 0.30416666666666664,
+      "loco_adjacc_d_vs_hc_n4": 0.1154211183724375,
+      "loco_adjacc_per_color": [
+        1.0,
+        0.0,
+        0.0,
+        0.6667,
+        0.6667,
+        0.5,
+        0.0,
+        0.6667
+      ],
+      "loro_acc": 0.7916666666666666,
+      "loro_fe6_acc": 0.4791666666666667,
+      "note": "sub-08 exp1; maskfunc recipe (recipe-matched to HC; voxel set 560 differs from exp2 858)"
+    },
+    "contrast_optimal_minus_window": {
+      "delta_loco_rho": 0.3682384623685261,
+      "delta_in_hc_n4_sd_units": 4.271982092691403,
+      "optimal_closer_to_hc": true,
+      "loo_run_separated": true,
+      "delta_loco_adjacc": 0.0,
+      "delta_adjacc_in_hc_n4_sd_units": 0.0,
+      "optimal_closer_to_hc_adjacc": false,
+      "adjacc_loo_run_separated": false,
+      "vs_nofilter": {
+        "nofilter_rho_n4": 0.005112162154517438,
+        "optimal_more_hc_like_than_nofilter": true,
+        "window_more_hc_like_than_nofilter": false,
+        "optimal_minus_nofilter": 0.0528683522186874,
+        "window_minus_nofilter": -0.3153701101498387,
+        "nofilter_adjacc_n4": 0.4083333333333333,
+        "optimal_more_hc_like_than_nofilter_adjacc": false,
+        "window_more_hc_like_than_nofilter_adjacc": false,
+        "optimal_adjacc_minus_nofilter": -0.15833333333333333,
+        "window_adjacc_minus_nofilter": -0.15833333333333333
+      }
+    }
+  },
+  "V2": {
+    "roi": "V2",
+    "K": 6,
+    "hc_n": 7,
+    "hc_loco_rho_n4_mean": 0.16165882707011606,
+    "hc_loco_rho_n4_sd": 0.13496314767902878,
+    "hc_loco_rho_n4_values": [
+      0.0965,
+      0.2391,
+      0.2136,
+      0.2114,
+      0.2767,
+      -0.1178,
+      0.2122
+    ],
+    "hc_loco_rho_n6_mean": 0.14962293819685374,
+    "hc_loco_rho_n6_sd": 0.18769423328355958,
+    "hc_loco_adjacc_n4_mean": 0.37321428571428567,
+    "hc_loco_adjacc_n4_sd": 0.1607249408578414,
+    "hc_loco_adjacc_n4_values": [
+      0.4417,
+      0.1708,
+      0.5354,
+      0.2708,
+      0.4938,
+      0.1812,
+      0.5188
+    ],
+    "hc_loco_adjacc_n6_mean": 0.35714285714285715,
+    "hc_loco_adjacc_n6_sd": 0.15423636348185152,
+    "hc_loco_exactacc_n4_mean": 0.2806547619047619,
+    "hc_loco_exactacc_n4_sd": 0.1353723981365798,
+    "hc_loco_exactacc_n6_mean": 0.2648809523809524,
+    "hc_loro_acc_mean": 0.7053571428571429,
+    "hc_loro_acc_sd": 0.08195789504890032,
+    "hc_loro_fe6_acc_mean": 0.613095238095238,
+    "hc_loro_fe6_acc_sd": 0.09383263553830029,
+    "conditions": {
+      "window": {
+        "n_voxels": 400,
+        "n_runs": 4,
+        "loco_rho_mean": -0.2297323618521937,
+        "loco_rho_per_color": [
+          -0.8477,
+          -0.5242,
+          0.671,
+          -0.0132,
+          0.5458,
+          -0.0877,
+          -0.7776,
+          -0.8043
+        ],
+        "loco_d_vs_hc_n4matched": -2.899985630545026,
+        "loco_rho_loo_runs": [
+          -0.2242,
+          -0.1206,
+          -0.1001,
+          -0.1255
+        ],
+        "loco_rho_loo_min": -0.2241967467047607,
+        "loco_rho_loo_max": -0.10008731484758981,
+        "loco_adjacc_mean": 0.28125,
+        "loco_exactacc_mean": 0.28125,
+        "loco_adjacc_per_color": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -0.5721842871644084,
+        "loco_adjacc_loo_runs": [
+          0.2917,
+          0.2917,
+          0.2917,
+          0.2917
+        ],
+        "loco_adjacc_loo_min": 0.29166666666666663,
+        "loco_adjacc_loo_max": 0.29166666666666663,
+        "loro_acc": 0.6875,
+        "loro_fe6_acc": 0.34375,
+        "rdm_cosine_to_hc": 0.8520836180980177
+      },
+      "optimal": {
+        "n_voxels": 400,
+        "n_runs": 4,
+        "loco_rho_mean": 0.1674076446658314,
+        "loco_rho_per_color": [
+          0.2479,
+          -0.4633,
+          -0.051,
+          0.7891,
+          0.78,
+          -0.1339,
+          -0.131,
+          0.3013
+        ],
+        "loco_d_vs_hc_n4matched": 0.042595461758103574,
+        "loco_rho_loo_runs": [
+          0.1528,
+          0.1988,
+          0.2506,
+          0.1501
+        ],
+        "loco_rho_loo_min": 0.1501122239352442,
+        "loco_rho_loo_max": 0.25064450388155807,
+        "loco_adjacc_mean": 0.375,
+        "loco_exactacc_mean": 0.125,
+        "loco_adjacc_per_color": [
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.75,
+          0.0,
+          0.0,
+          0.25
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": 0.011110374508047076,
+        "loco_adjacc_loo_runs": [
+          0.3333,
+          0.3333,
+          0.3333,
+          0.375
+        ],
+        "loco_adjacc_loo_min": 0.3333333333333333,
+        "loco_adjacc_loo_max": 0.375,
+        "loro_acc": 0.625,
+        "loro_fe6_acc": 0.5625,
+        "rdm_cosine_to_hc": 0.8248770249411631
+      }
+    },
+    "nofilter_baseline_exp1": {
+      "n_voxels": 400,
+      "loco_rho_n6_full": -0.24116422029697987,
+      "loco_rho_n4_matched": -0.21075823213937914,
+      "loco_d_vs_hc_n4": -2.759398143967289,
+      "loco_adjacc_n6_full": 0.27083333333333337,
+      "loco_adjacc_n4_matched": 0.2916666666666667,
+      "loco_exactacc_n6_full": 0.27083333333333337,
+      "loco_exactacc_n4_matched": 0.28958333333333336,
+      "loco_adjacc_d_vs_hc_n4": -0.507373769200802,
+      "loco_adjacc_per_color": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.1667,
+        0.0,
+        0.8333
+      ],
+      "loro_acc": 0.7916666666666666,
+      "loro_fe6_acc": 0.4583333333333333,
+      "note": "sub-08 exp1; maskfunc recipe (recipe-matched to HC; voxel set 560 differs from exp2 858)"
+    },
+    "contrast_optimal_minus_window": {
+      "delta_loco_rho": 0.3971400065180251,
+      "delta_in_hc_n4_sd_units": 2.9425810923031297,
+      "optimal_closer_to_hc": true,
+      "loo_run_separated": true,
+      "delta_loco_adjacc": 0.09375,
+      "delta_adjacc_in_hc_n4_sd_units": 0.5832946616724554,
+      "optimal_closer_to_hc_adjacc": true,
+      "adjacc_loo_run_separated": true,
+      "vs_nofilter": {
+        "nofilter_rho_n4": -0.21075823213937914,
+        "optimal_more_hc_like_than_nofilter": true,
+        "window_more_hc_like_than_nofilter": false,
+        "optimal_minus_nofilter": 0.3781658768052105,
+        "window_minus_nofilter": -0.018974129712814564,
+        "nofilter_adjacc_n4": 0.2916666666666667,
+        "optimal_more_hc_like_than_nofilter_adjacc": true,
+        "window_more_hc_like_than_nofilter_adjacc": false,
+        "optimal_adjacc_minus_nofilter": 0.08333333333333331,
+        "window_adjacc_minus_nofilter": -0.010416666666666685
+      }
+    }
+  },
+  "V3": {
+    "roi": "V3",
+    "K": 6,
+    "hc_n": 7,
+    "hc_loco_rho_n4_mean": 0.053052193637943036,
+    "hc_loco_rho_n4_sd": 0.20017605993691998,
+    "hc_loco_rho_n4_values": [
+      0.1802,
+      0.1299,
+      -0.0141,
+      0.0567,
+      0.354,
+      -0.2812,
+      -0.0542
+    ],
+    "hc_loco_rho_n6_mean": 0.02307324093686703,
+    "hc_loco_rho_n6_sd": 0.24031593474261087,
+    "hc_loco_adjacc_n4_mean": 0.34196428571428567,
+    "hc_loco_adjacc_n4_sd": 0.134103831534655,
+    "hc_loco_adjacc_n4_values": [
+      0.5375,
+      0.4604,
+      0.2458,
+      0.3063,
+      0.3438,
+      0.1313,
+      0.3688
+    ],
+    "hc_loco_adjacc_n6_mean": 0.3392857142857143,
+    "hc_loco_adjacc_n6_sd": 0.15105449452916092,
+    "hc_loco_exactacc_n4_mean": 0.2642857142857143,
+    "hc_loco_exactacc_n4_sd": 0.11271474213801005,
+    "hc_loco_exactacc_n6_mean": 0.27083333333333337,
+    "hc_loro_acc_mean": 0.7678571428571429,
+    "hc_loro_acc_sd": 0.1235029400074192,
+    "hc_loro_fe6_acc_mean": 0.5922619047619048,
+    "hc_loro_fe6_acc_sd": 0.1354738890088219,
+    "conditions": {
+      "window": {
+        "n_voxels": 114,
+        "n_runs": 4,
+        "loco_rho_mean": -0.3197899638267484,
+        "loco_rho_per_color": [
+          -0.8891,
+          -0.8459,
+          0.475,
+          -0.6748,
+          0.8649,
+          -0.0374,
+          -0.6481,
+          -0.8029
+        ],
+        "loco_d_vs_hc_n4matched": -1.8625711665130311,
+        "loco_rho_loo_runs": [
+          -0.3269,
+          -0.3375,
+          -0.288,
+          -0.2814
+        ],
+        "loco_rho_loo_min": -0.33754326747640195,
+        "loco_rho_loo_max": -0.28141205677671305,
+        "loco_adjacc_mean": 0.21875,
+        "loco_exactacc_mean": 0.21875,
+        "loco_adjacc_per_color": [
+          0.0,
+          0.0,
+          0.75,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.0,
+          0.75,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -0.9187976533127223,
+        "loco_adjacc_loo_runs": [
+          0.2083,
+          0.2083,
+          0.2083,
+          0.25
+        ],
+        "loco_adjacc_loo_min": 0.20833333333333331,
+        "loco_adjacc_loo_max": 0.25,
+        "loro_acc": 0.78125,
+        "loro_fe6_acc": 0.4375,
+        "rdm_cosine_to_hc": 0.8347459789687884
+      },
+      "optimal": {
+        "n_voxels": 114,
+        "n_runs": 4,
+        "loco_rho_mean": 0.0454160133879076,
+        "loco_rho_per_color": [
+          -0.3362,
+          -0.6915,
+          -0.7176,
+          0.7901,
+          0.8141,
+          -0.0381,
+          0.0928,
+          0.4496
+        ],
+        "loco_d_vs_hc_n4matched": -0.03814732017625769,
+        "loco_rho_loo_runs": [
+          0.0525,
+          0.0447,
+          0.1356,
+          0.0747
+        ],
+        "loco_rho_loo_min": 0.04473829811189975,
+        "loco_rho_loo_max": 0.13564178098337853,
+        "loco_adjacc_mean": 0.25,
+        "loco_exactacc_mean": 0.125,
+        "loco_adjacc_per_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -0.6857692629797855,
+        "loco_adjacc_loo_runs": [
+          0.25,
+          0.25,
+          0.2917,
+          0.25
+        ],
+        "loco_adjacc_loo_min": 0.25,
+        "loco_adjacc_loo_max": 0.29166666666666663,
+        "loro_acc": 0.6875,
+        "loro_fe6_acc": 0.40625,
+        "rdm_cosine_to_hc": 0.7798685232096908
+      }
+    },
+    "nofilter_baseline_exp1": {
+      "n_voxels": 114,
+      "loco_rho_n6_full": 0.049361596683290834,
+      "loco_rho_n4_matched": 0.06623785261373578,
+      "loco_d_vs_hc_n4": 0.06587030926649196,
+      "loco_adjacc_n6_full": 0.375,
+      "loco_adjacc_n4_matched": 0.38125,
+      "loco_exactacc_n6_full": 0.3541666666666667,
+      "loco_exactacc_n4_matched": 0.33541666666666664,
+      "loco_adjacc_d_vs_hc_n4": 0.2929499764185495,
+      "loco_adjacc_per_color": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6667,
+        0.3333,
+        0.0,
+        1.0
+      ],
+      "loro_acc": 0.6666666666666666,
+      "loro_fe6_acc": 0.4583333333333333,
+      "note": "sub-08 exp1; maskfunc recipe (recipe-matched to HC; voxel set 560 differs from exp2 858)"
+    },
+    "contrast_optimal_minus_window": {
+      "delta_loco_rho": 0.365205977214656,
+      "delta_in_hc_n4_sd_units": 1.824423846336773,
+      "optimal_closer_to_hc": true,
+      "loo_run_separated": true,
+      "delta_loco_adjacc": 0.03125,
+      "delta_adjacc_in_hc_n4_sd_units": 0.23302839033293693,
+      "optimal_closer_to_hc_adjacc": true,
+      "adjacc_loo_run_separated": false,
+      "vs_nofilter": {
+        "nofilter_rho_n4": 0.06623785261373578,
+        "optimal_more_hc_like_than_nofilter": true,
+        "window_more_hc_like_than_nofilter": false,
+        "optimal_minus_nofilter": -0.020821839225828184,
+        "window_minus_nofilter": -0.3860278164404842,
+        "nofilter_adjacc_n4": 0.38125,
+        "optimal_more_hc_like_than_nofilter_adjacc": false,
+        "window_more_hc_like_than_nofilter_adjacc": false,
+        "optimal_adjacc_minus_nofilter": -0.13124999999999998,
+        "window_adjacc_minus_nofilter": -0.16249999999999998
+      }
+    }
+  },
+  "V4": {
+    "roi": "V4",
+    "K": 6,
+    "hc_n": 6,
+    "hc_loco_rho_n4_mean": 0.20789970301206742,
+    "hc_loco_rho_n4_sd": 0.17869406589391207,
+    "hc_loco_rho_n4_values": [
+      0.0046,
+      0.4036,
+      0.403,
+      0.151,
+      0.0198,
+      0.2654
+    ],
+    "hc_loco_rho_n6_mean": 0.23164515891993595,
+    "hc_loco_rho_n6_sd": 0.16632022820907563,
+    "hc_loco_adjacc_n4_mean": 0.45555555555555555,
+    "hc_loco_adjacc_n4_sd": 0.10623502073059349,
+    "hc_loco_adjacc_n4_values": [
+      0.4229,
+      0.3708,
+      0.5437,
+      0.5375,
+      0.3021,
+      0.5563
+    ],
+    "hc_loco_adjacc_n6_mean": 0.46527777777777773,
+    "hc_loco_adjacc_n6_sd": 0.10838673897292592,
+    "hc_loco_exactacc_n4_mean": 0.3423611111111111,
+    "hc_loco_exactacc_n4_sd": 0.055067298893330584,
+    "hc_loco_exactacc_n6_mean": 0.3576388888888889,
+    "hc_loro_acc_mean": 0.7534722222222222,
+    "hc_loro_acc_sd": 0.0971974174706456,
+    "hc_loro_fe6_acc_mean": 0.65625,
+    "hc_loro_fe6_acc_sd": 0.09386566938390677,
+    "conditions": {
+      "window": {
+        "n_voxels": 70,
+        "n_runs": 4,
+        "loco_rho_mean": -0.38821069100812833,
+        "loco_rho_per_color": [
+          -0.94,
+          -0.6842,
+          0.6567,
+          -0.4782,
+          0.8003,
+          -0.769,
+          -0.8827,
+          -0.8087
+        ],
+        "loco_d_vs_hc_n4matched": -3.3359271951095306,
+        "loco_rho_loo_runs": [
+          -0.3798,
+          -0.3948,
+          -0.3866,
+          -0.391
+        ],
+        "loco_rho_loo_min": -0.3948205251101071,
+        "loco_rho_loo_max": -0.3797885495078328,
+        "loco_adjacc_mean": 0.25,
+        "loco_exactacc_mean": 0.25,
+        "loco_adjacc_per_color": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -1.9349133095839817,
+        "loco_adjacc_loo_runs": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "loco_adjacc_loo_min": 0.25,
+        "loco_adjacc_loo_max": 0.25,
+        "loro_acc": 0.875,
+        "loro_fe6_acc": 0.40625,
+        "rdm_cosine_to_hc": 0.8127867131106469
+      },
+      "optimal": {
+        "n_voxels": 70,
+        "n_runs": 4,
+        "loco_rho_mean": 0.17886295791630277,
+        "loco_rho_per_color": [
+          0.4991,
+          0.0878,
+          -0.4213,
+          0.8575,
+          0.3841,
+          -0.3708,
+          0.1502,
+          0.2443
+        ],
+        "loco_d_vs_hc_n4matched": -0.1624941765721718,
+        "loco_rho_loo_runs": [
+          0.1931,
+          0.1335,
+          0.3367,
+          -0.0138
+        ],
+        "loco_rho_loo_min": -0.013829237174844328,
+        "loco_rho_loo_max": 0.33666883411622783,
+        "loco_adjacc_mean": 0.3125,
+        "loco_exactacc_mean": 0.25,
+        "loco_adjacc_per_color": [
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "loco_exactacc_per_color": [
+          0.0,
+          0.5,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "loco_adjacc_d_vs_hc_n4matched": -1.346595073561825,
+        "loco_adjacc_loo_runs": [
+          0.2917,
+          0.2917,
+          0.3333,
+          0.375
+        ],
+        "loco_adjacc_loo_min": 0.2916666666666667,
+        "loco_adjacc_loo_max": 0.375,
+        "loro_acc": 0.5,
+        "loro_fe6_acc": 0.40625,
+        "rdm_cosine_to_hc": 0.812850402753122
+      }
+    },
+    "nofilter_baseline_exp1": {
+      "n_voxels": 70,
+      "loco_rho_n6_full": -0.27454897653735955,
+      "loco_rho_n4_matched": -0.27232845389474786,
+      "loco_d_vs_hc_n4": -2.6874320336519704,
+      "loco_adjacc_n6_full": 0.25,
+      "loco_adjacc_n4_matched": 0.23125,
+      "loco_exactacc_n6_full": 0.25,
+      "loco_exactacc_n4_matched": 0.23125,
+      "loco_adjacc_d_vs_hc_n4": -2.1114087803906285,
+      "loco_adjacc_per_color": [
+        1.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.8333,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loro_acc": 0.7291666666666666,
+      "loro_fe6_acc": 0.5208333333333334,
+      "note": "sub-08 exp1; maskfunc recipe (recipe-matched to HC; voxel set 560 differs from exp2 858)"
+    },
+    "contrast_optimal_minus_window": {
+      "delta_loco_rho": 0.5670736489244311,
+      "delta_in_hc_n4_sd_units": 3.173433018537359,
+      "optimal_closer_to_hc": true,
+      "loo_run_separated": true,
+      "delta_loco_adjacc": 0.0625,
+      "delta_adjacc_in_hc_n4_sd_units": 0.5883182360221566,
+      "optimal_closer_to_hc_adjacc": true,
+      "adjacc_loo_run_separated": true,
+      "vs_nofilter": {
+        "nofilter_rho_n4": -0.27232845389474786,
+        "optimal_more_hc_like_than_nofilter": true,
+        "window_more_hc_like_than_nofilter": false,
+        "optimal_minus_nofilter": 0.4511914118110506,
+        "window_minus_nofilter": -0.11588223711338047,
+        "nofilter_adjacc_n4": 0.23125,
+        "optimal_more_hc_like_than_nofilter_adjacc": true,
+        "window_more_hc_like_than_nofilter_adjacc": true,
+        "optimal_adjacc_minus_nofilter": 0.08124999999999999,
+        "window_adjacc_minus_nofilter": 0.01874999999999999
+      }
+    }
+  }
+}

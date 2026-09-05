@@ -1,0 +1,240 @@
+{
+ "meta": {
+  "generated": "2026-07-23 00:45",
+  "script": "analysis/validation/scripts/basis_sensitivity_filter.py",
+  "question": "production L_RDM 의 PCA 기저를 SRM 기저로 교체하면 적합 파라미터와 필터 출력 색이 얼마나 달라지는가",
+  "stimulus": {
+   "L_star": 75.0,
+   "chroma": 40.0,
+   "hues_deg": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+   ],
+   "color_names": [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "cyan",
+    "blue",
+    "purple",
+    "magenta"
+   ]
+  },
+  "reliability_context": "HC-mean RDM split-half stability — PCA: V1 +0.146 V2 -0.041 | SRM LOO agreement: V1 +0.578 V2 +0.590 (analysis/validation/results/within_hc_reliability.json)"
+ },
+ "subjects": {
+  "sub-08": {
+   "cvd_type": "deutan",
+   "combo": "γOY|RDMV2|noLOCO",
+   "published_pca_argmin": [
+    6.0,
+    -42.0
+   ],
+   "pca_basis": {
+    "median": [
+     6.0,
+     -42.0
+    ],
+    "iqr": [
+     8.0,
+     2.0
+    ],
+    "mode": [
+     8.0,
+     -42.0
+    ],
+    "mode_share": 0.09,
+    "boundary_rate": 0.093,
+    "n": 300
+   },
+   "srm_basis": {
+    "median": [
+     8.0,
+     -42.0
+    ],
+    "iqr": [
+     10.0,
+     4.0
+    ],
+    "mode": [
+     18.0,
+     -36.0
+    ],
+    "mode_share": 0.147,
+    "boundary_rate": 0.177,
+    "n": 300
+   },
+   "param_shift_deg": {
+    "beta_s": 2.0,
+    "beta_c": 0.0,
+    "euclidean": 2.0
+   },
+   "filter_output_hue_deg": {
+    "pca": [
+     320.7,
+     10.17,
+     60.69,
+     112.14,
+     163.79,
+     253.28,
+     276.16,
+     294.27
+    ],
+    "srm": [
+     321.38,
+     11.9,
+     62.74,
+     114.37,
+     166.14,
+     252.36,
+     275.26,
+     293.8
+    ],
+    "difference": [
+     0.68,
+     1.73,
+     2.05,
+     2.23,
+     2.35,
+     -0.92,
+     -0.9,
+     -0.47
+    ],
+    "mean_abs_difference": 1.42,
+    "max_abs_difference": 2.35
+   },
+   "delta_e_ciede2000_between_bases": {
+    "per_color": {
+     "red": 0.29,
+     "orange": 0.72,
+     "yellow": 1.06,
+     "green": 1.0,
+     "cyan": 0.96,
+     "blue": 0.36,
+     "purple": 0.48,
+     "magenta": 0.27
+    },
+    "mean": 0.64,
+    "max": 1.06
+   },
+   "delta_e_vs_no_filter": {
+    "pca_mean": 10.74,
+    "srm_mean": 10.18
+   },
+   "pre_image_max_abs_residual_deg": {
+    "pca": 0.0,
+    "srm": 0.0
+   }
+  },
+  "sub-09": {
+   "cvd_type": "protan",
+   "combo": "γGB|RDMV1|noLOCO",
+   "published_pca_argmin": [
+    2.0,
+    24.0
+   ],
+   "pca_basis": {
+    "median": [
+     2.0,
+     24.0
+    ],
+    "iqr": [
+     0.0,
+     0.0
+    ],
+    "mode": [
+     2.0,
+     24.0
+    ],
+    "mode_share": 0.877,
+    "boundary_rate": 0.0,
+    "n": 300
+   },
+   "srm_basis": {
+    "median": [
+     32.0,
+     0.0
+    ],
+    "iqr": [
+     2.0,
+     10.0
+    ],
+    "mode": [
+     32.0,
+     0.0
+    ],
+    "mode_share": 0.57,
+    "boundary_rate": 0.13,
+    "n": 300
+   },
+   "param_shift_deg": {
+    "beta_s": 30.0,
+    "beta_c": -24.0,
+    "euclidean": 38.42
+   },
+   "filter_output_hue_deg": {
+    "pca": [
+     348.44,
+     40.48,
+     91.03,
+     140.77,
+     191.1,
+     241.11,
+     263.82,
+     292.04
+    ],
+    "srm": [
+     26.22,
+     74.63,
+     121.41,
+     166.99,
+     210.39,
+     233.09,
+     246.11,
+     331.27
+    ],
+    "difference": [
+     37.78,
+     34.16,
+     30.38,
+     26.23,
+     19.29,
+     -8.02,
+     -17.72,
+     39.22
+    ],
+    "mean_abs_difference": 26.6,
+    "max_abs_difference": 39.22
+   },
+   "delta_e_ciede2000_between_bases": {
+    "per_color": {
+     "red": 15.05,
+     "orange": 17.2,
+     "yellow": 14.16,
+     "green": 10.05,
+     "cyan": 8.24,
+     "blue": 2.9,
+     "purple": 7.16,
+     "magenta": 18.58
+    },
+    "mean": 11.67,
+    "max": 18.58
+   },
+   "delta_e_vs_no_filter": {
+    "pca_mean": 4.39,
+    "srm_mean": 10.72
+   },
+   "pre_image_max_abs_residual_deg": {
+    "pca": 0.0,
+    "srm": 0.0
+   }
+  }
+ }
+}

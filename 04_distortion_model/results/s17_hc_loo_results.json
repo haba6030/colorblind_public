@@ -1,0 +1,1249 @@
+{
+  "candidates": [
+    {
+      "id": "S08-stable",
+      "subject": "sub-08",
+      "family": "deutan",
+      "model": "2comp",
+      "combo_label": "\u03b3ALL|RDMV1|noLOCO",
+      "gamma_pairs": [
+        "ALL"
+      ],
+      "rdm_rois": [
+        "V1"
+      ],
+      "loco_v4": false,
+      "description": "primary stable (multi-pair \u03b3 + V1 RDM)",
+      "phase_b_v6_fit": {
+        "beta_s": 38.0,
+        "beta_c": -10.0
+      },
+      "loo_folds": [
+        {
+          "held_out_hc": "sub-01",
+          "train_hcs": [
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.195463915257526,
+          "test_loss": -2.339645266054692,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 46.0,
+          "beta_c": -10.0
+        },
+        {
+          "held_out_hc": "sub-02",
+          "train_hcs": [
+            "sub-01",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.3551904325565938,
+          "test_loss": -0.41716517914946,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 20.0,
+          "beta_c": -32.0
+        },
+        {
+          "held_out_hc": "sub-03",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.2034141512851118,
+          "test_loss": -2.8262297339246922,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 38.0,
+          "beta_c": -4.0
+        },
+        {
+          "held_out_hc": "sub-04",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.2425482303390434,
+          "test_loss": -2.8513684715251197,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 46.0,
+          "beta_c": -10.0
+        },
+        {
+          "held_out_hc": "sub-05",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.2940538548514215,
+          "test_loss": -0.7509521289911855,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 46.0,
+          "beta_c": -10.0
+        },
+        {
+          "held_out_hc": "sub-06",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-07"
+          ],
+          "train_loss": -1.2281302009232808,
+          "test_loss": -2.399481793870821,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 38.0,
+          "beta_c": -4.0
+        },
+        {
+          "held_out_hc": "sub-07",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06"
+          ],
+          "train_loss": -1.2182014814186397,
+          "test_loss": -3.287304645353656,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 32.0,
+          "beta_c": 0.0
+        }
+      ],
+      "summary": {
+        "n_folds_valid": 7,
+        "phase_b_v6_fit": {
+          "beta_s": 38.0,
+          "beta_c": -10.0
+        },
+        "bs_median": 38.0,
+        "bs_iqr": 11.0,
+        "bs_min": 20.0,
+        "bs_max": 46.0,
+        "bs_range": 26.0,
+        "bc_median": -10.0,
+        "bc_iqr": 6.0,
+        "bc_min": -32.0,
+        "bc_max": 0.0,
+        "bc_range": 32.0,
+        "outlier_ranking": [
+          {
+            "held_out_hc": "sub-02",
+            "euclid_delta_bsc": 28.42534080710379
+          },
+          {
+            "held_out_hc": "sub-07",
+            "euclid_delta_bsc": 11.661903789690601
+          },
+          {
+            "held_out_hc": "sub-01",
+            "euclid_delta_bsc": 8.0
+          },
+          {
+            "held_out_hc": "sub-04",
+            "euclid_delta_bsc": 8.0
+          },
+          {
+            "held_out_hc": "sub-05",
+            "euclid_delta_bsc": 8.0
+          },
+          {
+            "held_out_hc": "sub-03",
+            "euclid_delta_bsc": 6.0
+          },
+          {
+            "held_out_hc": "sub-06",
+            "euclid_delta_bsc": 6.0
+          }
+        ],
+        "outlier_holdouts": [
+          "sub-02"
+        ],
+        "boundary_rate": 0.0,
+        "train_loss_median": -1.2281302009232808,
+        "train_loss_iqr": 0.05749322624335651,
+        "test_loss_median": -2.399481793870821,
+        "test_loss_iqr": 1.293500405201967,
+        "test_focal_median": null,
+        "test_agg_median": null
+      }
+    },
+    {
+      "id": "S08-robust",
+      "subject": "sub-08",
+      "family": "deutan",
+      "model": "2comp",
+      "combo_label": "\u03b3OY|RDMV2|noLOCO",
+      "gamma_pairs": [
+        "OY"
+      ],
+      "rdm_rois": [
+        "V2"
+      ],
+      "loco_v4": false,
+      "description": "primary robust (OY \u03b3 + V2 RDM)",
+      "phase_b_v6_fit": {
+        "beta_s": 6.0,
+        "beta_c": -42.0
+      },
+      "loo_folds": [
+        {
+          "held_out_hc": "sub-01",
+          "train_hcs": [
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -2.9931036799275135,
+          "test_loss": -3.313281474277041,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 6.0,
+          "beta_c": -44.0
+        },
+        {
+          "held_out_hc": "sub-02",
+          "train_hcs": [
+            "sub-01",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -2.9199691500210525,
+          "test_loss": -3.289008423288999,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 4.0,
+          "beta_c": -40.0
+        },
+        {
+          "held_out_hc": "sub-03",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -2.875845483457866,
+          "test_loss": -3.1861682004706693,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 6.0,
+          "beta_c": -42.0
+        },
+        {
+          "held_out_hc": "sub-04",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -2.8916121641619372,
+          "test_loss": -2.9059588935301015,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 10.0,
+          "beta_c": -44.0
+        },
+        {
+          "held_out_hc": "sub-05",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -3.0444450433379693,
+          "test_loss": -0.8097103062928153,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 12.0,
+          "beta_c": -46.0
+        },
+        {
+          "held_out_hc": "sub-06",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-07"
+          ],
+          "train_loss": -2.724115663560879,
+          "test_loss": -5.027733160084284,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 2.0,
+          "beta_c": -40.0
+        },
+        {
+          "held_out_hc": "sub-07",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06"
+          ],
+          "train_loss": -2.7013248679531734,
+          "test_loss": -3.398531077297793,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_OY",
+            "rdm_V2"
+          ],
+          "test_atoms_used": [
+            "rdm_V2"
+          ],
+          "beta_s": 2.0,
+          "beta_c": -38.0
+        }
+      ],
+      "summary": {
+        "n_folds_valid": 7,
+        "phase_b_v6_fit": {
+          "beta_s": 6.0,
+          "beta_c": -42.0
+        },
+        "bs_median": 6.0,
+        "bs_iqr": 5.0,
+        "bs_min": 2.0,
+        "bs_max": 12.0,
+        "bs_range": 10.0,
+        "bc_median": -42.0,
+        "bc_iqr": 4.0,
+        "bc_min": -46.0,
+        "bc_max": -38.0,
+        "bc_range": 8.0,
+        "outlier_ranking": [
+          {
+            "held_out_hc": "sub-05",
+            "euclid_delta_bsc": 7.211102550927978
+          },
+          {
+            "held_out_hc": "sub-07",
+            "euclid_delta_bsc": 5.656854249492381
+          },
+          {
+            "held_out_hc": "sub-04",
+            "euclid_delta_bsc": 4.47213595499958
+          },
+          {
+            "held_out_hc": "sub-06",
+            "euclid_delta_bsc": 4.47213595499958
+          },
+          {
+            "held_out_hc": "sub-02",
+            "euclid_delta_bsc": 2.8284271247461903
+          },
+          {
+            "held_out_hc": "sub-01",
+            "euclid_delta_bsc": 2.0
+          },
+          {
+            "held_out_hc": "sub-03",
+            "euclid_delta_bsc": 0.0
+          }
+        ],
+        "outlier_holdouts": [],
+        "boundary_rate": 0.0,
+        "train_loss_median": -2.8916121641619372,
+        "train_loss_iqr": 0.15655584146491064,
+        "test_loss_median": -3.289008423288999,
+        "test_loss_iqr": 0.30984272878703134,
+        "test_focal_median": null,
+        "test_agg_median": null
+      }
+    },
+    {
+      "id": "S08-rc-subprimary",
+      "subject": "sub-08",
+      "family": "deutan",
+      "model": "rc",
+      "combo_label": "\u03b3_|RDMV1|noLOCO",
+      "gamma_pairs": [],
+      "rdm_rois": [
+        "V1"
+      ],
+      "loco_v4": false,
+      "description": "R+C sub-primary (V1 RDM only, \u0394\u03bb=6.5)",
+      "phase_b_v6_fit": {
+        "g": 2.25
+      },
+      "loo_folds": [
+        {
+          "held_out_hc": "sub-01",
+          "train_hcs": [
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.4533951978127349,
+          "test_loss": -2.6121613578654976,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        },
+        {
+          "held_out_hc": "sub-02",
+          "train_hcs": [
+            "sub-01",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.3199756067511743,
+          "test_loss": -0.7988250602753413,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        },
+        {
+          "held_out_hc": "sub-03",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.3650397644830048,
+          "test_loss": -0.32393754944312736,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        },
+        {
+          "held_out_hc": "sub-04",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.2921379373548454,
+          "test_loss": -0.8220093596032532,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        },
+        {
+          "held_out_hc": "sub-05",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.121153700654465,
+          "test_loss": -0.9462661737052389,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        },
+        {
+          "held_out_hc": "sub-06",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-07"
+          ],
+          "train_loss": -1.2513305666285532,
+          "test_loss": -2.822920780812552,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        },
+        {
+          "held_out_hc": "sub-07",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06"
+          ],
+          "train_loss": -1.2768353686938854,
+          "test_loss": -0.7624891306129183,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.25
+        }
+      ],
+      "summary": {
+        "n_folds_valid": 7,
+        "phase_b_v6_fit": {
+          "g": 2.25
+        },
+        "g_median": 2.25,
+        "g_iqr": 0.0,
+        "g_min": 2.25,
+        "g_max": 2.25,
+        "g_range": 0.0,
+        "outlier_ranking": [
+          {
+            "held_out_hc": "sub-01",
+            "abs_delta_g": 0.0
+          },
+          {
+            "held_out_hc": "sub-02",
+            "abs_delta_g": 0.0
+          },
+          {
+            "held_out_hc": "sub-03",
+            "abs_delta_g": 0.0
+          },
+          {
+            "held_out_hc": "sub-04",
+            "abs_delta_g": 0.0
+          },
+          {
+            "held_out_hc": "sub-05",
+            "abs_delta_g": 0.0
+          },
+          {
+            "held_out_hc": "sub-06",
+            "abs_delta_g": 0.0
+          },
+          {
+            "held_out_hc": "sub-07",
+            "abs_delta_g": 0.0
+          }
+        ],
+        "outlier_holdouts": [],
+        "boundary_rate": 0.0,
+        "train_loss_median": -1.2921379373548454,
+        "train_loss_iqr": 0.07842471795587036,
+        "test_loss_median": -0.8220093596032532,
+        "test_loss_iqr": 0.9985566703412385,
+        "test_focal_median": null,
+        "test_agg_median": null
+      },
+      "dl_src": "JND_Lamb",
+      "dl_value": 6.5
+    },
+    {
+      "id": "S09-stable",
+      "subject": "sub-09",
+      "family": "protan",
+      "model": "2comp",
+      "combo_label": "\u03b3ALL|RDMV1|noLOCO",
+      "gamma_pairs": [
+        "ALL"
+      ],
+      "rdm_rois": [
+        "V1"
+      ],
+      "loco_v4": false,
+      "description": "primary (multi-pair \u03b3 + V1 RDM)",
+      "phase_b_v6_fit": {
+        "beta_s": 2.0,
+        "beta_c": 24.0
+      },
+      "loo_folds": [
+        {
+          "held_out_hc": "sub-01",
+          "train_hcs": [
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.4481107169439527,
+          "test_loss": -0.46498052452390337,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        {
+          "held_out_hc": "sub-02",
+          "train_hcs": [
+            "sub-01",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.7935989199464133,
+          "test_loss": -2.460643400567259,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        {
+          "held_out_hc": "sub-03",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -2.079982383361858,
+          "test_loss": -2.079569372319982,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        {
+          "held_out_hc": "sub-04",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -2.1886510327816024,
+          "test_loss": -5.439243231615559,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        {
+          "held_out_hc": "sub-05",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.7588227730575645,
+          "test_loss": -2.3822147856623017,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        {
+          "held_out_hc": "sub-06",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-07"
+          ],
+          "train_loss": -1.8047094710333467,
+          "test_loss": -3.3843055499083854,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        {
+          "held_out_hc": "sub-07",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06"
+          ],
+          "train_loss": -1.7258854000334676,
+          "test_loss": -2.259234084585942,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        }
+      ],
+      "summary": {
+        "n_folds_valid": 7,
+        "phase_b_v6_fit": {
+          "beta_s": 2.0,
+          "beta_c": 24.0
+        },
+        "bs_median": 2.0,
+        "bs_iqr": 0.0,
+        "bs_min": 2.0,
+        "bs_max": 2.0,
+        "bs_range": 0.0,
+        "bc_median": 24.0,
+        "bc_iqr": 0.0,
+        "bc_min": 24.0,
+        "bc_max": 24.0,
+        "bc_range": 0.0,
+        "outlier_ranking": [
+          {
+            "held_out_hc": "sub-01",
+            "euclid_delta_bsc": 0.0
+          },
+          {
+            "held_out_hc": "sub-02",
+            "euclid_delta_bsc": 0.0
+          },
+          {
+            "held_out_hc": "sub-03",
+            "euclid_delta_bsc": 0.0
+          },
+          {
+            "held_out_hc": "sub-04",
+            "euclid_delta_bsc": 0.0
+          },
+          {
+            "held_out_hc": "sub-05",
+            "euclid_delta_bsc": 0.0
+          },
+          {
+            "held_out_hc": "sub-06",
+            "euclid_delta_bsc": 0.0
+          },
+          {
+            "held_out_hc": "sub-07",
+            "euclid_delta_bsc": 0.0
+          }
+        ],
+        "outlier_holdouts": [],
+        "boundary_rate": 0.0,
+        "train_loss_median": -1.7935989199464133,
+        "train_loss_iqr": 0.1999918406520862,
+        "test_loss_median": -2.3822147856623017,
+        "test_loss_iqr": 0.7530727467848601,
+        "test_focal_median": null,
+        "test_agg_median": null
+      }
+    },
+    {
+      "id": "S09-rc-subprimary",
+      "subject": "sub-09",
+      "family": "protan",
+      "model": "rc",
+      "combo_label": "\u03b3ALL|RDMV1|noLOCO",
+      "gamma_pairs": [
+        "ALL"
+      ],
+      "rdm_rois": [
+        "V1"
+      ],
+      "loco_v4": false,
+      "description": "R+C sub-primary (\u03b3_all + V1 RDM, \u0394\u03bb=3.0)",
+      "phase_b_v6_fit": {
+        "g": 2.95
+      },
+      "loo_folds": [
+        {
+          "held_out_hc": "sub-01",
+          "train_hcs": [
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.121624643584662,
+          "test_loss": -2.558143242108758,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": true,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 3.0
+        },
+        {
+          "held_out_hc": "sub-02",
+          "train_hcs": [
+            "sub-01",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.1320180402514322,
+          "test_loss": -0.6216150921342494,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.9000000000000004
+        },
+        {
+          "held_out_hc": "sub-03",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-04",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.1334160591776732,
+          "test_loss": -2.017434211311962,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": true,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 3.0
+        },
+        {
+          "held_out_hc": "sub-04",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-05",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.0535606885778668,
+          "test_loss": -4.1506770390470304,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": true,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 3.0
+        },
+        {
+          "held_out_hc": "sub-05",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-06",
+            "sub-07"
+          ],
+          "train_loss": -1.088481564095551,
+          "test_loss": -1.22542295246361,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.9000000000000004
+        },
+        {
+          "held_out_hc": "sub-06",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-07"
+          ],
+          "train_loss": -1.099075853357301,
+          "test_loss": -1.4204840984807616,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.9000000000000004
+        },
+        {
+          "held_out_hc": "sub-07",
+          "train_hcs": [
+            "sub-01",
+            "sub-02",
+            "sub-03",
+            "sub-04",
+            "sub-05",
+            "sub-06"
+          ],
+          "train_loss": -1.1223335798110812,
+          "test_loss": -0.6024864810579914,
+          "test_focal": null,
+          "test_agg": null,
+          "boundary": false,
+          "train_atoms_used": [
+            "gamma_ALL",
+            "rdm_V1"
+          ],
+          "test_atoms_used": [
+            "rdm_V1"
+          ],
+          "g": 2.95
+        }
+      ],
+      "summary": {
+        "n_folds_valid": 7,
+        "phase_b_v6_fit": {
+          "g": 2.95
+        },
+        "g_median": 2.95,
+        "g_iqr": 0.09999999999999964,
+        "g_min": 2.9000000000000004,
+        "g_max": 3.0,
+        "g_range": 0.09999999999999964,
+        "outlier_ranking": [
+          {
+            "held_out_hc": "sub-01",
+            "abs_delta_g": 0.04999999999999982
+          },
+          {
+            "held_out_hc": "sub-02",
+            "abs_delta_g": 0.04999999999999982
+          },
+          {
+            "held_out_hc": "sub-03",
+            "abs_delta_g": 0.04999999999999982
+          },
+          {
+            "held_out_hc": "sub-04",
+            "abs_delta_g": 0.04999999999999982
+          },
+          {
+            "held_out_hc": "sub-05",
+            "abs_delta_g": 0.04999999999999982
+          },
+          {
+            "held_out_hc": "sub-06",
+            "abs_delta_g": 0.04999999999999982
+          },
+          {
+            "held_out_hc": "sub-07",
+            "abs_delta_g": 0.0
+          }
+        ],
+        "outlier_holdouts": [],
+        "boundary_rate": 0.42857142857142855,
+        "train_loss_median": -1.121624643584662,
+        "train_loss_iqr": 0.033397101304830645,
+        "test_loss_median": -1.4204840984807616,
+        "test_loss_iqr": 1.3642697044114307,
+        "test_focal_median": null,
+        "test_agg_median": null
+      },
+      "dl_src": "Boehm_low",
+      "dl_value": 3.0
+    }
+  ],
+  "meta": {
+    "design": "strict HC LOO 7-fold",
+    "n_train_hcs_per_fold": 6,
+    "n_test_hcs_per_fold": 1,
+    "hc_subjects": [
+      "sub-01",
+      "sub-02",
+      "sub-03",
+      "sub-04",
+      "sub-05",
+      "sub-06",
+      "sub-07"
+    ],
+    "rdm_test_handling": "single-HC RDM atom (n=1 allowed in test only)",
+    "gamma_test_handling": "jnd_baseline_from_pool with n=1 \u2192 sd floored to 1e-3, z-renormalized to TRAIN (mu,sd)",
+    "loco_atom_invariance": true,
+    "loco_atom_note": "LOCO atom is CVD-internal (HC-independent); same value across folds",
+    "phase_b_v6_comparison": "param IQR not directly comparable to 5/2 \u00d7 300 resamples; range [min,max] is more honest stability indicator for n=7",
+    "elapsed_sec": 5.0,
+    "n_candidates": 5
+  }
+}

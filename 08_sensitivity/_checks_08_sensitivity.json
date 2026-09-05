@@ -1,0 +1,1262 @@
+{
+ "stage": "08_sensitivity",
+ "counts": {
+  "ok": 127,
+  "near": 1,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 0,
+  "table": 3
+ },
+ "checks": [
+  {
+   "id": "08.T1.Deutan.V1.t",
+   "desc": "tab:motion_arms Deutan V1 CH t",
+   "produced": 2.402336418350053,
+   "reported": 2.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V1.p",
+   "desc": "tab:motion_arms Deutan V1 CH p",
+   "produced": 0.02656274997385044,
+   "reported": 0.027,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V1.t_loso",
+   "desc": "tab:motion_arms Deutan V1 LOSO t",
+   "produced": 1.6071481861356662,
+   "reported": 1.6,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V1.p_loso",
+   "desc": "tab:motion_arms Deutan V1 LOSO p",
+   "produced": 0.07957289644809318,
+   "reported": 0.08,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V2.t",
+   "desc": "tab:motion_arms Deutan V2 CH t",
+   "produced": -1.0138286688259999,
+   "reported": -1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V2.p",
+   "desc": "tab:motion_arms Deutan V2 CH p",
+   "produced": 0.8251056117050823,
+   "reported": 0.825,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V2.t_loso",
+   "desc": "tab:motion_arms Deutan V2 LOSO t",
+   "produced": -0.6280174570422777,
+   "reported": -0.6,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V2.p_loso",
+   "desc": "tab:motion_arms Deutan V2 LOSO p",
+   "produced": 0.7234352449775143,
+   "reported": 0.723,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V3.t",
+   "desc": "tab:motion_arms Deutan V3 CH t",
+   "produced": 0.5746317332355184,
+   "reported": 0.6,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V3.p",
+   "desc": "tab:motion_arms Deutan V3 CH p",
+   "produced": 0.2932119963209332,
+   "reported": 0.293,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V3.t_loso",
+   "desc": "tab:motion_arms Deutan V3 LOSO t",
+   "produced": 0.43834525434814053,
+   "reported": 0.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.V3.p_loso",
+   "desc": "tab:motion_arms Deutan V3 LOSO p",
+   "produced": 0.3382389968905235,
+   "reported": 0.338,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.hV4.t",
+   "desc": "tab:motion_arms Deutan hV4 CH t",
+   "produced": 0.4021438645588843,
+   "reported": 0.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.hV4.p",
+   "desc": "tab:motion_arms Deutan hV4 CH p",
+   "produced": 0.3507561565108408,
+   "reported": 0.351,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.hV4.t_loso",
+   "desc": "tab:motion_arms Deutan hV4 LOSO t",
+   "produced": 0.38583393144542394,
+   "reported": 0.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Deutan.hV4.p_loso",
+   "desc": "tab:motion_arms Deutan hV4 LOSO p",
+   "produced": 0.3564646124666693,
+   "reported": 0.356,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V1.t",
+   "desc": "tab:motion_arms Protan V1 CH t",
+   "produced": 1.6348144461492713,
+   "reported": 1.6,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V1.p",
+   "desc": "tab:motion_arms Protan V1 CH p",
+   "produced": 0.0766027115322645,
+   "reported": 0.077,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V1.t_loso",
+   "desc": "tab:motion_arms Protan V1 LOSO t",
+   "produced": 1.2974175712664733,
+   "reported": 1.3,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V1.p_loso",
+   "desc": "tab:motion_arms Protan V1 LOSO p",
+   "produced": 0.12106789951492403,
+   "reported": 0.121,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V2.t",
+   "desc": "tab:motion_arms Protan V2 CH t",
+   "produced": 0.9658339238868096,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V2.p",
+   "desc": "tab:motion_arms Protan V2 CH p",
+   "produced": 0.18571337781128716,
+   "reported": 0.186,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V2.t_loso",
+   "desc": "tab:motion_arms Protan V2 LOSO t",
+   "produced": 0.052163958614336724,
+   "reported": 0.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V2.p_loso",
+   "desc": "tab:motion_arms Protan V2 LOSO p",
+   "produced": 0.48004570041923467,
+   "reported": 0.48,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V3.t",
+   "desc": "tab:motion_arms Protan V3 CH t",
+   "produced": 1.1278552431260502,
+   "reported": 1.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V3.p",
+   "desc": "tab:motion_arms Protan V3 CH p",
+   "produced": 0.15122629450536507,
+   "reported": 0.151,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V3.t_loso",
+   "desc": "tab:motion_arms Protan V3 LOSO t",
+   "produced": 1.0020328601667021,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.V3.p_loso",
+   "desc": "tab:motion_arms Protan V3 LOSO p",
+   "produced": 0.17750568578056414,
+   "reported": 0.178,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.hV4.t",
+   "desc": "tab:motion_arms Protan hV4 CH t",
+   "produced": 1.4320287639057663,
+   "reported": 1.4,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.hV4.p",
+   "desc": "tab:motion_arms Protan hV4 CH p",
+   "produced": 0.10105178431157491,
+   "reported": 0.101,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.hV4.t_loso",
+   "desc": "tab:motion_arms Protan hV4 LOSO t",
+   "produced": 1.0869313571403778,
+   "reported": 1.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T1.Protan.hV4.p_loso",
+   "desc": "tab:motion_arms Protan hV4 LOSO p",
+   "produced": 0.1593960154864219,
+   "reported": 0.159,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.01",
+   "desc": "tab:motion_arms | 8 cells x (CH t, p; LOSO t, p)",
+   "produced": null,
+   "reported": "32 cells, see 08.T1.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "08.02",
+   "desc": "S2 'Disparity under the two pipelines' | protan V1 remains the largest deviation under both pipelines",
+   "produced": [
+    "V1",
+    "V1"
+   ],
+   "reported": [
+    "V1",
+    "V1"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.03",
+   "desc": "S2 | protan V1 weakens from p = .007",
+   "produced": 0.006596542848822162,
+   "reported": 0.007,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.04",
+   "desc": "S2 | to p = .077",
+   "produced": 0.0766027115322645,
+   "reported": 0.077,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.05",
+   "desc": "S2 | deutan largest deviation moves from V2 to V1",
+   "produced": [
+    "V2",
+    "V1"
+   ],
+   "reported": [
+    "V2",
+    "V1"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.06",
+   "desc": "S2 | deutan V2 t reverses in sign (+2.1 -> -1.0)",
+   "produced": [
+    2.1,
+    -1.0
+   ],
+   "reported": [
+    2.1,
+    -1.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.07",
+   "desc": "S2 | under LOSO the primary-pipeline protan V1 cell alone reaches significance across both pipelines",
+   "produced": [
+    [
+     "with_residuals",
+     "sub-09",
+     "V1"
+    ]
+   ],
+   "reported": [
+    [
+     "with_residuals",
+     "sub-09",
+     "V1"
+    ]
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.08",
+   "desc": "S2 | primary-pipeline table reproduces tab:disparity_loso (deutan V2 .040 / .116; protan V1 .007 / .045)",
+   "produced": [
+    0.04,
+    0.116,
+    0.007,
+    0.045
+   ],
+   "reported": [
+    0.04,
+    0.116,
+    0.007,
+    0.045
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V1.primary.acc",
+   "desc": "tab:interp_arms controls V1 primary",
+   "produced": 0.3928571428571428,
+   "reported": 0.393,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V1.primary.p",
+   "desc": "tab:interp_arms controls V1 primary p",
+   "produced": 0.16383616383616384,
+   "reported": 0.164,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V1.hmc.acc",
+   "desc": "tab:interp_arms controls V1 head-motion",
+   "produced": 0.2827380952380953,
+   "reported": 0.283,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V1.hmc.p",
+   "desc": "tab:interp_arms controls V1 head-motion p",
+   "produced": 0.922077922077922,
+   "reported": 0.922,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V2.primary.acc",
+   "desc": "tab:interp_arms controls V2 primary",
+   "produced": 0.35714285714285715,
+   "reported": 0.357,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V2.primary.p",
+   "desc": "tab:interp_arms controls V2 primary p",
+   "produced": 0.42357642357642356,
+   "reported": 0.424,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V2.hmc.acc",
+   "desc": "tab:interp_arms controls V2 head-motion",
+   "produced": 0.38095238095238093,
+   "reported": 0.381,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V2.hmc.p",
+   "desc": "tab:interp_arms controls V2 head-motion p",
+   "produced": 0.22777222777222778,
+   "reported": 0.228,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V3.primary.acc",
+   "desc": "tab:interp_arms controls V3 primary",
+   "produced": 0.3392857142857143,
+   "reported": 0.339,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V3.primary.p",
+   "desc": "tab:interp_arms controls V3 primary p",
+   "produced": 0.5864135864135864,
+   "reported": 0.586,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V3.hmc.acc",
+   "desc": "tab:interp_arms controls V3 head-motion",
+   "produced": 0.3154761904761904,
+   "reported": 0.315,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.V3.hmc.p",
+   "desc": "tab:interp_arms controls V3 head-motion p",
+   "produced": 0.8101898101898102,
+   "reported": 0.81,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.hV4.primary.acc",
+   "desc": "tab:interp_arms controls hV4 primary",
+   "produced": 0.45595238095238094,
+   "reported": 0.456,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.hV4.primary.p",
+   "desc": "tab:interp_arms controls hV4 primary p",
+   "produced": 0.01098901098901099,
+   "reported": 0.011,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.hV4.hmc.acc",
+   "desc": "tab:interp_arms controls hV4 head-motion",
+   "produced": 0.4511904761904762,
+   "reported": 0.451,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.controls.hV4.hmc.p",
+   "desc": "tab:interp_arms controls hV4 head-motion p",
+   "produced": 0.022977022977022976,
+   "reported": 0.023,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.deutan.hV4.primary.acc",
+   "desc": "tab:interp_arms deutan hV4 primary",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.deutan.hV4.primary.p",
+   "desc": "tab:interp_arms deutan hV4 primary p",
+   "produced": 0.05388318894783613,
+   "reported": 0.054,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.deutan.hV4.hmc.acc",
+   "desc": "tab:interp_arms deutan hV4 head-motion",
+   "produced": 0.35416666666666663,
+   "reported": 0.354,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.deutan.hV4.hmc.p",
+   "desc": "tab:interp_arms deutan hV4 head-motion p",
+   "produced": 0.24230208143091742,
+   "reported": 0.242,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.protan.hV4.primary.acc",
+   "desc": "tab:interp_arms protan hV4 primary",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.protan.hV4.primary.p",
+   "desc": "tab:interp_arms protan hV4 primary p",
+   "produced": 0.0114619638613391,
+   "reported": 0.012,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.protan.hV4.hmc.acc",
+   "desc": "tab:interp_arms protan hV4 head-motion",
+   "produced": 0.2708333333333333,
+   "reported": 0.271,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.protan.hV4.hmc.p",
+   "desc": "tab:interp_arms protan hV4 head-motion p",
+   "produced": 0.10778113440426298,
+   "reported": 0.108,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.controls.hV4.Primary",
+   "desc": "tab:interp_arms classification controls hV4 Primary",
+   "produced": 0.4881,
+   "reported": 0.488,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.controls.hV4.Realignment",
+   "desc": "tab:interp_arms classification controls hV4 Realignment",
+   "produced": 0.5685,
+   "reported": 0.569,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.deutan.hV4.Primary.acc",
+   "desc": "tab:interp_arms classification deutan hV4 Primary",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.deutan.hV4.Primary.p",
+   "desc": "tab:interp_arms classification deutan hV4 Primary p (two-tailed)",
+   "produced": 0.3515,
+   "reported": 0.351,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.deutan.hV4.Realignment.acc",
+   "desc": "tab:interp_arms classification deutan hV4 Realignment",
+   "produced": 0.5833,
+   "reported": 0.583,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.deutan.hV4.Realignment.p",
+   "desc": "tab:interp_arms classification deutan hV4 Realignment p (two-tailed)",
+   "produced": 0.9046,
+   "reported": 0.905,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.protan.hV4.Primary.acc",
+   "desc": "tab:interp_arms classification protan hV4 Primary",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.protan.hV4.Primary.p",
+   "desc": "tab:interp_arms classification protan hV4 Primary p (two-tailed)",
+   "produced": 0.3515,
+   "reported": 0.351,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.protan.hV4.Realignment.acc",
+   "desc": "tab:interp_arms classification protan hV4 Realignment",
+   "produced": 0.3958,
+   "reported": 0.396,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T2.loro.protan.hV4.Realignment.p",
+   "desc": "tab:interp_arms classification protan hV4 Realignment p (two-tailed)",
+   "produced": 0.1972,
+   "reported": 0.197,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.09",
+   "desc": "tab:interp_arms | interpolation and classification cells under both pipelines",
+   "produced": null,
+   "reported": "34 cells, see 08.T2.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "08.10",
+   "desc": "S2 'Classification and interpolation' | hV4 alone passes the control gate in both pipelines",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.11",
+   "desc": "S2 | both participants remain below the control mean in both pipelines",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.12",
+   "desc": "S2 | lowest CVD classification cell, primary",
+   "produced": 0.375,
+   "reported": 0.375,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.13",
+   "desc": "S2 | lowest CVD classification cell, head-motion correction",
+   "produced": 0.2292,
+   "reported": 0.229,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.14",
+   "desc": "S2 | which is 1.8 times chance",
+   "produced": 1.8336,
+   "reported": 1.8,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.15",
+   "desc": "S2 | every single-case classification contrast stays above p = .10 in both pipelines",
+   "produced": 0.1026,
+   "reported": 0.1,
+   "status": "ok",
+   "mode": "gt",
+   "reason": null
+  },
+  {
+   "id": "08.16",
+   "desc": "S2 | single-case interpolation contrasts reach significance under the primary pipeline alone",
+   "produced": [
+    true,
+    true
+   ],
+   "reported": [
+    true,
+    true
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.17",
+   "desc": "tab:interp_arms caption | permutation null mean is 0.35 in both pipelines (all ROIs within 0.34-0.36)",
+   "produced": [
+    0.34614464285714286,
+    0.3494672619047619
+   ],
+   "reported": [
+    0.34,
+    0.36
+   ],
+   "status": "ok",
+   "mode": "range",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 1.V1",
+   "desc": "tab:color_specificity head-motion Control 1 V1 p_perm",
+   "produced": 0.012,
+   "reported": 0.012,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 1.V2",
+   "desc": "tab:color_specificity head-motion Control 1 V2 p_perm",
+   "produced": 0.0719,
+   "reported": 0.072,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 1.V3",
+   "desc": "tab:color_specificity head-motion Control 1 V3 p_perm",
+   "produced": 0.018,
+   "reported": 0.018,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 1.hV4",
+   "desc": "tab:color_specificity head-motion Control 1 hV4 p_perm",
+   "produced": 0.2897,
+   "reported": 0.29,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 2.V1",
+   "desc": "tab:color_specificity head-motion Control 2 V1 p_perm",
+   "produced": 0.4366,
+   "reported": 0.437,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 2.V2",
+   "desc": "tab:color_specificity head-motion Control 2 V2 p_perm",
+   "produced": 0.4196,
+   "reported": 0.42,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 2.V3",
+   "desc": "tab:color_specificity head-motion Control 2 V3 p_perm",
+   "produced": 0.1908,
+   "reported": 0.191,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 2.hV4",
+   "desc": "tab:color_specificity head-motion Control 2 hV4 p_perm",
+   "produced": 0.019,
+   "reported": 0.019,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 3.V1",
+   "desc": "tab:color_specificity head-motion Control 3 V1 p_perm",
+   "produced": 0.3247,
+   "reported": 0.325,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 3.V2",
+   "desc": "tab:color_specificity head-motion Control 3 V2 p_perm",
+   "produced": 0.1129,
+   "reported": 0.113,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 3.V3",
+   "desc": "tab:color_specificity head-motion Control 3 V3 p_perm",
+   "produced": 0.1758,
+   "reported": 0.176,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 3.hV4",
+   "desc": "tab:color_specificity head-motion Control 3 hV4 p_perm",
+   "produced": 0.1009,
+   "reported": 0.101,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 4.V1",
+   "desc": "tab:color_specificity head-motion Control 4 V1 p_perm",
+   "produced": 0.4196,
+   "reported": 0.42,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 4.V2",
+   "desc": "tab:color_specificity head-motion Control 4 V2 p_perm",
+   "produced": 0.006,
+   "reported": 0.006,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 4.V3",
+   "desc": "tab:color_specificity head-motion Control 4 V3 p_perm",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 4.hV4",
+   "desc": "tab:color_specificity head-motion Control 4 hV4 p_perm",
+   "produced": 0.1728,
+   "reported": 0.173,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 5.V1",
+   "desc": "tab:color_specificity head-motion Control 5 V1 p_perm",
+   "produced": 0.0789,
+   "reported": 0.079,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 5.V2",
+   "desc": "tab:color_specificity head-motion Control 5 V2 p_perm",
+   "produced": 0.1938,
+   "reported": 0.194,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 5.V3",
+   "desc": "tab:color_specificity head-motion Control 5 V3 p_perm",
+   "produced": 0.032,
+   "reported": 0.032,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 5.hV4",
+   "desc": "tab:color_specificity head-motion Control 5 hV4 p_perm",
+   "produced": 0.038,
+   "reported": 0.038,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 6.V1",
+   "desc": "tab:color_specificity head-motion Control 6 V1 p_perm",
+   "produced": 0.3726,
+   "reported": 0.373,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 6.V2",
+   "desc": "tab:color_specificity head-motion Control 6 V2 p_perm",
+   "produced": 0.1169,
+   "reported": 0.117,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 6.V3",
+   "desc": "tab:color_specificity head-motion Control 6 V3 p_perm",
+   "produced": 0.01,
+   "reported": 0.01,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 6.hV4",
+   "desc": "tab:color_specificity head-motion Control 6 hV4 p_perm",
+   "produced": 0.012,
+   "reported": 0.012,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 7.V1",
+   "desc": "tab:color_specificity head-motion Control 7 V1 p_perm",
+   "produced": 0.008,
+   "reported": 0.008,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 7.V2",
+   "desc": "tab:color_specificity head-motion Control 7 V2 p_perm",
+   "produced": 0.005,
+   "reported": 0.005,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 7.V3",
+   "desc": "tab:color_specificity head-motion Control 7 V3 p_perm",
+   "produced": 0.3906,
+   "reported": 0.391,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Control 7.hV4",
+   "desc": "tab:color_specificity head-motion Control 7 hV4 (absent)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Deutan.V1",
+   "desc": "tab:color_specificity head-motion Deutan V1 p_perm",
+   "produced": 0.022,
+   "reported": 0.022,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Deutan.V2",
+   "desc": "tab:color_specificity head-motion Deutan V2 p_perm",
+   "produced": 0.003,
+   "reported": 0.003,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Deutan.V3",
+   "desc": "tab:color_specificity head-motion Deutan V3 p_perm",
+   "produced": 0.047,
+   "reported": 0.047,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Deutan.hV4",
+   "desc": "tab:color_specificity head-motion Deutan hV4 p_perm",
+   "produced": 0.2567,
+   "reported": 0.257,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Protan.V1",
+   "desc": "tab:color_specificity head-motion Protan V1 p_perm",
+   "produced": 0.01,
+   "reported": 0.01,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Protan.V2",
+   "desc": "tab:color_specificity head-motion Protan V2 p_perm",
+   "produced": 0.1479,
+   "reported": 0.148,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Protan.V3",
+   "desc": "tab:color_specificity head-motion Protan V3 p_perm",
+   "produced": 0.0529,
+   "reported": 0.053,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.T3.Protan.hV4",
+   "desc": "tab:color_specificity head-motion Protan hV4 p_perm",
+   "produced": 0.8152,
+   "reported": 0.815,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.18",
+   "desc": "tab:color_specificity | 35 cells, head-motion-corrected pipeline",
+   "produced": null,
+   "reported": "35 cells, see 08.T3.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "08.19",
+   "desc": "S18 \u00b63 | cells below .05 under head-motion correction",
+   "produced": 15,
+   "reported": 15,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.20",
+   "desc": "S18 \u00b63 | none survive BH correction",
+   "produced": 0,
+   "reported": 0,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.21",
+   "desc": "S18 \u00b63 | deutan V2 nominal p .003",
+   "produced": 0.003,
+   "reported": 0.003,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.22",
+   "desc": "S18 \u00b63 | deutan V2 corrected q .053",
+   "produced": 0.0525,
+   "reported": 0.053,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.23",
+   "desc": "S18 \u00b63 | protan V1 moves to p .010",
+   "produced": 0.01,
+   "reported": 0.01,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.24",
+   "desc": "S2 'Session-2 endpoints' | fourteen pre-specified endpoints",
+   "produced": 14,
+   "reported": 14,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.25",
+   "desc": "S2 | control reference hV4 adjacent accuracy, primary arm",
+   "produced": 0.45555555555555555,
+   "reported": 0.456,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.26",
+   "desc": "S2 | harmonised arm",
+   "produced": 0.4454861111111112,
+   "reported": 0.445,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "08.27",
+   "desc": "S2 | native-mask directional contrasts reversed between arms",
+   "produced": [
+    8,
+    10
+   ],
+   "reported": [
+    8,
+    10
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.28",
+   "desc": "S2 | run-matched-mask contrasts reversed",
+   "produced": [
+    5,
+    10
+   ],
+   "reported": [
+    5,
+    10
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "08.29",
+   "desc": "S2 | the contrasts at the pre-specified target regions held in both arms",
+   "produced": [
+    true,
+    true
+   ],
+   "reported": [
+    true,
+    true
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  }
+ ]
+}

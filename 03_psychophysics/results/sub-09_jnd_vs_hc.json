@@ -1,0 +1,210 @@
+{
+  "subject": "sub-09",
+  "n_hc": 7,
+  "hc_mean_overall": 0.1041,
+  "cond_mean_overall": {
+    "nofilter": 0.0972,
+    "window": 0.1151,
+    "optimal": 0.1088
+  },
+  "mean_abs_dist_to_HC": {
+    "nofilter": 0.0367,
+    "window": 0.0567,
+    "optimal": 0.0472
+  },
+  "mean_abs_z_to_HC": {
+    "nofilter": 0.8966,
+    "window": 1.7752,
+    "optimal": 0.9344
+  },
+  "optimal_closer_to_HC_than_window_npairs": 4,
+  "optimal_closer_to_HC_than_nofilter_npairs": 3,
+  "window_closer_to_HC_than_nofilter_npairs": 4,
+  "crawford_howell": {
+    "orange-yellow": {
+      "nofilter": {
+        "t": -0.592,
+        "df": 6,
+        "p": 0.5755,
+        "z_cc": -0.633,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.696,
+        "df": 6,
+        "p": 0.5127,
+        "z_cc": -0.744,
+        "sig05": false
+      },
+      "optimal": {
+        "t": 1.241,
+        "df": 6,
+        "p": 0.2611,
+        "z_cc": 1.326,
+        "sig05": false
+      }
+    },
+    "yellow-green": {
+      "nofilter": {
+        "t": 0.817,
+        "df": 6,
+        "p": 0.4453,
+        "z_cc": 0.873,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.778,
+        "df": 6,
+        "p": 0.4662,
+        "z_cc": -0.832,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.635,
+        "df": 6,
+        "p": 0.549,
+        "z_cc": -0.679,
+        "sig05": false
+      }
+    },
+    "green-blue": {
+      "nofilter": {
+        "t": 2.204,
+        "df": 6,
+        "p": 0.0697,
+        "z_cc": 2.356,
+        "sig05": false
+      },
+      "window": {
+        "t": 4.755,
+        "df": 6,
+        "p": 0.0031,
+        "z_cc": 5.084,
+        "sig05": true
+      },
+      "optimal": {
+        "t": 0.819,
+        "df": 6,
+        "p": 0.4439,
+        "z_cc": 0.876,
+        "sig05": false
+      }
+    },
+    "red-orange": {
+      "nofilter": {
+        "t": -0.635,
+        "df": 6,
+        "p": 0.5488,
+        "z_cc": -0.679,
+        "sig05": false
+      },
+      "window": {
+        "t": 0.048,
+        "df": 6,
+        "p": 0.9632,
+        "z_cc": 0.051,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.798,
+        "df": 6,
+        "p": 0.4554,
+        "z_cc": -0.853,
+        "sig05": false
+      }
+    },
+    "blue-purple": {
+      "nofilter": {
+        "t": -0.17,
+        "df": 6,
+        "p": 0.8708,
+        "z_cc": -0.181,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.423,
+        "df": 6,
+        "p": 0.6874,
+        "z_cc": -0.452,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.372,
+        "df": 6,
+        "p": 0.7227,
+        "z_cc": -0.398,
+        "sig05": false
+      }
+    },
+    "yellow-purple": {
+      "nofilter": {
+        "t": 0.88,
+        "df": 6,
+        "p": 0.4128,
+        "z_cc": 0.941,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.66,
+        "df": 6,
+        "p": 0.5338,
+        "z_cc": -0.705,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -1.045,
+        "df": 6,
+        "p": 0.3363,
+        "z_cc": -1.117,
+        "sig05": false
+      }
+    },
+    "cyan-magenta": {
+      "nofilter": {
+        "t": -0.263,
+        "df": 6,
+        "p": 0.801,
+        "z_cc": -0.282,
+        "sig05": false
+      },
+      "window": {
+        "t": 5.837,
+        "df": 6,
+        "p": 0.0011,
+        "z_cc": 6.24,
+        "sig05": true
+      },
+      "optimal": {
+        "t": -1.398,
+        "df": 6,
+        "p": 0.2115,
+        "z_cc": -1.495,
+        "sig05": false
+      }
+    },
+    "red-cyan": {
+      "nofilter": {
+        "t": -1.148,
+        "df": 6,
+        "p": 0.2946,
+        "z_cc": -1.228,
+        "sig05": false
+      },
+      "window": {
+        "t": 0.088,
+        "df": 6,
+        "p": 0.9325,
+        "z_cc": 0.094,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.685,
+        "df": 6,
+        "p": 0.5192,
+        "z_cc": -0.732,
+        "sig05": false
+      }
+    }
+  },
+  "nofilter_sig_pairs": []
+}

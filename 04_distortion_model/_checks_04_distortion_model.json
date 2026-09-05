@@ -1,0 +1,1004 @@
+{
+ "stage": "04_distortion_model",
+ "counts": {
+  "ok": 86,
+  "near": 0,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 1,
+  "table": 0
+ },
+ "checks": [
+  {
+   "id": "04.01",
+   "desc": "Methods grid | beta_s grid: 26 values over [0, 50] at 2 degrees",
+   "produced": [
+    26,
+    0.0,
+    50.0,
+    2.0
+   ],
+   "reported": [
+    26,
+    0.0,
+    50.0,
+    2.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.02",
+   "desc": "Methods grid | beta_c grid: 51 values over [-50, 50] at 2 degrees",
+   "produced": [
+    51,
+    -50.0,
+    50.0,
+    2.0
+   ],
+   "reported": [
+    51,
+    -50.0,
+    50.0,
+    2.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.03",
+   "desc": "Methods grid | grid cells",
+   "produced": 1326,
+   "reported": 1326,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.04",
+   "desc": "Methods model | theta_conf protan = 16 degrees",
+   "produced": 16.0,
+   "reported": 16.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.05",
+   "desc": "Methods model | theta_conf deutan = 150 degrees",
+   "produced": 150.0,
+   "reported": 150.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.06",
+   "desc": "S11 / Methods grid | R+C gain g over [0, 3] in steps of 0.05 (61 values)",
+   "produced": [
+    0.0,
+    3.0,
+    0.05,
+    61
+   ],
+   "reported": [
+    0.0,
+    3.0,
+    0.05,
+    61
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.07",
+   "desc": "S11 | Delta-lambda anchors deutan 6.0, 6.5, 8.0 nm",
+   "produced": [
+    6.0,
+    6.5,
+    8.0
+   ],
+   "reported": [
+    6.0,
+    6.5,
+    8.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.08",
+   "desc": "S11 | Delta-lambda anchors protan 1.5, 3.0, 10.0 nm",
+   "produced": [
+    1.5,
+    3.0,
+    10.0
+   ],
+   "reported": [
+    1.5,
+    3.0,
+    10.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.09",
+   "desc": "Methods selection | N = 300 control 5-train/2-test resamples",
+   "produced": [
+    300,
+    5
+   ],
+   "reported": [
+    300,
+    5
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.10",
+   "desc": "Results \u00a74 \u00b62 | deutan combinations passing the boundary-saturation gate",
+   "produced": 25,
+   "reported": 25,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.11",
+   "desc": "Results \u00a74 \u00b62 | protan combinations passing",
+   "produced": 4,
+   "reported": 4,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.12",
+   "desc": "Results \u00a74 \u00b62 | every gate-passing protan combination with an RDM atom returns (2, +24)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.13",
+   "desc": "Results \u00a74 \u00b61 | the LOCO family entered neither winning combination",
+   "produced": false,
+   "reported": false,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.14",
+   "desc": "tab:modelfits | deutan selected beta_s",
+   "produced": 6.0,
+   "reported": 6.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.15",
+   "desc": "tab:modelfits | deutan selected beta_c",
+   "produced": -42.0,
+   "reported": -42.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.16",
+   "desc": "tab:modelfits | deutan selected L_test",
+   "produced": -2.359316295724163,
+   "reported": -2.36,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.17",
+   "desc": "tab:modelfits | deutan selected IQR",
+   "produced": 2.149687623669479,
+   "reported": 2.15,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.18",
+   "desc": "tab:modelfits | deutan next-ranked beta_s",
+   "produced": 38.0,
+   "reported": 38.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.19",
+   "desc": "tab:modelfits | deutan next-ranked beta_c",
+   "produced": -10.0,
+   "reported": -10.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.20",
+   "desc": "tab:modelfits | deutan next-ranked L_test",
+   "produced": -1.1374315087944904,
+   "reported": -1.14,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.21",
+   "desc": "tab:modelfits | deutan next-ranked IQR",
+   "produced": 0.8566659098233033,
+   "reported": 0.86,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.22",
+   "desc": "tab:modelfits | protan selected beta_s",
+   "produced": 2.0,
+   "reported": 2.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.23",
+   "desc": "tab:modelfits | protan selected beta_c",
+   "produced": 24.0,
+   "reported": 24.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.24",
+   "desc": "tab:modelfits | protan selected L_test",
+   "produced": -1.5390701698772489,
+   "reported": -1.54,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.25",
+   "desc": "tab:modelfits | protan selected IQR",
+   "produced": 1.416685834164569,
+   "reported": 1.42,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.26",
+   "desc": "tab:modelfits | protan next-ranked returns the same estimate",
+   "produced": [
+    2.0,
+    24.0
+   ],
+   "reported": [
+    2.0,
+    24.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.27",
+   "desc": "tab:modelfits | protan next-ranked L_test",
+   "produced": -1.5187992352040045,
+   "reported": -1.52,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.28",
+   "desc": "tab:modelfits | protan next-ranked IQR",
+   "produced": 1.4117536649460913,
+   "reported": 1.41,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.29",
+   "desc": "Results \u00a74 \u00b62 | the deutan next-ranked candidate is beta_s-dominant",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.30",
+   "desc": "S11 / tab:modelfits | deutan R+C: 100% of resamples saturate at the reported anchor (lowest held-out loss; the three anchors give 0.71-1.00)",
+   "produced": 1.0,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.31",
+   "desc": "S11 / tab:modelfits | deutan R+C gain at the boundary g = 3.0",
+   "produced": 3.0,
+   "reported": 3.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.32",
+   "desc": "S11 \u00b63 | protan R+C: 41% saturated at the best anchor",
+   "produced": 41.333333333333336,
+   "reported": 41.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.33",
+   "desc": "S11 \u00b63 | protan R+C gain g = 2.95",
+   "produced": 2.95,
+   "reported": 2.95,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.34",
+   "desc": "S11 \u00b63 | protan R+C held-out loss -0.86",
+   "produced": -0.858609039546967,
+   "reported": -0.86,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.35",
+   "desc": "S11 \u00b63 | protan saturation ranges from 0% to 100% across anchors",
+   "produced": [
+    0.0,
+    1.0
+   ],
+   "reported": [
+    0.0,
+    1.0
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "04.36",
+   "desc": "tab:fit_stability | deutan separation d at V1 / V2 / V3 / hV4",
+   "produced": [
+    2.31,
+    1.94,
+    0.86,
+    2.19
+   ],
+   "reported": [
+    2.31,
+    1.94,
+    0.86,
+    2.19
+   ],
+   "status": "ok",
+   "mode": "list",
+   "reason": null
+  },
+  {
+   "id": "04.37",
+   "desc": "tab:fit_stability | protan separation d at V1 / V2 / V3 / hV4",
+   "produced": [
+    0.81,
+    -0.23,
+    -0.48,
+    -0.24
+   ],
+   "reported": [
+    0.81,
+    -0.23,
+    -0.48,
+    -0.24
+   ],
+   "status": "ok",
+   "mode": "list",
+   "reason": null
+  },
+  {
+   "id": "04.38",
+   "desc": "Results \u00a74 \u00b61 | RDM atom admissible at all four ROIs in deutan and V1 alone in protan (d >= +0.5)",
+   "produced": [
+    4,
+    [
+     "V1"
+    ]
+   ],
+   "reported": [
+    4,
+    [
+     "V1"
+    ]
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.39",
+   "desc": "tab:fit_stability | deutan grid percentile (%)",
+   "produced": 4.600301659125189,
+   "reported": 4.6,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.40",
+   "desc": "tab:fit_stability | protan grid percentile (%)",
+   "produced": 8.069381598793363,
+   "reported": 8.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.41",
+   "desc": "Results \u00a74 \u00b63 | both within the top 8% of the 1,326-cell grid",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.42",
+   "desc": "tab:fit_stability | deutan Delta-L psychophysical atom",
+   "produced": -13.845503542009823,
+   "reported": -13.85,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.43",
+   "desc": "tab:fit_stability | deutan folds favouring it (of 7)",
+   "produced": 5,
+   "reported": 5,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.44",
+   "desc": "tab:fit_stability | protan Delta-L psychophysical atom",
+   "produced": 0.010823999860011924,
+   "reported": 0.01,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.45",
+   "desc": "tab:fit_stability | protan folds favouring it",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.46",
+   "desc": "tab:fit_stability | deutan Delta-L RDM atom",
+   "produced": -0.4057627792324694,
+   "reported": -0.41,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.47",
+   "desc": "tab:fit_stability | deutan RDM folds (7 of 7)",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.48",
+   "desc": "tab:fit_stability | protan Delta-L RDM atom",
+   "produced": -0.4720205081284399,
+   "reported": -0.47,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.49",
+   "desc": "tab:fit_stability | protan RDM folds (7 of 7)",
+   "produced": 7,
+   "reported": 7,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.50",
+   "desc": "Results \u00a75 \u00b61 | protan psychophysical atoms alone",
+   "produced": [
+    26.0,
+    4.0
+   ],
+   "reported": [
+    26.0,
+    4.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.51",
+   "desc": "Results \u00a75 \u00b61 | protan RDM atom alone",
+   "produced": [
+    0.0,
+    24.0
+   ],
+   "reported": [
+    0.0,
+    24.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.52",
+   "desc": "Results \u00a75 \u00b62 | deutan psychophysical atoms alone",
+   "produced": [
+    16.0,
+    -44.0
+   ],
+   "reported": [
+    16.0,
+    -44.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.53",
+   "desc": "Results \u00a75 \u00b62 | deutan RDM atom alone",
+   "produced": [
+    4.0,
+    -26.0
+   ],
+   "reported": [
+    4.0,
+    -26.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.54",
+   "desc": "Results \u00a75 \u00b62 | all three deutan argmins on the same side of the confusion axis (beta_c < 0)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.55",
+   "desc": "tab:fit_stability | deutan selected combination, SRM basis",
+   "produced": [
+    8.0,
+    -42.0
+   ],
+   "reported": [
+    8.0,
+    -42.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.56",
+   "desc": "tab:fit_stability | protan selected combination, SRM basis",
+   "produced": [
+    32.0,
+    0.0
+   ],
+   "reported": [
+    32.0,
+    0.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.57",
+   "desc": "tab:fit_stability | deutan boundary-saturation rate, psychophysical alone",
+   "produced": 0.23,
+   "reported": 0.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.58",
+   "desc": "tab:fit_stability | deutan boundary-saturation rate, selected",
+   "produced": 0.09333333333333334,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.59",
+   "desc": "Results \u00a75 \u00b62 | adding the RDM atom more than halved the deutan saturation rate",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.60",
+   "desc": "tab:fit_stability | protan boundary-saturation rate, psychophysical alone -> selected",
+   "produced": [
+    0.0,
+    0.0
+   ],
+   "reported": [
+    0.0,
+    0.0
+   ],
+   "status": "ok",
+   "mode": "pair",
+   "reason": null
+  },
+  {
+   "id": "04.61",
+   "desc": "tab:fit_stability | deutan parameter IQR, PCA: psychophysical alone",
+   "produced": [
+    18.0,
+    6.0
+   ],
+   "reported": [
+    18.0,
+    6.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.62",
+   "desc": "tab:fit_stability | deutan parameter IQR, PCA: selected",
+   "produced": [
+    8.0,
+    2.0
+   ],
+   "reported": [
+    8.0,
+    2.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.63",
+   "desc": "tab:fit_stability | protan parameter IQR, PCA: psychophysical alone",
+   "produced": [
+    6.0,
+    4.0
+   ],
+   "reported": [
+    6.0,
+    4.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.64",
+   "desc": "tab:fit_stability | protan parameter IQR, PCA: selected",
+   "produced": [
+    0.0,
+    0.0
+   ],
+   "reported": [
+    0.0,
+    0.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.65",
+   "desc": "tab:fit_stability | deutan parameter IQR, SRM: psychophysical alone",
+   "produced": [
+    18.0,
+    6.0
+   ],
+   "reported": [
+    18.0,
+    6.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.66",
+   "desc": "tab:fit_stability | deutan parameter IQR, SRM: selected",
+   "produced": [
+    10.0,
+    4.0
+   ],
+   "reported": [
+    10.0,
+    4.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.67",
+   "desc": "tab:fit_stability | protan parameter IQR, SRM: psychophysical alone",
+   "produced": [
+    6.0,
+    4.0
+   ],
+   "reported": [
+    6.0,
+    4.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.68",
+   "desc": "tab:fit_stability | protan parameter IQR, SRM: selected",
+   "produced": [
+    0.0,
+    2.0
+   ],
+   "reported": [
+    0.0,
+    2.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.69",
+   "desc": "S13 'Resample structure' | deutan beta_c at -42 or -44 in 202 of 300 resamples",
+   "produced": 202,
+   "reported": 202,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.70",
+   "desc": "S13 | deutan beta_c stays within [-48, -36]",
+   "produced": [
+    -48.0,
+    -36.0
+   ],
+   "reported": [
+    -48.0,
+    -36.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.71",
+   "desc": "S13 | deutan beta_s distributed from 0 to 14",
+   "produced": [
+    0.0,
+    14.0
+   ],
+   "reported": [
+    0.0,
+    14.0
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.72",
+   "desc": "S12 'Basis caveat' | protan SRM basis: modal argmin (32, 0) in 171 of 300 resamples",
+   "produced": 171,
+   "reported": 171,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.73",
+   "desc": "S12 'Basis caveat' | protan SRM basis: beta_c positive in 17%",
+   "produced": 17.333333333333336,
+   "reported": 17.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.74",
+   "desc": "S12 'Basis caveat' | and negative in 26%",
+   "produced": 25.666666666666664,
+   "reported": 26.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.75",
+   "desc": "S12 'Basis caveat' | deutan sign holds in 300 of 300 resamples under both bases",
+   "produced": [
+    300,
+    300
+   ],
+   "reported": [
+    300,
+    300
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.76",
+   "desc": "Results \u00a74 \u00b64 | deutan |beta_c| = 42 exceeds the 26-degree recovery uncertainty; protan 24 lies within it",
+   "produced": [
+    true,
+    true
+   ],
+   "reported": [
+    true,
+    true
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "04.77",
+   "desc": "S13 'Sign stability' | deutan beta_c median, primary",
+   "produced": -42.0,
+   "reported": -42.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.78",
+   "desc": "S13 | deutan beta_c median, head-motion correction",
+   "produced": -46.0,
+   "reported": -46.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.79",
+   "desc": "S13 | deutan fraction of negative resamples, primary",
+   "produced": 1.0,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.80",
+   "desc": "S13 | deutan fraction negative, head-motion correction",
+   "produced": 0.947,
+   "reported": 0.947,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.81",
+   "desc": "S13 | protan beta_c median, primary",
+   "produced": 24.0,
+   "reported": 24.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.82",
+   "desc": "S13 | protan beta_c median, head-motion correction",
+   "produced": -12.0,
+   "reported": -12.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.83",
+   "desc": "S13 | protan negative resamples, head-motion correction (%)",
+   "produced": 79.3,
+   "reported": 79.3,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.84",
+   "desc": "S13 | protan negative resamples, primary (none)",
+   "produced": 0.0,
+   "reported": 0.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.85",
+   "desc": "S13 | deutan combined boundary fraction rises from 0.09",
+   "produced": 0.093,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.86",
+   "desc": "S13 | to 0.72",
+   "produced": 0.72,
+   "reported": 0.72,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "04.87",
+   "desc": "Figure S1 | loss landscape reconstruction on the seven-control pool",
+   "produced": null,
+   "reported": "figure committed; regeneration requires the amplitude arrays (scripts/viz_closure_ground_plot.py)",
+   "status": "flag",
+   "mode": "flag",
+   "reason": "figure committed; regeneration requires the amplitude arrays (scripts/viz_closure_ground_plot.py)"
+  }
+ ]
+}

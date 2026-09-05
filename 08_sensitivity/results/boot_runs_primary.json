@@ -1,0 +1,495 @@
+{
+  "arm": "with_residuals",
+  "root": "/Users/jinilkim/LocalProj/colorBlind_analysis/analysis/phase1_procrustes_decoding/results/visualization/full_dataset_C010_with_residuals",
+  "n_boot": 2000,
+  "rois": {
+    "V1": {
+      "hc_point_mean": 0.3928571428571428,
+      "hc_point_sd": 0.05567942539842176,
+      "hc_mean_ci": [
+        0.32142857142857145,
+        0.4880952380952381
+      ],
+      "subjects": {
+        "sub-01": {
+          "point": 0.3542,
+          "boot_median": 0.3333,
+          "ci95": [
+            0.25,
+            0.4583
+          ],
+          "width": 0.2083,
+          "group": "HC"
+        },
+        "sub-02": {
+          "point": 0.375,
+          "boot_median": 0.4375,
+          "ci95": [
+            0.2083,
+            0.6458
+          ],
+          "width": 0.4375,
+          "group": "HC"
+        },
+        "sub-03": {
+          "point": 0.4792,
+          "boot_median": 0.4792,
+          "ci95": [
+            0.3745,
+            0.6042
+          ],
+          "width": 0.2297,
+          "group": "HC"
+        },
+        "sub-04": {
+          "point": 0.4375,
+          "boot_median": 0.4167,
+          "ci95": [
+            0.3333,
+            0.5
+          ],
+          "width": 0.1667,
+          "group": "HC"
+        },
+        "sub-05": {
+          "point": 0.375,
+          "boot_median": 0.4375,
+          "ci95": [
+            0.3333,
+            0.5625
+          ],
+          "width": 0.2292,
+          "group": "HC"
+        },
+        "sub-06": {
+          "point": 0.3125,
+          "boot_median": 0.2708,
+          "ci95": [
+            0.1875,
+            0.375
+          ],
+          "width": 0.1875,
+          "group": "HC"
+        },
+        "sub-07": {
+          "point": 0.4167,
+          "boot_median": 0.4167,
+          "ci95": [
+            0.3125,
+            0.5208
+          ],
+          "width": 0.2083,
+          "group": "HC"
+        },
+        "sub-08": {
+          "point": 0.4375,
+          "boot_median": 0.4167,
+          "ci95": [
+            0.2708,
+            0.5417
+          ],
+          "width": 0.2708,
+          "group": "CVD"
+        },
+        "sub-09": {
+          "point": 0.1875,
+          "boot_median": 0.1875,
+          "ci95": [
+            0.0833,
+            0.2917
+          ],
+          "width": 0.2083,
+          "group": "CVD"
+        }
+      },
+      "contrast": {
+        "sub-08": {
+          "cvd_type": "deutan",
+          "deficit_point": 0.0446,
+          "deficit_boot_median": 0.0134,
+          "deficit_ci95": [
+            -0.1696,
+            0.1696
+          ],
+          "frac_below_zero": 0.4325
+        },
+        "sub-09": {
+          "cvd_type": "protan",
+          "deficit_point": -0.2054,
+          "deficit_boot_median": -0.2083,
+          "deficit_ci95": [
+            -0.3482,
+            -0.0774
+          ],
+          "frac_below_zero": 0.9995
+        }
+      }
+    },
+    "V2": {
+      "hc_point_mean": 0.35714285714285715,
+      "hc_point_sd": 0.15423636348185152,
+      "hc_mean_ci": [
+        0.24404761904761904,
+        0.505952380952381
+      ],
+      "subjects": {
+        "sub-01": {
+          "point": 0.4375,
+          "boot_median": 0.4375,
+          "ci95": [
+            0.3125,
+            0.6042
+          ],
+          "width": 0.2917,
+          "group": "HC"
+        },
+        "sub-02": {
+          "point": 0.1458,
+          "boot_median": 0.1667,
+          "ci95": [
+            0.1042,
+            0.2708
+          ],
+          "width": 0.1667,
+          "group": "HC"
+        },
+        "sub-03": {
+          "point": 0.5,
+          "boot_median": 0.5208,
+          "ci95": [
+            0.375,
+            0.7083
+          ],
+          "width": 0.3333,
+          "group": "HC"
+        },
+        "sub-04": {
+          "point": 0.2917,
+          "boot_median": 0.2708,
+          "ci95": [
+            0.1458,
+            0.3958
+          ],
+          "width": 0.25,
+          "group": "HC"
+        },
+        "sub-05": {
+          "point": 0.4583,
+          "boot_median": 0.5,
+          "ci95": [
+            0.3333,
+            0.6875
+          ],
+          "width": 0.3542,
+          "group": "HC"
+        },
+        "sub-06": {
+          "point": 0.1667,
+          "boot_median": 0.1667,
+          "ci95": [
+            0.125,
+            0.2917
+          ],
+          "width": 0.1667,
+          "group": "HC"
+        },
+        "sub-07": {
+          "point": 0.5,
+          "boot_median": 0.5208,
+          "ci95": [
+            0.375,
+            0.6458
+          ],
+          "width": 0.2708,
+          "group": "HC"
+        },
+        "sub-08": {
+          "point": 0.2708,
+          "boot_median": 0.2917,
+          "ci95": [
+            0.2083,
+            0.3958
+          ],
+          "width": 0.1875,
+          "group": "CVD"
+        },
+        "sub-09": {
+          "point": 0.1042,
+          "boot_median": 0.125,
+          "ci95": [
+            0.0417,
+            0.2083
+          ],
+          "width": 0.1667,
+          "group": "CVD"
+        }
+      },
+      "contrast": {
+        "sub-08": {
+          "cvd_type": "deutan",
+          "deficit_point": -0.0863,
+          "deficit_boot_median": -0.0774,
+          "deficit_ci95": [
+            -0.2321,
+            0.0775
+          ],
+          "frac_below_zero": 0.8335
+        },
+        "sub-09": {
+          "cvd_type": "protan",
+          "deficit_point": -0.253,
+          "deficit_boot_median": -0.2381,
+          "deficit_ci95": [
+            -0.3958,
+            -0.0744
+          ],
+          "frac_below_zero": 0.998
+        }
+      }
+    },
+    "V3": {
+      "hc_point_mean": 0.3392857142857143,
+      "hc_point_sd": 0.15105449452916092,
+      "hc_mean_ci": [
+        0.2261904761904762,
+        0.45238095238095244
+      ],
+      "subjects": {
+        "sub-01": {
+          "point": 0.5833,
+          "boot_median": 0.5208,
+          "ci95": [
+            0.375,
+            0.6458
+          ],
+          "width": 0.2708,
+          "group": "HC"
+        },
+        "sub-02": {
+          "point": 0.4583,
+          "boot_median": 0.4583,
+          "ci95": [
+            0.2708,
+            0.5833
+          ],
+          "width": 0.3125,
+          "group": "HC"
+        },
+        "sub-03": {
+          "point": 0.25,
+          "boot_median": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ],
+          "width": 0.25,
+          "group": "HC"
+        },
+        "sub-04": {
+          "point": 0.25,
+          "boot_median": 0.3125,
+          "ci95": [
+            0.1667,
+            0.4583
+          ],
+          "width": 0.2917,
+          "group": "HC"
+        },
+        "sub-05": {
+          "point": 0.3333,
+          "boot_median": 0.3333,
+          "ci95": [
+            0.2083,
+            0.5208
+          ],
+          "width": 0.3125,
+          "group": "HC"
+        },
+        "sub-06": {
+          "point": 0.125,
+          "boot_median": 0.125,
+          "ci95": [
+            0.0208,
+            0.2917
+          ],
+          "width": 0.2708,
+          "group": "HC"
+        },
+        "sub-07": {
+          "point": 0.375,
+          "boot_median": 0.375,
+          "ci95": [
+            0.2083,
+            0.5
+          ],
+          "width": 0.2917,
+          "group": "HC"
+        },
+        "sub-08": {
+          "point": 0.375,
+          "boot_median": 0.375,
+          "ci95": [
+            0.3125,
+            0.4792
+          ],
+          "width": 0.1667,
+          "group": "CVD"
+        },
+        "sub-09": {
+          "point": 0.2083,
+          "boot_median": 0.2083,
+          "ci95": [
+            0.1458,
+            0.3125
+          ],
+          "width": 0.1667,
+          "group": "CVD"
+        }
+      },
+      "contrast": {
+        "sub-08": {
+          "cvd_type": "deutan",
+          "deficit_point": 0.0357,
+          "deficit_boot_median": 0.0476,
+          "deficit_ci95": [
+            -0.0982,
+            0.1875
+          ],
+          "frac_below_zero": 0.259
+        },
+        "sub-09": {
+          "cvd_type": "protan",
+          "deficit_point": -0.131,
+          "deficit_boot_median": -0.122,
+          "deficit_ci95": [
+            -0.2649,
+            0.0328
+          ],
+          "frac_below_zero": 0.9365
+        }
+      }
+    },
+    "hV4": {
+      "hc_point_mean": 0.45595238095238094,
+      "hc_point_sd": 0.10197293187890026,
+      "hc_mean_ci": [
+        0.3606994047619048,
+        0.5386904761904762
+      ],
+      "subjects": {
+        "sub-01": {
+          "point": 0.4375,
+          "boot_median": 0.4167,
+          "ci95": [
+            0.3125,
+            0.5417
+          ],
+          "width": 0.2292,
+          "group": "HC"
+        },
+        "sub-02": {
+          "point": 0.375,
+          "boot_median": 0.375,
+          "ci95": [
+            0.2917,
+            0.4583
+          ],
+          "width": 0.1667,
+          "group": "HC"
+        },
+        "sub-03": {
+          "point": 0.5833,
+          "boot_median": 0.5625,
+          "ci95": [
+            0.4167,
+            0.6458
+          ],
+          "width": 0.2292,
+          "group": "HC"
+        },
+        "sub-04": {
+          "point": 0.5208,
+          "boot_median": 0.5208,
+          "ci95": [
+            0.375,
+            0.625
+          ],
+          "width": 0.25,
+          "group": "HC"
+        },
+        "sub-05": {
+          "point": 0.3125,
+          "boot_median": 0.2917,
+          "ci95": [
+            0.2083,
+            0.4583
+          ],
+          "width": 0.25,
+          "group": "HC"
+        },
+        "sub-06": {
+          "point": 0.5625,
+          "boot_median": 0.5625,
+          "ci95": [
+            0.3958,
+            0.6672
+          ],
+          "width": 0.2714,
+          "group": "HC"
+        },
+        "sub-07": {
+          "point": 0.4,
+          "boot_median": 0.4,
+          "ci95": [
+            0.375,
+            0.5625
+          ],
+          "width": 0.1875,
+          "group": "HC"
+        },
+        "sub-08": {
+          "point": 0.25,
+          "boot_median": 0.2292,
+          "ci95": [
+            0.1667,
+            0.2917
+          ],
+          "width": 0.125,
+          "group": "CVD"
+        },
+        "sub-09": {
+          "point": 0.125,
+          "boot_median": 0.1458,
+          "ci95": [
+            0.0833,
+            0.2292
+          ],
+          "width": 0.1458,
+          "group": "CVD"
+        }
+      },
+      "contrast": {
+        "sub-08": {
+          "cvd_type": "deutan",
+          "deficit_point": -0.206,
+          "deficit_boot_median": -0.2126,
+          "deficit_ci95": [
+            -0.3274,
+            -0.1071
+          ],
+          "frac_below_zero": 0.9995
+        },
+        "sub-09": {
+          "cvd_type": "protan",
+          "deficit_point": -0.331,
+          "deficit_boot_median": -0.3015,
+          "deficit_ci95": [
+            -0.4107,
+            -0.1905
+          ],
+          "frac_below_zero": 1.0
+        }
+      }
+    }
+  }
+}

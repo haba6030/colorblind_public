@@ -1,0 +1,334 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+% !BIB TS-program = biber
+% TeXShop reads the three lines above. The third one matters: this manuscript
+% uses biblatex with backend=biber, and TeXShop's default BibTeX button
+% overwrites main.bbl with an empty file, which strips every citation and the
+% whole reference list from the PDF. Typeset -> BibTeX -> Typeset -> Typeset.
+% =====================================================================
+% Imaging Neuroscience submission.
+% Class: imag-ms-template.cls (journal-supplied, copied from
+% imaging_neuro_tex/). Migrated from apa6[man,british] on 2026-08-17.
+%
+% What the class already loads -- do NOT load these again:
+%   mathtools/amsthm/amsfonts/amssymb, setspace[doublespacing],
+%   threeparttable, booktabs, graphicx, rotating[figuresright], enumitem,
+%   biblatex[natbib=true,backend=biber,style=apa], algorithm2e, mathrsfs,
+%   hyperref[breaklinks=true].
+% It also sets sans-serif as the default family, 12pt, and \pagestyle{headings}
+% (page numbers), which together satisfy the journal's typography requirements.
+%
+% The apa6 \setcounter{secnumdepth} workaround is gone: this class is
+% article-based, so \section/\subsection are numbered natively and
+% "1 Introduction" falls out without intervention.
+% =====================================================================
+\documentclass{imag-ms-template}
+
+\usepackage[american]{babel}   % body spelling is American throughout
+\usepackage{csquotes}          % biblatex requests it when babel is present
+\usepackage{epstopdf}
+\usepackage{gensymb}           % \degree
+\usepackage{xcolor}
+\usepackage{tabularx}          % wide supplementary tables wrap instead of overflowing
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\usepackage[nameinlink]{cleveref}  % after the class's hyperref
+
+% Supplementary sections carry their own S-counter so that \cref resolves the
+% number. Reordering the supplementary renumbers every cross-reference; nothing
+% in the main text hardcodes "S12".
+\newcounter{suppsec}
+\renewcommand{\thesuppsec}{S\arabic{suppsec}}
+\crefname{suppsec}{\S}{\S\S}
+\Crefname{suppsec}{\S}{\S\S}
+\newcommand{\suppsection}[2]{%
+  \refstepcounter{suppsec}%
+  \subsection*{\textbf{\thesuppsec. #1}}%
+  \label{#2}%
+}
+
+% Line numbers. The class ships these commented out at its foot; enabling them
+% here keeps the class file pristine. The amsmath patch below is required
+% because lineno otherwise drops numbered display equations (8 in this
+% manuscript: 6 in Methods, 2 in Supplementary).
+\usepackage{lineno}
+\newcommand*\linenomathpatch[1]{%
+  \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+  \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+  \renewenvironment{#1}%
+    {\linenomath\csname old#1\endcsname}%
+    {\csname oldend#1\endcsname\endlinenomath}%
+}
+\linenomathpatch{equation}
+
+% Float placement. apa6 'man' mode deliberately deferred every float to the end
+% of the manuscript (APA submission convention); this class is article-based, so
+% figures are meant to flow with the text. With LaTeX's default float
+% parameters all eight main figures still queued and flushed together at
+% pp.33-40 -- Figure 1 sat 28 pages after its first mention. Relaxing the
+% fractions lets a full-width figure share a page with body text, which stops
+% the cascade (floats must appear in declaration order, so one unplaceable
+% figure pushes every later one with it).
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+\providecommand{\doi}[1]{\href{https://doi.org/#1}{doi:#1}}
+
+% Citation commands. The class loads biblatex with natbib=true, so \citep and
+% \citet work natively; the body's 37 \citep calls need no change. The apa6
+% aliases that used to sit here are gone, and the three apacite-only forms were
+% rewritten in the body files:
+%   apacite \cite   (parenthetical)      -> \parencite
+%   apacite \citeA  (textual)            -> \textcite
+%   apacite \citeNP (no parentheses)     -> \citealp
+\addbibresource{bibliography.bib}
+
+\graphicspath{{../figures/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document Information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Preserved categorical identification with impaired hue interpolation in color vision deficiency motivates a cortically derived correction filter}
+
+\author{%
+Jinil Kim,$^{a}$ Albert Minkue Cho,$^{a}$ Jungwoo Seo,$^{a}$ Jiook Cha$^{a\ast}$\\
+{\small $^{a}$Seoul National University, Seoul, South Korea}\\
+{\small $^{\ast}$Correspondence: Jiook Cha (connectome@snu.ac.kr)}
+}
+
+\begin{document}
+
+\linenumbers
+
+\maketitle
+
+\keywords{color vision deficiency, fMRI, multivoxel pattern analysis, representational geometry, cortical color representation, individualized color correction}
+
+\begin{abstract}
+Color vision deficiency (CVD) is typically corrected with generic filters designed from a retina-based model. Such filters change how colors appear but improve color discrimination inconsistently across users and tasks. They are designed without reference to the visual cortex, where the retinal loss and the observer's partial compensation combine. How that combination reshapes color representation in CVD remains underinvestigated. Here we show that categorical hue information remains decodable in CVD while the continuous geometry of cortical color representation is distorted, and we use that distortion to design an individualized correction filter. We scanned two adults with CVD, one with each red--green subtype, and seven color-normal controls. All eight colors remained decodable from cortical activity in both CVD participants, whereas the continuous hue geometry departed from controls in both. We modeled each distortion as a hue rotation along two color-space axes and inverted the fit into an individualized stimulus-space filter. Both CVD participants completed a second session of fMRI and behavioral testing to evaluate the filters. Under the individualized filter, the four hue-discrimination thresholds that had exceeded the control range in the first session (three for deutan, one marginal for protan) moved within that range. Establishing superiority over a deployed accessibility filter requires a larger sample. The direction of cortical change differed across participants and measures, and neither reached the control reference. This study characterizes a previously undescribed geometric distortion of the cortical color representation in CVD and introduces, to our knowledge, the first cortically grounded framework for individualized color correction.
+\end{abstract}
+
+% Introduction Section
+\input{Introduction/introduction_v2}
+
+% Methods Section
+\input{Methods/methods_v2}
+
+% Results Section
+\input{Results/results_v4}
+
+% Discussion Section
+\input{Discussion/discussion_v3}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Back matter — Imaging Neuroscience order and section names.
+%
+% IN Guide for Authors mandates, in this order:
+%   Data and Code Availability (mandatory) → Author Contributions (mandatory)
+%   → Funding (optional) → Declaration of Competing Interests (mandatory)
+%   → Acknowledgements (optional) → Supplementary → References.
+% The previous arrangement followed Elsevier/NeuroImage and has been replaced.
+%
+% STATUS: remaining \todo{} blocks render in red and MUST be resolved before
+% submission. Checklist: SUBMISSION_CHECKLIST_IMAGING_NEURO.md
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+
+% Declaration of the use of AI.
+% Required as a standalone end-matter section by the Imaging Neuroscience Guide
+% for Authors, which asks for (i) the role AI played in planning and carrying out
+% the research, (ii) the exact tools and version numbers, and (iii) the role AI
+% played in generating figures. The guide also requires the same disclosure in
+% the cover letter -- keep the two worded identically.
+%
+% Supersedes the paragraph that previously sat unlabelled after Acknowledgements
+% and asserted "No figure, text, statistical result, or numerical value in this
+% article was produced by an AI tool". That sentence was inaccurate: AI tools
+% were used to reword author-written draft text and to check spelling and
+% grammar. Scope confirmed by the authors 2026-09-01.
+\section*{Declaration of the use of AI}
+
+With respect to the research described in this paper, AI tools played no part in
+the study design, in the choice of analyses, or in the interpretation of the
+results. AI-based coding assistants were used to review the analysis code and to
+check its correctness against the committed data. Every result reported here was
+produced by executing that code, and the authors verified the outputs.
+
+With respect to the preparation of the manuscript, the authors used AI tools to
+check spelling and grammar and to reword draft text written by the authors. All
+statistical results and numerical values reported in the paper were taken from
+the analysis outputs rather than from an AI tool.
+
+No figure contains AI-generated content. Every figure is produced by the analysis
+and figure scripts released with the paper.
+
+The AI tool used was Claude Code 2.1.259 (Anthropic), running the Claude Opus 5
+model.
+
+The authors take full responsibility for the content of this article, including
+any part prepared with the assistance of these tools.
+
+\section*{Data and Code Availability}
+
+All analysis and preprocessing code needed to reproduce the reported results is
+openly available at \url{https://github.com/Transconnectome/colorBlind_analysis}
+\todo{[FILL AT SUBMISSION] and archived at Zenodo DOI xx.xxxx/zenodo.xxxxxxx.
+IN asks for a persistent identifier; make the repository public and mint a
+release DOI before submission so that reviewers can access it.}
+
+% Deposit of derived data was examined against the approved protocol and the
+% signed consent form (docs/archive/final_IRB.pdf, docs/archive/[변경2차] IRB
+% No. 2510_002-023.pdf) on 2026-08-16 and is NOT permitted: the protocol places
+% all study data in a principal-investigator-only encrypted store, and the
+% consent form contains no secondary-use, third-party-provision, or public
+% deposit clause. Open deposit would require a new ethics submission. The
+% restricted-access statement below is therefore the whole of the data half.
+
+The neuroimaging and behavioral data cannot be shared openly. The protocol
+approved by the Seoul National University Institutional Review Board (SNUIRB
+No.~2510/002-023), and the written consent obtained under it, place all study
+data in an encrypted store to which the principal investigator controls access,
+and neither document provides for secondary use by third parties or for deposit
+in a public repository. Under Article 16(3) of the Seoul National University
+Research Ethics Guidelines, the de-identified study data are retained for five
+years and, thereafter, for as long as the principal investigator can maintain
+custody of them, so that the integrity of the reported analyses can be verified.
+Requests for access should be directed to the principal investigator (Jiook Cha,
+connectome@snu.ac.kr) and are granted subject to (i) a formal data sharing
+agreement between the requesting institution and Seoul National University,
+(ii) approval of the intended use by the requesting researcher's local ethics
+committee, and (iii) a short project outline describing that use; a request that
+falls outside the scope of the original consent additionally requires a new
+submission to the Seoul National University Institutional Review Board.
+Co-authorship is not a condition of access. Requests are answered within eight
+weeks.
+
+\section*{Author Contributions}
+
+% Format follows the published Imaging Neuroscience article used as this
+% manuscript's style reference: Kwon et al., Imaging Neuroscience 3 (2025),
+% doi:10.1162/imag_a_00440, whose statement names each author in full and states
+% that author's roles in prose ("Junbeom Kwon: Junbeom Kwon served as the primary
+% investigator and was instrumental in ...").
+%
+% This supersedes the earlier initials-plus-semicolons form modeled on
+% doi:10.1162/IMAG.a.55. Both forms are published IN practice; the full-name form
+% was chosen by the authors 2026-09-04. Every CRediT role carried by the previous
+% version is preserved below, in CRediT vocabulary:
+%   Jinil Kim          Conceptualization, Methodology, Software, Validation,
+%                      Formal analysis, Investigation, Data curation,
+%                      Visualization, Project administration, Funding
+%                      acquisition, Writing---original draft,
+%                      Writing---review & editing
+%   Albert Minkue Cho  Conceptualization, Methodology, Formal analysis,
+%                      Investigation, Data curation, Project administration,
+%                      Funding acquisition, Writing---review & editing
+%   Jungwoo Seo        Conceptualization (supporting), Investigation, Funding
+%                      acquisition, Writing---review & editing
+%   Jiook Cha          Conceptualization, Methodology, Validation, Resources,
+%                      Supervision, Funding acquisition, Writing---review &
+%                      editing
+% The Editorial Manager submission form collects the same roles as taxonomy
+% terms with degree-of-contribution qualifiers; keep the two consistent.
+%
+% Roles supplied by the corresponding author 2026-08-17. Two mappings were
+% applied, because CRediT has no matching term for the labels given:
+%   "result interpretation" -> Formal analysis (CRediT: "application of
+%       statistical, mathematical, computational, or other formal techniques to
+%       analyze or synthesize study data"); interpretation has no separate role.
+%   "data collection" / "recruitment" -> Investigation.
+% Funding acquisition is assigned to all four authors: the award is a university
+% undergraduate programme applied for jointly, which the closing sentence states.
+
+Jinil Kim: Jinil Kim served as the primary investigator and led the
+conceptualization and the methodology of the study. Jinil Kim wrote the analysis
+software, collected the neuroimaging and psychophysical data, and curated and
+validated them. Jinil Kim also led the formal analysis and the interpretation of
+the results, produced the figures, administered the project, and drafted the
+original manuscript.
+
+Albert Minkue Cho: Albert Minkue Cho contributed to the conceptualization and the
+methodology of the study and took part in participant recruitment and data
+collection and curation. Albert Minkue Cho also carried out part of the formal
+analysis, shared responsibility for project administration, and reviewed and
+edited the manuscript.
+
+Jungwoo Seo: Jungwoo Seo contributed to the conceptualization of the study in a
+supporting role and took part in data collection. Jungwoo Seo also reviewed and
+edited the manuscript.
+
+Jiook Cha: Jiook Cha, as the corresponding author, took on a supervisory role,
+providing overall guidance and direction for the project. Jiook Cha contributed
+to the conceptualization and the methodology, validated the analyses, and
+provided the imaging and computational resources on which the study depended.
+Jiook Cha also reviewed and edited the manuscript.
+
+All four authors applied jointly for the funding that supported this work.
+
+% Both sampled Imaging Neuroscience research articles carry a short back-matter
+% "Ethics" section in addition to the statement in Methods (doi:10.1162/IMAG.a.55,
+% doi:10.1162/imag_a_00455). The Guide for Authors does not list it, but house
+% practice does, so it is included here; the fuller statement stays in Methods.
+\section*{Ethics}
+
+The Seoul National University Institutional Review Board approved the study
+(SNUIRB No.~2510/002-023), which was conducted in accordance with the
+Declaration of Helsinki. Written informed consent was obtained from all
+participants for being included in the study.
+
+\section*{Funding}
+
+% Funding text confirmed by the authors 2026-09-01. It supersedes the earlier
+% statement naming the Independent Research Support Program of the College of
+% Liberal Studies, which was taken from the approved protocol
+% (docs/archive/final_IRB.pdf p.2) and is no longer the funding of record.
+% The only editorial change to the supplied wording is punctuation: the supplied
+% text read "... (2025). and Undergraduate Social Science Research Grant ...",
+% which is joined here into a single sentence.
+This work was supported by the SNU Student-directed Education Undergraduate
+Research Program through the SNU College, Seoul National University (2025), and
+by the Undergraduate Social Science Research Grant through the College of Social
+Sciences, Seoul National University (2026).
+
+\section*{Declaration of Competing Interests}
+
+The authors declare that they have no known competing financial interests or
+personal relationships that could have appeared to influence the work reported
+in this paper. No patent has been filed on the correction filter described here,
+and no author has a financial relationship with a supplier of color-correction
+eyewear or display software.
+
+\section*{Acknowledgements}
+
+Imaging was carried out at the Seoul National University Brain Imaging Center,
+and the authors thank its staff for their support. The authors also thank
+Juhyoung Ryu for assistance with coregistration during preprocessing, Eunhwi Lee
+for support with the experimental design, and Seung Yun Choi for revising the
+experiment documents.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printbibliography
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Supplementary Methods
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\section*{Supplementary Methods}
+\input{Supplementary/supplementary}
+
+\end{document}
+%:

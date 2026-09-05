@@ -1,0 +1,1644 @@
+{
+ "stage": "03_psychophysics",
+ "counts": {
+  "ok": 175,
+  "near": 2,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 0,
+  "table": 2
+ },
+ "checks": [
+  {
+   "id": "03.T1.orange-yellow.mean",
+   "desc": "tab:jnd_baseline orange-yellow control mean",
+   "produced": 0.27809285714285714,
+   "reported": 0.278,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.sd",
+   "desc": "tab:jnd_baseline orange-yellow control SD",
+   "produced": 0.1352756519992032,
+   "reported": 0.135,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.deutan_t",
+   "desc": "tab:jnd_baseline orange-yellow deutan t",
+   "produced": 0.84,
+   "reported": 0.84,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.deutan_gamma",
+   "desc": "tab:jnd_baseline orange-yellow deutan gamma",
+   "produced": 3.020573806282588,
+   "reported": 3.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.deutan_z",
+   "desc": "tab:jnd_baseline orange-yellow deutan z",
+   "produced": 4.153793639526887,
+   "reported": 4.15,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.protan_t",
+   "desc": "tab:jnd_baseline orange-yellow protan t",
+   "produced": 0.1925,
+   "reported": 0.193,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.protan_gamma",
+   "desc": "tab:jnd_baseline orange-yellow protan gamma",
+   "produced": 0.6922148306064264,
+   "reported": 0.69,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.orange-yellow.protan_z",
+   "desc": "tab:jnd_baseline orange-yellow protan z",
+   "produced": -0.6327292153310878,
+   "reported": -0.63,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.mean",
+   "desc": "tab:jnd_baseline yellow-green control mean",
+   "produced": 0.08952142857142857,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.sd",
+   "desc": "tab:jnd_baseline yellow-green control SD",
+   "produced": 0.04349783382674415,
+   "reported": 0.044,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.deutan_t",
+   "desc": "tab:jnd_baseline yellow-green deutan t",
+   "produced": 0.2775,
+   "reported": 0.278,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.deutan_gamma",
+   "desc": "tab:jnd_baseline yellow-green deutan gamma",
+   "produced": 3.0998164844809706,
+   "reported": 3.1,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.deutan_z",
+   "desc": "tab:jnd_baseline yellow-green deutan z",
+   "produced": 4.321561670801982,
+   "reported": 4.32,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.protan_t",
+   "desc": "tab:jnd_baseline yellow-green protan t",
+   "produced": 0.1275,
+   "reported": 0.128,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.protan_gamma",
+   "desc": "tab:jnd_baseline yellow-green protan gamma",
+   "produced": 1.4242400063831486,
+   "reported": 1.42,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-green.protan_z",
+   "desc": "tab:jnd_baseline yellow-green protan z",
+   "produced": 0.8731140860908971,
+   "reported": 0.87,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.mean",
+   "desc": "tab:jnd_baseline green-blue control mean",
+   "produced": 0.0794,
+   "reported": 0.079,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.sd",
+   "desc": "tab:jnd_baseline green-blue control SD",
+   "produced": 0.03208238093824501,
+   "reported": 0.032,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.deutan_t",
+   "desc": "tab:jnd_baseline green-blue deutan t",
+   "produced": 0.0775,
+   "reported": 0.078,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.deutan_gamma",
+   "desc": "tab:jnd_baseline green-blue deutan gamma",
+   "produced": 0.9760705289672544,
+   "reported": 0.98,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.deutan_z",
+   "desc": "tab:jnd_baseline green-blue deutan z",
+   "produced": -0.05922253724426769,
+   "reported": -0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.protan_t",
+   "desc": "tab:jnd_baseline green-blue protan t",
+   "produced": 0.155,
+   "reported": 0.155,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.protan_gamma",
+   "desc": "tab:jnd_baseline green-blue protan gamma",
+   "produced": 1.9521410579345089,
+   "reported": 1.95,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.green-blue.protan_z",
+   "desc": "tab:jnd_baseline green-blue protan z",
+   "produced": 2.3564335871929685,
+   "reported": 2.36,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.mean",
+   "desc": "tab:jnd_baseline cyan-magenta control mean",
+   "produced": 0.04214285714285715,
+   "reported": 0.042,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.sd",
+   "desc": "tab:jnd_baseline cyan-magenta control SD",
+   "produced": 0.01648411934184506,
+   "reported": 0.017,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.deutan_t",
+   "desc": "tab:jnd_baseline cyan-magenta deutan t",
+   "produced": 0.04,
+   "reported": 0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.deutan_gamma",
+   "desc": "tab:jnd_baseline cyan-magenta deutan gamma",
+   "produced": 0.9491525423728813,
+   "reported": 0.95,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.deutan_z",
+   "desc": "tab:jnd_baseline cyan-magenta deutan z",
+   "produced": -0.12999524563119905,
+   "reported": -0.13,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.protan_t",
+   "desc": "tab:jnd_baseline cyan-magenta protan t",
+   "produced": 0.0375,
+   "reported": 0.038,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.protan_gamma",
+   "desc": "tab:jnd_baseline cyan-magenta protan gamma",
+   "produced": 0.8898305084745761,
+   "reported": 0.89,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.cyan-magenta.protan_z",
+   "desc": "tab:jnd_baseline cyan-magenta protan z",
+   "produced": -0.2816563655342644,
+   "reported": -0.28,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.mean",
+   "desc": "tab:jnd_baseline yellow-purple control mean",
+   "produced": 0.02178571428571429,
+   "reported": 0.022,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.sd",
+   "desc": "tab:jnd_baseline yellow-purple control SD",
+   "produced": 0.00607492896293956,
+   "reported": 0.006,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.deutan_t",
+   "desc": "tab:jnd_baseline yellow-purple deutan t",
+   "produced": 0.0625,
+   "reported": 0.063,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.deutan_gamma",
+   "desc": "tab:jnd_baseline yellow-purple deutan gamma",
+   "produced": 2.868852459016393,
+   "reported": 2.87,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.deutan_z",
+   "desc": "tab:jnd_baseline yellow-purple deutan z",
+   "produced": 6.702018404275253,
+   "reported": 6.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.protan_t",
+   "desc": "tab:jnd_baseline yellow-purple protan t",
+   "produced": 0.0275,
+   "reported": 0.028,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.protan_gamma",
+   "desc": "tab:jnd_baseline yellow-purple protan gamma",
+   "produced": 1.262295081967213,
+   "reported": 1.26,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.yellow-purple.protan_z",
+   "desc": "tab:jnd_baseline yellow-purple protan z",
+   "produced": 0.9406341620035438,
+   "reported": 0.94,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.mean",
+   "desc": "tab:jnd_baseline blue-purple control mean",
+   "produced": 0.1642857142857143,
+   "reported": 0.164,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.sd",
+   "desc": "tab:jnd_baseline blue-purple control SD",
+   "produced": 0.0925080434083334,
+   "reported": 0.093,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.deutan_t",
+   "desc": "tab:jnd_baseline blue-purple deutan t",
+   "produced": 0.12,
+   "reported": 0.12,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.deutan_gamma",
+   "desc": "tab:jnd_baseline blue-purple deutan gamma",
+   "produced": 0.7304347826086955,
+   "reported": 0.73,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.deutan_z",
+   "desc": "tab:jnd_baseline blue-purple deutan z",
+   "produced": -0.4787228510523759,
+   "reported": -0.48,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.protan_t",
+   "desc": "tab:jnd_baseline blue-purple protan t",
+   "produced": 0.1475,
+   "reported": 0.148,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.protan_gamma",
+   "desc": "tab:jnd_baseline blue-purple protan gamma",
+   "produced": 0.8978260869565216,
+   "reported": 0.9,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.blue-purple.protan_z",
+   "desc": "tab:jnd_baseline blue-purple protan z",
+   "produced": -0.1814514032214653,
+   "reported": -0.18,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.mean",
+   "desc": "tab:jnd_baseline red-orange control mean",
+   "produced": 0.12380714285714287,
+   "reported": 0.124,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.sd",
+   "desc": "tab:jnd_baseline red-orange control SD",
+   "produced": 0.07187867340509416,
+   "reported": 0.072,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.deutan_t",
+   "desc": "tab:jnd_baseline red-orange deutan t",
+   "produced": 0.0625,
+   "reported": 0.063,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.deutan_gamma",
+   "desc": "tab:jnd_baseline red-orange deutan gamma",
+   "produced": 0.5048174003346217,
+   "reported": 0.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.deutan_z",
+   "desc": "tab:jnd_baseline red-orange deutan z",
+   "produced": -0.8529253525816731,
+   "reported": -0.85,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.protan_t",
+   "desc": "tab:jnd_baseline red-orange protan t",
+   "produced": 0.075,
+   "reported": 0.075,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.protan_gamma",
+   "desc": "tab:jnd_baseline red-orange protan gamma",
+   "produced": 0.6057808804015461,
+   "reported": 0.61,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-orange.protan_z",
+   "desc": "tab:jnd_baseline red-orange protan z",
+   "produced": -0.6790211970395634,
+   "reported": -0.68,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.mean",
+   "desc": "tab:jnd_baseline red-cyan control mean",
+   "produced": 0.03357142857142857,
+   "reported": 0.034,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.sd",
+   "desc": "tab:jnd_baseline red-cyan control SD",
+   "produced": 0.015128418543226772,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.deutan_t",
+   "desc": "tab:jnd_baseline red-cyan deutan t",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.deutan_gamma",
+   "desc": "tab:jnd_baseline red-cyan deutan gamma",
+   "produced": 0.44680851063829785,
+   "reported": 0.45,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.deutan_z",
+   "desc": "tab:jnd_baseline red-cyan deutan z",
+   "produced": -1.2275855879029265,
+   "reported": -1.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.protan_t",
+   "desc": "tab:jnd_baseline red-cyan protan t",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.protan_gamma",
+   "desc": "tab:jnd_baseline red-cyan protan gamma",
+   "produced": 0.44680851063829785,
+   "reported": 0.45,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T1.red-cyan.protan_z",
+   "desc": "tab:jnd_baseline red-cyan protan z",
+   "produced": -1.2275855879029265,
+   "reported": -1.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.01",
+   "desc": "tab:jnd_baseline | 8 pairs x (control mean, SD, deutan t/gamma/z, protan t/gamma/z)",
+   "produced": null,
+   "reported": "64 cells, see 03.T1.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "03.02",
+   "desc": "Results \u00a73 \u00b62 | mean |z| over eight pairs, deutan",
+   "produced": 2.2407281611270706,
+   "reported": 2.24,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.03",
+   "desc": "Results \u00a73 \u00b62 | mean |z|, protan",
+   "produced": 0.8965782005395896,
+   "reported": 0.9,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.04",
+   "desc": "Results \u00a73 \u00b62 | remaining pairs lie within |z| <= 1.23 in both participants",
+   "produced": 1.2275855879029265,
+   "reported": 1.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.05",
+   "desc": "Results \u00a73 \u00b61 | deutan exceeds z = +4 on both deutan-axis pairs and on yellow-purple",
+   "produced": 4.153793639526887,
+   "reported": 4.0,
+   "status": "ok",
+   "mode": "gt",
+   "reason": null
+  },
+  {
+   "id": "03.06",
+   "desc": "Results \u00a73 \u00b61 | protan exceeds z = +2 on green-blue only",
+   "produced": [
+    "green-blue"
+   ],
+   "reported": [
+    "green-blue"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.07",
+   "desc": "tab:jnd_baseline caption | staircases collected in the study",
+   "produced": 208,
+   "reported": 208,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.08",
+   "desc": "tab:jnd_baseline caption | staircases censored at the largest presentable separation",
+   "produced": 2,
+   "reported": 2,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.09",
+   "desc": "tab:jnd_baseline caption | both censored staircases are the deutan orange-yellow pair",
+   "produced": [
+    [
+     "sub-08_jnd_ses1_no_filter",
+     "orange-yellow"
+    ]
+   ],
+   "reported": [
+    [
+     "sub-08_jnd_ses1_no_filter",
+     "orange-yellow"
+    ]
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs red-orange sub-08 session1 high-start",
+   "produced": 0.06,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs red-orange sub-08 session1 low-start",
+   "produced": 0.065,
+   "reported": 0.065,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs red-orange sub-08 deployed high-start",
+   "produced": 0.16,
+   "reported": 0.16,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs red-orange sub-08 deployed low-start",
+   "produced": 0.21,
+   "reported": 0.21,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs red-orange sub-08 individualized high-start",
+   "produced": 0.14,
+   "reported": 0.14,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs red-orange sub-08 individualized low-start",
+   "produced": 0.13,
+   "reported": 0.13,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs red-orange sub-09 session1 high-start",
+   "produced": 0.075,
+   "reported": 0.075,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs red-orange sub-09 session1 low-start",
+   "produced": 0.075,
+   "reported": 0.075,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs red-orange sub-09 deployed high-start",
+   "produced": 0.11,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs red-orange sub-09 deployed low-start",
+   "produced": 0.145,
+   "reported": 0.145,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs red-orange sub-09 individualized high-start",
+   "produced": 0.07,
+   "reported": 0.07,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-orange.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs red-orange sub-09 individualized low-start",
+   "produced": 0.055,
+   "reported": 0.055,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs orange-yellow sub-08 session1 high-start",
+   "produced": 0.87,
+   "reported": 0.87,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs orange-yellow sub-08 session1 low-start",
+   "produced": 0.81,
+   "reported": 0.81,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs orange-yellow sub-08 deployed high-start",
+   "produced": 0.08,
+   "reported": 0.08,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs orange-yellow sub-08 deployed low-start",
+   "produced": 0.11,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs orange-yellow sub-08 individualized high-start",
+   "produced": 0.06,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs orange-yellow sub-08 individualized low-start",
+   "produced": 0.0317,
+   "reported": 0.032,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs orange-yellow sub-09 session1 high-start",
+   "produced": 0.175,
+   "reported": 0.175,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs orange-yellow sub-09 session1 low-start",
+   "produced": 0.21,
+   "reported": 0.21,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs orange-yellow sub-09 deployed high-start",
+   "produced": 0.17,
+   "reported": 0.17,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs orange-yellow sub-09 deployed low-start",
+   "produced": 0.185,
+   "reported": 0.185,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs orange-yellow sub-09 individualized high-start",
+   "produced": 0.715,
+   "reported": 0.715,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.orange-yellow.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs orange-yellow sub-09 individualized low-start",
+   "produced": 0.2,
+   "reported": 0.2,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs yellow-green sub-08 session1 high-start",
+   "produced": 0.28,
+   "reported": 0.28,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs yellow-green sub-08 session1 low-start",
+   "produced": 0.275,
+   "reported": 0.275,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs yellow-green sub-08 deployed high-start",
+   "produced": 0.09,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs yellow-green sub-08 deployed low-start",
+   "produced": 0.075,
+   "reported": 0.075,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs yellow-green sub-08 individualized high-start",
+   "produced": 0.145,
+   "reported": 0.145,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs yellow-green sub-08 individualized low-start",
+   "produced": 0.165,
+   "reported": 0.165,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs yellow-green sub-09 session1 high-start",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs yellow-green sub-09 session1 low-start",
+   "produced": 0.13,
+   "reported": 0.13,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs yellow-green sub-09 deployed high-start",
+   "produced": 0.0567,
+   "reported": 0.057,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs yellow-green sub-09 deployed low-start",
+   "produced": 0.05,
+   "reported": 0.05,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs yellow-green sub-09 individualized high-start",
+   "produced": 0.055,
+   "reported": 0.055,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-green.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs yellow-green sub-09 individualized low-start",
+   "produced": 0.065,
+   "reported": 0.065,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs green-blue sub-08 session1 high-start",
+   "produced": 0.065,
+   "reported": 0.065,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs green-blue sub-08 session1 low-start",
+   "produced": 0.09,
+   "reported": 0.09,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs green-blue sub-08 deployed high-start",
+   "produced": 0.15,
+   "reported": 0.15,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs green-blue sub-08 deployed low-start",
+   "produced": 0.11,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs green-blue sub-08 individualized high-start",
+   "produced": 0.045,
+   "reported": 0.045,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs green-blue sub-08 individualized low-start",
+   "produced": 0.06,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs green-blue sub-09 session1 high-start",
+   "produced": 0.145,
+   "reported": 0.145,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs green-blue sub-09 session1 low-start",
+   "produced": 0.165,
+   "reported": 0.165,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs green-blue sub-09 deployed high-start",
+   "produced": 0.26,
+   "reported": 0.26,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs green-blue sub-09 deployed low-start",
+   "produced": 0.225,
+   "reported": 0.225,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs green-blue sub-09 individualized high-start",
+   "produced": 0.135,
+   "reported": 0.135,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.green-blue.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs green-blue sub-09 individualized low-start",
+   "produced": 0.08,
+   "reported": 0.08,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs blue-purple sub-08 session1 high-start",
+   "produced": 0.115,
+   "reported": 0.115,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs blue-purple sub-08 session1 low-start",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs blue-purple sub-08 deployed high-start",
+   "produced": 0.05,
+   "reported": 0.05,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs blue-purple sub-08 deployed low-start",
+   "produced": 0.095,
+   "reported": 0.095,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs blue-purple sub-08 individualized high-start",
+   "produced": 0.11,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs blue-purple sub-08 individualized low-start",
+   "produced": 0.2,
+   "reported": 0.2,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs blue-purple sub-09 session1 high-start",
+   "produced": 0.125,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs blue-purple sub-09 session1 low-start",
+   "produced": 0.17,
+   "reported": 0.17,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs blue-purple sub-09 deployed high-start",
+   "produced": 0.135,
+   "reported": 0.135,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs blue-purple sub-09 deployed low-start",
+   "produced": 0.11,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs blue-purple sub-09 individualized high-start",
+   "produced": 0.15,
+   "reported": 0.15,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.blue-purple.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs blue-purple sub-09 individualized low-start",
+   "produced": 0.105,
+   "reported": 0.105,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs yellow-purple sub-08 session1 high-start",
+   "produced": 0.06,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs yellow-purple sub-08 session1 low-start",
+   "produced": 0.065,
+   "reported": 0.065,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs yellow-purple sub-08 deployed high-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs yellow-purple sub-08 deployed low-start",
+   "produced": 0.02,
+   "reported": 0.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs yellow-purple sub-08 individualized high-start",
+   "produced": 0.035,
+   "reported": 0.035,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs yellow-purple sub-08 individualized low-start",
+   "produced": 0.025,
+   "reported": 0.025,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs yellow-purple sub-09 session1 high-start",
+   "produced": 0.02,
+   "reported": 0.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs yellow-purple sub-09 session1 low-start",
+   "produced": 0.035,
+   "reported": 0.035,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs yellow-purple sub-09 deployed high-start",
+   "produced": 0.02,
+   "reported": 0.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs yellow-purple sub-09 deployed low-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs yellow-purple sub-09 individualized high-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.yellow-purple.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs yellow-purple sub-09 individualized low-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs red-cyan sub-08 session1 high-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs red-cyan sub-08 session1 low-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs red-cyan sub-08 deployed high-start",
+   "produced": 0.04,
+   "reported": 0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs red-cyan sub-08 deployed low-start",
+   "produced": 0.0183,
+   "reported": 0.018,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs red-cyan sub-08 individualized high-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs red-cyan sub-08 individualized low-start",
+   "produced": 0.045,
+   "reported": 0.045,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs red-cyan sub-09 session1 high-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs red-cyan sub-09 session1 low-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs red-cyan sub-09 deployed high-start",
+   "produced": 0.03,
+   "reported": 0.03,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs red-cyan sub-09 deployed low-start",
+   "produced": 0.04,
+   "reported": 0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs red-cyan sub-09 individualized high-start",
+   "produced": 0.02,
+   "reported": 0.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.red-cyan.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs red-cyan sub-09 individualized low-start",
+   "produced": 0.025,
+   "reported": 0.025,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-08.session1.hi",
+   "desc": "tab:staircase_pairs cyan-magenta sub-08 session1 high-start",
+   "produced": 0.035,
+   "reported": 0.035,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-08.session1.lo",
+   "desc": "tab:staircase_pairs cyan-magenta sub-08 session1 low-start",
+   "produced": 0.045,
+   "reported": 0.045,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-08.deployed.hi",
+   "desc": "tab:staircase_pairs cyan-magenta sub-08 deployed high-start",
+   "produced": 0.03,
+   "reported": 0.03,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-08.deployed.lo",
+   "desc": "tab:staircase_pairs cyan-magenta sub-08 deployed low-start",
+   "produced": 0.025,
+   "reported": 0.025,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-08.individualized.hi",
+   "desc": "tab:staircase_pairs cyan-magenta sub-08 individualized high-start",
+   "produced": 0.04,
+   "reported": 0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-08.individualized.lo",
+   "desc": "tab:staircase_pairs cyan-magenta sub-08 individualized low-start",
+   "produced": 0.0333,
+   "reported": 0.033,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-09.session1.hi",
+   "desc": "tab:staircase_pairs cyan-magenta sub-09 session1 high-start",
+   "produced": 0.04,
+   "reported": 0.04,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-09.session1.lo",
+   "desc": "tab:staircase_pairs cyan-magenta sub-09 session1 low-start",
+   "produced": 0.035,
+   "reported": 0.035,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-09.deployed.hi",
+   "desc": "tab:staircase_pairs cyan-magenta sub-09 deployed high-start",
+   "produced": 0.15,
+   "reported": 0.15,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-09.deployed.lo",
+   "desc": "tab:staircase_pairs cyan-magenta sub-09 deployed low-start",
+   "produced": 0.14,
+   "reported": 0.14,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-09.individualized.hi",
+   "desc": "tab:staircase_pairs cyan-magenta sub-09 individualized high-start",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.T2.cyan-magenta.sub-09.individualized.lo",
+   "desc": "tab:staircase_pairs cyan-magenta sub-09 individualized low-start",
+   "produced": 0.02,
+   "reported": 0.02,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.10",
+   "desc": "tab:staircase_pairs | 8 pairs x 6 columns x (high, low)",
+   "produced": null,
+   "reported": "96 cells, see 03.T2.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "03.11",
+   "desc": "S1 \u00b6 after tab:staircase_pairs | number of pair-level cells (13 files x 8 pairs)",
+   "produced": 104,
+   "reported": 104,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.12",
+   "desc": "S1 | median difference between the two staircases",
+   "produced": 0.015,
+   "reported": 0.015,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.13",
+   "desc": "S1 | cells whose two estimates differ by more than 0.10",
+   "produced": 3,
+   "reported": 3,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.14",
+   "desc": "S1 | largest difference",
+   "produced": 0.5149999999999999,
+   "reported": 0.515,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.15",
+   "desc": "S1 | it is the protan participant's orange-yellow pair under the individualized filter",
+   "produced": [
+    "sub-09/individualized",
+    "orange-yellow"
+   ],
+   "reported": [
+    "sub-09/individualized",
+    "orange-yellow"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "03.16",
+   "desc": "S1 | that cell's z with the mean of the two tracks",
+   "produced": 1.326233806348238,
+   "reported": 1.33,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.17",
+   "desc": "S1 | z restricted to the converged track",
+   "produced": -0.5772868656609181,
+   "reported": -0.58,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.18",
+   "desc": "S1 | protan mean |z| under the individualized filter",
+   "produced": 0.934375,
+   "reported": 0.93,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "03.19",
+   "desc": "S1 | same with the converged track",
+   "produced": 0.8407608582076147,
+   "reported": 0.84,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  }
+ ]
+}

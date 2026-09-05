@@ -1,0 +1,272 @@
+{
+ "subject": "sub-08",
+ "variant": "matched",
+ "n_runs_match": 4,
+ "design": "exhaustive C(6,4)=15 subsets; HC + nofilter subsampled, window/optimal untouched (already 4 runs)",
+ "rois": {
+  "V1": {
+   "k": 4,
+   "n_subsets": 15,
+   "n_hc": 7,
+   "srm": {
+    "hc_disp_mean": 0.42918625067753097,
+    "hc_disp_sd": 0.06913024975792768,
+    "conditions": {
+     "window": {
+      "disparity": 0.7406277748976415,
+      "disparity_sd_over_subsets": 0.027182282426753992,
+      "t": 4.214173548218222,
+      "p": 0.9972013865383205,
+      "d": 4.505141024525161
+     },
+     "optimal": {
+      "disparity": 0.6863300752242226,
+      "disparity_sd_over_subsets": 0.023762111955764022,
+      "t": 3.4794612125211324,
+      "p": 0.993424431256396,
+      "d": 3.719700499378032
+     },
+     "nofilter": {
+      "disparity": 0.5042726663569217,
+      "disparity_sd_over_subsets": 0.03825353391989271,
+      "t": 1.0160083424295476,
+      "p": 0.8255847490271,
+      "d": 1.0861586055644188
+     }
+    }
+   },
+   "srm_rdm_paper": {
+    "_hc": {
+     "pair_disp_mean": 1.0785313920543425,
+     "pair_disp_sd": 0.05292101597341481,
+     "spearman_self_loo_mean": 0.6582583991450986,
+     "pair_disp_mean_sd_over_subsets": 0.015425109489014266,
+     "pair_disp_sd_sd_over_subsets": 0.017292930766782844,
+     "spearman_self_loo_mean_sd_over_subsets": 0.060618831161646104
+    },
+    "window": {
+     "mean_pairwise_disparity": 1.03627533458293,
+     "disp_d_vs_hc": -0.9687040515838794,
+     "spearman_to_hc": 0.20124064951651158,
+     "mean_pairwise_disparity_sd_over_subsets": 0.016656352202729683,
+     "disp_d_vs_hc_sd_over_subsets": 0.657606131868425,
+     "spearman_to_hc_sd_over_subsets": 0.0697938686310153
+    },
+    "optimal": {
+     "mean_pairwise_disparity": 0.8311477446831149,
+     "disp_d_vs_hc": -5.267336109251439,
+     "spearman_to_hc": 0.23824119686188655,
+     "mean_pairwise_disparity_sd_over_subsets": 0.013585698863750991,
+     "disp_d_vs_hc_sd_over_subsets": 2.0735565571435584,
+     "spearman_to_hc_sd_over_subsets": 0.05240179812364239
+    },
+    "nofilter": {
+     "mean_pairwise_disparity": 1.1205474304946605,
+     "disp_d_vs_hc": 0.8354204418912619,
+     "spearman_to_hc": 0.6585659551176792,
+     "mean_pairwise_disparity_sd_over_subsets": 0.012925884642587199,
+     "disp_d_vs_hc_sd_over_subsets": 0.4553422170508334,
+     "spearman_to_hc_sd_over_subsets": 0.12141187139118925
+    }
+   }
+  },
+  "V2": {
+   "k": 4,
+   "n_subsets": 15,
+   "n_hc": 7,
+   "srm": {
+    "hc_disp_mean": 0.44331507648224167,
+    "hc_disp_sd": 0.08652722520357709,
+    "conditions": {
+     "window": {
+      "disparity": 0.8696385203324745,
+      "disparity_sd_over_subsets": 0.08760924214677454,
+      "t": 4.60882762357201,
+      "p": 0.9981710214597418,
+      "d": 4.927043977744572
+     },
+     "optimal": {
+      "disparity": 0.765942911240916,
+      "disparity_sd_over_subsets": 0.024876567985063023,
+      "t": 3.487812125789085,
+      "p": 0.9934910028981739,
+      "d": 3.7286280011824147
+     },
+     "nofilter": {
+      "disparity": 0.6762750455790627,
+      "disparity_sd_over_subsets": 0.06744247792305151,
+      "t": 2.518445457897669,
+      "p": 0.977308850134496,
+      "d": 2.692331443065741
+     }
+    }
+   },
+   "srm_rdm_paper": {
+    "_hc": {
+     "pair_disp_mean": 1.0504430831890383,
+     "pair_disp_sd": 0.0711371958768061,
+     "spearman_self_loo_mean": 0.5881512758360049,
+     "pair_disp_mean_sd_over_subsets": 0.020434894368494196,
+     "pair_disp_sd_sd_over_subsets": 0.023934569391170626,
+     "spearman_self_loo_mean_sd_over_subsets": 0.0690599434896742
+    },
+    "window": {
+     "mean_pairwise_disparity": 0.9787142314356672,
+     "disp_d_vs_hc": -1.1135534401364342,
+     "spearman_to_hc": 0.16281700419631454,
+     "mean_pairwise_disparity_sd_over_subsets": 0.04267122793754146,
+     "disp_d_vs_hc_sd_over_subsets": 0.6968939448143919,
+     "spearman_to_hc_sd_over_subsets": 0.11844430096516882
+    },
+    "optimal": {
+     "mean_pairwise_disparity": 0.7625657529185226,
+     "disp_d_vs_hc": -4.823800377695715,
+     "spearman_to_hc": 0.04769202700237183,
+     "mean_pairwise_disparity_sd_over_subsets": 0.09875963447164716,
+     "disp_d_vs_hc_sd_over_subsets": 3.0735028829540303,
+     "spearman_to_hc_sd_over_subsets": 0.18400086027527868
+    },
+    "nofilter": {
+     "mean_pairwise_disparity": 1.0276249760361336,
+     "disp_d_vs_hc": -0.47998707386240114,
+     "spearman_to_hc": 0.41831782521437694,
+     "mean_pairwise_disparity_sd_over_subsets": 0.03857121741608045,
+     "disp_d_vs_hc_sd_over_subsets": 0.9795380199830629,
+     "spearman_to_hc_sd_over_subsets": 0.11604062497615295
+    }
+   }
+  },
+  "V3": {
+   "k": 3,
+   "n_subsets": 15,
+   "n_hc": 7,
+   "srm": {
+    "hc_disp_mean": 0.522434675249219,
+    "hc_disp_sd": 0.09739314648376611,
+    "conditions": {
+     "window": {
+      "disparity": 0.9346457704466514,
+      "disparity_sd_over_subsets": 0.020586416183014697,
+      "t": 3.9590893839556127,
+      "p": 0.9962702344485068,
+      "d": 4.2324445823930885
+     },
+     "optimal": {
+      "disparity": 0.909106832778573,
+      "disparity_sd_over_subsets": 0.07144689283936607,
+      "t": 3.7138001664231113,
+      "p": 0.9950375657424523,
+      "d": 3.9702193787712363
+     },
+     "nofilter": {
+      "disparity": 0.6969104052619207,
+      "disparity_sd_over_subsets": 0.0505358480677671,
+      "t": 1.6757555012446825,
+      "p": 0.927598202503711,
+      "d": 1.7914579856169244
+     }
+    }
+   },
+   "srm_rdm_paper": {
+    "_hc": {
+     "pair_disp_mean": 1.0713965692585667,
+     "pair_disp_sd": 0.06037546880309837,
+     "spearman_self_loo_mean": 0.5316704459561603,
+     "pair_disp_mean_sd_over_subsets": 0.024708151327039324,
+     "pair_disp_sd_sd_over_subsets": 0.027609813416856047,
+     "spearman_self_loo_mean_sd_over_subsets": 0.12486417272208382
+    },
+    "window": {
+     "mean_pairwise_disparity": 0.9362957092845724,
+     "disp_d_vs_hc": -2.9466761352327016,
+     "spearman_to_hc": 0.11629264732713009,
+     "mean_pairwise_disparity_sd_over_subsets": 0.024936748205454783,
+     "disp_d_vs_hc_sd_over_subsets": 2.3513411884006277,
+     "spearman_to_hc_sd_over_subsets": 0.11473212326535374
+    },
+    "optimal": {
+     "mean_pairwise_disparity": 1.013616569278274,
+     "disp_d_vs_hc": -1.1521454320040625,
+     "spearman_to_hc": 0.1751870096697683,
+     "mean_pairwise_disparity_sd_over_subsets": 0.1335983854746032,
+     "disp_d_vs_hc_sd_over_subsets": 2.4531979200455987,
+     "spearman_to_hc_sd_over_subsets": 0.2107386790379621
+    },
+    "nofilter": {
+     "mean_pairwise_disparity": 0.8347396762066366,
+     "disp_d_vs_hc": -5.27258773278955,
+     "spearman_to_hc": 0.29056741470534575,
+     "mean_pairwise_disparity_sd_over_subsets": 0.10040006141223883,
+     "disp_d_vs_hc_sd_over_subsets": 4.603921523004895,
+     "spearman_to_hc_sd_over_subsets": 0.15124186133584805
+    }
+   }
+  },
+  "V4": {
+   "k": 3,
+   "n_subsets": 15,
+   "n_hc": 6,
+   "srm": {
+    "hc_disp_mean": 0.6953201220726749,
+    "hc_disp_sd": 0.10446087906900096,
+    "conditions": {
+     "window": {
+      "disparity": 1.0035624849875684,
+      "disparity_sd_over_subsets": 0.015692409228367298,
+      "t": 2.731902868627879,
+      "p": 0.9794065605714178,
+      "d": 2.950792350802313
+     },
+     "optimal": {
+      "disparity": 0.9007722782577474,
+      "disparity_sd_over_subsets": 0.02224280284174236,
+      "t": 1.8208896711668154,
+      "p": 0.9358688693058612,
+      "d": 1.9667856332068812
+     },
+     "nofilter": {
+      "disparity": 0.8717363795940489,
+      "disparity_sd_over_subsets": 0.04518254931814034,
+      "t": 1.5635491352897022,
+      "p": 0.910655527820991,
+      "d": 1.688826085838732
+     }
+    }
+   },
+   "srm_rdm_paper": {
+    "_hc": {
+     "pair_disp_mean": 0.8956579617577509,
+     "pair_disp_sd": 0.24443093469983526,
+     "spearman_self_loo_mean": 0.2060451255853555,
+     "pair_disp_mean_sd_over_subsets": 0.02115222049431102,
+     "pair_disp_sd_sd_over_subsets": 0.035272382307558595,
+     "spearman_self_loo_mean_sd_over_subsets": 0.09377423952602312
+    },
+    "window": {
+     "mean_pairwise_disparity": 0.8765484635770835,
+     "disp_d_vs_hc": -0.07792915470643254,
+     "spearman_to_hc": 0.13096150337529647,
+     "mean_pairwise_disparity_sd_over_subsets": 0.003926784998854038,
+     "disp_d_vs_hc_sd_over_subsets": 0.08384657623784278,
+     "spearman_to_hc_sd_over_subsets": 0.12089811473643206
+    },
+    "optimal": {
+     "mean_pairwise_disparity": 0.7659745207304536,
+     "disp_d_vs_hc": -0.5401344671378266,
+     "spearman_to_hc": -0.10235358511220578,
+     "mean_pairwise_disparity_sd_over_subsets": 0.07780374468222186,
+     "disp_d_vs_hc_sd_over_subsets": 0.3497220153282323,
+     "spearman_to_hc_sd_over_subsets": 0.16494528464048755
+    },
+    "nofilter": {
+     "mean_pairwise_disparity": 1.1264587893523326,
+     "disp_d_vs_hc": 0.9639588395462712,
+     "spearman_to_hc": 0.06641123882503193,
+     "mean_pairwise_disparity_sd_over_subsets": 0.012665203717424526,
+     "disp_d_vs_hc_sd_over_subsets": 0.17671947581961317,
+     "spearman_to_hc_sd_over_subsets": 0.13171861722837347
+    }
+   }
+  }
+ }
+}

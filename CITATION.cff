@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or these result files, please cite the manuscript below and this repository."
+title: "colorblind_public: code and result files for a cortically derived colour-correction filter"
+version: 1.0.0
+date-released: 2026-09-05
+repository-code: "https://github.com/haba6030/colorblind_public"
+license: MIT
+authors:
+  - family-names: Kim
+    given-names: Jinil
+    affiliation: Seoul National University
+  - family-names: Cho
+    given-names: Albert Minkue
+    affiliation: Seoul National University
+  - family-names: Seo
+    given-names: Jungwoo
+    affiliation: Seoul National University
+  - family-names: Cha
+    given-names: Jiook
+    affiliation: Seoul National University
+    email: connectome@snu.ac.kr
+# doi: 10.5281/zenodo.XXXXXXX   (to be added once the release is archived)
+preferred-citation:
+  type: article
+  title: "Preserved categorical identification with impaired hue interpolation in color vision deficiency motivates a cortically derived correction filter"
+  authors:
+    - family-names: Kim
+      given-names: Jinil
+    - family-names: Cho
+      given-names: Albert Minkue
+    - family-names: Seo
+      given-names: Jungwoo
+    - family-names: Cha
+      given-names: Jiook
+  year: 2026
+  journal: "Imaging Neuroscience (submitted)"

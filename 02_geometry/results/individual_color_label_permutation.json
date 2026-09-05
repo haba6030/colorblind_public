@@ -1,0 +1,389 @@
+{
+ "meta": {
+  "generated": "2026-07-23 01:17",
+  "script": "analysis/validation/scripts/individual_color_label_permutation.py",
+  "n_perm": 1000,
+  "hc": [
+   "sub-01",
+   "sub-02",
+   "sub-03",
+   "sub-04",
+   "sub-05",
+   "sub-06",
+   "sub-07"
+  ],
+  "cvd": [
+   "sub-08",
+   "sub-09"
+  ],
+  "excluded": [
+   "sub-10 (near-normal)"
+  ],
+  "k_srm": {
+   "V1": 4,
+   "V2": 4,
+   "V3": 3,
+   "V4": 3
+  },
+  "seed": 42,
+  "statistic": "Crawford & Howell (1998) modified t, one-tailed upper",
+  "null": "색 라벨을 피험자별로 독립 순열 → HC-only SRM 재학습 → 동일 LOO 절차. canonical rerun_loo_consistent.py 의 귀무 구성과 동일하되, 통계량이 집단 격차가 아니라 개인 Crawford-Howell t 이고 sub-10 을 제외함."
+ },
+ "results": {
+  "V1": {
+   "k": 4,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "estimators": {
+    "common_space": {
+     "hc_disparity": {
+      "mean": 0.4528,
+      "sd": 0.083
+     },
+     "elapsed_s": 7.3,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.5505,
+       "t": 1.101,
+       "p_ch": 0.1566,
+       "p_published": null,
+       "null_t": {
+        "mean": 2.179,
+        "sd": 1.013,
+        "pct95": 4.099,
+        "n": 1000
+       },
+       "p_permutation": 0.8791
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.7614,
+       "t": 3.477,
+       "p_ch": 0.0066,
+       "p_published": 0.007,
+       "null_t": {
+        "mean": 2.733,
+        "sd": 1.154,
+        "pct95": 4.895,
+        "n": 1000
+       },
+       "p_permutation": 0.2238
+      }
+     }
+    },
+    "loso_symmetric": {
+     "hc_disparity": {
+      "mean": 0.4904,
+      "sd": 0.1245
+     },
+     "elapsed_s": 40.0,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.5547,
+       "t": 0.483,
+       "p_ch": 0.3231,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.47,
+        "sd": 0.723,
+        "pct95": 2.787,
+        "n": 1000
+       },
+       "p_permutation": 0.9381
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.7593,
+       "t": 2.02,
+       "p_ch": 0.0449,
+       "p_published": 0.045,
+       "null_t": {
+        "mean": 1.925,
+        "sd": 0.823,
+        "pct95": 3.378,
+        "n": 1000
+       },
+       "p_permutation": 0.3866
+      }
+     }
+    }
+   }
+  },
+  "V2": {
+   "k": 4,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "estimators": {
+    "common_space": {
+     "hc_disparity": {
+      "mean": 0.4858,
+      "sd": 0.1029
+     },
+     "elapsed_s": 6.4,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.7183,
+       "t": 2.113,
+       "p_ch": 0.0395,
+       "p_published": 0.04,
+       "null_t": {
+        "mean": 3.876,
+        "sd": 1.406,
+        "pct95": 6.212,
+        "n": 1000
+       },
+       "p_permutation": 0.953
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.5943,
+       "t": 0.986,
+       "p_ch": 0.1811,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.936,
+        "sd": 0.941,
+        "pct95": 3.499,
+        "n": 1000
+       },
+       "p_permutation": 0.8821
+      }
+     }
+    },
+    "loso_symmetric": {
+     "hc_disparity": {
+      "mean": 0.4716,
+      "sd": 0.1441
+     },
+     "elapsed_s": 34.2,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.6767,
+       "t": 1.331,
+       "p_ch": 0.1157,
+       "p_published": 0.116,
+       "null_t": {
+        "mean": 2.747,
+        "sd": 0.97,
+        "pct95": 4.429,
+        "n": 1000
+       },
+       "p_permutation": 0.979
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.5907,
+       "t": 0.773,
+       "p_ch": 0.2345,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.279,
+        "sd": 0.629,
+        "pct95": 2.385,
+        "n": 1000
+       },
+       "p_permutation": 0.8002
+      }
+     }
+    }
+   }
+  },
+  "V3": {
+   "k": 3,
+   "n_hc": 7,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-07"
+   ],
+   "estimators": {
+    "common_space": {
+     "hc_disparity": {
+      "mean": 0.5403,
+      "sd": 0.0962
+     },
+     "elapsed_s": 4.6,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.7378,
+       "t": 1.921,
+       "p_ch": 0.0515,
+       "p_published": null,
+       "null_t": {
+        "mean": 2.486,
+        "sd": 1.066,
+        "pct95": 4.412,
+        "n": 1000
+       },
+       "p_permutation": 0.7003
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.5495,
+       "t": 0.09,
+       "p_ch": 0.4657,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.613,
+        "sd": 0.863,
+        "pct95": 3.114,
+        "n": 1000
+       },
+       "p_permutation": 0.979
+      }
+     }
+    },
+    "loso_symmetric": {
+     "hc_disparity": {
+      "mean": 0.5392,
+      "sd": 0.1478
+     },
+     "elapsed_s": 24.2,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.7244,
+       "t": 1.172,
+       "p_ch": 0.1427,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.76,
+        "sd": 0.702,
+        "pct95": 2.986,
+        "n": 1000
+       },
+       "p_permutation": 0.8022
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.5481,
+       "t": 0.056,
+       "p_ch": 0.4785,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.054,
+        "sd": 0.54,
+        "pct95": 2.014,
+        "n": 1000
+       },
+       "p_permutation": 0.986
+      }
+     }
+    }
+   }
+  },
+  "hV4": {
+   "k": 3,
+   "n_hc": 6,
+   "hc_used": [
+    "sub-01",
+    "sub-02",
+    "sub-03",
+    "sub-04",
+    "sub-05",
+    "sub-06"
+   ],
+   "estimators": {
+    "common_space": {
+     "hc_disparity": {
+      "mean": 0.7213,
+      "sd": 0.1066
+     },
+     "elapsed_s": 4.0,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.8791,
+       "t": 1.37,
+       "p_ch": 0.1145,
+       "p_published": null,
+       "null_t": {
+        "mean": 2.198,
+        "sd": 1.105,
+        "pct95": 4.006,
+        "n": 1000
+       },
+       "p_permutation": 0.7962
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.8537,
+       "t": 1.15,
+       "p_ch": 0.1511,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.154,
+        "sd": 0.883,
+        "pct95": 2.607,
+        "n": 1000
+       },
+       "p_permutation": 0.5055
+      }
+     }
+    },
+    "loso_symmetric": {
+     "hc_disparity": {
+      "mean": 0.7539,
+      "sd": 0.1297
+     },
+     "elapsed_s": 18.3,
+     "subjects": {
+      "sub-08": {
+       "cvd_type": "deutan",
+       "disparity": 0.9167,
+       "t": 1.162,
+       "p_ch": 0.1489,
+       "p_published": null,
+       "null_t": {
+        "mean": 1.707,
+        "sd": 0.887,
+        "pct95": 3.241,
+        "n": 1000
+       },
+       "p_permutation": 0.7363
+      },
+      "sub-09": {
+       "cvd_type": "protan",
+       "disparity": 0.8562,
+       "t": 0.73,
+       "p_ch": 0.249,
+       "p_published": null,
+       "null_t": {
+        "mean": 0.906,
+        "sd": 0.682,
+        "pct95": 2.129,
+        "n": 1000
+       },
+       "p_permutation": 0.5804
+      }
+     }
+    }
+   }
+  }
+ }
+}

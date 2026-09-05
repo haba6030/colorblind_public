@@ -1,0 +1,6412 @@
+{
+  "subject": "01",
+  "subject_group": "HC",
+  "rois": [
+    "V1",
+    "V2",
+    "V3",
+    "V4"
+  ],
+  "models": [
+    "LDA",
+    "Ridge",
+    "KernelRidge",
+    "SVM",
+    "MLP",
+    "ForwardEncoding"
+  ],
+  "alignment": "srm",
+  "n_permutations": 1000,
+  "settings": {
+    "baseline_dir": "/scratch/connectome/haba6030/colorBlind/derivatives/full_dataset_C010",
+    "dataset_name": "full_dataset_C010",
+    "n_runs": 6,
+    "n_colors": 8,
+    "cv_method": "LOCO (Leave-One-Color-Out)",
+    "hp_tuning": false,
+    "hp_tuning_note": "LOCO uses default hyperparameters. With only 7 training colors per fold, nested HP tuning would be unreliable."
+  },
+  "hyperparameters": {
+    "LDA": {
+      "params": {
+        "solver": "lsqr",
+        "shrinkage": "auto"
+      },
+      "rationale": "Ledoit-Wolf automatic shrinkage; robust for small samples."
+    },
+    "Ridge": {
+      "params": {
+        "alpha": 1.0
+      },
+      "rationale": "Moderate regularization; standard default."
+    },
+    "KernelRidge": {
+      "params": {
+        "alpha": 1.0,
+        "gamma": 0.01
+      },
+      "rationale": "Conservative gamma to avoid overfitting in high-dim voxel space."
+    },
+    "SVM": {
+      "params": {
+        "C": 1.0,
+        "gamma": 0.01
+      },
+      "rationale": "Default C=1; conservative gamma for fMRI dimensionality."
+    },
+    "MLP": {
+      "params": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 0.1
+      },
+      "rationale": "Single hidden layer; strong L2 to prevent overfitting with n=42."
+    },
+    "ForwardEncoding": {
+      "params": {
+        "alpha": 0,
+        "n_channels": 6
+      },
+      "rationale": "Pseudoinverse solution (alpha=0); 6 channels per B&H 2009."
+    }
+  },
+  "model_architectures": {
+    "LDA": {
+      "type": "classifier",
+      "target": "labels (0-7)",
+      "linearity": "linear",
+      "description": "Linear Discriminant Analysis with shrinkage. Finds linear projection maximizing between-class variance."
+    },
+    "Ridge": {
+      "type": "regression",
+      "target": "circular hue (sin/cos encoding)",
+      "linearity": "linear",
+      "description": "Ridge regression predicting sin(hue) and cos(hue). L2 regularization controls overfitting."
+    },
+    "KernelRidge": {
+      "type": "regression",
+      "target": "circular hue (sin/cos encoding)",
+      "linearity": "nonlinear",
+      "description": "Kernel Ridge with RBF kernel. Non-linear extension of Ridge via kernel trick."
+    },
+    "SVM": {
+      "type": "classifier",
+      "target": "labels (0-7)",
+      "linearity": "nonlinear",
+      "description": "Support Vector Machine with RBF kernel. Non-linear decision boundaries in voxel space."
+    },
+    "MLP": {
+      "type": "classifier",
+      "target": "labels (0-7)",
+      "linearity": "nonlinear",
+      "description": "Multi-Layer Perceptron with ReLU activation, early stopping, and L2 regularization."
+    },
+    "ForwardEncoding": {
+      "type": "encoding_model",
+      "target": "labels (0-7) via 6-channel basis",
+      "linearity": "linear",
+      "description": "Brouwer & Heeger 2009 forward encoding model. 6 idealized color channels, analytical solution."
+    }
+  },
+  "results": {
+    "V1": {
+      "LDA": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              270,
+              270,
+              315,
+              45,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              45,
+              45,
+              90,
+              90
+            ],
+            "mae": 75.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              6,
+              6,
+              7,
+              1,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              225,
+              135,
+              135,
+              225,
+              225,
+              135
+            ],
+            "errors_per_run": [
+              180,
+              90,
+              90,
+              180,
+              180,
+              90
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              3,
+              3,
+              5,
+              5,
+              3
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              225,
+              45,
+              180,
+              45,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              45,
+              90,
+              45,
+              90,
+              90
+            ],
+            "mae": 82.5,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              5,
+              1,
+              4,
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "mae": 180.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              90,
+              270,
+              90,
+              90,
+              225,
+              90
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              45,
+              90
+            ],
+            "mae": 82.5,
+            "medae": 90.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              2,
+              6,
+              2,
+              2,
+              5,
+              2
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              225,
+              225,
+              225,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              135,
+              90,
+              135
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              135,
+              180
+            ],
+            "mae": 172.5,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              2,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 102.1875,
+        "overall_adjacent_acc": 0.3541666666666667,
+        "permutation": {
+          "observed_mae": 102.1875,
+          "null_mean": 102.60375,
+          "null_std": 12.891728270968947,
+          "p_value": 0.507,
+          "z_score": -0.03228814564276568,
+          "n_permutations": 1000
+        }
+      },
+      "Ridge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              234.34535095687752,
+              217.92473494833334,
+              233.45220219171935,
+              239.2940943703647,
+              237.70151316711645,
+              254.6328951358542
+            ],
+            "errors_per_run": [
+              125.65464904312248,
+              142.07526505166666,
+              126.54779780828065,
+              120.70590562963531,
+              122.29848683288355,
+              105.3671048641458
+            ],
+            "mae": 123.77486820495574,
+            "medae": 123.97656793800302,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              211.83635369449118,
+              246.66364304774135,
+              265.84911824647565,
+              221.78843182545984,
+              231.22183270188032,
+              221.6389695133641
+            ],
+            "errors_per_run": [
+              166.83635369449118,
+              158.33635695225865,
+              139.15088175352435,
+              176.78843182545984,
+              173.77816729811968,
+              176.6389695133641
+            ],
+            "mae": 165.25486017286963,
+            "medae": 170.30726049630545,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              228.63299510321428,
+              287.3225594654755,
+              221.47672184921686,
+              355.4368541482928,
+              232.69857466414055,
+              219.87136222166188
+            ],
+            "errors_per_run": [
+              138.63299510321428,
+              162.67744053452452,
+              131.47672184921686,
+              94.56314585170719,
+              142.69857466414055,
+              129.87136222166188
+            ],
+            "mae": 133.32004003741088,
+            "medae": 135.05485847621557,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              6,
+              5,
+              0,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              323.4352202803743,
+              308.07525122279594,
+              333.9239251699796,
+              342.0290752054368,
+              329.4255649728886,
+              323.4923208912878
+            ],
+            "errors_per_run": [
+              171.56477971962568,
+              173.07525122279594,
+              161.0760748300204,
+              152.9709247945632,
+              165.5744350271114,
+              171.50767910871218
+            ],
+            "mae": 165.9615241171381,
+            "medae": 168.5410570679118,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              0,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              321.2575254498656,
+              299.313885375323,
+              251.55093356196363,
+              16.841826700619194,
+              275.770498064149,
+              340.9822107404506
+            ],
+            "errors_per_run": [
+              141.25752544986562,
+              119.31388537532303,
+              71.55093356196363,
+              163.1581732993808,
+              95.77049806414902,
+              160.98221074045063
+            ],
+            "mae": 125.33887108185547,
+            "medae": 130.28570541259433,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              6,
+              0,
+              6,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              107.6193053955674,
+              84.7565677825954,
+              53.28250346459514,
+              62.34456770781115,
+              139.56168721223264,
+              75.22045443967993
+            ],
+            "errors_per_run": [
+              117.3806946044326,
+              140.2434322174046,
+              171.71749653540485,
+              162.65543229218883,
+              85.43831278776736,
+              149.77954556032006
+            ],
+            "mae": 137.86915233291973,
+            "medae": 145.01148888886235,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              1,
+              1,
+              3,
+              2
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              134.66556979086957,
+              102.76759128135883,
+              161.80639104794804,
+              145.38006279151102,
+              173.8899185235947,
+              107.15106560099346
+            ],
+            "errors_per_run": [
+              135.33443020913043,
+              167.23240871864118,
+              108.19360895205196,
+              124.61993720848898,
+              96.1100814764053,
+              162.84893439900654
+            ],
+            "mae": 132.38990016062073,
+            "medae": 129.97718370880972,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              2,
+              4,
+              3,
+              4,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              103.6371695926713,
+              112.05330556364659,
+              88.91801620000861,
+              109.18481069482567,
+              105.92692753740042,
+              104.19628845541678
+            ],
+            "errors_per_run": [
+              148.63716959267128,
+              157.05330556364657,
+              133.9180162000086,
+              154.18481069482567,
+              150.92692753740042,
+              149.19628845541678
+            ],
+            "mae": 148.98608634066156,
+            "medae": 150.0616079964086,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "overall_mae": 141.61191280605397,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 141.61191280605397,
+          "null_mean": 160.17694800151264,
+          "null_std": 4.644027748991069,
+          "p_value": 0.0,
+          "z_score": -3.9976150442882252,
+          "n_permutations": 1000
+        }
+      },
+      "KernelRidge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              180.67980623271453,
+              180.78290342019173,
+              180.0669803838708,
+              179.96406969393138,
+              181.8839594588725,
+              182.6038445305101
+            ],
+            "errors_per_run": [
+              179.32019376728547,
+              179.21709657980827,
+              179.9330196161292,
+              179.96406969393138,
+              178.1160405411275,
+              177.3961554694899
+            ],
+            "mae": 178.9910959446286,
+            "medae": 179.26864517354687,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              224.61643379091456,
+              225.8118606282947,
+              225.73876777687158,
+              224.94527451444455,
+              225.33386672521522,
+              224.95962069445872
+            ],
+            "errors_per_run": [
+              179.61643379091456,
+              179.1881393717053,
+              179.26123222312842,
+              179.94527451444455,
+              179.66613327478478,
+              179.95962069445872
+            ],
+            "mae": 179.6061389782394,
+            "medae": 179.64128353284968,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              268.7498262051942,
+              270.3290722315527,
+              267.32848856368355,
+              271.4711228565794,
+              269.2532713752356,
+              267.8310445172346
+            ],
+            "errors_per_run": [
+              178.7498262051942,
+              179.6709277684473,
+              177.32848856368355,
+              178.52887714342057,
+              179.2532713752356,
+              177.8310445172346
+            ],
+            "mae": 178.5604059288693,
+            "medae": 178.6393516743074,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              315.55130631093573,
+              314.853417851733,
+              316.4280831316956,
+              316.7064517710379,
+              315.85200174922915,
+              315.54738316458094
+            ],
+            "errors_per_run": [
+              179.44869368906427,
+              179.853417851733,
+              178.5719168683044,
+              178.2935482289621,
+              179.14799825077085,
+              179.45261683541906
+            ],
+            "mae": 179.12803195404229,
+            "medae": 179.29834596991756,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              359.6062676579773,
+              358.2057312678688,
+              359.1389892192607,
+              0.3725403408966221,
+              359.5190517750329,
+              359.9488925348591
+            ],
+            "errors_per_run": [
+              179.6062676579773,
+              178.20573126786883,
+              179.13898921926068,
+              179.62745965910338,
+              179.5190517750329,
+              179.9488925348591
+            ],
+            "mae": 179.34106535235037,
+            "medae": 179.5626597165051,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              46.70628802665442,
+              45.757861750889106,
+              45.032541434129925,
+              45.119849395626424,
+              45.97599884209264,
+              45.54465938961039
+            ],
+            "errors_per_run": [
+              178.29371197334558,
+              179.2421382491109,
+              179.96745856587006,
+              179.88015060437357,
+              179.02400115790735,
+              179.4553406103896
+            ],
+            "mae": 179.3104668601662,
+            "medae": 179.34873942975025,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              91.2167175016581,
+              90.2763874219775,
+              92.28701665917647,
+              91.25388212866437,
+              92.43053075895139,
+              90.36359249192623
+            ],
+            "errors_per_run": [
+              178.78328249834192,
+              179.72361257802248,
+              177.71298334082354,
+              178.74611787133563,
+              177.5694692410486,
+              179.63640750807377
+            ],
+            "mae": 178.69531217294102,
+            "medae": 178.76470018483877,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              132.99524018473983,
+              133.35387562575931,
+              131.9493365800811,
+              132.94895417638108,
+              130.72477489599058,
+              132.98326330710648
+            ],
+            "errors_per_run": [
+              177.99524018473983,
+              178.35387562575931,
+              176.9493365800811,
+              177.94895417638108,
+              175.72477489599058,
+              177.98326330710648
+            ],
+            "mae": 177.49257412834308,
+            "medae": 177.96610874174377,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 178.89063641494752,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 178.89063641494752,
+          "null_mean": 179.4438058479181,
+          "null_std": 0.13422834583625495,
+          "p_value": 0.001,
+          "z_score": -4.121107427229925,
+          "n_permutations": 1000
+        }
+      },
+      "SVM": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              45,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              45,
+              90,
+              90
+            ],
+            "mae": 105.0,
+            "medae": 112.5,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              1,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              225,
+              225,
+              135,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              90,
+              180,
+              180,
+              180
+            ],
+            "mae": 165.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              3,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              180,
+              135,
+              180,
+              45,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              90,
+              45,
+              90,
+              45,
+              90,
+              90
+            ],
+            "mae": 75.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              4,
+              3,
+              4,
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              45,
+              180,
+              45,
+              45,
+              90,
+              45
+            ],
+            "errors_per_run": [
+              90,
+              45,
+              90,
+              90,
+              45,
+              90
+            ],
+            "mae": 75.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              1,
+              4,
+              1,
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              225,
+              270,
+              225,
+              90,
+              225,
+              90
+            ],
+            "errors_per_run": [
+              45,
+              90,
+              45,
+              90,
+              45,
+              90
+            ],
+            "mae": 67.5,
+            "medae": 67.5,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              5,
+              6,
+              5,
+              2,
+              5,
+              2
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              45,
+              45,
+              45,
+              270,
+              270,
+              45
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              45,
+              45,
+              180
+            ],
+            "mae": 135.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              6,
+              6,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              225,
+              225,
+              225,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              135,
+              90,
+              135
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              135,
+              180
+            ],
+            "mae": 172.5,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              2,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 105.0,
+        "overall_adjacent_acc": 0.3333333333333333,
+        "permutation": {
+          "observed_mae": 105.0,
+          "null_mean": 102.0984375,
+          "null_std": 12.29069204072105,
+          "p_value": 0.605,
+          "z_score": 0.23607804104005303,
+          "n_permutations": 1000
+        }
+      },
+      "MLP": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "mae": 180.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        ],
+        "overall_mae": 95.625,
+        "overall_adjacent_acc": 0.375,
+        "permutation": {
+          "observed_mae": 95.625,
+          "null_mean": 95.6259375,
+          "null_std": 0.44469430774831153,
+          "p_value": 0.992,
+          "z_score": -0.0021081897916643893,
+          "n_permutations": 1000
+        }
+      },
+      "ForwardEncoding": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              300.0,
+              246.0,
+              356.0,
+              16.0,
+              236.0,
+              246.0
+            ],
+            "errors_per_run": [
+              60.0,
+              114.0,
+              4.0,
+              16.0,
+              124.0,
+              114.0
+            ],
+            "mae": 72.0,
+            "medae": 87.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              7,
+              5,
+              0,
+              0,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              237.0,
+              239.0,
+              244.0,
+              51.0,
+              236.0,
+              239.0
+            ],
+            "errors_per_run": [
+              168.0,
+              166.0,
+              161.0,
+              6.0,
+              169.0,
+              166.0
+            ],
+            "mae": 139.33333333333334,
+            "medae": 166.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              194.0,
+              181.0,
+              184.0,
+              55.0,
+              174.0,
+              186.0
+            ],
+            "errors_per_run": [
+              104.0,
+              91.0,
+              94.0,
+              35.0,
+              84.0,
+              96.0
+            ],
+            "mae": 84.0,
+            "medae": 92.5,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              295.0,
+              296.0,
+              312.0,
+              309.0,
+              152.0,
+              295.0
+            ],
+            "errors_per_run": [
+              160.0,
+              161.0,
+              177.0,
+              174.0,
+              17.0,
+              160.0
+            ],
+            "mae": 141.5,
+            "medae": 160.5,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              3,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              251.0,
+              247.0,
+              251.0,
+              249.0,
+              247.0,
+              259.0
+            ],
+            "errors_per_run": [
+              71.0,
+              67.0,
+              71.0,
+              69.0,
+              67.0,
+              79.0
+            ],
+            "mae": 70.66666666666667,
+            "medae": 70.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              5,
+              6,
+              6,
+              5,
+              6
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              229.0,
+              230.0,
+              232.0,
+              231.0,
+              230.0,
+              230.0
+            ],
+            "errors_per_run": [
+              4.0,
+              5.0,
+              7.0,
+              6.0,
+              5.0,
+              5.0
+            ],
+            "mae": 5.333333333333333,
+            "medae": 5.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              220.0,
+              220.0,
+              216.0,
+              220.0,
+              219.0,
+              221.0
+            ],
+            "errors_per_run": [
+              50.0,
+              50.0,
+              54.0,
+              50.0,
+              51.0,
+              49.0
+            ],
+            "mae": 50.666666666666664,
+            "medae": 50.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              132.0,
+              130.0,
+              116.0,
+              130.0,
+              119.0,
+              132.0
+            ],
+            "errors_per_run": [
+              177.0,
+              175.0,
+              161.0,
+              175.0,
+              164.0,
+              177.0
+            ],
+            "mae": 171.5,
+            "medae": 175.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 91.875,
+        "overall_adjacent_acc": 0.22916666666666666,
+        "permutation": {
+          "observed_mae": 91.875,
+          "null_mean": 78.24866666666667,
+          "null_std": 15.566989394629266,
+          "p_value": 0.811,
+          "z_score": 0.8753351716186386,
+          "n_permutations": 1000
+        }
+      }
+    },
+    "V2": {
+      "LDA": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              135,
+              135,
+              180,
+              135,
+              135,
+              135
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              180,
+              135,
+              135,
+              135
+            ],
+            "mae": 142.5,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              4,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              180,
+              270,
+              0,
+              0,
+              0,
+              180
+            ],
+            "errors_per_run": [
+              90,
+              180,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 105.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              6,
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              0,
+              0,
+              180,
+              0,
+              0,
+              0
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              45,
+              135,
+              135,
+              135
+            ],
+            "mae": 120.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              225,
+              135,
+              135,
+              225,
+              225,
+              0
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              180
+            ],
+            "mae": 67.5,
+            "medae": 45.0,
+            "adjacent_acc": 0.8333333333333334,
+            "pred_labels": [
+              5,
+              3,
+              3,
+              5,
+              5,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              270,
+              270,
+              180,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              4,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              225,
+              45,
+              225,
+              225,
+              225,
+              45
+            ],
+            "errors_per_run": [
+              45,
+              135,
+              45,
+              45,
+              45,
+              135
+            ],
+            "mae": 75.0,
+            "medae": 45.0,
+            "adjacent_acc": 0.6666666666666666,
+            "pred_labels": [
+              5,
+              1,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              180,
+              135,
+              135,
+              180,
+              135,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              180,
+              180,
+              135,
+              180,
+              135
+            ],
+            "mae": 157.5,
+            "medae": 157.5,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              3,
+              3,
+              4,
+              3,
+              4
+            ]
+          }
+        ],
+        "overall_mae": 105.9375,
+        "overall_adjacent_acc": 0.3333333333333333,
+        "permutation": {
+          "observed_mae": 105.9375,
+          "null_mean": 102.96375,
+          "null_std": 12.365707306397802,
+          "p_value": 0.61,
+          "z_score": 0.2404836153983225,
+          "n_permutations": 1000
+        }
+      },
+      "Ridge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              136.53644445271922,
+              136.11179426251948,
+              169.852159669991,
+              146.37404433346052,
+              150.1612351239773,
+              165.69775729223159
+            ],
+            "errors_per_run": [
+              136.53644445271922,
+              136.11179426251948,
+              169.852159669991,
+              146.37404433346052,
+              150.1612351239773,
+              165.69775729223159
+            ],
+            "mae": 150.78890585581652,
+            "medae": 148.2676397287189,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              4,
+              3,
+              3,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              246.14208920127464,
+              259.5851259334617,
+              268.55237575203375,
+              248.38085937451135,
+              256.40339208598425,
+              255.28674968053213
+            ],
+            "errors_per_run": [
+              158.85791079872536,
+              145.4148740665383,
+              136.44762424796625,
+              156.61914062548865,
+              148.59660791401575,
+              149.71325031946787
+            ],
+            "mae": 149.27490132870037,
+            "medae": 149.1549291167418,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              275.0046497618249,
+              283.97620388026417,
+              298.52193627536127,
+              276.25210155614695,
+              260.12553532585326,
+              284.3935669498502
+            ],
+            "errors_per_run": [
+              174.9953502381751,
+              166.02379611973583,
+              151.47806372463873,
+              173.74789844385305,
+              170.12553532585326,
+              165.6064330501498
+            ],
+            "mae": 166.99617948373427,
+            "medae": 168.07466572279455,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              7,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              304.8793888644324,
+              305.5149206539119,
+              285.0562735560977,
+              320.69216157337945,
+              299.80379286294954,
+              307.5806532276161
+            ],
+            "errors_per_run": [
+              169.87938886443243,
+              170.51492065391187,
+              150.05627355609772,
+              174.30783842662055,
+              164.80379286294954,
+              172.5806532276161
+            ],
+            "mae": 167.02381126527135,
+            "medae": 170.19715475917215,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              6,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              338.5354250154016,
+              342.6568051345114,
+              255.61188935987062,
+              348.63695546454704,
+              352.05453050632707,
+              6.5337565694685225
+            ],
+            "errors_per_run": [
+              158.5354250154016,
+              162.6568051345114,
+              75.61188935987062,
+              168.63695546454704,
+              172.05453050632707,
+              173.46624343053148
+            ],
+            "mae": 151.8269748185315,
+            "medae": 165.64688029952922,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              6,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              66.01801640563029,
+              45.38892356091736,
+              102.11003623400973,
+              48.403566140213115,
+              51.08602743225149,
+              48.58707848508255
+            ],
+            "errors_per_run": [
+              158.9819835943697,
+              179.61107643908264,
+              122.88996376599027,
+              176.59643385978688,
+              173.91397256774852,
+              176.41292151491746
+            ],
+            "mae": 164.7343919569826,
+            "medae": 175.16344704133297,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              2,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              102.13327600341128,
+              79.44567557657302,
+              125.55369093235923,
+              95.05584643492422,
+              101.86267516229078,
+              83.93063658834532
+            ],
+            "errors_per_run": [
+              167.86672399658872,
+              169.44567557657302,
+              144.44630906764075,
+              174.9441535650758,
+              168.13732483770923,
+              173.93063658834532
+            ],
+            "mae": 166.4618039386555,
+            "medae": 168.79150020714113,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              3,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              137.3973870035891,
+              139.28557449973036,
+              133.35370450237693,
+              145.17072241879978,
+              143.97780743262015,
+              128.3468477934759
+            ],
+            "errors_per_run": [
+              177.6026129964109,
+              175.71442550026964,
+              178.35370450237693,
+              169.82927758120022,
+              171.02219256737985,
+              173.3468477934759
+            ],
+            "mae": 174.31151015685225,
+            "medae": 174.53063664687278,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 161.42730985056807,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 161.42730985056807,
+          "null_mean": 168.41707647763388,
+          "null_std": 2.4739531246285944,
+          "p_value": 0.003,
+          "z_score": -2.825343195665911,
+          "n_permutations": 1000
+        }
+      },
+      "KernelRidge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              178.63497575118677,
+              179.04506404952681,
+              179.7201926241614,
+              178.93755336710254,
+              179.36671207881548,
+              179.6607918734262
+            ],
+            "errors_per_run": [
+              178.63497575118677,
+              179.04506404952681,
+              179.7201926241614,
+              178.93755336710254,
+              179.36671207881548,
+              179.6607918734262
+            ],
+            "mae": 179.2275482907032,
+            "medae": 179.20588806417115,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              225.65871666079136,
+              225.82440530780977,
+              226.13084266614234,
+              225.5340045303051,
+              225.94711492110915,
+              225.6441566679142
+            ],
+            "errors_per_run": [
+              179.34128333920864,
+              179.17559469219023,
+              178.86915733385766,
+              179.4659954696949,
+              179.05288507889085,
+              179.3558433320858
+            ],
+            "mae": 179.210126540988,
+            "medae": 179.25843901569942,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              270.1296052908284,
+              270.46176179014054,
+              271.0755321336924,
+              270.1323446163852,
+              269.7302239636193,
+              270.3808430154357
+            ],
+            "errors_per_run": [
+              179.8703947091716,
+              179.53823820985946,
+              178.92446786630762,
+              179.86765538361482,
+              179.73022396361932,
+              179.6191569845643
+            ],
+            "mae": 179.59168951952287,
+            "medae": 179.67469047409182,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              314.5628751901079,
+              314.51975222143966,
+              313.6356823651324,
+              315.18649915929836,
+              314.4996645438651,
+              314.7069479143278
+            ],
+            "errors_per_run": [
+              179.5628751901079,
+              179.51975222143966,
+              178.63568236513242,
+              179.81350084070164,
+              179.4996645438651,
+              179.70694791432783
+            ],
+            "mae": 179.4564038459291,
+            "medae": 179.54131370577377,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              359.66050877595745,
+              359.65235059604174,
+              358.6527305955868,
+              359.7816774388959,
+              359.8902705746248,
+              0.14104178217097643
+            ],
+            "errors_per_run": [
+              179.66050877595745,
+              179.65235059604174,
+              178.65273059558677,
+              179.78167743889588,
+              179.89027057462482,
+              179.858958217829
+            ],
+            "mae": 179.58274936648925,
+            "medae": 179.72109310742667,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              45.29964211003052,
+              45.01887245226824,
+              45.23619909392894,
+              45.06444065110804,
+              45.10717044894098,
+              45.027954520313926
+            ],
+            "errors_per_run": [
+              179.7003578899695,
+              179.98112754773177,
+              179.76380090607105,
+              179.93555934889196,
+              179.89282955105904,
+              179.97204547968607
+            ],
+            "mae": 179.87428678723492,
+            "medae": 179.9141944499755,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              90.30401722077995,
+              89.68438643015193,
+              90.77945160193569,
+              90.11362902887701,
+              90.42701221045948,
+              89.81009958576689
+            ],
+            "errors_per_run": [
+              179.69598277922006,
+              179.68438643015193,
+              179.2205483980643,
+              179.88637097112297,
+              179.57298778954052,
+              179.8100995857669
+            ],
+            "mae": 179.64506265897776,
+            "medae": 179.690184604686,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              135.19733974156705,
+              135.2124957061719,
+              135.039473753725,
+              135.39457646459786,
+              135.53716950207473,
+              134.8218206562864
+            ],
+            "errors_per_run": [
+              179.80266025843295,
+              179.7875042938281,
+              179.960526246275,
+              179.60542353540214,
+              179.46283049792527,
+              179.8218206562864
+            ],
+            "mae": 179.74012758135834,
+            "medae": 179.79508227613053,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 179.54099932390045,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 179.54099932390045,
+          "null_mean": 179.71915327947784,
+          "null_std": 0.05973373624656085,
+          "p_value": 0.007,
+          "z_score": -2.9824679782631756,
+          "n_permutations": 1000
+        }
+      },
+      "SVM": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              135,
+              135,
+              270,
+              135,
+              135,
+              135
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              90,
+              135,
+              135,
+              135
+            ],
+            "mae": 127.5,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              6,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              270,
+              270,
+              45,
+              0,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              45,
+              90,
+              180,
+              180
+            ],
+            "mae": 142.5,
+            "medae": 180.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              6,
+              6,
+              1,
+              0,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              0,
+              0,
+              180,
+              0,
+              0,
+              0
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              45,
+              135,
+              135,
+              135
+            ],
+            "mae": 120.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              225,
+              135,
+              135,
+              225,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              90,
+              90
+            ],
+            "mae": 60.0,
+            "medae": 45.0,
+            "adjacent_acc": 0.6666666666666666,
+            "pred_labels": [
+              5,
+              3,
+              3,
+              5,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              225,
+              45,
+              225,
+              225,
+              225,
+              0
+            ],
+            "errors_per_run": [
+              45,
+              135,
+              45,
+              45,
+              45,
+              90
+            ],
+            "mae": 67.5,
+            "medae": 45.0,
+            "adjacent_acc": 0.6666666666666666,
+            "pred_labels": [
+              5,
+              1,
+              5,
+              5,
+              5,
+              0
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              225,
+              135,
+              0
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              90,
+              180,
+              45
+            ],
+            "mae": 142.5,
+            "medae": 180.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              5,
+              3,
+              0
+            ]
+          }
+        ],
+        "overall_mae": 105.0,
+        "overall_adjacent_acc": 0.3541666666666667,
+        "permutation": {
+          "observed_mae": 105.0,
+          "null_mean": 103.318125,
+          "null_std": 11.690725139907917,
+          "p_value": 0.574,
+          "z_score": 0.14386404434902766,
+          "n_permutations": 1000
+        }
+      },
+      "MLP": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "mae": 180.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              315,
+              315,
+              315,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        ],
+        "overall_mae": 95.625,
+        "overall_adjacent_acc": 0.375,
+        "permutation": {
+          "observed_mae": 95.625,
+          "null_mean": 95.6278125,
+          "null_std": 0.08889457853969499,
+          "p_value": 0.999,
+          "z_score": -0.031638599858467786,
+          "n_permutations": 1000
+        }
+      },
+      "ForwardEncoding": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              93.0,
+              4.0,
+              153.0,
+              97.0,
+              122.0,
+              357.0
+            ],
+            "errors_per_run": [
+              93.0,
+              4.0,
+              153.0,
+              97.0,
+              122.0,
+              3.0
+            ],
+            "mae": 78.66666666666667,
+            "medae": 95.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              2,
+              0,
+              3,
+              2,
+              3,
+              0
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              248.0,
+              59.0,
+              255.0,
+              246.0,
+              250.0,
+              253.0
+            ],
+            "errors_per_run": [
+              157.0,
+              14.0,
+              150.0,
+              159.0,
+              155.0,
+              152.0
+            ],
+            "mae": 131.16666666666666,
+            "medae": 153.5,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              6,
+              1,
+              6,
+              5,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              207.0,
+              52.0,
+              46.0,
+              2.0,
+              231.0,
+              37.0
+            ],
+            "errors_per_run": [
+              117.0,
+              38.0,
+              44.0,
+              88.0,
+              141.0,
+              53.0
+            ],
+            "mae": 80.16666666666667,
+            "medae": 70.5,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              5,
+              1,
+              1,
+              0,
+              5,
+              1
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              345.0,
+              348.0,
+              188.0,
+              350.0,
+              357.0,
+              2.0
+            ],
+            "errors_per_run": [
+              150.0,
+              147.0,
+              53.0,
+              145.0,
+              138.0,
+              133.0
+            ],
+            "mae": 127.66666666666667,
+            "medae": 141.5,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              136.0,
+              161.0,
+              171.0,
+              272.0,
+              247.0,
+              106.0
+            ],
+            "errors_per_run": [
+              44.0,
+              19.0,
+              9.0,
+              92.0,
+              67.0,
+              74.0
+            ],
+            "mae": 50.833333333333336,
+            "medae": 55.5,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              3,
+              4,
+              4,
+              6,
+              5,
+              2
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              234.0,
+              240.0,
+              187.0,
+              237.0,
+              235.0,
+              228.0
+            ],
+            "errors_per_run": [
+              9.0,
+              15.0,
+              38.0,
+              12.0,
+              10.0,
+              3.0
+            ],
+            "mae": 14.5,
+            "medae": 11.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              4,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              230.0,
+              47.0,
+              226.0,
+              58.0,
+              228.0,
+              21.0
+            ],
+            "errors_per_run": [
+              40.0,
+              137.0,
+              44.0,
+              148.0,
+              42.0,
+              111.0
+            ],
+            "mae": 87.0,
+            "medae": 77.5,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              5,
+              1,
+              5,
+              1,
+              5,
+              0
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              174.0,
+              176.0,
+              348.0,
+              62.0,
+              166.0,
+              64.0
+            ],
+            "errors_per_run": [
+              141.0,
+              139.0,
+              33.0,
+              107.0,
+              149.0,
+              109.0
+            ],
+            "mae": 113.0,
+            "medae": 124.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              4,
+              4,
+              0,
+              1,
+              4,
+              1
+            ]
+          }
+        ],
+        "overall_mae": 85.375,
+        "overall_adjacent_acc": 0.375,
+        "permutation": {
+          "observed_mae": 85.375,
+          "null_mean": 77.90260416666666,
+          "null_std": 13.427865366659047,
+          "p_value": 0.714,
+          "z_score": 0.5564842682953206,
+          "n_permutations": 1000
+        }
+      }
+    },
+    "V3": {
+      "LDA": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              180,
+              180
+            ],
+            "mae": 120.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              225,
+              135
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              180,
+              90
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              5,
+              3
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              315,
+              315,
+              45,
+              315,
+              135,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              45,
+              135,
+              45,
+              135
+            ],
+            "mae": 105.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              7,
+              7,
+              1,
+              7,
+              3,
+              7
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              90,
+              90,
+              90,
+              315,
+              90,
+              90
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              180,
+              45,
+              45
+            ],
+            "mae": 67.5,
+            "medae": 45.0,
+            "adjacent_acc": 0.8333333333333334,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              7,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              315,
+              315,
+              90,
+              315,
+              315,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              90,
+              135,
+              135,
+              135
+            ],
+            "mae": 127.5,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              2,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              180,
+              180,
+              180,
+              270,
+              270,
+              180
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              6,
+              6,
+              4
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              0,
+              45,
+              0,
+              180,
+              45,
+              0
+            ],
+            "errors_per_run": [
+              90,
+              135,
+              90,
+              90,
+              135,
+              90
+            ],
+            "mae": 105.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              1,
+              0,
+              4,
+              1,
+              0
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              180,
+              90,
+              90,
+              180,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              2,
+              2,
+              4,
+              4,
+              4
+            ]
+          }
+        ],
+        "overall_mae": 105.0,
+        "overall_adjacent_acc": 0.27083333333333337,
+        "permutation": {
+          "observed_mae": 105.0,
+          "null_mean": 102.93,
+          "null_std": 12.355052673400465,
+          "p_value": 0.57,
+          "z_score": 0.16754279036434652,
+          "n_permutations": 1000
+        }
+      },
+      "Ridge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              190.72606958458783,
+              187.3114747317234,
+              188.14227668127944,
+              181.65974532808212,
+              189.52465963470803,
+              189.0549279973775
+            ],
+            "errors_per_run": [
+              169.27393041541217,
+              172.6885252682766,
+              171.85772331872056,
+              178.34025467191788,
+              170.47534036529197,
+              170.9450720026225
+            ],
+            "mae": 172.2634743403736,
+            "medae": 171.40139766067153,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              225.25333255262686,
+              226.7508481731572,
+              230.81729534110832,
+              225.6162054790562,
+              223.70475927530808,
+              217.06755184244818
+            ],
+            "errors_per_run": [
+              179.74666744737314,
+              178.2491518268428,
+              174.18270465889168,
+              179.3837945209438,
+              178.70475927530808,
+              172.06755184244818
+            ],
+            "mae": 177.05577159530128,
+            "medae": 178.47695555107543,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              265.48229732949795,
+              264.35107949309725,
+              268.0083496068935,
+              266.657287035333,
+              265.4976054428861,
+              265.7164658434507
+            ],
+            "errors_per_run": [
+              175.48229732949795,
+              174.35107949309725,
+              178.0083496068935,
+              176.657287035333,
+              175.49760544288608,
+              175.7164658434507
+            ],
+            "mae": 175.95218079185975,
+            "medae": 175.6070356431684,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              323.8268406071465,
+              323.28734005345746,
+              323.130672238978,
+              320.41427892200886,
+              321.8697837013282,
+              323.0159973990835
+            ],
+            "errors_per_run": [
+              171.1731593928535,
+              171.71265994654254,
+              171.86932776102202,
+              174.58572107799114,
+              173.13021629867183,
+              171.98400260091648
+            ],
+            "mae": 172.40918117966626,
+            "medae": 171.92666518096925,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              354.6875866735652,
+              355.24409689600543,
+              0.13387113265618322,
+              358.3817128652351,
+              356.10981444293253,
+              353.9126725407016
+            ],
+            "errors_per_run": [
+              174.6875866735652,
+              175.24409689600543,
+              179.8661288673438,
+              178.3817128652351,
+              176.10981444293253,
+              173.91267254070158
+            ],
+            "mae": 176.36700204763062,
+            "medae": 175.67695566946898,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              37.11865235324343,
+              33.92485921253039,
+              38.19851224930459,
+              37.12631166693423,
+              42.272872937315654,
+              34.629118499095405
+            ],
+            "errors_per_run": [
+              172.11865235324342,
+              168.9248592125304,
+              173.1985122493046,
+              172.1263116669342,
+              177.27287293731564,
+              169.6291184990954
+            ],
+            "mae": 172.21172115307067,
+            "medae": 172.12248201008882,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              86.89053363645549,
+              87.25364533376042,
+              85.04642364722565,
+              88.14687130023141,
+              86.7715892508184,
+              85.12736654516999
+            ],
+            "errors_per_run": [
+              176.89053363645547,
+              177.2536453337604,
+              175.04642364722565,
+              178.1468713002314,
+              176.7715892508184,
+              175.12736654517
+            ],
+            "mae": 176.53940495227687,
+            "medae": 176.83106144363694,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              138.48695624101268,
+              134.60995140484394,
+              138.35336270223925,
+              136.36759805574607,
+              140.25747742226304,
+              138.74107275199884
+            ],
+            "errors_per_run": [
+              176.51304375898732,
+              179.60995140484394,
+              176.64663729776075,
+              178.63240194425393,
+              174.74252257773696,
+              176.25892724800116
+            ],
+            "mae": 177.06724737193068,
+            "medae": 176.57984052837404,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 174.98324792901371,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 174.98324792901371,
+          "null_mean": 177.20845026415162,
+          "null_std": 0.6220898114823735,
+          "p_value": 0.0,
+          "z_score": -3.576979230435375,
+          "n_permutations": 1000
+        }
+      },
+      "KernelRidge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              180.25030051118776,
+              180.16203392603958,
+              180.17686654968324,
+              180.03587805086894,
+              180.23966224188092,
+              180.20417982702634
+            ],
+            "errors_per_run": [
+              179.74969948881224,
+              179.83796607396042,
+              179.82313345031676,
+              179.96412194913106,
+              179.76033775811908,
+              179.79582017297366
+            ],
+            "mae": 179.8218464822189,
+            "medae": 179.8094768116452,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              225.00978630174424,
+              225.04321312070164,
+              225.167520383673,
+              225.01836253705218,
+              224.97104859214193,
+              224.83233915596776
+            ],
+            "errors_per_run": [
+              179.99021369825576,
+              179.95678687929836,
+              179.832479616327,
+              179.98163746294782,
+              179.97104859214193,
+              179.83233915596776
+            ],
+            "mae": 179.92741756748975,
+            "medae": 179.96391773572014,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              269.90651574480034,
+              269.8885248863946,
+              269.9602228197916,
+              269.9277258287407,
+              269.90751117149176,
+              269.9085465805042
+            ],
+            "errors_per_run": [
+              179.90651574480034,
+              179.88852488639458,
+              179.96022281979162,
+              179.92772582874068,
+              179.90751117149176,
+              179.9085465805042
+            ],
+            "mae": 179.91650783862053,
+            "medae": 179.90802887599799,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              315.17527813093983,
+              315.16639099878006,
+              315.1626156780703,
+              315.1101741447634,
+              315.13540284142624,
+              315.1592996808344
+            ],
+            "errors_per_run": [
+              179.82472186906017,
+              179.83360900121994,
+              179.83738432192968,
+              179.8898258552366,
+              179.86459715857376,
+              179.8407003191656
+            ],
+            "mae": 179.84847308753095,
+            "medae": 179.83904232054763,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              359.8841332632405,
+              359.8941351610367,
+              0.0016802523413190604,
+              359.9650244737554,
+              359.91426290550044,
+              359.86707870411254
+            ],
+            "errors_per_run": [
+              179.88413326324053,
+              179.89413516103667,
+              179.99831974765868,
+              179.96502447375542,
+              179.91426290550044,
+              179.86707870411254
+            ],
+            "mae": 179.92049237588404,
+            "medae": 179.90419903326855,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              44.823217558355125,
+              44.74680344643352,
+              44.8546269306638,
+              44.81608616763513,
+              44.939649265310955,
+              44.76941183576329
+            ],
+            "errors_per_run": [
+              179.8232175583551,
+              179.74680344643352,
+              179.8546269306638,
+              179.81608616763512,
+              179.93964926531095,
+              179.7694118357633
+            ],
+            "mae": 179.8249658673603,
+            "medae": 179.8196518629951,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              89.93523753929786,
+              89.9379228533873,
+              89.8989011806859,
+              89.9618171142833,
+              89.93165296539324,
+              89.89945566212275
+            ],
+            "errors_per_run": [
+              179.93523753929787,
+              179.9379228533873,
+              179.8989011806859,
+              179.9618171142833,
+              179.93165296539325,
+              179.89945566212276
+            ],
+            "mae": 179.92749788586173,
+            "medae": 179.93344525234556,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              135.0891846022464,
+              134.99373029435077,
+              135.08690335629467,
+              135.0351569799789,
+              135.13511255403165,
+              135.0962943182614
+            ],
+            "errors_per_run": [
+              179.9108153977536,
+              179.99373029435077,
+              179.91309664370533,
+              179.9648430200211,
+              179.86488744596835,
+              179.9037056817386
+            ],
+            "mae": 179.9251797472563,
+            "medae": 179.91195602072946,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 179.8890476065278,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 179.8890476065278,
+          "null_mean": 179.93908140696615,
+          "null_std": 0.013633300646340685,
+          "p_value": 0.002,
+          "z_score": -3.669969711389871,
+          "n_permutations": 1000
+        }
+      },
+      "SVM": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              180,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              180,
+              180,
+              180
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              90
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              45
+            ],
+            "mae": 120.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              2
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              315,
+              135,
+              270,
+              315,
+              135,
+              315
+            ],
+            "errors_per_run": [
+              135,
+              45,
+              180,
+              135,
+              45,
+              135
+            ],
+            "mae": 112.5,
+            "medae": 135.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              7,
+              3,
+              6,
+              7,
+              3,
+              7
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              90,
+              90,
+              90,
+              315,
+              90,
+              90
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              180,
+              45,
+              45
+            ],
+            "mae": 67.5,
+            "medae": 45.0,
+            "adjacent_acc": 0.8333333333333334,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              7,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              90,
+              315,
+              90,
+              315,
+              270,
+              315
+            ],
+            "errors_per_run": [
+              90,
+              135,
+              90,
+              135,
+              90,
+              135
+            ],
+            "mae": 112.5,
+            "medae": 112.5,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              7,
+              2,
+              7,
+              6,
+              7
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              270,
+              270,
+              180,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              4,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              180,
+              90,
+              225,
+              180,
+              225,
+              0
+            ],
+            "errors_per_run": [
+              90,
+              180,
+              45,
+              90,
+              45,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              4,
+              2,
+              5,
+              4,
+              5,
+              0
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              180,
+              90,
+              180,
+              180,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              2,
+              4,
+              4,
+              4,
+              4
+            ]
+          }
+        ],
+        "overall_mae": 102.1875,
+        "overall_adjacent_acc": 0.33333333333333337,
+        "permutation": {
+          "observed_mae": 102.1875,
+          "null_mean": 103.155,
+          "null_std": 12.14722827181164,
+          "p_value": 0.493,
+          "z_score": -0.07964779934572745,
+          "n_permutations": 1000
+        }
+      },
+      "MLP": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "mae": 180.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              225,
+              225,
+              225,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              225,
+              225,
+              225,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          }
+        ],
+        "overall_mae": 101.25,
+        "overall_adjacent_acc": 0.25,
+        "permutation": {
+          "observed_mae": 101.25,
+          "null_mean": 101.25,
+          "null_std": 0.0,
+          "p_value": 1.0,
+          "z_score": 0.0,
+          "n_permutations": 1000
+        }
+      },
+      "ForwardEncoding": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              199.0,
+              229.0,
+              232.0,
+              158.0,
+              166.0,
+              213.0
+            ],
+            "errors_per_run": [
+              161.0,
+              131.0,
+              128.0,
+              158.0,
+              166.0,
+              147.0
+            ],
+            "mae": 148.5,
+            "medae": 152.5,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              5,
+              5,
+              4,
+              4,
+              5
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              241.0,
+              239.0,
+              240.0,
+              242.0,
+              242.0,
+              116.0
+            ],
+            "errors_per_run": [
+              164.0,
+              166.0,
+              165.0,
+              163.0,
+              163.0,
+              71.0
+            ],
+            "mae": 148.66666666666666,
+            "medae": 163.5,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              3
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              73.0,
+              79.0,
+              71.0,
+              155.0,
+              137.0,
+              146.0
+            ],
+            "errors_per_run": [
+              17.0,
+              11.0,
+              19.0,
+              65.0,
+              47.0,
+              56.0
+            ],
+            "mae": 35.833333333333336,
+            "medae": 33.0,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              87.0,
+              86.0,
+              128.0,
+              133.0,
+              71.0,
+              118.0
+            ],
+            "errors_per_run": [
+              48.0,
+              49.0,
+              7.0,
+              2.0,
+              64.0,
+              17.0
+            ],
+            "mae": 31.166666666666668,
+            "medae": 32.5,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              2,
+              2,
+              3,
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              217.0,
+              346.0,
+              181.0,
+              342.0,
+              354.0,
+              343.0
+            ],
+            "errors_per_run": [
+              37.0,
+              166.0,
+              1.0,
+              162.0,
+              174.0,
+              163.0
+            ],
+            "mae": 117.16666666666667,
+            "medae": 162.5,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              5,
+              0,
+              4,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              51.0,
+              47.0,
+              51.0,
+              47.0,
+              234.0,
+              227.0
+            ],
+            "errors_per_run": [
+              174.0,
+              178.0,
+              174.0,
+              178.0,
+              9.0,
+              2.0
+            ],
+            "mae": 119.16666666666667,
+            "medae": 174.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              32.0,
+              49.0,
+              24.0,
+              34.0,
+              38.0,
+              21.0
+            ],
+            "errors_per_run": [
+              122.0,
+              139.0,
+              114.0,
+              124.0,
+              128.0,
+              111.0
+            ],
+            "mae": 123.0,
+            "medae": 123.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              138.0,
+              66.0,
+              136.0,
+              141.0,
+              143.0,
+              142.0
+            ],
+            "errors_per_run": [
+              177.0,
+              111.0,
+              179.0,
+              174.0,
+              172.0,
+              173.0
+            ],
+            "mae": 164.33333333333334,
+            "medae": 173.5,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              1,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 110.97916666666667,
+        "overall_adjacent_acc": 0.20833333333333331,
+        "permutation": {
+          "observed_mae": 110.97916666666667,
+          "null_mean": 77.3843125,
+          "null_std": 13.979330214998951,
+          "p_value": 0.994,
+          "z_score": 2.403180527964172,
+          "n_permutations": 1000
+        }
+      }
+    },
+    "V4": {
+      "LDA": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "mae": 180.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              0,
+              225,
+              0,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              45,
+              180,
+              45,
+              180,
+              180,
+              180
+            ],
+            "mae": 135.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              0,
+              5,
+              0,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              180,
+              180,
+              135,
+              135,
+              180,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              45,
+              45,
+              90,
+              45
+            ],
+            "mae": 67.5,
+            "medae": 67.5,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              4,
+              4,
+              3,
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              180,
+              180,
+              270,
+              270,
+              225,
+              180
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              135,
+              135,
+              90,
+              45
+            ],
+            "mae": 82.5,
+            "medae": 67.5,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              4,
+              4,
+              6,
+              6,
+              5,
+              4
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              90,
+              315,
+              135,
+              90,
+              315,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              135,
+              45,
+              90,
+              135,
+              45
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              2,
+              7,
+              3,
+              2,
+              7,
+              3
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              135,
+              45,
+              90,
+              270,
+              45,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              180,
+              135,
+              45,
+              180,
+              90
+            ],
+            "mae": 120.0,
+            "medae": 112.5,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              3,
+              1,
+              2,
+              6,
+              1,
+              3
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              180,
+              0,
+              180,
+              180,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              45,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 120.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              4,
+              0,
+              4,
+              4,
+              4,
+              4
+            ]
+          }
+        ],
+        "overall_mae": 116.25,
+        "overall_adjacent_acc": 0.25,
+        "permutation": {
+          "observed_mae": 116.25,
+          "null_mean": 103.2834375,
+          "null_std": 11.922790147542804,
+          "p_value": 0.874,
+          "z_score": 1.0875443029308292,
+          "n_permutations": 1000
+        }
+      },
+      "Ridge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              183.14323648743402,
+              180.40173081461077,
+              182.57786992870615,
+              185.48379539560995,
+              185.33321058261123,
+              183.33923150395998
+            ],
+            "errors_per_run": [
+              176.85676351256598,
+              179.59826918538923,
+              177.42213007129385,
+              174.51620460439005,
+              174.66678941738877,
+              176.66076849604002
+            ],
+            "mae": 176.6201542145113,
+            "medae": 176.758766004303,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              220.32872607975585,
+              214.2493714334734,
+              217.79547924539887,
+              214.04048571830882,
+              205.91918511679947,
+              216.72442276237592
+            ],
+            "errors_per_run": [
+              175.32872607975585,
+              169.2493714334734,
+              172.79547924539887,
+              169.04048571830882,
+              160.91918511679947,
+              171.72442276237592
+            ],
+            "mae": 169.84294505935205,
+            "medae": 170.48689709792467,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              265.1295745767301,
+              271.80133661780263,
+              262.3833091697997,
+              261.39793160465837,
+              269.6229575303975,
+              264.717250143927
+            ],
+            "errors_per_run": [
+              175.12957457673008,
+              178.19866338219737,
+              172.3833091697997,
+              171.39793160465837,
+              179.6229575303975,
+              174.717250143927
+            ],
+            "mae": 175.241614401285,
+            "medae": 174.92341236032854,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              314.49347533057215,
+              316.9891348932805,
+              312.6544560481074,
+              311.30141423450596,
+              311.78051539656656,
+              316.96886148942133
+            ],
+            "errors_per_run": [
+              179.49347533057215,
+              178.0108651067195,
+              177.65445604810742,
+              176.30141423450596,
+              176.78051539656656,
+              178.03113851057867
+            ],
+            "mae": 177.7119774378417,
+            "medae": 177.83266057741346,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              358.41754731639367,
+              356.66325880195217,
+              0.6233417428442578,
+              2.358237942241358,
+              354.62043054894883,
+              358.7976611851892
+            ],
+            "errors_per_run": [
+              178.41754731639367,
+              176.66325880195217,
+              179.37665825715575,
+              177.64176205775865,
+              174.62043054894883,
+              178.7976611851892
+            ],
+            "mae": 177.58621969456635,
+            "medae": 178.02965468707617,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              53.24858880049204,
+              55.045814751148384,
+              57.844662123024456,
+              58.00583540540893,
+              65.6927940878286,
+              51.47534817997568
+            ],
+            "errors_per_run": [
+              171.75141119950797,
+              169.95418524885162,
+              167.15533787697555,
+              166.99416459459107,
+              159.3072059121714,
+              173.5246518200243
+            ],
+            "mae": 168.11449277535368,
+            "medae": 168.5547615629136,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              91.09918020242415,
+              94.3646520268698,
+              90.30208107314785,
+              96.87447193340992,
+              95.7434506885493,
+              96.5568087165182
+            ],
+            "errors_per_run": [
+              178.90081979757585,
+              175.6353479731302,
+              179.69791892685214,
+              173.12552806659008,
+              174.2565493114507,
+              173.44319128348178
+            ],
+            "mae": 175.84322589318012,
+            "medae": 174.94594864229043,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              133.67370165584776,
+              130.59362147716794,
+              131.46452231821607,
+              135.08210878455137,
+              133.2747654718215,
+              133.89945873565284
+            ],
+            "errors_per_run": [
+              178.67370165584776,
+              175.59362147716794,
+              176.46452231821607,
+              179.91789121544863,
+              178.2747654718215,
+              178.89945873565284
+            ],
+            "mae": 177.97066014569245,
+            "medae": 178.47423356383462,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 174.86641120272284,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 174.86641120272284,
+          "null_mean": 176.33414833400997,
+          "null_std": 1.0338385686148004,
+          "p_value": 0.085,
+          "z_score": -1.41969662947832,
+          "n_permutations": 1000
+        }
+      },
+      "KernelRidge": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              180.06143610091755,
+              180.0062384305347,
+              180.04791899497323,
+              180.10905726712983,
+              180.1096688018819,
+              180.06982814981777
+            ],
+            "errors_per_run": [
+              179.93856389908245,
+              179.9937615694653,
+              179.95208100502677,
+              179.89094273287017,
+              179.8903311981181,
+              179.93017185018223
+            ],
+            "mae": 179.9326420424575,
+            "medae": 179.93436787463236,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              224.87484145435562,
+              224.70763755205832,
+              224.79819352458568,
+              224.70018000196734,
+              224.34645232272902,
+              224.78822174346098
+            ],
+            "errors_per_run": [
+              179.87484145435562,
+              179.70763755205832,
+              179.79819352458568,
+              179.70018000196734,
+              179.34645232272902,
+              179.78822174346098
+            ],
+            "mae": 179.70258776652614,
+            "medae": 179.74792964775963,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              269.8956852789533,
+              270.0545432690681,
+              269.8252364948742,
+              269.8071546425606,
+              269.9900488778494,
+              269.88224933960555
+            ],
+            "errors_per_run": [
+              179.8956852789533,
+              179.94545673093188,
+              179.82523649487422,
+              179.8071546425606,
+              179.9900488778494,
+              179.88224933960555
+            ],
+            "mae": 179.89097189412917,
+            "medae": 179.88896730927942,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              314.9889627188559,
+              315.04178473105276,
+              314.9489276606485,
+              314.92557951120455,
+              314.9395195440465,
+              315.03831635739164
+            ],
+            "errors_per_run": [
+              179.98896271885587,
+              179.95821526894724,
+              179.9489276606485,
+              179.92557951120455,
+              179.9395195440465,
+              179.96168364260836
+            ],
+            "mae": 179.95381472438513,
+            "medae": 179.95357146479788,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              359.9569218481545,
+              359.90645203961407,
+              0.022425610710761858,
+              0.05152321846839258,
+              359.83466430860926,
+              359.97588301801846
+            ],
+            "errors_per_run": [
+              179.95692184815448,
+              179.90645203961407,
+              179.97757438928923,
+              179.9484767815316,
+              179.83466430860926,
+              179.97588301801846
+            ],
+            "mae": 179.93332873086953,
+            "medae": 179.95269931484304,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              45.20937981230506,
+              45.27070868242456,
+              45.32542092893483,
+              45.34369367921757,
+              45.66178130454705,
+              45.165045593195615
+            ],
+            "errors_per_run": [
+              179.79062018769494,
+              179.72929131757544,
+              179.67457907106518,
+              179.65630632078242,
+              179.33821869545295,
+              179.8349544068044
+            ],
+            "mae": 179.67066166656255,
+            "medae": 179.7019351943203,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              90.02685625740608,
+              90.10023622909763,
+              90.00803551971197,
+              90.16382453482305,
+              90.14345580683838,
+              90.15939628856528
+            ],
+            "errors_per_run": [
+              179.97314374259392,
+              179.89976377090238,
+              179.99196448028803,
+              179.83617546517695,
+              179.85654419316162,
+              179.8406037114347
+            ],
+            "mae": 179.8996992272596,
+            "medae": 179.87815398203202,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              134.96868676967833,
+              134.8974999284947,
+              134.92199505598154,
+              135.00042955832697,
+              134.9563538002407,
+              134.97507216118257
+            ],
+            "errors_per_run": [
+              179.96868676967833,
+              179.8974999284947,
+              179.92199505598154,
+              179.99957044167303,
+              179.9563538002407,
+              179.97507216118257
+            ],
+            "mae": 179.9531963595418,
+            "medae": 179.9625202849595,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "overall_mae": 179.86711280146642,
+        "overall_adjacent_acc": 0.0,
+        "permutation": {
+          "observed_mae": 179.86711280146642,
+          "null_mean": 179.9180674453262,
+          "null_std": 0.021871116240567597,
+          "p_value": 0.015,
+          "z_score": -2.32976878268586,
+          "n_permutations": 1000
+        }
+      },
+      "SVM": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              135,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              180,
+              180
+            ],
+            "mae": 150.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              4,
+              4
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              135,
+              225,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              180,
+              90
+            ],
+            "mae": 105.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              5,
+              3
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              180,
+              180,
+              135,
+              135,
+              135,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 60.0,
+            "medae": 45.0,
+            "adjacent_acc": 0.6666666666666666,
+            "pred_labels": [
+              4,
+              4,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              90,
+              180,
+              270,
+              270,
+              270,
+              90
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              135,
+              135,
+              135,
+              45
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              2,
+              4,
+              6,
+              6,
+              6,
+              2
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              90,
+              90,
+              270,
+              135,
+              0,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              45,
+              180,
+              45
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              2,
+              2,
+              6,
+              3,
+              0,
+              3
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              270,
+              45,
+              135
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              45,
+              180,
+              90
+            ],
+            "mae": 97.5,
+            "medae": 90.0,
+            "adjacent_acc": 0.16666666666666666,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              6,
+              1,
+              3
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          }
+        ],
+        "overall_mae": 107.8125,
+        "overall_adjacent_acc": 0.20833333333333331,
+        "permutation": {
+          "observed_mae": 107.8125,
+          "null_mean": 102.6871875,
+          "null_std": 12.310017988252241,
+          "p_value": 0.685,
+          "z_score": 0.4163529659250881,
+          "n_permutations": 1000
+        }
+      },
+      "MLP": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              180,
+              180,
+              180,
+              180,
+              180,
+              180
+            ],
+            "mae": 180.0,
+            "medae": 180.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              135,
+              135,
+              135,
+              135,
+              135,
+              135
+            ],
+            "mae": 135.0,
+            "medae": 135.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              270,
+              270,
+              270,
+              270,
+              270,
+              270
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              225,
+              225,
+              225,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              45,
+              45,
+              45,
+              45,
+              45,
+              45
+            ],
+            "mae": 45.0,
+            "medae": 45.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              225,
+              225,
+              225,
+              225,
+              225,
+              225
+            ],
+            "errors_per_run": [
+              90,
+              90,
+              90,
+              90,
+              90,
+              90
+            ],
+            "mae": 90.0,
+            "medae": 90.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          }
+        ],
+        "overall_mae": 101.25,
+        "overall_adjacent_acc": 0.25,
+        "permutation": {
+          "observed_mae": 101.25,
+          "null_mean": 101.3390625,
+          "null_std": 0.4107651729927332,
+          "p_value": 0.952,
+          "z_score": -0.2168209620867073,
+          "n_permutations": 1000
+        }
+      },
+      "ForwardEncoding": {
+        "fold_results": [
+          {
+            "test_color": 0,
+            "test_hue": 0.0,
+            "pred_hues": [
+              359.0,
+              6.0,
+              6.0,
+              338.0,
+              307.0,
+              326.0
+            ],
+            "errors_per_run": [
+              1.0,
+              6.0,
+              6.0,
+              22.0,
+              53.0,
+              34.0
+            ],
+            "mae": 20.333333333333332,
+            "medae": 14.0,
+            "adjacent_acc": 0.8333333333333334,
+            "pred_labels": [
+              0,
+              0,
+              0,
+              0,
+              7,
+              7
+            ]
+          },
+          {
+            "test_color": 1,
+            "test_hue": 45.0,
+            "pred_hues": [
+              234.0,
+              234.0,
+              234.0,
+              234.0,
+              235.0,
+              234.0
+            ],
+            "errors_per_run": [
+              171.0,
+              171.0,
+              171.0,
+              171.0,
+              170.0,
+              171.0
+            ],
+            "mae": 170.83333333333334,
+            "medae": 171.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 2,
+            "test_hue": 90.0,
+            "pred_hues": [
+              178.0,
+              309.0,
+              255.0,
+              84.0,
+              64.0,
+              83.0
+            ],
+            "errors_per_run": [
+              88.0,
+              141.0,
+              165.0,
+              6.0,
+              26.0,
+              7.0
+            ],
+            "mae": 72.16666666666667,
+            "medae": 57.0,
+            "adjacent_acc": 0.5,
+            "pred_labels": [
+              4,
+              7,
+              6,
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "test_color": 3,
+            "test_hue": 135.0,
+            "pred_hues": [
+              234.0,
+              39.0,
+              238.0,
+              235.0,
+              232.0,
+              49.0
+            ],
+            "errors_per_run": [
+              99.0,
+              96.0,
+              103.0,
+              100.0,
+              97.0,
+              86.0
+            ],
+            "mae": 96.83333333333333,
+            "medae": 98.0,
+            "adjacent_acc": 0.0,
+            "pred_labels": [
+              5,
+              1,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          {
+            "test_color": 4,
+            "test_hue": 180.0,
+            "pred_hues": [
+              313.0,
+              316.0,
+              221.0,
+              197.0,
+              319.0,
+              236.0
+            ],
+            "errors_per_run": [
+              133.0,
+              136.0,
+              41.0,
+              17.0,
+              139.0,
+              56.0
+            ],
+            "mae": 87.0,
+            "medae": 94.5,
+            "adjacent_acc": 0.3333333333333333,
+            "pred_labels": [
+              7,
+              7,
+              5,
+              4,
+              7,
+              5
+            ]
+          },
+          {
+            "test_color": 5,
+            "test_hue": 225.0,
+            "pred_hues": [
+              231.0,
+              231.0,
+              231.0,
+              233.0,
+              231.0,
+              232.0
+            ],
+            "errors_per_run": [
+              6.0,
+              6.0,
+              6.0,
+              8.0,
+              6.0,
+              7.0
+            ],
+            "mae": 6.5,
+            "medae": 6.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 6,
+            "test_hue": 270.0,
+            "pred_hues": [
+              231.0,
+              233.0,
+              235.0,
+              232.0,
+              229.0,
+              230.0
+            ],
+            "errors_per_run": [
+              39.0,
+              37.0,
+              35.0,
+              38.0,
+              41.0,
+              40.0
+            ],
+            "mae": 38.333333333333336,
+            "medae": 38.5,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "test_color": 7,
+            "test_hue": 315.0,
+            "pred_hues": [
+              314.0,
+              318.0,
+              326.0,
+              312.0,
+              314.0,
+              314.0
+            ],
+            "errors_per_run": [
+              1.0,
+              3.0,
+              11.0,
+              3.0,
+              1.0,
+              1.0
+            ],
+            "mae": 3.3333333333333335,
+            "medae": 2.0,
+            "adjacent_acc": 1.0,
+            "pred_labels": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          }
+        ],
+        "overall_mae": 61.91666666666667,
+        "overall_adjacent_acc": 0.5833333333333333,
+        "permutation": {
+          "observed_mae": 61.91666666666667,
+          "null_mean": 77.6390625,
+          "null_std": 15.954412151183877,
+          "p_value": 0.168,
+          "z_score": -0.9854575451823627,
+          "n_permutations": 1000
+        }
+      }
+    }
+  },
+  "timestamp": "20260226_132635",
+  "datetime": "2026-02-26T14:32:53.632051"
+}

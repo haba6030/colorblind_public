@@ -1,0 +1,1234 @@
+{
+ "stage": "07_filter_evaluation",
+ "counts": {
+  "ok": 127,
+  "near": 1,
+  "mismatch": 0,
+  "error": 0,
+  "flag": 0,
+  "table": 3
+ },
+ "checks": [
+  {
+   "id": "07.01",
+   "desc": "Results \u00a77 | deutan mean |z| at baseline",
+   "produced": 2.2407,
+   "reported": 2.24,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.02",
+   "desc": "Results \u00a77 | deutan mean |z| under the deployed filter (below 0.9)",
+   "produced": 0.8527,
+   "reported": 0.9,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "07.03",
+   "desc": "Results \u00a77 | deutan mean |z| under the individualized filter (below 0.9)",
+   "produced": 0.7798,
+   "reported": 0.9,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "07.04",
+   "desc": "Results \u00a77 | deutan: all three elevated pairs within \u00b11.8 control SD under each filter",
+   "produced": 1.717,
+   "reported": 1.8,
+   "status": "ok",
+   "mode": "le",
+   "reason": null
+  },
+  {
+   "id": "07.05",
+   "desc": "Results \u00a77 | deutan Wilcoxon between the two filters p = 0.84",
+   "produced": 0.84375,
+   "reported": 0.84,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.06",
+   "desc": "Results \u00a77 | protan mean |z| at baseline",
+   "produced": 0.8966,
+   "reported": 0.9,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.07",
+   "desc": "Results \u00a77 | protan mean |z| under the deployed filter",
+   "produced": 1.7752,
+   "reported": 1.78,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.08",
+   "desc": "Results \u00a77 | protan mean |z| under the individualized filter",
+   "produced": 0.9344,
+   "reported": 0.93,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.09",
+   "desc": "Results \u00a77 | deployed filter left two protan pairs deviant (|z| > 2)",
+   "produced": 2,
+   "reported": 2,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.10",
+   "desc": "Results \u00a77 | individualized filter held every protan pair within \u00b11.5",
+   "produced": 1.495,
+   "reported": 1.5,
+   "status": "ok",
+   "mode": "le",
+   "reason": null
+  },
+  {
+   "id": "07.11",
+   "desc": "Results \u00a77 | only the individualized filter kept every previously non-deviant pair inside the control range in both participants",
+   "produced": [
+    true,
+    false
+   ],
+   "reported": [
+    true,
+    false
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.12",
+   "desc": "Abstract | the four session-1 elevations (three deutan, one protan) moved inside the control range under the individualized filter",
+   "produced": 1.717,
+   "reported": 2.0,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.NF.acc",
+   "desc": "tab:exp2_8afc deutan NF accuracy",
+   "produced": 0.8125,
+   "reported": 0.81,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.NF.lo",
+   "desc": "tab:exp2_8afc deutan NF CI low",
+   "produced": 0.7002563933674387,
+   "reported": 0.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.NF.hi",
+   "desc": "tab:exp2_8afc deutan NF CI high",
+   "produced": 0.8893535687353672,
+   "reported": 0.89,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.NF.n",
+   "desc": "tab:exp2_8afc deutan NF n = 64",
+   "produced": 64,
+   "reported": 64,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Dep.acc",
+   "desc": "tab:exp2_8afc deutan Dep accuracy",
+   "produced": 0.96875,
+   "reported": 0.97,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Dep.lo",
+   "desc": "tab:exp2_8afc deutan Dep CI low",
+   "produced": 0.8930270814228412,
+   "reported": 0.89,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Dep.hi",
+   "desc": "tab:exp2_8afc deutan Dep CI high",
+   "produced": 0.9913878617313676,
+   "reported": 0.99,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Dep.n",
+   "desc": "tab:exp2_8afc deutan Dep n = 64",
+   "produced": 64,
+   "reported": 64,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Ind.acc",
+   "desc": "tab:exp2_8afc deutan Ind accuracy",
+   "produced": 0.96875,
+   "reported": 0.97,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Ind.lo",
+   "desc": "tab:exp2_8afc deutan Ind CI low",
+   "produced": 0.8930270814228412,
+   "reported": 0.89,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Ind.hi",
+   "desc": "tab:exp2_8afc deutan Ind CI high",
+   "produced": 0.9913878617313676,
+   "reported": 0.99,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.deutan.Ind.n",
+   "desc": "tab:exp2_8afc deutan Ind n = 64",
+   "produced": 64,
+   "reported": 64,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.NF.acc",
+   "desc": "tab:exp2_8afc protan NF accuracy",
+   "produced": 1.0,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.NF.lo",
+   "desc": "tab:exp2_8afc protan NF CI low",
+   "produced": 0.9433759393644894,
+   "reported": 0.94,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.NF.hi",
+   "desc": "tab:exp2_8afc protan NF CI high",
+   "produced": 1.0,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.NF.n",
+   "desc": "tab:exp2_8afc protan NF n = 64",
+   "produced": 64,
+   "reported": 64,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Dep.acc",
+   "desc": "tab:exp2_8afc protan Dep accuracy",
+   "produced": 0.859375,
+   "reported": 0.86,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Dep.lo",
+   "desc": "tab:exp2_8afc protan Dep CI low",
+   "produced": 0.753837181611304,
+   "reported": 0.75,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Dep.hi",
+   "desc": "tab:exp2_8afc protan Dep CI high",
+   "produced": 0.9242142748069228,
+   "reported": 0.92,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Dep.n",
+   "desc": "tab:exp2_8afc protan Dep n = 64",
+   "produced": 64,
+   "reported": 64,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Ind.acc",
+   "desc": "tab:exp2_8afc protan Ind accuracy",
+   "produced": 0.984375,
+   "reported": 0.98,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Ind.lo",
+   "desc": "tab:exp2_8afc protan Ind CI low",
+   "produced": 0.9166589831521346,
+   "reported": 0.92,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Ind.hi",
+   "desc": "tab:exp2_8afc protan Ind CI high",
+   "produced": 0.9972364581072146,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T1.protan.Ind.n",
+   "desc": "tab:exp2_8afc protan Ind n = 64",
+   "produced": 64,
+   "reported": 64,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.13",
+   "desc": "tab:exp2_8afc | 2 participants x 3 conditions x (accuracy, CI, n)",
+   "produced": null,
+   "reported": "24 cells, see 07.T1.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.controls",
+   "desc": "tab:exp2_loro V1 controls",
+   "produced": 0.7142857142857144,
+   "reported": 0.71,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.deutan NF",
+   "desc": "tab:exp2_loro V1 deutan NF",
+   "produced": 0.7916666666666666,
+   "reported": 0.79,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.deutan Dep",
+   "desc": "tab:exp2_loro V1 deutan Dep",
+   "produced": 0.84375,
+   "reported": 0.84,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.deutan Ind",
+   "desc": "tab:exp2_loro V1 deutan Ind",
+   "produced": 0.71875,
+   "reported": 0.72,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.protan NF",
+   "desc": "tab:exp2_loro V1 protan NF",
+   "produced": 0.7916666666666666,
+   "reported": 0.79,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.protan Dep",
+   "desc": "tab:exp2_loro V1 protan Dep",
+   "produced": 0.90625,
+   "reported": 0.91,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V1.protan Ind",
+   "desc": "tab:exp2_loro V1 protan Ind",
+   "produced": 0.65625,
+   "reported": 0.66,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.controls",
+   "desc": "tab:exp2_loro V2 controls",
+   "produced": 0.7053571428571429,
+   "reported": 0.71,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.deutan NF",
+   "desc": "tab:exp2_loro V2 deutan NF",
+   "produced": 0.7916666666666666,
+   "reported": 0.79,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.deutan Dep",
+   "desc": "tab:exp2_loro V2 deutan Dep",
+   "produced": 0.6875,
+   "reported": 0.69,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.deutan Ind",
+   "desc": "tab:exp2_loro V2 deutan Ind",
+   "produced": 0.625,
+   "reported": 0.62,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.protan NF",
+   "desc": "tab:exp2_loro V2 protan NF",
+   "produced": 0.8333333333333334,
+   "reported": 0.83,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.protan Dep",
+   "desc": "tab:exp2_loro V2 protan Dep",
+   "produced": 0.75,
+   "reported": 0.75,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V2.protan Ind",
+   "desc": "tab:exp2_loro V2 protan Ind",
+   "produced": 0.71875,
+   "reported": 0.72,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.controls",
+   "desc": "tab:exp2_loro V3 controls",
+   "produced": 0.7678571428571429,
+   "reported": 0.77,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.deutan NF",
+   "desc": "tab:exp2_loro V3 deutan NF",
+   "produced": 0.6666666666666666,
+   "reported": 0.67,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.deutan Dep",
+   "desc": "tab:exp2_loro V3 deutan Dep",
+   "produced": 0.78125,
+   "reported": 0.78,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.deutan Ind",
+   "desc": "tab:exp2_loro V3 deutan Ind",
+   "produced": 0.6875,
+   "reported": 0.69,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.protan NF",
+   "desc": "tab:exp2_loro V3 protan NF",
+   "produced": 0.8125,
+   "reported": 0.81,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.protan Dep",
+   "desc": "tab:exp2_loro V3 protan Dep",
+   "produced": 1.0,
+   "reported": 1.0,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.V3.protan Ind",
+   "desc": "tab:exp2_loro V3 protan Ind",
+   "produced": 0.6875,
+   "reported": 0.69,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.controls",
+   "desc": "tab:exp2_loro hV4 controls",
+   "produced": 0.7534722222222222,
+   "reported": 0.75,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.deutan NF",
+   "desc": "tab:exp2_loro hV4 deutan NF",
+   "produced": 0.7291666666666666,
+   "reported": 0.73,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.deutan Dep",
+   "desc": "tab:exp2_loro hV4 deutan Dep",
+   "produced": 0.875,
+   "reported": 0.88,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.deutan Ind",
+   "desc": "tab:exp2_loro hV4 deutan Ind",
+   "produced": 0.5,
+   "reported": 0.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.protan NF",
+   "desc": "tab:exp2_loro hV4 protan NF",
+   "produced": 0.7083333333333334,
+   "reported": 0.71,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.protan Dep",
+   "desc": "tab:exp2_loro hV4 protan Dep",
+   "produced": 0.84375,
+   "reported": 0.84,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T2.hV4.protan Ind",
+   "desc": "tab:exp2_loro hV4 protan Ind",
+   "produced": 0.6875,
+   "reported": 0.69,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.14",
+   "desc": "tab:exp2_loro | 4 ROIs x (controls + 2 participants x 3 conditions)",
+   "produced": null,
+   "reported": "28 cells, see 07.T2.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "07.15",
+   "desc": "Results \u00a77 | lowest cell",
+   "produced": 0.5,
+   "reported": 0.5,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.16",
+   "desc": "Results \u00a77 | control range low",
+   "produced": 0.7053571428571429,
+   "reported": 0.71,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.17",
+   "desc": "Results \u00a77 | control range high",
+   "produced": 0.7678571428571429,
+   "reported": 0.77,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.18",
+   "desc": "Results \u00a77 | every cell above chance 0.125",
+   "produced": 0.5,
+   "reported": 0.125,
+   "status": "ok",
+   "mode": "gt",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.controls_mean",
+   "desc": "tab:exp2_geometry deutan hV4 controls mean",
+   "produced": 0.45555555555555555,
+   "reported": 0.46,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.controls_sd",
+   "desc": "tab:exp2_geometry deutan hV4 controls SD",
+   "produced": 0.10623502073059349,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.controls_n",
+   "desc": "tab:exp2_geometry deutan hV4 n = 6 controls",
+   "produced": 6,
+   "reported": 6,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.NF.adj",
+   "desc": "tab:exp2_geometry deutan hV4 adjacent NF",
+   "produced": 0.23125,
+   "reported": 0.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.NF.d",
+   "desc": "tab:exp2_geometry deutan hV4 adjacent NF d_cc",
+   "produced": -2.1114087803906285,
+   "reported": -2.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.Dep.adj",
+   "desc": "tab:exp2_geometry deutan hV4 adjacent Dep",
+   "produced": 0.25,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.Dep.d",
+   "desc": "tab:exp2_geometry deutan hV4 adjacent Dep d_cc",
+   "produced": -1.9349133095839817,
+   "reported": -1.94,
+   "status": "near",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.Ind.adj",
+   "desc": "tab:exp2_geometry deutan hV4 adjacent Ind",
+   "produced": 0.3125,
+   "reported": 0.31,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.hV4.Ind.d",
+   "desc": "tab:exp2_geometry deutan hV4 adjacent Ind d_cc",
+   "produced": -1.346595073561825,
+   "reported": -1.35,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.controls",
+   "desc": "tab:exp2_geometry deutan V2 disparity controls",
+   "produced": 0.44331507648224167,
+   "reported": 0.44,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.NF",
+   "desc": "tab:exp2_geometry deutan V2 disparity NF",
+   "produced": 0.6762750455790627,
+   "reported": 0.68,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.NF.d",
+   "desc": "tab:exp2_geometry deutan V2 disparity NF d_cc",
+   "produced": 2.692331443065741,
+   "reported": 2.69,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.Dep",
+   "desc": "tab:exp2_geometry deutan V2 disparity Dep",
+   "produced": 0.8696385203324745,
+   "reported": 0.87,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.Dep.d",
+   "desc": "tab:exp2_geometry deutan V2 disparity Dep d_cc",
+   "produced": 4.927043977744572,
+   "reported": 4.93,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.Ind",
+   "desc": "tab:exp2_geometry deutan V2 disparity Ind",
+   "produced": 0.765942911240916,
+   "reported": 0.77,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.disp.Ind.d",
+   "desc": "tab:exp2_geometry deutan V2 disparity Ind d_cc",
+   "produced": 3.7286280011824147,
+   "reported": 3.73,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.rdm.controls",
+   "desc": "tab:exp2_geometry deutan V2 RDM similarity controls (LOO self-consistency)",
+   "produced": 0.5881512758360049,
+   "reported": 0.59,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.rdm.NF",
+   "desc": "tab:exp2_geometry deutan V2 RDM similarity NF",
+   "produced": 0.41831782521437694,
+   "reported": 0.42,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.rdm.Dep",
+   "desc": "tab:exp2_geometry deutan V2 RDM similarity Dep",
+   "produced": 0.16281700419631454,
+   "reported": 0.16,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.V2.rdm.Ind",
+   "desc": "tab:exp2_geometry deutan V2 RDM similarity Ind",
+   "produced": 0.04769202700237183,
+   "reported": 0.05,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.deutan.n_subsets",
+   "desc": "S14 deutan C(6,4) = 15 subsets, n = 7 controls",
+   "produced": [
+    15,
+    7
+   ],
+   "reported": [
+    15,
+    7
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.controls_mean",
+   "desc": "tab:exp2_geometry protan hV4 controls mean",
+   "produced": 0.45555555555555555,
+   "reported": 0.46,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.controls_sd",
+   "desc": "tab:exp2_geometry protan hV4 controls SD",
+   "produced": 0.10623502073059349,
+   "reported": 0.11,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.controls_n",
+   "desc": "tab:exp2_geometry protan hV4 n = 6 controls",
+   "produced": 6,
+   "reported": 6,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.NF.adj",
+   "desc": "tab:exp2_geometry protan hV4 adjacent NF",
+   "produced": 0.1375,
+   "reported": 0.14,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.NF.d",
+   "desc": "tab:exp2_geometry protan hV4 adjacent NF d_cc",
+   "produced": -2.9938861344238634,
+   "reported": -2.99,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.Dep.adj",
+   "desc": "tab:exp2_geometry protan hV4 adjacent Dep",
+   "produced": 0.1875,
+   "reported": 0.19,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.Dep.d",
+   "desc": "tab:exp2_geometry protan hV4 adjacent Dep d_cc",
+   "produced": -2.523231545606138,
+   "reported": -2.52,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.Ind.adj",
+   "desc": "tab:exp2_geometry protan hV4 adjacent Ind",
+   "produced": 0.0625,
+   "reported": 0.06,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.hV4.Ind.d",
+   "desc": "tab:exp2_geometry protan hV4 adjacent Ind d_cc",
+   "produced": -3.6998680176504517,
+   "reported": -3.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.controls",
+   "desc": "tab:exp2_geometry protan V1 disparity controls",
+   "produced": 0.42918625067753097,
+   "reported": 0.43,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.NF",
+   "desc": "tab:exp2_geometry protan V1 disparity NF",
+   "produced": 0.7003851561063323,
+   "reported": 0.7,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.NF.d",
+   "desc": "tab:exp2_geometry protan V1 disparity NF d_cc",
+   "produced": 3.9230135342842583,
+   "reported": 3.92,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.Dep",
+   "desc": "tab:exp2_geometry protan V1 disparity Dep",
+   "produced": 0.6566864488152305,
+   "reported": 0.66,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.Dep.d",
+   "desc": "tab:exp2_geometry protan V1 disparity Dep d_cc",
+   "produced": 3.2908921772210205,
+   "reported": 3.29,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.Ind",
+   "desc": "tab:exp2_geometry protan V1 disparity Ind",
+   "produced": 0.6257942504116029,
+   "reported": 0.63,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.disp.Ind.d",
+   "desc": "tab:exp2_geometry protan V1 disparity Ind d_cc",
+   "produced": 2.844022702399182,
+   "reported": 2.84,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.rdm.controls",
+   "desc": "tab:exp2_geometry protan V1 RDM similarity controls (LOO self-consistency)",
+   "produced": 0.6582583991450986,
+   "reported": 0.66,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.rdm.NF",
+   "desc": "tab:exp2_geometry protan V1 RDM similarity NF",
+   "produced": 0.33231162196679437,
+   "reported": 0.33,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.rdm.Dep",
+   "desc": "tab:exp2_geometry protan V1 RDM similarity Dep",
+   "produced": 0.38175515416894723,
+   "reported": 0.38,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.V1.rdm.Ind",
+   "desc": "tab:exp2_geometry protan V1 RDM similarity Ind",
+   "produced": 0.2629082284254698,
+   "reported": 0.26,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.T3.protan.n_subsets",
+   "desc": "S14 protan C(6,4) = 15 subsets, n = 7 controls",
+   "produced": [
+    15,
+    7
+   ],
+   "reported": [
+    15,
+    7
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.19",
+   "desc": "tab:exp2_geometry | adjacent accuracy, disparity and RDM similarity by condition with d_cc",
+   "produced": null,
+   "reported": "42 cells, see 07.T3.*",
+   "status": "table",
+   "mode": "table",
+   "reason": null
+  },
+  {
+   "id": "07.20",
+   "desc": "Results \u00a77 'Interpolation' | deutan: individualized filter is the only condition above chance 0.25 at hV4",
+   "produced": [
+    "Ind"
+   ],
+   "reported": [
+    "Ind"
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.21",
+   "desc": "Results \u00a77 'Interpolation' | protan: individualized filter is the lowest of the three, all below chance",
+   "produced": [
+    "Ind",
+    true
+   ],
+   "reported": [
+    "Ind",
+    true
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.22",
+   "desc": "Results \u00a77 'Geometry' | deutan: both filters raise V2 disparity above baseline and lower RDM similarity",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.23",
+   "desc": "Results \u00a77 'Geometry' | protan: both filters reduce V1 disparity; RDM similarity rises under Dep and falls under Ind",
+   "produced": [
+    true,
+    true,
+    true
+   ],
+   "reported": [
+    true,
+    true,
+    true
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.24",
+   "desc": "S15 'Forward-tuning' | deutan hV4 rho under the individualized filter",
+   "produced": 0.17886295791630277,
+   "reported": 0.18,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.25",
+   "desc": "S15 | control rho at hV4",
+   "produced": 0.20789970301206742,
+   "reported": 0.21,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.26",
+   "desc": "S15 | deutan hV4 rho under the deployed filter",
+   "produced": -0.38821069100812833,
+   "reported": -0.39,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.27",
+   "desc": "S15 | protan: three conditions all near -0.02 (|rho + 0.02| < 0.01)",
+   "produced": 0.004013606473159018,
+   "reported": 0.01,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "07.28",
+   "desc": "S14 'Run-count adequacy' | hV4 control mean at four runs",
+   "produced": 0.4491071428571428,
+   "reported": 0.45,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.29",
+   "desc": "S14 | at six runs",
+   "produced": 0.45595238095238094,
+   "reported": 0.46,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.30",
+   "desc": "S14 | deutan at four runs",
+   "produced": 0.23125,
+   "reported": 0.23,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.31",
+   "desc": "S14 | protan at four runs",
+   "produced": 0.1375,
+   "reported": 0.14,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.32",
+   "desc": "S14 | single-case d_cc < -2 in both at four runs",
+   "produced": -2.212,
+   "reported": -2.0,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "07.33",
+   "desc": "S14 | the control-CVD separation holds at every run count down to four (control mean above both CVD cases and above chance)",
+   "produced": true,
+   "reported": true,
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  },
+  {
+   "id": "07.33b",
+   "desc": "S14 | both CVD participants below chance at four runs",
+   "produced": 0.23125,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "lt",
+   "reason": null
+  },
+  {
+   "id": "07.34",
+   "desc": "S14 | protan V1 RDM similarity of the unfiltered baseline, unmatched",
+   "produced": 0.2517788724685276,
+   "reported": 0.25,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.35",
+   "desc": "S14 | same after run matching",
+   "produced": 0.33231162196679437,
+   "reported": 0.33,
+   "status": "ok",
+   "mode": "round",
+   "reason": null
+  },
+  {
+   "id": "07.36",
+   "desc": "S14 | four runs per filter condition",
+   "produced": [
+    4,
+    4
+   ],
+   "reported": [
+    4,
+    4
+   ],
+   "status": "ok",
+   "mode": "eq",
+   "reason": null
+  }
+ ]
+}

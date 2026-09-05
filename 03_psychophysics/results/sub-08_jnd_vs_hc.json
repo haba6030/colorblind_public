@@ -1,0 +1,214 @@
+{
+  "subject": "sub-08",
+  "n_hc": 7,
+  "hc_mean_overall": 0.1041,
+  "cond_mean_overall": {
+    "nofilter": 0.1869,
+    "window": 0.0799,
+    "optimal": 0.08
+  },
+  "mean_abs_dist_to_HC": {
+    "nofilter": 0.1149,
+    "window": 0.0521,
+    "optimal": 0.0453
+  },
+  "mean_abs_z_to_HC": {
+    "nofilter": 2.2407,
+    "window": 0.8527,
+    "optimal": 0.7798
+  },
+  "optimal_closer_to_HC_than_window_npairs": 5,
+  "optimal_closer_to_HC_than_nofilter_npairs": 6,
+  "window_closer_to_HC_than_nofilter_npairs": 5,
+  "crawford_howell": {
+    "orange-yellow": {
+      "nofilter": {
+        "t": 3.886,
+        "df": 6,
+        "p": 0.0081,
+        "z_cc": 4.154,
+        "sig05": true
+      },
+      "window": {
+        "t": -1.266,
+        "df": 6,
+        "p": 0.2524,
+        "z_cc": -1.353,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -1.606,
+        "df": 6,
+        "p": 0.1594,
+        "z_cc": -1.717,
+        "sig05": false
+      }
+    },
+    "yellow-green": {
+      "nofilter": {
+        "t": 4.042,
+        "df": 6,
+        "p": 0.0068,
+        "z_cc": 4.322,
+        "sig05": true
+      },
+      "window": {
+        "t": -0.151,
+        "df": 6,
+        "p": 0.8849,
+        "z_cc": -0.161,
+        "sig05": false
+      },
+      "optimal": {
+        "t": 1.408,
+        "df": 6,
+        "p": 0.2087,
+        "z_cc": 1.505,
+        "sig05": false
+      }
+    },
+    "green-blue": {
+      "nofilter": {
+        "t": -0.055,
+        "df": 6,
+        "p": 0.9576,
+        "z_cc": -0.059,
+        "sig05": false
+      },
+      "window": {
+        "t": 1.475,
+        "df": 6,
+        "p": 0.1906,
+        "z_cc": 1.577,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.784,
+        "df": 6,
+        "p": 0.4627,
+        "z_cc": -0.838,
+        "sig05": false
+      }
+    },
+    "red-orange": {
+      "nofilter": {
+        "t": -0.798,
+        "df": 6,
+        "p": 0.4554,
+        "z_cc": -0.853,
+        "sig05": false
+      },
+      "window": {
+        "t": 0.796,
+        "df": 6,
+        "p": 0.4562,
+        "z_cc": 0.851,
+        "sig05": false
+      },
+      "optimal": {
+        "t": 0.146,
+        "df": 6,
+        "p": 0.889,
+        "z_cc": 0.156,
+        "sig05": false
+      }
+    },
+    "blue-purple": {
+      "nofilter": {
+        "t": -0.448,
+        "df": 6,
+        "p": 0.67,
+        "z_cc": -0.479,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.928,
+        "df": 6,
+        "p": 0.3892,
+        "z_cc": -0.992,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.094,
+        "df": 6,
+        "p": 0.9283,
+        "z_cc": -0.1,
+        "sig05": false
+      }
+    },
+    "yellow-purple": {
+      "nofilter": {
+        "t": 6.269,
+        "df": 6,
+        "p": 0.0008,
+        "z_cc": 6.702,
+        "sig05": true
+      },
+      "window": {
+        "t": -0.66,
+        "df": 6,
+        "p": 0.5338,
+        "z_cc": -0.705,
+        "sig05": false
+      },
+      "optimal": {
+        "t": 1.265,
+        "df": 6,
+        "p": 0.2528,
+        "z_cc": 1.352,
+        "sig05": false
+      }
+    },
+    "cyan-magenta": {
+      "nofilter": {
+        "t": -0.122,
+        "df": 6,
+        "p": 0.9072,
+        "z_cc": -0.13,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.831,
+        "df": 6,
+        "p": 0.4378,
+        "z_cc": -0.888,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.312,
+        "df": 6,
+        "p": 0.7658,
+        "z_cc": -0.333,
+        "sig05": false
+      }
+    },
+    "red-cyan": {
+      "nofilter": {
+        "t": -1.148,
+        "df": 6,
+        "p": 0.2946,
+        "z_cc": -1.228,
+        "sig05": false
+      },
+      "window": {
+        "t": -0.273,
+        "df": 6,
+        "p": 0.7937,
+        "z_cc": -0.292,
+        "sig05": false
+      },
+      "optimal": {
+        "t": -0.221,
+        "df": 6,
+        "p": 0.8325,
+        "z_cc": -0.236,
+        "sig05": false
+      }
+    }
+  },
+  "nofilter_sig_pairs": [
+    "orange-yellow",
+    "yellow-green",
+    "yellow-purple"
+  ]
+}

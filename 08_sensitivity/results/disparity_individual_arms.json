@@ -1,0 +1,110 @@
+{
+  "note": "SRM Procrustes disparity, Crawford-Howell single-case tests, canonical vs hmc_v2 arm. Parsed from logs/disp_arms_168367.out (the frozen wrapper prints to stdout only). sub-10 is excluded from all reported analyses.",
+  "source": "analysis/prep_trials/logs/disp_arms_168367.out (job 168367, 2026-08-17)",
+  "metric": "disparity score; t and p are one-tailed Crawford-Howell vs n=7 HC",
+  "arms": {
+    "with_residuals": {
+      "sub-08": {
+        "V1": [
+          0.55,
+          1.1,
+          0.157
+        ],
+        "V2": [
+          0.718,
+          2.1,
+          0.04
+        ],
+        "V3": [
+          0.738,
+          1.9,
+          0.052
+        ],
+        "hV4": [
+          0.732,
+          0.2,
+          0.411
+        ]
+      },
+      "sub-09": {
+        "V1": [
+          0.761,
+          3.5,
+          0.007
+        ],
+        "V2": [
+          0.594,
+          1.0,
+          0.181
+        ],
+        "V3": [
+          0.549,
+          0.1,
+          0.466
+        ],
+        "hV4": [
+          0.855,
+          1.1,
+          0.15
+        ]
+      }
+    },
+    "hmc_v2": {
+      "sub-08": {
+        "V1": [
+          0.654,
+          2.4,
+          0.027
+        ],
+        "V2": [
+          0.425,
+          -1.0,
+          0.825
+        ],
+        "V3": [
+          0.658,
+          0.6,
+          0.293
+        ],
+        "hV4": [
+          0.734,
+          0.4,
+          0.351
+        ]
+      },
+      "sub-09": {
+        "V1": [
+          0.599,
+          1.6,
+          0.077
+        ],
+        "V2": [
+          0.567,
+          1.0,
+          0.186
+        ],
+        "V3": [
+          0.714,
+          1.1,
+          0.151
+        ],
+        "hV4": [
+          0.875,
+          1.4,
+          0.101
+        ]
+      }
+    }
+  },
+  "value_order": [
+    "disparity",
+    "t",
+    "p"
+  ],
+  "findings": {
+    "elevation_present_every_cell": "each subject x arm has >=1 ROI with p<.10 and positive t",
+    "max_roi_protan": "V1 in both arms (stable)",
+    "max_roi_deutan": "V2 (canonical) -> V1 (hmc_v2) (unstable)",
+    "deutan_V2_sign_reversal": "t +2.1 -> -1.0"
+  }
+}

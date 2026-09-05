@@ -1,0 +1,63 @@
+{
+  "subject": "sub-08",
+  "jnd_mean_by_condition": {
+    "baseline": 0.1869,
+    "window": 0.0799,
+    "optimal": 0.08
+  },
+  "jnd_opt_lt_win_npairs": 3,
+  "jnd_opt_lt_base_npairs": 5,
+  "wilcoxon": {
+    "wilcoxon_opt_vs_win": {
+      "stat": 16.0,
+      "p": 0.84375
+    },
+    "wilcoxon_opt_vs_base": {
+      "stat": 13.0,
+      "p": 0.546875
+    },
+    "wilcoxon_win_vs_base": {
+      "stat": 13.0,
+      "p": 0.546875
+    }
+  },
+  "rsvp": {
+    "baseline": {
+      "acc": 0.8125,
+      "n": 64,
+      "n_correct": 52,
+      "errors": [
+        "orange->yellow",
+        "yellow->green",
+        "purple->magenta",
+        "green->MISS",
+        "yellow->magenta",
+        "purple->magenta",
+        "green->yellow",
+        "yellow->red",
+        "green->yellow",
+        "purple->magenta",
+        "magenta->purple",
+        "magenta->purple"
+      ]
+    },
+    "window": {
+      "acc": 0.96875,
+      "n": 64,
+      "n_correct": 62,
+      "errors": [
+        "red->orange",
+        "red->orange"
+      ]
+    },
+    "optimal": {
+      "acc": 0.96875,
+      "n": 64,
+      "n_correct": 62,
+      "errors": [
+        "magenta->MISS",
+        "magenta->purple"
+      ]
+    }
+  }
+}

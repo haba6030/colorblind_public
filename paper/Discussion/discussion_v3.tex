@@ -1,0 +1,54 @@
+% Discussion Section v3 — last revised 2026-09-04
+% Reframe: CVD color deficit = individual-specific GEOMETRIC DISTORTION of
+%   cortical color representation. RDM = structure, LOCO = functional consequence.
+%   Neural + psychophysical measurements JOINTLY ground an individualized correction.
+%
+% Spine: 3 contributions (paragraph map: discussion_structure_v3.md §2)
+%   C1 structural/geometric distortion (RQ1)          — ¶2
+%   C2 individualized filter from cortical geometry   — ¶3-¶8
+%   C3 filter evaluation, second session (2 cases)    — ¶9-¶11
+%
+% 17 paragraphs. Renumber discussion_structure_v3.md §2 whenever this changes,
+% or the next /revise-draft drift check is meaningless.
+%
+% Removed from v2: upstream-input-rejection paragraph; detection-correction
+%   "divergence" falsifier + §S14 cosine statistic.
+%
+% Revision log
+%   2026-06-08  v3 drafted (C3 was then a forward-looking Phase-3 TODO).
+%   2026-08-05  BLUF/NEGA pass over P1-P10 (discussion_v3_revision_checklist.md).
+%   2026-08-06  Phase-3 data folded in: C3 became a reported evaluation.
+%               /revise-draft round 1 -> revision_report_2026-08-06.md.
+%               §7 splits at former L29/L34/L43; control terminology unified.
+%   2026-08-07  Round 2 fixes (¶1); "behavioral" -> "psychophysical" throughout.
+%   2026-09-04  P2 compressed (205 -> 145); Limitations 5 paragraphs -> 2 (513 -> 234),
+%               preprocessing-dependence detail left to Results/Supplementary; Conclusion -> one
+%               paragraph in Kwon 2025 form (words_trimming.md §4).
+%
+% Brief / evidence pack / constraints: discussion_structure_v3.md
+
+\section{Discussion}
+\label{sec:discussion}
+
+In both CVD participants categorical color identification was preserved while continuous hue interpolation fell to chance at hV4, and the hue geometry of both departed from the control reference by more than the controls departed from one another. We modeled that distortion as a hue rotation about the subtype confusion axis and the S-cone axis, fitted it to each participant's own neural and psychophysical measurements, and inverted it into a per-person stimulus-space filter evaluated in a second session. Under the individualized filter the elevated discrimination thresholds of both participants returned to the control range, the deployed accessibility filter left two pairs deviant in the protan participant, and the neural endpoints varied by participant and by measure. Together these results locate the CVD deficit in continuous hue geometry, which categorical decoding does not detect, and they show that an individual's own cortical color representation can be inverted into a correction filter for that individual.
+
+\subsection{A geometric distortion of cortical color representation}
+Both CVD participants identified all eight hues well above chance at every region while their hue interpolation fell to chance at hV4, the only region where the controls interpolated above their color-label null. The preserved identification and the reduced interpolation each held under head-motion correction (Section~\ref{sec:results:loco}; Supplementary~\cref{app:uncorrected}). Procrustes disparity from the control reference was elevated in both participants, while the region carrying the largest deviation was unstable across preprocessing in the deutan participant, leaving the cortical locus of the distortion undetermined (Section~\ref{sec:results:geometry}).
+
+\subsection{A neurally grounded, individualizable correction filter}
+The filter is the stimulus-space pre-image of the fitted distortion. For each intended color it substitutes the displayed hue that the participant's own cortical transformation maps onto that intended color (Methods~\S\ref{sec:methods:filter}). Each participant's loss combination was fixed beforehand by the pre-specified three-gate procedure over held-out control resamples (Methods~\S\ref{sec:methods:selection}). The two fitted corrections differed in magnitude and in direction, which parallels psychophysical evidence that hue perception varies markedly across anomalous trichromats \parencite{emery2021}. Their parameters come from each individual's own measurements rather than from a subtype average, and the neural and psychophysical terms are not redundant. The neural term located a confusion-axis rotation that the psychophysical loss alone left near zero, and it narrowed the parameter uncertainty in both participants (Section~\ref{sec:results:neural_role}). To our knowledge this is the first color-correction filter derived from an individual's cortical color representation rather than from a retinal model. Earlier inversions of cortical encoding models synthesized images that maximize the response of chosen units \parencite{bashivan2019} or voxels \parencite{shinkle2025} rather than the arrangement of colors within a region.
+
+The fits recover the sign of the dominant confusion-axis term. No recovery check established the magnitude on either axis, and in the protan participant even that sign depends on the reduction basis and on the preprocessing pipeline (Supplementary~\cref{app:identifiability}, \cref{app:fit_stability}). With one participant per subtype, individual and subtype differences also remain confounded. Fixing those parameters therefore calls for a larger sample and a fitting procedure whose solution is stable across these analysis choices. This framework is built to support that analysis.
+
+\subsection{Filter evaluation}
+In the psychophysical evaluation both filters removed the deutan participant's baseline threshold deficit, whereas in the protan participant the individualized filter left every hue-discrimination pair within the control range and preserved color identification accuracy while the deployed filter left two pairs deviant and lowered identification. The psychophysical advantage of the individualized filter therefore appeared in the protan participant only. The neural evaluation differed across measures. Hue interpolation at hV4 rose under the individualized filter in the deutan participant and fell in the protan participant, while the early-visual geometry moved in the opposite direction within each participant and did so under both filters alike, so neither shift was specific to the individualized correction. Representational similarity to the controls was higher under the deployed filter in both participants, and the geometry of both remained displaced from the control reference under either filter (Section~\ref{sec:results:filter_eval}).
+
+Early-visual geometry and hV4 interpolation lie at different levels of the visual hierarchy and can vary independently, so the disagreement alone does not show which readout tracks the correction. With one participant per subtype these neural endpoints remain inconclusive, and establishing whether either pattern generalizes requires replication in more individuals within each subtype on a refined neural endpoint.
+
+\subsection{Limitations}
+The CVD sample is $N = 2$, one participant per subtype, with subtype assigned from Ishihara plates rather than anomaloscopy. Single-case statistics \parencite{crawford1998} support inference about each individual, and the seven controls serve only to place each CVD estimate relative to the control range. Claims about deutan or protan subtypes, and the separation of a per-person correction from a subtype-average one, require several participants within each subtype. The fitted parameters are reported without confidence intervals, because six runs per participant are too few for stable resampling.
+
+Several estimates depend on analysis choices, and the measurements cover a narrow stimulus range. The regional attribution of the geometric distortion and the sign of the protan confusion-axis term vary with preprocessing and with the reduction basis, so we report the geometry as descriptive and select filter targets by held-out test-loss (Section~\ref{sec:results:geometry}; Supplementary~\cref{app:uncorrected}, \cref{app:fit_stability}, \cref{app:geometry_validity}). The two neural loss terms read different regions and moved in different directions at evaluation, so no neural endpoint is yet stable enough for a larger study, and the assumption that shifting cortical geometry toward the control reference shifts perception with it remains untested. The stimuli occupied a single lightness and chroma locus, lightness was equated for the standard observer rather than for each participant, and the scanner task directed attention away from color \parencite{brouwer2013}. Extending the correction to natural scenes and to attended color requires refitting under those conditions.
+
+\subsection{Conclusion}
+This study shows that in two individuals with CVD categorical hue identification was preserved while continuous hue interpolation at hV4 was reduced, and that an individual's own cortical color representation can be inverted into a per-person stimulus-space correction filter. In the future, we anticipate that scaling this procedure to larger CVD and control samples will quantify the cortical color distortions of CVD, yield a fitting procedure which is stable across preprocessing and analysis choices, and deliver individualized filters whose effect on color perception can be established.

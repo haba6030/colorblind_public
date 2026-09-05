@@ -1,0 +1,17 @@
+# Imaging Neuroscience figure requirement: Arial or Helvetica inside figures.
+# Applied via MATPLOTLIBRC so the generator scripts need no edits.
+# mathtext is the part previous attempts missed: it carries its own font set and
+# defaults to dejavusans, which is why Arial-configured scripts still embedded
+# DejaVuSans-Oblique for italic math.
+font.family:       sans-serif
+font.sans-serif:   Arial, Helvetica, DejaVu Sans
+mathtext.fontset:  custom
+mathtext.rm:       Arial
+mathtext.it:       Arial:italic
+mathtext.bf:       Arial:bold
+mathtext.sf:       Arial
+mathtext.tt:       Arial
+mathtext.cal:      Arial:italic
+pdf.fonttype:      42
+ps.fonttype:       42
+svg.fonttype:      none

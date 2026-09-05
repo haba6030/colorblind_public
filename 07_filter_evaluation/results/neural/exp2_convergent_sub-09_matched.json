@@ -1,0 +1,390 @@
+{
+  "V1": {
+    "roi": "V1",
+    "pca_rdm": {
+      "nofilter": {
+        "pearson_to_hc": -0.243682404115698,
+        "cosine_to_hc": 0.909138640686956
+      },
+      "window": {
+        "pearson_to_hc": 0.15102885747087208,
+        "cosine_to_hc": 0.924448363858829
+      },
+      "optimal": {
+        "pearson_to_hc": -0.15296581602181672,
+        "cosine_to_hc": 0.8981820351902181
+      },
+      "hc_self_pearson_mean": 0.10674484106255185
+    },
+    "euclidean_rdm": {
+      "nofilter": {
+        "pearson_to_hc": -0.360561427661149,
+        "cosine_to_hc": 0.936570807269013
+      },
+      "window": {
+        "pearson_to_hc": -0.1623090289398037,
+        "cosine_to_hc": 0.9715571468819254
+      },
+      "optimal": {
+        "pearson_to_hc": 0.07396144488198944,
+        "cosine_to_hc": 0.9695487320020202
+      },
+      "hc_self_pearson_mean": 0.07911455187411318
+    },
+    "crossnobis_rdm": {
+      "nofilter": {
+        "pearson_to_hc": -0.369724769205539,
+        "cosine_to_hc": 0.6219616582994122
+      },
+      "window": {
+        "pearson_to_hc": -0.14574201981029317,
+        "cosine_to_hc": 0.8095007973653251
+      },
+      "optimal": {
+        "pearson_to_hc": -0.07415661887727042,
+        "cosine_to_hc": 0.791356040312682
+      },
+      "hc_self_pearson_mean": 0.10261935442052485
+    },
+    "srm": {
+      "k": 4,
+      "hc_disp_mean": 0.4528011318999689,
+      "hc_disp_sd": 0.08301661901234,
+      "conditions": {
+        "nofilter": {
+          "disparity": 0.7613663037809509,
+          "d_vs_hc": 3.716908440165642,
+          "ch_p_below_hc": 0.993403457151178
+        },
+        "window": {
+          "disparity": 0.630221376569641,
+          "d_vs_hc": 2.1371653866474545,
+          "ch_p_below_hc": 0.9537314299460758
+        },
+        "optimal": {
+          "disparity": 0.618295630286397,
+          "d_vs_hc": 1.993510460379363,
+          "ch_p_below_hc": 0.9442570101038766
+        },
+        "nofilter_n4": {
+          "disparity": 0.7049126106001502,
+          "d_vs_hc": 3.036879623617365,
+          "ch_p_below_hc": 0.985230889584044
+        }
+      }
+    },
+    "srm_rdm_paper": {
+      "_hc": {
+        "pair_disp_mean": 1.070397676129051,
+        "pair_disp_sd": 0.05225184990235028,
+        "spearman_self_loo_mean": 0.6628352490421456
+      },
+      "nofilter": {
+        "mean_pairwise_disparity": 1.0616921986947985,
+        "disp_d_vs_hc": -0.16660610965011918,
+        "spearman_to_hc": 0.2517788724685276
+      },
+      "window": {
+        "mean_pairwise_disparity": 1.0767503745517122,
+        "disp_d_vs_hc": 0.12157844046733798,
+        "spearman_to_hc": 0.4876847290640395
+      },
+      "optimal": {
+        "mean_pairwise_disparity": 1.0938942978556445,
+        "disp_d_vs_hc": 0.4496801887493868,
+        "spearman_to_hc": 0.3021346469622332
+      }
+    }
+  },
+  "V2": {
+    "roi": "V2",
+    "pca_rdm": {
+      "nofilter": {
+        "pearson_to_hc": 0.21779150689479382,
+        "cosine_to_hc": 0.9382100002235851
+      },
+      "window": {
+        "pearson_to_hc": 0.5756487403430527,
+        "cosine_to_hc": 0.9264244364699317
+      },
+      "optimal": {
+        "pearson_to_hc": 0.321144844478973,
+        "cosine_to_hc": 0.9555871660926456
+      },
+      "hc_self_pearson_mean": -0.04044522422652562
+    },
+    "euclidean_rdm": {
+      "nofilter": {
+        "pearson_to_hc": 0.27546420212105854,
+        "cosine_to_hc": 0.963941783107689
+      },
+      "window": {
+        "pearson_to_hc": 0.19424354883254624,
+        "cosine_to_hc": 0.9690505278365973
+      },
+      "optimal": {
+        "pearson_to_hc": 0.15303841336933982,
+        "cosine_to_hc": 0.9712304522430091
+      },
+      "hc_self_pearson_mean": -0.030879693388309228
+    },
+    "crossnobis_rdm": {
+      "nofilter": {
+        "pearson_to_hc": 0.06843541591166834,
+        "cosine_to_hc": 0.7886544042800424
+      },
+      "window": {
+        "pearson_to_hc": 0.14877926812375925,
+        "cosine_to_hc": 0.8302730115077683
+      },
+      "optimal": {
+        "pearson_to_hc": -0.055741198999315796,
+        "cosine_to_hc": 0.7980542258545503
+      },
+      "hc_self_pearson_mean": -0.06374802054227029
+    },
+    "srm": {
+      "k": 4,
+      "hc_disp_mean": 0.4858435074460932,
+      "hc_disp_sd": 0.10287573190251778,
+      "conditions": {
+        "nofilter": {
+          "disparity": 0.594274565067451,
+          "d_vs_hc": 1.0540003518429797,
+          "ch_p_below_hc": 0.8188787625686124
+        },
+        "window": {
+          "disparity": 0.5290358440410288,
+          "d_vs_hc": 0.4198496165826885,
+          "ch_p_below_hc": 0.6459552637027455
+        },
+        "optimal": {
+          "disparity": 0.5508623277135545,
+          "d_vs_hc": 0.632013197525256,
+          "ch_p_below_hc": 0.7120154077220204
+        },
+        "nofilter_n4": {
+          "disparity": 0.5585735845546004,
+          "d_vs_hc": 0.7069702034044743,
+          "ch_p_below_hc": 0.7335146608735394
+        }
+      }
+    },
+    "srm_rdm_paper": {
+      "_hc": {
+        "pair_disp_mean": 1.0246665567430375,
+        "pair_disp_sd": 0.08145467732406227,
+        "spearman_self_loo_mean": 0.5001954804910469
+      },
+      "nofilter": {
+        "mean_pairwise_disparity": 1.0683070979467109,
+        "disp_d_vs_hc": 0.5357647054453633,
+        "spearman_to_hc": 0.3656267104542967
+      },
+      "window": {
+        "mean_pairwise_disparity": 1.0384766521931401,
+        "disp_d_vs_hc": 0.1695433080553496,
+        "spearman_to_hc": 0.5500821018062397
+      },
+      "optimal": {
+        "mean_pairwise_disparity": 1.0960424532192727,
+        "disp_d_vs_hc": 0.8762651675884828,
+        "spearman_to_hc": 0.5670498084291188
+      }
+    }
+  },
+  "V3": {
+    "roi": "V3",
+    "pca_rdm": {
+      "nofilter": {
+        "pearson_to_hc": 0.57935319414968,
+        "cosine_to_hc": 0.950721627508706
+      },
+      "window": {
+        "pearson_to_hc": 0.35193324094176615,
+        "cosine_to_hc": 0.9353662323062495
+      },
+      "optimal": {
+        "pearson_to_hc": 0.016042566901958717,
+        "cosine_to_hc": 0.9435871745992576
+      },
+      "hc_self_pearson_mean": 0.1187085090307597
+    },
+    "euclidean_rdm": {
+      "nofilter": {
+        "pearson_to_hc": 0.5324719580142462,
+        "cosine_to_hc": 0.9698211264044982
+      },
+      "window": {
+        "pearson_to_hc": 0.04677871146552264,
+        "cosine_to_hc": 0.9611145839566836
+      },
+      "optimal": {
+        "pearson_to_hc": -0.09245169835276039,
+        "cosine_to_hc": 0.9617984126881057
+      },
+      "hc_self_pearson_mean": 0.0795538347733836
+    },
+    "crossnobis_rdm": {
+      "nofilter": {
+        "pearson_to_hc": 0.695706358412162,
+        "cosine_to_hc": 0.8750470426217203
+      },
+      "window": {
+        "pearson_to_hc": -0.09066601184554803,
+        "cosine_to_hc": 0.7768093966908669
+      },
+      "optimal": {
+        "pearson_to_hc": -0.2728250007894578,
+        "cosine_to_hc": 0.7167865342891125
+      },
+      "hc_self_pearson_mean": 0.1266479741949493
+    },
+    "srm": {
+      "k": 3,
+      "hc_disp_mean": 0.5402815753472441,
+      "hc_disp_sd": 0.09616004353655853,
+      "conditions": {
+        "nofilter": {
+          "disparity": 0.5494965409811495,
+          "d_vs_hc": 0.09582946611709948,
+          "ch_p_below_hc": 0.5342547565817151
+        },
+        "window": {
+          "disparity": 0.586956302904072,
+          "d_vs_hc": 0.48538588212143324,
+          "ch_p_below_hc": 0.667118272707111
+        },
+        "optimal": {
+          "disparity": 0.5752334397731157,
+          "d_vs_hc": 0.36347596299271084,
+          "ch_p_below_hc": 0.6272785601173372
+        },
+        "nofilter_n4": {
+          "disparity": 0.538703048084839,
+          "d_vs_hc": -0.016415625496310295,
+          "ch_p_below_hc": 0.49412325018276637
+        }
+      }
+    },
+    "srm_rdm_paper": {
+      "_hc": {
+        "pair_disp_mean": 1.0533644010980112,
+        "pair_disp_sd": 0.0745226544789725,
+        "spearman_self_loo_mean": 0.392133865040269
+      },
+      "nofilter": {
+        "mean_pairwise_disparity": 1.0713628748907202,
+        "disp_d_vs_hc": 0.24151681013707746,
+        "spearman_to_hc": 0.2775041050903119
+      },
+      "window": {
+        "mean_pairwise_disparity": 1.1387536661200601,
+        "disp_d_vs_hc": 1.145816203395473,
+        "spearman_to_hc": 0.04324028461959496
+      },
+      "optimal": {
+        "mean_pairwise_disparity": 1.037424207890822,
+        "disp_d_vs_hc": -0.21389728155331514,
+        "spearman_to_hc": 0.37055281882868085
+      }
+    }
+  },
+  "V4": {
+    "roi": "V4",
+    "pca_rdm": {
+      "nofilter": {
+        "pearson_to_hc": -0.17548920259612838,
+        "cosine_to_hc": 0.8968769369352542
+      },
+      "window": {
+        "pearson_to_hc": 0.08428860888328168,
+        "cosine_to_hc": 0.8868967687460109
+      },
+      "optimal": {
+        "pearson_to_hc": -0.20429452867859924,
+        "cosine_to_hc": 0.9002084973344515
+      },
+      "hc_self_pearson_mean": -0.08396778643844009
+    },
+    "euclidean_rdm": {
+      "nofilter": {
+        "pearson_to_hc": -0.0045043364963520405,
+        "cosine_to_hc": 0.937648768947207
+      },
+      "window": {
+        "pearson_to_hc": -0.04341492702046467,
+        "cosine_to_hc": 0.8767067847795906
+      },
+      "optimal": {
+        "pearson_to_hc": -0.22701507417916314,
+        "cosine_to_hc": 0.9470334020503945
+      },
+      "hc_self_pearson_mean": -0.04939502871363003
+    },
+    "crossnobis_rdm": {
+      "nofilter": {
+        "pearson_to_hc": -0.17698130893403313,
+        "cosine_to_hc": 0.7103518319555145
+      },
+      "window": {
+        "pearson_to_hc": -0.0999359873590299,
+        "cosine_to_hc": 0.5816679005738818
+      },
+      "optimal": {
+        "pearson_to_hc": -0.24604319967106492,
+        "cosine_to_hc": 0.6962746112599442
+      },
+      "hc_self_pearson_mean": 0.12775906953057659
+    },
+    "srm": {
+      "k": 3,
+      "hc_disp_mean": 0.7213492633575559,
+      "hc_disp_sd": 0.10660645845498315,
+      "conditions": {
+        "nofilter": {
+          "disparity": 0.8537287786421347,
+          "d_vs_hc": 1.2417588690508734,
+          "ch_p_below_hc": 0.8488539880088225
+        },
+        "window": {
+          "disparity": 0.8365704731194709,
+          "d_vs_hc": 1.0808089062499866,
+          "ch_p_below_hc": 0.8185306328114916
+        },
+        "optimal": {
+          "disparity": 0.8810714991594092,
+          "d_vs_hc": 1.498241646112833,
+          "ch_p_below_hc": 0.8879686512884402
+        },
+        "nofilter_n4": {
+          "disparity": 0.8283810202379798,
+          "d_vs_hc": 1.0039894245771266,
+          "ch_p_below_hc": 0.8023572476972973
+        }
+      }
+    },
+    "srm_rdm_paper": {
+      "_hc": {
+        "pair_disp_mean": 0.8792834612280219,
+        "pair_disp_sd": 0.2480066433461818,
+        "spearman_self_loo_mean": 0.157453019521985
+      },
+      "nofilter": {
+        "mean_pairwise_disparity": 1.071891832288579,
+        "disp_d_vs_hc": 0.7766258534925753,
+        "spearman_to_hc": 0.4258347016967706
+      },
+      "window": {
+        "mean_pairwise_disparity": 1.0498641556462849,
+        "disp_d_vs_hc": 0.6878069559618881,
+        "spearman_to_hc": 0.14395183360700603
+      },
+      "optimal": {
+        "mean_pairwise_disparity": 1.082413480651844,
+        "disp_d_vs_hc": 0.8190507184933815,
+        "spearman_to_hc": 0.4192665571975917
+      }
+    }
+  }
+}
