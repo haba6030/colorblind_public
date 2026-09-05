@@ -1,0 +1,45 @@
+{
+  "upload_type": "software",
+  "title": "colorblind_public: code and result files for a cortically derived colour-correction filter",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Kim, Jinil",
+      "affiliation": "Seoul National University"
+    },
+    {
+      "name": "Cho, Albert Minkue",
+      "affiliation": "Seoul National University"
+    },
+    {
+      "name": "Seo, Jungwoo",
+      "affiliation": "Seoul National University"
+    },
+    {
+      "name": "Cha, Jiook",
+      "affiliation": "Seoul National University"
+    }
+  ],
+  "description": "<p>Analysis code, per-participant summary results, figures and reproduction notebooks accompanying the manuscript <em>Preserved categorical identification with impaired hue interpolation in color vision deficiency motivates a cortically derived correction filter</em>.</p><p>Two adults with red-green colour vision deficiency (one deutan, one protan) and seven colour-normal controls viewed eight uniform colour discs during fMRI and completed hue-discrimination and identification tasks. Categorical hue identity remained decodable from the visual cortex of the CVD participants, whereas continuous hue interpolation at hV4 fell to chance and the hue geometry departed from the control reference. A two-parameter cortical distortion model was fitted to each participant's psychophysical and neural data and inverted into an individualized stimulus-space filter, which both participants then evaluated in a second session against a deployed accessibility filter.</p><p>The repository is organised by the stages of the manuscript. Each stage folder holds the analysis scripts, the committed result files those scripts produced, and one executed Jupyter notebook that compares the committed results with every number printed in the manuscript for that stage. REPORT.md tallies those checks, MANIFEST.md lists the printed values, and MAP.md links each value to the file and script behind it.</p><p><strong>Data.</strong> The neuroimaging and behavioural data cannot be shared openly. The protocol approved by the Seoul National University Institutional Review Board (SNUIRB No. 2510/002-023) and the written consent obtained under it place all study data in an encrypted store to which the principal investigator controls access. Requests for access should be directed to the principal investigator (Jiook Cha, connectome@snu.ac.kr). This archive therefore contains code, per-participant summary statistics, permutation null distributions, figures and the manuscript source, and no voxel-level or trial-level data.</p><p><strong>Licences.</strong> The source code is released under the MIT licence; the result files under the stage <code>results/</code> folders, the figures and the manuscript source are released under CC BY 4.0. See LICENSE and LICENSE-RESULTS in the archive.</p>",
+  "keywords": [
+    "color vision deficiency",
+    "fMRI",
+    "multivoxel pattern analysis",
+    "representational geometry",
+    "cortical color representation",
+    "individualized color correction",
+    "shared response model",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/haba6030/colorblind_public",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Controls sub-01 to sub-07 (n = 7); CVD participants sub-08 (deutan) and sub-09 (protan) (n = 2). A third CVD participant (sub-10) was scanned in the first session but did not complete the second-session filter evaluation and is excluded from every analysis in the manuscript."
+}

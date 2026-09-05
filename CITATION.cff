@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or these result files, please cite the manuscript below and this repository."
 title: "colorblind_public: code and result files for a cortically derived colour-correction filter"
 version: 1.0.0
-date-released: 2026-09-05
+date-released: 2026-09-06
 repository-code: "https://github.com/haba6030/colorblind_public"
 license: MIT
 authors:

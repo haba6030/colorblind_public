@@ -1,6 +1,6 @@
 # Reproduction report
 
-Executed 2026-09-04 17:29 UTC by `run_notebooks.py` (Python 3.9.23).
+Executed 2026-09-05 17:27 UTC by `run_notebooks.py` (Python 3.9.23).
 
 Legend: **ok** reproduces the printed value to its precision (half a unit of the last printed digit) or satisfies the stated relation; **near** lies within one unit of the last printed digit, which points to rounding of an intermediate value rather than a different result; **mismatch** differs by more; **error** the check raised; **pointer** the manuscript value has no committed artifact and is listed rather than verified.
 

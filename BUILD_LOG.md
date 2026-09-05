@@ -1,4 +1,4 @@
-# Build log (2026-09-05, dev commit 53c81c2)
+# Build log (2026-09-06, dev commit 53c81c2)
 
 Files copied: 307; total 13.7 MB; largest figures/fig3_assets/Presentation1_box2_2026-09-03.pptx (1.4 MB).
 Python files compiled: 111; failures: 0.

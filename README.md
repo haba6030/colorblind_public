@@ -69,4 +69,4 @@ See `REPORT.md`. Checks that could not be performed from committed files (for ex
 
 Code is released under the MIT licence (`LICENSE`); result files and figures under CC BY 4.0 (`LICENSE-RESULTS`). Please cite the manuscript and, for the code, `CITATION.cff` (a Zenodo DOI will be added at release).
 
-Built from the development repository at commit 53c81c2 on 2026-09-05.
+Built from the development repository at commit 53c81c2 on 2026-09-06.
